@@ -4,6 +4,8 @@ import { hasEnvVars } from "../utils";
 import type { UserRole } from "../auth/types";
 
 export async function updateSession(request: NextRequest) {
+  console.log('Middleware executing for path:', request.nextUrl.pathname);
+  
   let supabaseResponse = NextResponse.next({
     request,
   });
@@ -11,6 +13,7 @@ export async function updateSession(request: NextRequest) {
   // If the env vars are not set, skip middleware check. You can remove this
   // once you setup the project.
   if (!hasEnvVars) {
+    console.warn('Supabase env vars not found, skipping auth middleware');
     return supabaseResponse;
   }
 
@@ -18,7 +21,7 @@ export async function updateSession(request: NextRequest) {
   // variable. Always create a new one on each request.
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_OR_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
       cookies: {
         getAll() {
@@ -99,6 +102,13 @@ export async function updateSession(request: NextRequest) {
       }
 
       if (pathname.startsWith('/tipster') && userRole === 'cliente') {
+        const url = request.nextUrl.clone();
+        url.pathname = "/access-denied";
+        return NextResponse.redirect(url);
+      }
+
+      // Check access to client area - only cliente, admin and master allowed
+      if (pathname.startsWith('/cliente') && userRole === 'tipster') {
         const url = request.nextUrl.clone();
         url.pathname = "/access-denied";
         return NextResponse.redirect(url);
