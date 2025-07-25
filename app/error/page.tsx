@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function ErrorPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <PageWrapper>
       <Header />
       
       <main className="flex-1 flex items-center justify-center">
@@ -24,6 +25,6 @@ export default function ErrorPage() {
           </div>
         </div>
       </main>
-    </div>
+    </PageWrapper>
   );
 }

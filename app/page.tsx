@@ -1,10 +1,11 @@
 import { Header } from "@/components/header";
 import { LandingHero } from "@/components/landing-hero";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <PageWrapper>
       <Header />
       
       <main className="flex-1">
@@ -66,6 +67,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </PageWrapper>
   );
 }

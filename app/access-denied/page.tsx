@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
+import { PageWrapper } from "@/components/ui/page-wrapper";
 
 export default function AccessDeniedPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <PageWrapper>
       <Header />
       
       <main className="flex-1 flex items-center justify-center">
@@ -25,6 +26,6 @@ export default function AccessDeniedPage() {
           </div>
         </div>
       </main>
-    </div>
+    </PageWrapper>
   );
 }

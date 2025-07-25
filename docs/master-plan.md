@@ -66,20 +66,22 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
   - [✅] /tipster/metricas - placeholder
   - [✅] Test: Todos os roles tentando acessar
 
-- [🔶] Feature 1.5: Admin Area Unificada + Access Control
+- [✅] Feature 1.5: Admin Area Unificada + Access Control
   - [✅] /admin/dashboard - visão geral (admin e master)
   - [✅] /admin/tipsters - gerenciar tipsters (admin e master)
-  - [🔶] /admin/clientes - gerenciar clientes (admin e master)
-  - [🔶] /admin/canais - moderar canais (admin e master)
+  - [✅] /admin/clientes - gerenciar clientes (admin e master)
+  - [✅] /admin/canais - moderar canais (admin e master)
   - [✅] /admin/admins - gerenciar administradores (MASTER ONLY)
-  - [🔶] /admin/configuracoes - configurações do sistema (seções condicionais)
-  - [ ] Test: Validar controle granular (master vê mais opções)
+  - [✅] /admin/configuracoes - configurações do sistema (seções condicionais)
+  - [✅] Test: Validar controle granular (master vê mais opções)
 
-- [ ] Feature 1.6: Polish + Final Testing
-  - [ ] Melhorias visuais no header/nav
-  - [ ] Avatar do usuário no header
+- [⏳] Feature 1.6: Polish + Final Testing
+  - [ ] Páginas institucionais (/sobre, /blog)
+  - [ ] Páginas de compliance (/termos, /privacidade)
+  - [ ] Sistema de cookie consent
+  - [✅] Avatar do usuário no header (já implementado)
   - [ ] Testes de fluxo completo
-  - [ ] Documentação de handover
+  - [ ] Documentação de handover EPIC 1
   - [ ] Test: Fluxo completo funcionando
 ```
 

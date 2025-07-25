@@ -21,9 +21,9 @@ export function ClientLayout({ children, userRole }: ClientLayoutProps) {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen bg-gradient-to-b from-primary/10 to-background">
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex w-[200px] flex-col fixed inset-y-0 z-50">
+      <aside className="hidden md:flex w-[200px] flex-col fixed inset-y-0 z-50 bg-background">
         <SidebarNav userRole={userRole} />
       </aside>
 
