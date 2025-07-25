@@ -25,7 +25,7 @@
 
 ## 🎯 EPIC 1: Sistema Base com Autenticação e Navegação
 
-### Status: ⬜ Pending
+### Status: 🟦 In Progress
 ### Start Date: 2025-01-24
 ### Target End: 2025-01-31
 ### Progress File: `docs/epics/epic-1-base-system/progress.md`
@@ -36,21 +36,21 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 #### Features Checklist:
 
 ```markdown
-- [ ] Feature 1.1: Base Infrastructure
-  - [ ] Remover componentes do tutorial
-  - [ ] Criar landing page básica
-  - [ ] Header com logo e área de auth
-  - [ ] Navigation bar com dropdown
-  - [ ] Páginas de erro e access denied
-  - [ ] Test: Ver nova home e navigation
+- [✅] Feature 1.1: Base Infrastructure
+  - [✅] Remover componentes do tutorial
+  - [✅] Criar landing page básica
+  - [✅] Header com logo e área de auth
+  - [✅] Navigation bar com dropdown
+  - [✅] Páginas de erro e access denied
+  - [✅] Test: Ver nova home e navigation
 
-- [ ] Feature 1.2: Database Schema + Auth Pages
-  - [ ] Criar tabela profiles com enum roles
-  - [ ] Trigger de sincronização users → profiles
-  - [ ] Página de login funcional
-  - [ ] Página de signup funcional
-  - [ ] Sistema de logout
-  - [ ] Test: Criar conta, login, logout
+- [✅] Feature 1.2: Database Schema + Auth Pages
+  - [✅] Criar tabela profiles com enum roles
+  - [✅] Trigger de sincronização users → profiles
+  - [✅] Página de login funcional
+  - [✅] Página de signup funcional
+  - [✅] Sistema de logout
+  - [✅] Test: Criar conta, login, logout
 
 - [ ] Feature 1.3: Client Pages + Access Control
   - [ ] /cliente/dashboard - placeholder
@@ -344,10 +344,10 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 0/42 Features (0%)
+### Overall Progress: 2/42 Features (4.8%)
 
 ```
-EPIC 1: ⬜ 0/7 features (0%)
+EPIC 1: 🟦 2/7 features (28.6%)
 EPIC 2: ⬜ 0/5 features (0%)
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
@@ -386,13 +386,26 @@ EPIC 6: ⬜ 0/5 features (0%)
 ## 📝 Seção de Notas
 
 ### Decisões Importantes:
-<!-- Claude Code adiciona decisões aqui -->
+- **25/01/2025**: Feature 1.1 - Optado por menu horizontal no mobile (hambúrguer adiado)
+- **25/01/2025**: Logo BetLink como SVG inline para melhor performance
+- **25/01/2025**: Theme system via cookies para evitar flash
+- **25/01/2025**: Feature 1.2 - Todos os usuários entram como 'cliente' por padrão
+- **25/01/2025**: Feature 1.2 - Roles só podem ser alterados por admin/master via SQL
 
 ### Débito Técnico:
-<!-- Rastrear itens para refatorar depois -->
+- Menu hambúrguer mobile (Feature 1.1)
+- Testes E2E com Playwright (adiado para Feature 1.7)
+- Dropdown com todas as rotas do sistema
+- Páginas de dashboard (Feature 1.3)
+- Sistema de logging estruturado
 
 ### Aprendizados:
-<!-- Documentar descobertas importantes -->
+- Supabase SSR (`@supabase/ssr`) simplifica muito a integração
+- Middleware é crítico para manter sessão atualizada
+- Documentar durante desenvolvimento economiza ~30min
+- **RLS policies precisam incluir INSERT para triggers funcionarem**
+- **Usuários de teste devem ser criados via signup, não SQL direto**
+- **Separação client/server é mandatória no Next.js 13+**
 
 ---
 

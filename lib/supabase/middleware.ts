@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { hasEnvVars } from "../utils";
+import type { UserRole } from "../auth/types";
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
@@ -47,16 +48,62 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
-  if (
-    request.nextUrl.pathname !== "/" &&
-    !user &&
-    !request.nextUrl.pathname.startsWith("/login") &&
-    !request.nextUrl.pathname.startsWith("/auth")
-  ) {
-    // no user, potentially respond by redirecting the user to the login page
+  const pathname = request.nextUrl.pathname;
+
+  // Public routes that don't require authentication
+  const publicRoutes = [
+    "/",
+    "/auth/login",
+    "/auth/sign-up",
+    "/auth/forgot-password",
+    "/auth/update-password",
+    "/auth/sign-up-success",
+    "/auth/error",
+    "/auth/confirm",
+    "/error",
+    "/access-denied"
+  ];
+
+  const isPublicRoute = publicRoutes.some(route => pathname.startsWith(route));
+
+  // If no user and trying to access protected route, redirect to login
+  if (!user && !isPublicRoute) {
     const url = request.nextUrl.clone();
     url.pathname = "/auth/login";
     return NextResponse.redirect(url);
+  }
+
+  // If user is authenticated, check role-based access
+  if (user) {
+    // Get user profile with role
+    const { data: profile } = await supabase
+      .from('profiles')
+      .select('role')
+      .eq('id', user.sub)
+      .single();
+
+    if (profile) {
+      const userRole = profile.role as UserRole;
+
+      // Check role-based access for protected routes
+      if (pathname.startsWith('/master') && userRole !== 'master') {
+        const url = request.nextUrl.clone();
+        url.pathname = "/access-denied";
+        return NextResponse.redirect(url);
+      }
+
+      if (pathname.startsWith('/admin') && userRole !== 'master' && userRole !== 'admin') {
+        const url = request.nextUrl.clone();
+        url.pathname = "/access-denied";
+        return NextResponse.redirect(url);
+      }
+
+      if (pathname.startsWith('/tipster') && userRole === 'cliente') {
+        const url = request.nextUrl.clone();
+        url.pathname = "/access-denied";
+        return NextResponse.redirect(url);
+      }
+    }
   }
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is.
