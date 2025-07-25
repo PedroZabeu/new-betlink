@@ -15,7 +15,7 @@ export interface AuthUser {
 
 // Role-based route configurations
 export const roleRoutes: Record<UserRole, string> = {
-  master: '/master/dashboard',
+  master: '/admin/dashboard',
   admin: '/admin/dashboard',
   tipster: '/tipster/dashboard',
   cliente: '/cliente/dashboard'

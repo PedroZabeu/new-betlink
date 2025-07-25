@@ -17,7 +17,7 @@ export default function AccessDeniedPage() {
           </p>
           <div className="flex gap-4 justify-center">
             <Button asChild>
-              <Link href="/">Voltar ao Início</Link>
+              <Link href="/">Home</Link>
             </Button>
             <Button asChild variant="outline">
               <Link href="/auth/login">Fazer Login</Link>

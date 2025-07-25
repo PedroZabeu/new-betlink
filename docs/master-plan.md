@@ -66,21 +66,16 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
   - [✅] /tipster/metricas - placeholder
   - [✅] Test: Todos os roles tentando acessar
 
-- [ ] Feature 1.5: Admin Pages + Access Control
-  - [ ] /admin/dashboard - placeholder
-  - [ ] /admin/tipsters - placeholder
-  - [ ] /admin/clientes - placeholder
-  - [ ] /admin/canais - placeholder
-  - [ ] Test: Todos os roles tentando acessar
+- [🔶] Feature 1.5: Admin Area Unificada + Access Control
+  - [✅] /admin/dashboard - visão geral (admin e master)
+  - [✅] /admin/tipsters - gerenciar tipsters (admin e master)
+  - [🔶] /admin/clientes - gerenciar clientes (admin e master)
+  - [🔶] /admin/canais - moderar canais (admin e master)
+  - [✅] /admin/admins - gerenciar administradores (MASTER ONLY)
+  - [🔶] /admin/configuracoes - configurações do sistema (seções condicionais)
+  - [ ] Test: Validar controle granular (master vê mais opções)
 
-- [ ] Feature 1.6: Master Pages + Test Users
-  - [ ] /master/dashboard - placeholder
-  - [ ] /master/configuracoes - placeholder
-  - [ ] Criar 4 usuários de teste (um por role)
-  - [ ] Documentar credenciais
-  - [ ] Test: Cada usuário acessando suas páginas
-
-- [ ] Feature 1.7: Polish + Final Testing
+- [ ] Feature 1.6: Polish + Final Testing
   - [ ] Melhorias visuais no header/nav
   - [ ] Avatar do usuário no header
   - [ ] Testes de fluxo completo

@@ -1,0 +1,1 @@
+when loging in with master user, users are being redirected to master dashboard, which does not exist

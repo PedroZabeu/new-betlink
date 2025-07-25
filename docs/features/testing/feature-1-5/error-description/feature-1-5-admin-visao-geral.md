@@ -1,0 +1,1 @@
+nav bar ocupa toda a tela e o conteudo da página está espremido no canto
