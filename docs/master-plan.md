@@ -52,19 +52,19 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
   - [✅] Sistema de logout
   - [✅] Test: Criar conta, login, logout
 
-- [ ] Feature 1.3: Client Pages + Access Control
-  - [ ] /cliente/dashboard - placeholder
-  - [ ] /cliente/assinaturas - placeholder
-  - [ ] /cliente/historico - placeholder
-  - [ ] Middleware redirecionando não-autorizados
-  - [ ] Test: Todos os roles tentando acessar
+- [✅] Feature 1.3: Client Pages + Access Control
+  - [✅] /cliente/dashboard - placeholder
+  - [✅] /cliente/assinaturas - placeholder
+  - [✅] /cliente/historico - placeholder
+  - [✅] Middleware redirecionando não-autorizados
+  - [✅] Test: Todos os roles tentando acessar
 
-- [ ] Feature 1.4: Tipster Pages + Access Control
-  - [ ] /tipster/dashboard - placeholder
-  - [ ] /tipster/canais - placeholder
-  - [ ] /tipster/assinantes - placeholder
-  - [ ] /tipster/metricas - placeholder
-  - [ ] Test: Todos os roles tentando acessar
+- [✅] Feature 1.4: Tipster Pages + Access Control
+  - [✅] /tipster/dashboard - placeholder
+  - [✅] /tipster/canais - placeholder
+  - [✅] /tipster/assinantes - placeholder
+  - [✅] /tipster/metricas - placeholder
+  - [✅] Test: Todos os roles tentando acessar
 
 - [ ] Feature 1.5: Admin Pages + Access Control
   - [ ] /admin/dashboard - placeholder
