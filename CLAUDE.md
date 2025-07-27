@@ -2,6 +2,35 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## ✅ Logging - Padrão do Projeto
+
+Este projeto usa um logger centralizado em `lib/utils/logger.ts`. **É proibido o uso direto de `console.log`, `console.error`, etc.** Todos os eventos relevantes devem ser logados com contexto, utilizando os métodos:
+
+- `logger.info()` → para eventos normais
+- `logger.warn()` → para comportamentos inesperados  
+- `logger.error()` → para falhas que devem ser investigadas
+- `logger.audit()` → para eventos sensíveis (login, signup, alterações administrativas)
+- `logger.debug()` → somente em ambiente de desenvolvimento
+
+**Nunca logue senhas, tokens ou dados sensíveis.**
+
+### Exemplo de uso correto:
+```typescript
+import { logger } from '@/lib/utils/logger';
+
+// ✅ Bom - com contexto
+logger.info('Usuário realizou login', { userId, email, role });
+
+// ❌ Ruim - sem contexto
+console.log('Login realizado');
+
+// ✅ Bom - erro com stack trace
+logger.error('Falha ao processar pagamento', error, { userId, amount });
+
+// ❌ Ruim - sem informações úteis
+console.error(error);
+```
+
 ## Project Overview
 
 **BetLink** is a tipster management platform that connects professional tipsters with betting clients. Built on Next.js 15 + Supabase, it provides subscription management, Telegram integration, and automated payment processing.
@@ -158,22 +187,35 @@ For detailed examples, see `/docs/collaboration/workflow-examples.md`
 - **Queries**: Typed Supabase queries with error handling
 
 ### Logging Standards
-All operations must include structured logging:
+**IMPORTANTE: Use SEMPRE o logger centralizado. NUNCA use console.log/error/warn diretamente.**
 
 ```typescript
 import { logger } from '@/lib/utils/logger';
 
-// Authentication
-logger.audit(userId, 'auth.login', 'session', { role, ip });
+// Authentication - sempre incluir contexto
+logger.audit(userId, 'auth.login', 'session', { role, ip, userAgent });
 
-// Data operations  
-logger.audit(userId, 'create', 'channel', { channelId, data });
+// Data operations - incluir IDs e timestamps
+logger.audit(userId, 'create', 'channel', { channelId, data, timestamp });
 
-// Errors
-logger.error('payment.failed', error, { userId, amount });
+// Errors - sempre passar o objeto de erro
+logger.error('payment.failed', error, { userId, amount, paymentMethod });
+
+// Info - eventos importantes do sistema
+logger.info('Subscription activated', { userId, channelId, plan });
+
+// Warn - situações inesperadas mas não críticas  
+logger.warn('Rate limit approaching', { userId, remaining: 10 });
+
+// Debug - apenas em desenvolvimento
+logger.debug('Cache miss', { key, reason });
 ```
 
-For complete logging standards, see `.claude-instructions/logging-standards.md`
+**Regras de Logging:**
+1. Sempre incluir contexto relevante (userId, IDs, timestamps)
+2. Nunca logar dados sensíveis (senhas, tokens, cartões)
+3. Usar níveis apropriados (não usar info para erros)
+4. Em produção, debug não aparece
 
 ### Git Workflow
 After each feature completion:

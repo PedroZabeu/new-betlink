@@ -1,10 +1,17 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { hasEnvVars } from "../utils";
+import { logger } from "../utils/logger";
 import type { UserRole } from "../auth/types";
 
 export async function updateSession(request: NextRequest) {
-  console.log('Middleware executing for path:', request.nextUrl.pathname);
+  // Log middleware execution apenas em desenvolvimento
+  logger.debug('Middleware executando', {
+    path: request.nextUrl.pathname,
+    method: request.method,
+    ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown',
+    userAgent: request.headers.get('user-agent') || 'unknown'
+  });
   
   let supabaseResponse = NextResponse.next({
     request,
@@ -13,7 +20,7 @@ export async function updateSession(request: NextRequest) {
   // If the env vars are not set, skip middleware check. You can remove this
   // once you setup the project.
   if (!hasEnvVars) {
-    console.warn('Supabase env vars not found, skipping auth middleware');
+    logger.warn('Variáveis de ambiente do Supabase não encontradas, pulando middleware de autenticação');
     return supabaseResponse;
   }
 
@@ -90,18 +97,36 @@ export async function updateSession(request: NextRequest) {
 
       // Check role-based access for protected routes
       if (pathname.startsWith('/master') && userRole !== 'master') {
+        logger.warn('Tentativa de acesso não autorizado à área master', {
+          userId: user.sub,
+          userRole,
+          attemptedPath: pathname,
+          ip: request.headers.get('x-forwarded-for') || 'unknown'
+        });
         const url = request.nextUrl.clone();
         url.pathname = "/access-denied";
         return NextResponse.redirect(url);
       }
 
       if (pathname.startsWith('/admin') && userRole !== 'master' && userRole !== 'admin') {
+        logger.warn('Tentativa de acesso não autorizado à área admin', {
+          userId: user.sub,
+          userRole,
+          attemptedPath: pathname,
+          ip: request.headers.get('x-forwarded-for') || 'unknown'
+        });
         const url = request.nextUrl.clone();
         url.pathname = "/access-denied";
         return NextResponse.redirect(url);
       }
 
       if (pathname.startsWith('/tipster') && userRole === 'cliente') {
+        logger.warn('Tentativa de acesso não autorizado à área tipster', {
+          userId: user.sub,
+          userRole,
+          attemptedPath: pathname,
+          ip: request.headers.get('x-forwarded-for') || 'unknown'
+        });
         const url = request.nextUrl.clone();
         url.pathname = "/access-denied";
         return NextResponse.redirect(url);
@@ -109,6 +134,12 @@ export async function updateSession(request: NextRequest) {
 
       // Check access to client area - only cliente, admin and master allowed
       if (pathname.startsWith('/cliente') && userRole === 'tipster') {
+        logger.warn('Tentativa de acesso não autorizado à área cliente', {
+          userId: user.sub,
+          userRole,
+          attemptedPath: pathname,
+          ip: request.headers.get('x-forwarded-for') || 'unknown'
+        });
         const url = request.nextUrl.clone();
         url.pathname = "/access-denied";
         return NextResponse.redirect(url);

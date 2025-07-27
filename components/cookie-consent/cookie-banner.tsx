@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Cookie, Settings, X } from "lucide-react";
 import { CookieModal } from "./cookie-modal";
+import { logger } from "@/lib/utils/logger";
 
 export interface CookiePreferences {
   necessary: boolean;
@@ -35,7 +36,11 @@ export function CookieBanner() {
         const parsed = JSON.parse(stored);
         setPreferences(parsed);
       } catch (e) {
-        console.error("Failed to parse cookie preferences:", e);
+        logger.error("Falha ao parsear preferências de cookies", e, {
+          storedValue: stored,
+          userAgent: typeof window !== 'undefined' ? navigator.userAgent : undefined,
+          timestamp: new Date().toISOString()
+        });
       }
     }
   }, []);
@@ -49,9 +54,17 @@ export function CookieBanner() {
     setPreferences(toSave);
     setShowBanner(false);
     setShowModal(false);
+    
+    // Log preferências de cookies salvas
+    logger.info('Preferências de cookies atualizadas', {
+      analytics: prefs.analytics,
+      marketing: prefs.marketing,
+      timestamp: toSave.acceptedAt
+    });
   };
 
   const acceptAll = () => {
+    logger.info('Usuário aceitou todos os cookies');
     savePreferences({
       necessary: true,
       analytics: true,
@@ -60,6 +73,7 @@ export function CookieBanner() {
   };
 
   const acceptNecessaryOnly = () => {
+    logger.info('Usuário aceitou apenas cookies necessários');
     savePreferences({
       necessary: true,
       analytics: false,

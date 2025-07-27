@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { getRedirectUrlForRoleClient as getRedirectUrlForRole } from "@/lib/auth/client";
 import type { UserRole } from "@/lib/auth/types";
+import { logger } from "@/lib/utils/logger";
 import {
   Card,
   CardContent,
@@ -34,31 +35,84 @@ export function LoginForm({
     setIsLoading(true);
     setError(null);
 
+    // Log tentativa de login
+    logger.info('Tentativa de login iniciada', {
+      email,
+      timestamp: new Date().toISOString(),
+      userAgent: typeof window !== 'undefined' ? navigator.userAgent : undefined
+    });
+
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       });
-      if (error) throw error;
+      
+      if (error) {
+        // Log erro de autenticação
+        logger.warn('Falha na autenticação do login', {
+          email,
+          error: error.message,
+          errorCode: error.code,
+          timestamp: new Date().toISOString()
+        });
+        throw error;
+      }
 
       // Get user profile to determine role
       if (data.user) {
-        const { data: profile } = await supabase
+        const { data: profile, error: profileError } = await supabase
           .from('profiles')
           .select('role')
           .eq('id', data.user.id)
           .single();
 
+        if (profileError) {
+          // Log falha na busca do perfil
+          logger.error('Falha ao buscar perfil do usuário após login', profileError, {
+            userId: data.user.id,
+            email,
+            timestamp: new Date().toISOString()
+          });
+        }
+
         if (profile) {
           const redirectUrl = getRedirectUrlForRole(profile.role as UserRole);
+          
+          // Log login bem-sucedido (audit)
+          logger.audit(data.user.id, 'auth.login', 'session', {
+            email,
+            role: profile.role,
+            loginMethod: 'password',
+            redirectTo: redirectUrl,
+            timestamp: new Date().toISOString(),
+            userAgent: typeof window !== 'undefined' ? navigator.userAgent : undefined
+          });
+          
           router.push(redirectUrl);
         } else {
+          // Log cenário de fallback
+          logger.warn('Perfil não encontrado para usuário, usando redirecionamento padrão', {
+            userId: data.user.id,
+            email,
+            redirectTo: '/cliente/dashboard',
+            timestamp: new Date().toISOString()
+          });
           // Fallback to cliente dashboard if no profile found
           router.push("/cliente/dashboard");
         }
       }
     } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : "An error occurred");
+      const errorMessage = error instanceof Error ? error.message : "An error occurred";
+      
+      // Log erro completo do processo de login
+      logger.error('Processo de login falhou', error, {
+        email,
+        userAgent: typeof window !== 'undefined' ? navigator.userAgent : undefined,
+        timestamp: new Date().toISOString()
+      });
+      
+      setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
