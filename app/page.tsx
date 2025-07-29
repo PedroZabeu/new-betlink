@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { LandingHero } from "@/components/landing-hero";
 import { AdvantagesSection } from "@/components/home/advantages-section";
+import { BlogCTASection } from "@/components/home/blog-cta-section";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 
@@ -52,6 +53,8 @@ export default function Home() {
             </div>
           </section>
         </div>
+        
+        <BlogCTASection />
       </main>
 
       <footer className="border-t py-8">
