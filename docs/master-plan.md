@@ -162,12 +162,13 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Reading Progress + Share Buttons + Post Navigation
   - [✅] Test: Static generation + navegação funcionando
 
-- [ ] Feature 2.9: Sistema de Busca no Blog
-  - [ ] Componente SearchBar reutilizando Input
-  - [ ] Busca client-side nos dados carregados
-  - [ ] Debounce 300ms para performance
-  - [ ] Highlight dos termos encontrados
-  - [ ] Test: Busca retorna < 200ms
+- [✅] Feature 2.9: Sistema de Busca no Blog - COMPLETO
+  - [✅] Componente SearchBar reutilizando Input
+  - [✅] Busca client-side nos dados carregados com scoring inteligente
+  - [✅] Debounce 300ms para performance otimizada
+  - [✅] Highlight dos termos encontrados em títulos e excerpts
+  - [✅] Integração perfeita com filtros existentes
+  - [✅] Test: Busca retorna < 200ms com feedback visual
 
 - [ ] Feature 2.10: Melhorias de Performance e UX
   - [ ] Static Generation para todas as páginas (SSG)

@@ -9,7 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Calendar, Clock, User, FileText, X, Search } from 'lucide-react';
+import { Calendar, Clock, User, FileText } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { logger } from '@/lib/utils/logger';
@@ -27,6 +27,9 @@ import {
 } from '@/lib/blog/filters';
 import { CategoryBadge } from './category-badge';
 import { TagChip } from './tag-chip';
+import { SearchBar } from './search-bar';
+import { HighlightTitle, HighlightExcerpt } from './search-highlight';
+import { useSearchDebounce } from '@/hooks/use-debounce';
 
 const FEATURE_NAME = '[Feature: BlogClient]';
 
@@ -60,18 +63,30 @@ export function BlogClient({ posts }: BlogClientProps) {
   });
 
   const [searchInput, setSearchInput] = useState('');
+  
+  // Debounce da busca para otimizar performance
+  const debouncedSearchQuery = useSearchDebounce(searchInput, 300);
+
+  // Atualizar filtros quando a busca debounced mudar
+  const currentFilters = useMemo(() => ({
+    ...filters,
+    searchQuery: debouncedSearchQuery.trim() || undefined
+  }), [filters, debouncedSearchQuery]);
 
   // Process posts with filters
   const { posts: filteredPosts, counts } = useMemo(() => {
-    const result = combineFiltersLogic(posts, filters);
+    const result = combineFiltersLogic(posts, currentFilters);
     
-    logger.debug(`${FEATURE_NAME} Posts filtered`, { 
+    logger.debug(`${FEATURE_NAME} Posts filtered with search`, { 
       originalCount: posts.length,
-      filteredCount: result.posts.length
+      filteredCount: result.posts.length,
+      searchQuery: currentFilters.searchQuery,
+      hasCategories: currentFilters.categories.length > 0,
+      hasTags: currentFilters.tags.length > 0
     });
 
     return result;
-  }, [posts, filters]);
+  }, [posts, currentFilters]);
 
   // Extract available tags
   const availableTags = useMemo(() => {
@@ -126,10 +141,6 @@ export function BlogClient({ posts }: BlogClientProps) {
 
   const handleSearchChange = (value: string) => {
     setSearchInput(value);
-    setFilters({
-      ...filters,
-      searchQuery: value.trim() || undefined
-    });
   };
 
   const handleClearFilters = () => {
@@ -137,9 +148,10 @@ export function BlogClient({ posts }: BlogClientProps) {
     setSearchInput('');
   };
 
-  const activeFiltersCount = filters.categories.length + filters.tags.length + 
-                            (filters.searchQuery ? 1 : 0);
-  const hasFilters = hasActiveFilters(filters);
+  const activeFiltersCount = currentFilters.categories.length + currentFilters.tags.length + 
+                            (currentFilters.searchQuery ? 1 : 0);
+  const hasFilters = hasActiveFilters(currentFilters);
+  const isSearching = searchInput !== debouncedSearchQuery;
 
   // Featured post (first filtered post or first overall)
   const featuredPost = filteredPosts[0] || posts[0];
@@ -179,25 +191,14 @@ export function BlogClient({ posts }: BlogClientProps) {
         {/* Filters */}
         <div className="mb-8 space-y-4">
           {/* Search Bar */}
-          <div className="relative max-w-md">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
-            <Input
-              placeholder="Buscar posts..."
+          <div className="max-w-md">
+            <SearchBar
               value={searchInput}
-              onChange={(e) => handleSearchChange(e.target.value)}
-              className="pl-10 pr-10"
-              data-testid="search-input"
+              onChange={handleSearchChange}
+              resultCount={filteredPosts.length}
+              isSearching={isSearching}
+              placeholder="Buscar posts por título, conteúdo, tags..."
             />
-            {searchInput && (
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => handleSearchChange('')}
-                className="absolute right-1 top-1 h-8 w-8 p-0"
-              >
-                <X className="h-4 w-4" />
-              </Button>
-            )}
           </div>
 
           {/* Categories */}
@@ -299,10 +300,16 @@ export function BlogClient({ posts }: BlogClientProps) {
                       <Badge variant="outline" className="mb-2">Destaque</Badge>
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 line-clamp-2 group-hover:text-primary transition-colors">
-                      {featuredPost.title}
+                      <HighlightTitle 
+                        text={featuredPost.title} 
+                        query={currentFilters.searchQuery || ''} 
+                      />
                     </h2>
                     <p className="text-muted-foreground mb-6 line-clamp-3">
-                      {featuredPost.excerpt}
+                      <HighlightExcerpt 
+                        text={featuredPost.excerpt} 
+                        query={currentFilters.searchQuery || ''} 
+                      />
                     </p>
                     <div className="flex items-center gap-6 text-sm text-muted-foreground">
                       <div className="flex items-center gap-1">
@@ -360,10 +367,16 @@ export function BlogClient({ posts }: BlogClientProps) {
                     </CardHeader>
                     <CardContent className="p-6 flex-1">
                       <h3 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-                        {post.title}
+                        <HighlightTitle 
+                          text={post.title} 
+                          query={currentFilters.searchQuery || ''} 
+                        />
                       </h3>
                       <p className="text-muted-foreground line-clamp-3 mb-3">
-                        {post.excerpt}
+                        <HighlightExcerpt 
+                          text={post.excerpt} 
+                          query={currentFilters.searchQuery || ''} 
+                        />
                       </p>
                       {/* Tags */}
                       {post.tags.length > 0 && (

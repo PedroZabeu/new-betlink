@@ -10,6 +10,7 @@ import {
   PostCounts, 
   FilterResult
 } from './types';
+import { searchPosts } from './search';
 
 const FEATURE_NAME = '[Feature: BlogFilters]';
 
@@ -106,13 +107,16 @@ export function countPostsByTag(posts: BlogPost[]): Record<string, number> {
   }
 }
 
-/**
- * Filtra posts baseado no estado de filtros
- */
-export function filterPostsByFilters(posts: BlogPost[], filters: FilterState): BlogPost[] {
-  try {
-    let filteredPosts = [...posts];
 
+/**
+ * Combina lógica de filtragem, busca e contagem
+ * ORDEM: Filtros → Busca → Contagem
+ */
+export function combineFiltersLogic(posts: BlogPost[], filters: FilterState): FilterResult {
+  try {
+    // 1. Aplicar filtros tradicionais (categorias e tags)
+    let filteredPosts = [...posts];
+    
     // Filtro por categorias (OR logic)
     if (filters.categories.length > 0) {
       filteredPosts = filteredPosts.filter(post => 
@@ -120,7 +124,7 @@ export function filterPostsByFilters(posts: BlogPost[], filters: FilterState): B
       );
     }
 
-    // Filtro por tags (AND logic - post deve ter TODAS as tags selecionadas)
+    // Filtro por tags (AND logic)
     if (filters.tags.length > 0) {
       filteredPosts = filteredPosts.filter(post => {
         if (!Array.isArray(post.tags)) return false;
@@ -131,47 +135,26 @@ export function filterPostsByFilters(posts: BlogPost[], filters: FilterState): B
         );
       });
     }
-
-    // Filtro por busca textual
-    if (filters.searchQuery && filters.searchQuery.trim()) {
-      const searchTerm = filters.searchQuery.toLowerCase().trim();
-      
-      filteredPosts = filteredPosts.filter(post => {
-        const searchableText = [
-          post.title,
-          post.excerpt,
-          post.content,
-          ...(post.tags || [])
-        ].join(' ').toLowerCase();
-        
-        return searchableText.includes(searchTerm);
-      });
-    }
-
-    logger.debug(`${FEATURE_NAME} Filter operation completed`, { 
-      originalCount: posts.length,
-      filteredCount: filteredPosts.length
-    });
-
-    return filteredPosts;
-  } catch (error) {
-    logger.error(`${FEATURE_NAME} Error filtering posts`, error as Error);
-    return posts;
-  }
-}
-
-/**
- * Combina lógica de filtragem e contagem
- */
-export function combineFiltersLogic(posts: BlogPost[], filters: FilterState): FilterResult {
-  try {
-    const filteredPosts = filterPostsByFilters(posts, filters);
     
+    // 2. Aplicar busca textual nos posts já filtrados
+    if (filters.searchQuery && filters.searchQuery.trim()) {
+      filteredPosts = searchPosts(filteredPosts, filters.searchQuery);
+    }
+    
+    // 3. Calcular contagens baseadas nos posts originais (antes dos filtros)
     const counts: PostCounts = {
       total: posts.length,
       byCategory: countPostsByCategory(posts),
       byTag: countPostsByTag(posts)
     };
+
+    logger.debug(`${FEATURE_NAME} Combined filter and search logic completed`, { 
+      originalCount: posts.length,
+      afterFilters: filteredPosts.length,
+      hasSearch: !!filters.searchQuery?.trim(),
+      hasCategories: filters.categories.length > 0,
+      hasTags: filters.tags.length > 0
+    });
 
     return {
       posts: filteredPosts,
