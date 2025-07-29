@@ -89,55 +89,121 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 
 ---
 
-## 🎯 EPIC 2: Discovery de Canais (Área Pública)
+## 🎯 EPIC 2: Landing, Blog & Discovery
 
-### Status: ⬜ Pending
+### Status: 🟦 In Progress
 ### Dependencies: EPIC 1
-### Start Date: -
+### Start Date: 2025-01-29
 ### End Date: -
-### Progress File: `docs/epics/epic-2-channel-discovery/progress.md`
+### Progress File: `docs/epics/epic-2-landing-blog-discovery/progress.md`
 
-#### Features Checklist:
+#### Objetivo
+Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, dividido em 4 fases progressivas.
 
+#### Features por Fase:
+
+**Fase 1: Landing Page Features (5 features)**
 ```markdown
-- [ ] Feature 2.1: Landing Page Completa
-  - [ ] Hero section com CTA
-  - [ ] Seção "Como funciona"
-  - [ ] Grid de canais em destaque
-  - [ ] Estatísticas da plataforma
-  - [ ] Footer com links
-  - [ ] Test: Todas as seções renderizando
+- [✅] Feature 2.1: Ajustes na Navegação
+  - [✅] Underline para aba ativa
+  - [✅] Hover states suaves
+  - [✅] Transições fluidas
+  - [✅] Test: Estados visuais corretos
 
-- [ ] Feature 2.2: Página de Lista de Canais
-  - [ ] Rota /canais pública
-  - [ ] Componente de card de canal
+- [ ] Feature 2.2: Seção de Vantagens
+  - [ ] Remover números genéricos
+  - [ ] 4 cards de vantagens
   - [ ] Grid responsivo
-  - [ ] Estados de loading e vazio
-  - [ ] Dados mockados de canais
-  - [ ] Test: Ver lista de canais mockados
+  - [ ] Test: Cards visíveis e alinhados
 
-- [ ] Feature 2.3: Filtros e Busca
-  - [ ] Sidebar de filtros
-  - [ ] Filtro por preço
-  - [ ] Filtro por ROI
-  - [ ] Filtro por esporte/mercado
-  - [ ] Busca por nome
-  - [ ] Test: Filtros funcionando em tempo real
+- [ ] Feature 2.3: Melhoria "Como Funciona"
+  - [ ] Novos textos dos 3 passos
+  - [ ] Manter layout atual
+  - [ ] Test: Textos atualizados
 
-- [ ] Feature 2.4: Página Individual do Canal
-  - [ ] Rota /canal/[id]
-  - [ ] Header com infos do tipster
-  - [ ] Métricas detalhadas
-  - [ ] Descrição e regras
-  - [ ] CTA para assinatura
-  - [ ] Test: Navegar para detalhes do canal
+- [ ] Feature 2.4: Seção CTA Blog
+  - [ ] Call-to-action para blog
+  - [ ] Design harmonioso
+  - [ ] Test: Link funcionando
 
-- [ ] Feature 2.5: Modal de Assinatura
-  - [ ] Modal com planos/preços
-  - [ ] Integração com auth
-  - [ ] Redirecionamento pós-login
-  - [ ] Preview para não-logados
-  - [ ] Test: Fluxo completo de interesse em assinar
+- [ ] Feature 2.5: Polimento Final
+  - [ ] Performance optimization
+  - [ ] Lighthouse > 90
+  - [ ] Test: Métricas validadas
+```
+
+**Fase 2: Blog Features (5 features)**
+```markdown
+- [ ] Feature 2.6: Criar 4 Novos Posts
+  - [ ] Posts sobre apostas esportivas
+  - [ ] Conteúdo educacional
+  - [ ] Test: Posts acessíveis
+
+- [ ] Feature 2.7: Sistema de Tags
+  - [ ] Categorias e tags
+  - [ ] Filtros visuais
+  - [ ] Test: Filtros funcionando
+
+- [ ] Feature 2.8: Sistema de Busca
+  - [ ] Busca em tempo real
+  - [ ] Resultados instantâneos
+  - [ ] Test: Busca retorna corretamente
+
+- [ ] Feature 2.9: Página Individual Aprimorada
+  - [ ] Layout de leitura
+  - [ ] Compartilhamento social
+  - [ ] Test: Navegação funciona
+
+- [ ] Feature 2.10: Performance e UX
+  - [ ] Lazy loading
+  - [ ] Animações suaves
+  - [ ] Test: Carregamento < 2s
+```
+
+**Fase 3: Discovery de Canais (3 features)**
+```markdown
+- [ ] Feature 2.11: Refinamento dos Cards
+  - [ ] Cards com todas informações
+  - [ ] 10-12 canais mockados
+  - [ ] Test: Cards responsivos
+
+- [ ] Feature 2.12: Página de Detalhes
+  - [ ] Página completa do canal
+  - [ ] Sistema de abas
+  - [ ] Test: Todos dados visíveis
+
+- [ ] Feature 2.13: Fluxo de Assinatura
+  - [ ] Multi-step até pagamento
+  - [ ] Captura de leads
+  - [ ] Test: Fluxo completo
+```
+
+**Fase 4: Integração Supabase (5 features)**
+```markdown
+- [ ] Feature 2.14: Schema e Queries
+  - [ ] Tabelas otimizadas
+  - [ ] Views e functions
+  - [ ] Test: Queries < 100ms
+
+- [ ] Feature 2.15: Integração Explorar
+  - [ ] Dados reais nos cards
+  - [ ] Filtros dinâmicos
+  - [ ] Test: Performance mantida
+
+- [ ] Feature 2.16: Integração Detalhes
+  - [ ] Página com dados reais
+  - [ ] Gráficos funcionais
+  - [ ] Test: Abas com dados
+
+- [ ] Feature 2.17: Persistência Assinatura
+  - [ ] Salvar leads
+  - [ ] Analytics básico
+  - [ ] Test: Dados salvos
+
+- [ ] Feature 2.18: Otimização e Cache
+  - [ ] Cache multicamadas
+  - [ ] Performance produção
+  - [ ] Test: TTI < 3s
 ```
 
 ---
@@ -343,11 +409,11 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 6/37 Features (16.2%)
+### Overall Progress: 6/44 Features (13.6%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: ⬜ 0/5 features (0%)
+EPIC 2: ⬜ 0/18 features (0%) - 4 fases
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
