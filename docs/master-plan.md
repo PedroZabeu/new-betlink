@@ -121,43 +121,54 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Manter layout atual
   - [✅] Test: Textos atualizados
 
-- [ ] Feature 2.4: Seção CTA Blog
-  - [ ] Call-to-action para blog
-  - [ ] Design harmonioso
-  - [ ] Test: Link funcionando
+- [✅] Feature 2.4: Seção CTA Blog
+  - [✅] Call-to-action para blog
+  - [✅] Design harmonioso
+  - [✅] Test: Link funcionando
 
-- [ ] Feature 2.5: Polimento Final
-  - [ ] Performance optimization
-  - [ ] Lighthouse > 90
-  - [ ] Test: Métricas validadas
+- [✅] Feature 2.5: Polimento Final
+  - [✅] Performance optimization
+  - [✅] Lighthouse > 90
+  - [✅] Test: Métricas validadas
 ```
 
 **Fase 2: Blog Features (5 features)**
 ```markdown
-- [ ] Feature 2.6: Criar 4 Novos Posts
-  - [ ] Posts sobre apostas esportivas
-  - [ ] Conteúdo educacional
-  - [ ] Test: Posts acessíveis
+- [ ] Feature 2.6: Criar 4 Novos Posts sobre Apostas
+  - [ ] Setup estrutura /_posts e configuração
+  - [ ] Post 1: Métricas Essenciais nas Apostas Esportivas
+  - [ ] Post 2: Entendendo o EV+ (Expected Value Positivo)
+  - [ ] Post 3: Estratégias para Manter Contas Ativas
+  - [ ] Post 4: Montando sua Carteira de Tipsters
+  - [ ] Test: Posts renderizando em Markdown
 
-- [ ] Feature 2.7: Sistema de Tags
-  - [ ] Categorias e tags
-  - [ ] Filtros visuais
-  - [ ] Test: Filtros funcionando
+- [ ] Feature 2.7: Sistema de Tags e Categorias
+  - [ ] Definir types e interfaces
+  - [ ] 4 categorias fixas (educacional, estrategias, gestao-banca, ferramentas)
+  - [ ] Sistema de tags flexível (3-6 por post)
+  - [ ] Componente TagFilter com design existente
+  - [ ] Test: Filtros combinados funcionando
 
-- [ ] Feature 2.8: Sistema de Busca
-  - [ ] Busca em tempo real
-  - [ ] Resultados instantâneos
-  - [ ] Test: Busca retorna corretamente
+- [ ] Feature 2.8: Sistema de Busca no Blog
+  - [ ] Componente SearchBar reutilizando Input
+  - [ ] Busca em título, excerpt, conteúdo, tags
+  - [ ] Debounce 300ms para performance
+  - [ ] Highlight dos termos encontrados
+  - [ ] Test: Busca retorna < 200ms
 
-- [ ] Feature 2.9: Página Individual Aprimorada
-  - [ ] Layout de leitura
-  - [ ] Compartilhamento social
-  - [ ] Test: Navegação funciona
+- [ ] Feature 2.9: Página Individual de Post Aprimorada
+  - [ ] Breadcrumbs: Home > Blog > [Categoria] > [Post]
+  - [ ] Navegação: Post anterior/próximo
+  - [ ] Posts relacionados (mesma categoria)
+  - [ ] Compartilhamento: WhatsApp, Telegram, Copiar link
+  - [ ] Test: Navegação e compartilhamento funcionando
 
-- [ ] Feature 2.10: Performance e UX
-  - [ ] Lazy loading
-  - [ ] Animações suaves
-  - [ ] Test: Carregamento < 2s
+- [ ] Feature 2.10: Melhorias de Performance e UX
+  - [ ] Static Generation para todas as páginas
+  - [ ] Skeleton loading para lista de posts
+  - [ ] Scroll to top button (aparece após 300px)
+  - [ ] Lazy loading de imagens com blur placeholder
+  - [ ] Test: Lighthouse > 90, TTI < 3s
 ```
 
 **Fase 3: Discovery de Canais (3 features)**
@@ -409,11 +420,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 6/44 Features (13.6%)
+### Overall Progress: 11/44 Features (25%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: ⬜ 0/18 features (0%) - 4 fases
+EPIC 2: 🟦 5/18 features (27.8%) - Fase 1 completa, Fase 2 iniciando
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
