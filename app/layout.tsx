@@ -12,6 +12,38 @@ export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
   title: "BetLink - Conectando Tipsters de Elite aos Melhores Apostadores",
   description: "A plataforma líder em conectar apostadores a tipsters profissionais verificados. Transparência, segurança e resultados comprovados.",
+  keywords: ["tipsters", "apostas esportivas", "tips", "apostas", "telegram", "profissionais verificados"],
+  authors: [{ name: "BetLink" }],
+  creator: "BetLink",
+  publisher: "BetLink",
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    url: defaultUrl,
+    title: "BetLink - Conectando Tipsters de Elite aos Melhores Apostadores",
+    description: "A plataforma líder em conectar apostadores a tipsters profissionais verificados. Transparência, segurança e resultados comprovados.",
+    siteName: "BetLink",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BetLink - Conectando Tipsters de Elite aos Melhores Apostadores",
+    description: "A plataforma líder em conectar apostadores a tipsters profissionais verificados. Transparência, segurança e resultados comprovados.",
+    creator: "@betlink",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "google-site-verification-code",
+  },
 };
 
 const geistSans = Geist({

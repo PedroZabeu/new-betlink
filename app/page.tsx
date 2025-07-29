@@ -8,9 +8,12 @@ import { PageWrapper } from "@/components/ui/page-wrapper";
 export default function Home() {
   return (
     <PageWrapper>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-primary-foreground px-4 py-2 rounded-md">
+        Pular para o conteúdo principal
+      </a>
       <Header />
       
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <div className="container mx-auto px-4">
           <LandingHero />
         </div>
@@ -18,8 +21,8 @@ export default function Home() {
         <AdvantagesSection />
         
         <div className="container mx-auto px-4">
-          <section className="py-16">
-            <h2 className="text-3xl font-bold text-center mb-12">
+          <section className="py-16" aria-labelledby="how-it-works">
+            <h2 id="how-it-works" className="text-3xl font-bold text-center mb-12">
               Como Funciona
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">

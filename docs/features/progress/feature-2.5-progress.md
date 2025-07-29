@@ -1,24 +1,24 @@
 # Feature 2.5 - Progress Tracking
 
 ## 📊 Status Geral
-- **Status**: 🔴 Não Iniciado
+- **Status**: 🟡 Em Progresso
 - **Branch**: `feature/2.5-landing-polish`
-- **Início**: -
-- **Última Atualização**: -
-- **Dependência**: Feature 2.4 deve estar completa
+- **Início**: 29/07/2025 15:00
+- **Última Atualização**: 29/07/2025 15:15
+- **Dependência**: Feature 2.4 ✅ Completa
 
 ## ✅ Checklist Principal
 
 ### Análise Inicial
-- [ ] Lighthouse baseline capturado
-- [ ] Imagens inventariadas
-- [ ] Problemas de acessibilidade identificados
-- [ ] Meta tags verificadas
+- [x] Lighthouse baseline capturado
+- [x] Imagens inventariadas
+- [x] Problemas de acessibilidade identificados
+- [x] Meta tags verificadas
 
 ### Otimizações
 - [ ] Imagens otimizadas
-- [ ] Alt texts adicionados
-- [ ] Acessibilidade melhorada
+- [x] Alt texts adicionados
+- [x] Acessibilidade melhorada
 - [ ] Performance otimizada
 
 ### Validação
@@ -120,7 +120,17 @@ Nenhuma issue registrada ainda.
 ## 📝 Notas de Implementação
 
 ```markdown
-Aguardando início da implementação.
+1. Meta tags SEO e Open Graph adicionadas ao layout.tsx
+2. Aria-labels adicionados:
+   - Logo BetLink: aria-label="BetLink" role="img"
+   - Theme switcher: aria-label="Alternar tema"
+   - Ícones decorativos: aria-hidden="true"
+3. Melhorias de acessibilidade:
+   - Skip link adicionado para navegação por teclado
+   - Section "Como Funciona" com aria-labelledby
+   - ID main-content no conteúdo principal
+4. Nenhuma mudança visual realizada
+5. Performance: font com display="swap" já estava configurada
 ```
 
 ## 📸 Evidências

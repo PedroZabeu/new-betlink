@@ -8,22 +8,22 @@ interface Advantage {
 
 const advantages: Advantage[] = [
   {
-    icon: <CheckCircle2 className="w-10 h-10 text-primary mx-auto" />,
+    icon: <CheckCircle2 className="w-10 h-10 text-primary mx-auto" aria-hidden="true" />,
     title: "Tipsters Verificados",
     description: "Todos os canais passam por verificação técnica e histórica"
   },
   {
-    icon: <BarChart3 className="w-10 h-10 text-primary mx-auto" />,
+    icon: <BarChart3 className="w-10 h-10 text-primary mx-auto" aria-hidden="true" />,
     title: "Planilhas Automatizadas",
     description: "Estatísticas reais e confiáveis com base nas tips publicadas"
   },
   {
-    icon: <FolderOpen className="w-10 h-10 text-primary mx-auto" />,
+    icon: <FolderOpen className="w-10 h-10 text-primary mx-auto" aria-hidden="true" />,
     title: "Gestão Unificada",
     description: "Organize e acompanhe todos os seus canais em um só painel"
   },
   {
-    icon: <Search className="w-10 h-10 text-primary mx-auto" />,
+    icon: <Search className="w-10 h-10 text-primary mx-auto" aria-hidden="true" />,
     title: "Filtros Inteligentes",
     description: "Encontre canais por esporte, mercado ou tipo de estratégia"
   }
