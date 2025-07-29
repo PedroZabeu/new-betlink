@@ -178,6 +178,89 @@ export function getPostsByTag(tag: string): BlogPost[] {
   }
 }
 
+export function getPostBySlugPublic(slug: string): BlogPost | null {
+  try {
+    const allPosts = getAllPosts();
+    const post = allPosts.find(p => p.slug === slug);
+    
+    if (!post) {
+      logger.warn(`${FEATURE_NAME} Post not found`, { slug });
+      return null;
+    }
+    
+    logger.info(`${FEATURE_NAME} Loaded individual post`, { 
+      slug,
+      title: post.title,
+      category: post.category
+    });
+    
+    return post;
+  } catch (error) {
+    logger.error(`${FEATURE_NAME} Error loading individual post`, error as Error, { slug });
+    return null;
+  }
+}
+
+export function getAdjacentPosts(currentSlug: string): {
+  previousPost?: { slug: string; title: string };
+  nextPost?: { slug: string; title: string };
+} {
+  try {
+    const allPosts = getAllPosts();
+    const currentIndex = allPosts.findIndex(post => post.slug === currentSlug);
+    
+    if (currentIndex === -1) {
+      logger.warn(`${FEATURE_NAME} Current post not found for adjacent`, { currentSlug });
+      return {};
+    }
+    
+    const result = {
+      previousPost: currentIndex > 0 ? {
+        slug: allPosts[currentIndex - 1].slug,
+        title: allPosts[currentIndex - 1].title
+      } : undefined,
+      nextPost: currentIndex < allPosts.length - 1 ? {
+        slug: allPosts[currentIndex + 1].slug,
+        title: allPosts[currentIndex + 1].title
+      } : undefined
+    };
+    
+    logger.debug(`${FEATURE_NAME} Found adjacent posts`, { 
+      currentSlug,
+      hasPrevious: !!result.previousPost,
+      hasNext: !!result.nextPost
+    });
+    
+    return result;
+  } catch (error) {
+    logger.error(`${FEATURE_NAME} Error finding adjacent posts`, error as Error, { currentSlug });
+    return {};
+  }
+}
+
+export function getRelatedPosts(category: Category, currentSlug: string, limit: number = 3): BlogPost[] {
+  try {
+    const postsInCategory = getPostsByCategory(category);
+    const related = postsInCategory
+      .filter(post => post.slug !== currentSlug)
+      .slice(0, limit);
+    
+    logger.info(`${FEATURE_NAME} Found related posts`, { 
+      category,
+      currentSlug,
+      relatedCount: related.length
+    });
+    
+    return related;
+  } catch (error) {
+    logger.error(`${FEATURE_NAME} Error finding related posts`, error as Error, { 
+      category, 
+      currentSlug 
+    });
+    return [];
+  }
+}
+
 // Fallback mock data (only used if no markdown files found)
 function getMockPosts(): BlogPost[] {
   const mockPosts: BlogPost[] = [

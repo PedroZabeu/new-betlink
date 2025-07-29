@@ -11,6 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, FileText, X, Search } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { logger } from '@/lib/utils/logger';
 import { 
   BlogPost, 
@@ -274,51 +275,53 @@ export function BlogClient({ posts }: BlogClientProps) {
         {/* Featured Post */}
         {featuredPost && (
           <div className="mb-12">
-            <Card className="overflow-hidden" data-testid="featured-post">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-64 md:h-full">
-                  <Image
-                    src={featuredPost.coverImage || '/api/placeholder/800/400'}
-                    alt={featuredPost.title}
-                    fill
-                    className="object-cover"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <Badge 
-                      className={`bg-${getCategoryInfo(featuredPost.category).color}-100 text-${getCategoryInfo(featuredPost.category).color}-800 border-0`}
-                      data-testid={`category-${featuredPost.category}`}
-                    >
-                      {getCategoryInfo(featuredPost.category).label}
-                    </Badge>
+            <Link href={`/blog/${featuredPost.slug}`} className="block group">
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300" data-testid="featured-post">
+                <div className="grid md:grid-cols-2 gap-0">
+                  <div className="relative h-64 md:h-full">
+                    <Image
+                      src={featuredPost.coverImage || '/api/placeholder/800/400'}
+                      alt={featuredPost.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <Badge 
+                        className={`bg-${getCategoryInfo(featuredPost.category).color}-100 text-${getCategoryInfo(featuredPost.category).color}-800 border-0`}
+                        data-testid={`category-${featuredPost.category}`}
+                      >
+                        {getCategoryInfo(featuredPost.category).label}
+                      </Badge>
+                    </div>
+                  </div>
+                  <div className="p-6 md:p-8 flex flex-col justify-center">
+                    <div className="mb-4">
+                      <Badge variant="outline" className="mb-2">Destaque</Badge>
+                    </div>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 line-clamp-2 group-hover:text-primary transition-colors">
+                      {featuredPost.title}
+                    </h2>
+                    <p className="text-muted-foreground mb-6 line-clamp-3">
+                      {featuredPost.excerpt}
+                    </p>
+                    <div className="flex items-center gap-6 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-1">
+                        <User className="h-4 w-4" />
+                        <span>{featuredPost.author?.name || 'Anonymous'}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Calendar className="h-4 w-4" />
+                        <span>{formatDate(featuredPost.date)}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <Clock className="h-4 w-4" />
+                        <span>{calculateReadTime(featuredPost.content)} de leitura</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="p-6 md:p-8 flex flex-col justify-center">
-                  <div className="mb-4">
-                    <Badge variant="outline" className="mb-2">Destaque</Badge>
-                  </div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4 line-clamp-2">
-                    {featuredPost.title}
-                  </h2>
-                  <p className="text-muted-foreground mb-6 line-clamp-3">
-                    {featuredPost.excerpt}
-                  </p>
-                  <div className="flex items-center gap-6 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <User className="h-4 w-4" />
-                      <span>{featuredPost.author?.name || 'Anonymous'}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      <span>{formatDate(featuredPost.date)}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Clock className="h-4 w-4" />
-                      <span>{calculateReadTime(featuredPost.content)} de leitura</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
+              </Card>
+            </Link>
           </div>
         )}
 
@@ -328,70 +331,75 @@ export function BlogClient({ posts }: BlogClientProps) {
             {remainingPosts.map((post) => {
               const categoryInfo = getCategoryInfo(post.category);
               return (
-                <Card 
-                  key={post.slug} 
-                  className="overflow-hidden hover:shadow-lg transition-shadow"
-                  data-testid={`post-${post.slug}`}
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="block group"
                 >
-                  <CardHeader className="p-0">
-                    <div className="relative h-48">
-                      <Image
-                        src={post.coverImage || '/api/placeholder/400/200'}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute top-4 left-4">
-                        <Badge 
-                          className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
-                          data-testid={`category-${post.category}`}
-                        >
-                          {categoryInfo.label}
-                        </Badge>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2 line-clamp-2">
-                      {post.title}
-                    </h3>
-                    <p className="text-muted-foreground line-clamp-3 mb-3">
-                      {post.excerpt}
-                    </p>
-                    {/* Tags */}
-                    {post.tags.length > 0 && (
-                      <div className="flex flex-wrap gap-1">
-                        {post.tags.slice(0, 3).map(tag => (
+                  <Card 
+                    className="overflow-hidden hover:shadow-lg transition-all duration-300 h-full"
+                    data-testid={`post-${post.slug}`}
+                  >
+                    <CardHeader className="p-0">
+                      <div className="relative h-48">
+                        <Image
+                          src={post.coverImage || '/api/placeholder/400/200'}
+                          alt={post.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute top-4 left-4">
                           <Badge 
-                            key={tag}
-                            variant="secondary" 
-                            className="text-xs"
-                            data-testid={`post-tag-${tag}`}
+                            className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
+                            data-testid={`category-${post.category}`}
                           >
-                            #{tag}
+                            {categoryInfo.label}
                           </Badge>
-                        ))}
-                        {post.tags.length > 3 && (
-                          <Badge variant="secondary" className="text-xs">
-                            +{post.tags.length - 3}
-                          </Badge>
-                        )}
+                        </div>
                       </div>
-                    )}
-                  </CardContent>
-                  <CardFooter className="px-6 pb-6 pt-0">
-                    <div className="flex items-center justify-between w-full text-sm text-muted-foreground">
-                      <div className="flex items-center gap-1">
-                        <User className="h-3 w-3" />
-                        <span>{post.author?.name || 'Anonymous'}</span>
+                    </CardHeader>
+                    <CardContent className="p-6 flex-1">
+                      <h3 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-muted-foreground line-clamp-3 mb-3">
+                        {post.excerpt}
+                      </p>
+                      {/* Tags */}
+                      {post.tags.length > 0 && (
+                        <div className="flex flex-wrap gap-1">
+                          {post.tags.slice(0, 3).map(tag => (
+                            <Badge 
+                              key={tag}
+                              variant="secondary" 
+                              className="text-xs"
+                              data-testid={`post-tag-${tag}`}
+                            >
+                              #{tag}
+                            </Badge>
+                          ))}
+                          {post.tags.length > 3 && (
+                            <Badge variant="secondary" className="text-xs">
+                              +{post.tags.length - 3}
+                            </Badge>
+                          )}
+                        </div>
+                      )}
+                    </CardContent>
+                    <CardFooter className="px-6 pb-6 pt-0">
+                      <div className="flex items-center justify-between w-full text-sm text-muted-foreground">
+                        <div className="flex items-center gap-1">
+                          <User className="h-3 w-3" />
+                          <span>{post.author?.name || 'Anonymous'}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>{calculateReadTime(post.content)}</span>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="h-3 w-3" />
-                        <span>{calculateReadTime(post.content)}</span>
-                      </div>
-                    </div>
-                  </CardFooter>
-                </Card>
+                    </CardFooter>
+                  </Card>
+                </Link>
               );
             })}
           </div>

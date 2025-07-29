@@ -142,30 +142,32 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Post 4: Montando sua Carteira de Tipsters
   - [✅] Test: Posts renderizando em Markdown
 
-- [🔄] Feature 2.7: Sistema de Tags e Categorias - REVISADO
-  - [🔄] Approach: Server Component + Client Interactivity (baseado em Next.js Blog Starter)
-  - [🔄] Estrutura Híbrida:
+- [✅] Feature 2.7: Sistema de Tags e Categorias - COMPLETO
+  - [✅] Approach: Server Component + Client Interactivity (baseado em Next.js Blog Starter)
+  - [✅] Estrutura Híbrida:
     * Server Component (/app/blog/page.tsx) - data loading com fs access
     * Client Component (/components/blog/blog-client.tsx) - filtros interativos
     * API utilitários (/lib/blog/api.ts) - baseado no Next.js starter pattern
-  - [ ] Fase 1: Server Component com data loading (30min)
-  - [ ] Fase 2: Client Component com filtros (45min)  
-  - [ ] Fase 3: Integração e polish (15min)
-  - [ ] Test: Filtros funcionando sem erros de fs/client
+  - [✅] Fase 1: Server Component com data loading (30min)
+  - [✅] Fase 2: Client Component com filtros (45min)  
+  - [✅] Fase 3: Integração e polish (15min)
+  - [✅] Test: Filtros funcionando sem erros de fs/client
 
-- [ ] Feature 2.8: Sistema de Busca no Blog
+- [✅] Feature 2.8: Páginas Individuais de Posts - COMPLETO
+  - [✅] Server Component /app/blog/[slug]/page.tsx
+  - [✅] generateStaticParams para todas as páginas
+  - [✅] Links clicáveis nos cards do blog
+  - [✅] Breadcrumbs: Home > Blog > [Categoria] > [Post]
+  - [✅] Posts relacionados (mesma categoria)
+  - [✅] Reading Progress + Share Buttons + Post Navigation
+  - [✅] Test: Static generation + navegação funcionando
+
+- [ ] Feature 2.9: Sistema de Busca no Blog
   - [ ] Componente SearchBar reutilizando Input
   - [ ] Busca client-side nos dados carregados
   - [ ] Debounce 300ms para performance
   - [ ] Highlight dos termos encontrados
   - [ ] Test: Busca retorna < 200ms
-
-- [ ] Feature 2.9: Página Individual de Post Aprimorada
-  - [ ] Server Component para carregar post individual
-  - [ ] generateStaticParams para todas as páginas
-  - [ ] Breadcrumbs: Home > Blog > [Categoria] > [Post]
-  - [ ] Posts relacionados (mesma categoria)
-  - [ ] Test: Static generation + navegação funcionando
 
 - [ ] Feature 2.10: Melhorias de Performance e UX
   - [ ] Static Generation para todas as páginas (SSG)
