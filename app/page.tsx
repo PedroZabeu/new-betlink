@@ -26,27 +26,27 @@ export default function Home() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="font-semibold mb-2">Explore Tipsters</h3>
+                <h3 className="font-semibold mb-2">Descubra Profissionais Verificados</h3>
                 <p className="text-sm text-muted-foreground">
-                  Navegue por nosso catálogo de tipsters verificados e veja suas estatísticas
+                  Browse nosso catálogo de tipsters com histórico comprovado e métricas transparentes
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <h3 className="font-semibold mb-2">Escolha seu Plano</h3>
+                <h3 className="font-semibold mb-2">Assine os Melhores Canais</h3>
                 <p className="text-sm text-muted-foreground">
-                  Assine os canais dos tipsters que mais combinam com seu perfil
+                  Escolha entre planos mensais ou anuais e acesse tips exclusivas dos profissionais
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <h3 className="font-semibold mb-2">Receba Tips</h3>
+                <h3 className="font-semibold mb-2">Tips Direto no Telegram</h3>
                 <p className="text-sm text-muted-foreground">
-                  Acesse os canais exclusivos no Telegram e receba tips em tempo real
+                  Receba análises em tempo real e gerencie todas suas assinaturas em um só lugar
                 </p>
               </div>
             </div>

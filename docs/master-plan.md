@@ -116,10 +116,10 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Grid responsivo
   - [✅] Test: Cards visíveis e alinhados
 
-- [ ] Feature 2.3: Melhoria "Como Funciona"
-  - [ ] Novos textos dos 3 passos
-  - [ ] Manter layout atual
-  - [ ] Test: Textos atualizados
+- [✅] Feature 2.3: Melhoria "Como Funciona"
+  - [✅] Novos textos dos 3 passos
+  - [✅] Manter layout atual
+  - [✅] Test: Textos atualizados
 
 - [ ] Feature 2.4: Seção CTA Blog
   - [ ] Call-to-action para blog
