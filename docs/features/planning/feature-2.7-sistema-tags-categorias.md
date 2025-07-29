@@ -1,120 +1,139 @@
-# Feature 2.7 - Sistema de Tags e Categorias (Planning)
+# Feature 2.7 - Sistema Básico de Markdown + Tags Visuais (Planning)
 
 ## 📋 Resumo da Feature
-Implementar sistema de organização por categorias fixas e tags flexíveis, permitindo filtros combinados na página do blog.
+**PARTE A**: Criar sistema básico para ler posts .md e renderizá-los no blog (VISÍVEL ✅)
+**PARTE B**: Adicionar filtros de tags e categorias funcionais (VISÍVEL ✅)
 
 ## 🎯 Objetivo
-Facilitar a descoberta de conteúdo relacionado através de um sistema robusto de categorização e tags, melhorando a experiência de navegação no blog.
+Tornar os 4 posts criados na Feature 2.6 **VISÍVEIS** no blog localhost:3000, substituindo os posts mockados pelos posts reais em Markdown.
 
 ## 🚨 Guardrails Específicos
 
 ### DEVE FAZER:
-- Criar types e interfaces TypeScript
-- Adicionar metadata aos 12 posts (8 existentes + 4 novos)
-- Criar componente TagFilter reutilizando design existente
-- Implementar filtros via URL params
-- Mostrar contador de posts por filtro
-- Permitir combinação de filtros
+- **PARTE A**: Substituir posts mockados por posts reais .md
+- **PARTE A**: Instalar dependências (gray-matter, remark)  
+- **PARTE A**: Criar funções básicas para ler Markdown
+- **PARTE B**: Adicionar filtros visuais funcionais
+- **SEMPRE**: Manter design visual existente
 
 ### NÃO PODE:
-- Criar novo design visual
 - Modificar cards existentes do blog
-- Alterar estrutura da página
-- Adicionar animações complexas
-- Criar sistema de banco de dados
+- Alterar estrutura visual da página
+- Criar novo design
+- Quebrar funcionalidades existentes
+
+## ✅ TESTE VISUAL OBRIGATÓRIO:
+**Após PARTE A**: Ver 4 novos posts renderizados em localhost:3000/blog
+**Após PARTE B**: Ver filtros funcionando na mesma página
 
 ## 📁 Estrutura de Arquivos
 
-### Arquivos a criar:
+### PARTE A - Sistema Básico Markdown:
 ```typescript
 /lib/blog/
-├── types.ts      // NOVO - Interfaces e types
-├── api.ts        // NOVO - Funções para processar posts
-└── utils.ts      // NOVO - Helpers e utilitários
+├── types.ts      // NOVO - Interfaces Post
+├── api.ts        // NOVO - Funções getAllPosts(), getPostBySlug()
+└── markdown.ts   // NOVO - Processar Markdown
 
+/app/blog/
+└── page.tsx      // MODIFICAR - Usar posts reais
+```
+
+### PARTE B - Filtros Visuais:
+```typescript
 /components/blog/
-├── tag-filter.tsx    // NOVO - Componente de filtros
+├── tag-filter.tsx    // NOVO - Filtros funcionais
 └── category-badge.tsx // NOVO - Badge de categoria
 ```
 
 ## 🔧 Implementação Técnica
 
-### Types e Interfaces
+### PARTE A - Instalar Dependências:
+```bash
+npm install gray-matter remark remark-html
+```
+
+### PARTE A - Funções Básicas:
 ```typescript
-// /lib/blog/types.ts
-export interface Author {
-  name: string;
-  picture: string;
-}
+// /lib/blog/api.ts
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-export interface Post {
-  slug: string;
-  title: string;
-  excerpt: string;
-  coverImage: string;
-  date: string;
-  author: Author;
-  category: Category;
-  tags: string[];
-  readingTime: number;
-  content: string;
-  featured?: boolean;
-}
+const postsDirectory = path.join(process.cwd(), '_posts');
 
-export type Category = 'educacional' | 'estrategias' | 'gestao-banca' | 'ferramentas';
-
-export interface CategoryInfo {
-  value: Category;
-  label: string;
-  description: string;
-  color: string; // Para o badge
+export function getAllPosts() {
+  const fileNames = fs.readdirSync(postsDirectory);
+  const allPostsData = fileNames.map((fileName) => {
+    const slug = fileName.replace(/\.md$/, '');
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const matterResult = matter(fileContents);
+    
+    return {
+      slug,
+      ...matterResult.data,
+      content: matterResult.content
+    };
+  });
+  
+  return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
 }
 ```
 
-### Sistema de Categorias
+### PARTE A - Modificar Página Blog:
 ```typescript
-// 4 categorias fixas
-export const CATEGORIES: CategoryInfo[] = [
-  {
-    value: 'educacional',
-    label: 'Educacional',
-    description: 'Conceitos e fundamentos',
-    color: 'blue'
-  },
-  {
-    value: 'estrategias',
-    label: 'Estratégias',
-    description: 'Dicas e métodos práticos',
-    color: 'green'
-  },
-  {
-    value: 'gestao-banca',
-    label: 'Gestão de Banca',
-    description: 'Controle financeiro',
-    color: 'yellow'
-  },
-  {
-    value: 'ferramentas',
-    label: 'Ferramentas',
-    description: 'Uso da plataforma',
-    color: 'purple'
-  }
-];
+// /app/blog/page.tsx
+import { getAllPosts } from '@/lib/blog/api';
+
+export default function BlogPage() {
+  const posts = getAllPosts(); // Substituir posts mockados
+  
+  return (
+    <PageWrapper>
+      <Header />
+      <main className="flex-1">
+        {/* Manter layout atual, trocar apenas dados */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {posts.map((post) => (
+            <PostCard key={post.slug} post={post} /> // Usar posts reais
+          ))}
+        </div>
+      </main>
+    </PageWrapper>
+  );
+}
 ```
 
-### Componente TagFilter
+### PARTE B - Filtros Visuais:
 ```typescript
 // /components/blog/tag-filter.tsx
-interface TagFilterProps {
-  categories: CategoryInfo[];
-  tags: string[];
-  selectedCategory?: string;
-  selectedTags: string[];
-  onFilterChange: (category?: string, tags?: string[]) => void;
-  postCounts: {
-    byCategory: Record<string, number>;
-    byTag: Record<string, number>;
-  };
+import { Badge } from '@/components/ui/badge';
+
+export function TagFilter({ categories, selectedCategory, onFilterChange }) {
+  return (
+    <div className="mb-8">
+      <div className="flex flex-wrap gap-2">
+        <Badge 
+          variant={!selectedCategory ? "default" : "outline"}
+          className="cursor-pointer"
+          onClick={() => onFilterChange(undefined)}
+        >
+          Todos
+        </Badge>
+        {categories.map((cat) => (
+          <Badge
+            key={cat}
+            variant={selectedCategory === cat ? "default" : "outline"}
+            className="cursor-pointer"
+            onClick={() => onFilterChange(cat)}
+          >
+            {cat}
+          </Badge>
+        ))}
+      </div>
+    </div>
+  );
 }
 ```
 
@@ -149,65 +168,79 @@ iniciantes (5) | roi (3) | ev+ (2) | tipsters (4) | ...
 
 ## ✅ Checklist de Implementação
 
-### Types e Estrutura
-- [ ] Criar arquivo types.ts com interfaces
-- [ ] Definir enum/type para categorias
-- [ ] Criar type para tags (string[])
-- [ ] Adicionar types de filtros
+### PARTE A - Sistema Básico (TESTE: Posts visíveis em /blog)
+- [ ] Instalar dependências: gray-matter, remark, remark-html
+- [ ] Criar /lib/blog/types.ts com interfaces
+- [ ] Criar /lib/blog/api.ts com getAllPosts()
+- [ ] Modificar /app/blog/page.tsx para usar posts reais
+- [ ] **TESTE VISUAL**: Ver 4 posts reais renderizados
 
-### Processamento
-- [ ] Função para extrair tags únicas
-- [ ] Função para contar posts por categoria/tag
-- [ ] Função para filtrar posts
-- [ ] Função para combinar filtros
+### PARTE B - Filtros Funcionais (TESTE: Filtros funcionando)
+- [ ] Criar TagFilter component
+- [ ] Adicionar estado de filtros na página
+- [ ] Implementar lógica de filtragem
+- [ ] **TESTE VISUAL**: Clicar nos filtros e ver posts filtrados
 
-### Componentes
-- [ ] TagFilter component
-- [ ] CategoryBadge component
-- [ ] Integrar com página do blog
-- [ ] Adicionar estado de filtros
-
-### URL e Estado
-- [ ] Ler filtros da URL
-- [ ] Atualizar URL ao filtrar
-- [ ] Manter filtros ao navegar
-- [ ] Botão clear filters
-
-### Metadata nos Posts
-- [ ] Adicionar categoria aos 8 posts existentes
-- [ ] Adicionar tags relevantes (3-6 por post)
-- [ ] Validar categorias válidas
-- [ ] Garantir tags consistentes
+### Validação
+- [ ] Todos os 4 posts aparecem corretamente
+- [ ] Cards mantêm design existente
+- [ ] Filtros por categoria funcionam
+- [ ] Performance mantida
 
 ## 🎯 Critérios de Sucesso
 
-1. **Funcionalidade**:
-   - Filtros por categoria funcionando ✓
-   - Filtros por tags funcionando ✓
-   - Combinação de filtros ✓
-   - Contadores precisos ✓
+### PARTE A - Sistema Básico:
+1. **Visibilidade**: 
+   - 4 posts reais aparecem em localhost:3000/blog ✓
+   - Substituem os posts mockados ✓
+   - Cards mantêm design existente ✓
 
-2. **UX**:
-   - Filtros responsivos ✓
-   - Estado claro (ativo/inativo) ✓
-   - Fácil limpar filtros ✓
-   - URL compartilhável ✓
+2. **Funcionalidade**:
+   - getAllPosts() funciona ✓
+   - Front matter é processado corretamente ✓
+   - Links para posts individuais funcionam ✓
 
-3. **Performance**:
+### PARTE B - Filtros:
+1. **Filtros funcionais**:
+   - Clicar em categoria filtra posts ✓
+   - "Todos" mostra todos os posts ✓
+   - Visual dos filtros integrado ✓
+
+2. **Performance**:
    - Filtragem instantânea ✓
-   - Sem re-render desnecessário ✓
-   - Estado preservado ✓
+   - Sem quebras visuais ✓
 
 ## ⏱️ Estimativa
-3-4 horas
+- **PARTE A**: 2 horas (sistema básico)
+- **PARTE B**: 1-2 horas (filtros)
+- **Total**: 3-4 horas
 
 ## 🚫 Erros Comuns a Evitar
 
-1. **Categorias demais**: Manter apenas 4 categorias
-2. **Tags inconsistentes**: Padronizar nomenclatura
-3. **Filtros complexos**: Manter simples e intuitivo
-4. **Performance**: Evitar re-processar em cada render
-5. **Estado perdido**: Preservar filtros na navegação
+1. **Não testar visualmente**: Após PARTE A, DEVE ver posts em /blog
+2. **Quebrar design**: Manter cards exatamente iguais
+3. **Não instalar dependências**: gray-matter é obrigatório
+4. **Não processar Markdown**: Posts devem renderizar conteúdo
+5. **Filtros complexos**: Começar apenas com categorias simples
+
+## 🧪 TESTE OBRIGATÓRIO:
+
+### Após PARTE A:
+```bash
+# Iniciar servidor
+npm run dev
+
+# Abrir http://localhost:3000/blog
+# DEVE VER: 4 posts reais (não os mockados antigos)
+# DEVE VER: Títulos dos posts criados na Feature 2.6
+```
+
+### Após PARTE B:
+```bash
+# Na mesma página /blog
+# DEVE VER: Filtros de categoria acima dos posts
+# DEVE FUNCIONAR: Clicar em "educacional" → filtrar posts
+```
 
 ## 💡 Tags Sugeridas
 

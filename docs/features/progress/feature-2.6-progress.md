@@ -153,8 +153,8 @@ QUALIDADE DO CONTEÚDO:
 - [x] Conteúdo revisado
 - [x] Markdown válido
 - [x] Sem erros de YAML
-- [ ] Commit realizado
+- [x] Commit realizado
 
 ---
 
-**Última atualização**: 29/01/2025 16:45
+**Última atualização**: 29/01/2025 16:50
