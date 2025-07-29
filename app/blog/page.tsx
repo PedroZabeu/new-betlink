@@ -1,12 +1,35 @@
 // Feature 2.7: Sistema de Tags e Categorias - Blog Page (Server Component)
 // @feature: Blog Tags and Categories
 // @created: Feature 2.7
+// @enhanced: Feature 2.10 - Static Generation
 
 import { Header } from "@/components/header";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 import { getAllPosts } from "@/lib/blog/api";
 import { BlogClient } from "@/components/blog/blog-client";
+import { ScrollToTop } from "@/components/blog/scroll-to-top";
 import { logger } from '@/lib/utils/logger';
+
+// Feature 2.10: Static Site Generation
+// Generate static params for all blog categories and tags
+export async function generateStaticParams() {
+  try {
+    logger.info('[Feature: BlogPage] Generating static params for blog');
+    
+    const posts = getAllPosts();
+    logger.info('[Feature: BlogPage] Static params generated successfully', { 
+      postsCount: posts.length 
+    });
+    
+    // Return empty array since this is the main blog page
+    // Dynamic filtering happens client-side
+    return [];
+  } catch (error) {
+    logger.error('[Feature: BlogPage] Failed to generate static params', error as Error);
+    // Return empty array to prevent build failure
+    return [];
+  }
+}
 
 const FEATURE_NAME = '[Feature: BlogPage]';
 
@@ -30,6 +53,9 @@ export default function BlogPage() {
           {/* Pass data to Client Component */}
           <BlogClient posts={posts} />
         </main>
+        
+        {/* Feature 2.10: Scroll to Top Button */}
+        <ScrollToTop />
       </PageWrapper>
     );
   } catch (error) {

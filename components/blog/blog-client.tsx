@@ -1,10 +1,11 @@
 // Feature 2.7: Sistema de Tags e Categorias - Blog Client Component
 // @feature: Blog Tags and Categories
 // @created: Feature 2.7
+// @enhanced: Feature 2.10 - Loading Skeletons
 
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -22,6 +23,7 @@ import {
 } from '@/lib/blog/filters';
 import { SearchBar } from './search-bar';
 import { HighlightTitle, HighlightExcerpt } from './search-highlight';
+import { PostListSkeleton } from './post-list-skeleton';
 import { useSearchDebounce } from '@/hooks/use-debounce';
 
 const FEATURE_NAME = '[Feature: BlogClient]';
@@ -57,6 +59,9 @@ export function BlogClient({ posts }: BlogClientProps) {
 
   const [searchInput, setSearchInput] = useState('');
   
+  // Feature 2.10: Loading state for smooth UX during filtering
+  const [isFiltering, setIsFiltering] = useState(false);
+  
   // Debounce da busca para otimizar performance
   const debouncedSearchQuery = useSearchDebounce(searchInput, 300);
 
@@ -65,6 +70,16 @@ export function BlogClient({ posts }: BlogClientProps) {
     ...filters,
     searchQuery: debouncedSearchQuery.trim() || undefined
   }), [filters, debouncedSearchQuery]);
+
+  // Feature 2.10: Show skeleton briefly when filters change for smooth UX
+  useEffect(() => {
+    if (debouncedSearchQuery || filters.categories.length > 0 || filters.tags.length > 0) {
+      setIsFiltering(true);
+      const timer = setTimeout(() => setIsFiltering(false), 150); // Very brief skeleton
+      return () => clearTimeout(timer);
+    }
+    setIsFiltering(false);
+  }, [debouncedSearchQuery, filters.categories.length, filters.tags.length]);
 
   // Process posts with filters
   const { posts: filteredPosts } = useMemo(() => {
@@ -187,7 +202,10 @@ export function BlogClient({ posts }: BlogClientProps) {
         )}
 
         {/* Blog Grid */}
-        {remainingPosts.length > 0 && (
+        {/* Feature 2.10: Show skeleton during filtering for smooth UX */}
+        {isFiltering ? (
+          <PostListSkeleton count={6} />
+        ) : remainingPosts.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="posts-grid">
             {remainingPosts.map((post) => {
               const categoryInfo = getCategoryInfo(post.category);
@@ -263,7 +281,7 @@ export function BlogClient({ posts }: BlogClientProps) {
               );
             })}
           </div>
-        )}
+        ) : null}
 
         {/* Results summary */}
         {filteredPosts.length > 0 && currentFilters.searchQuery && (

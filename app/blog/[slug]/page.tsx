@@ -1,8 +1,10 @@
 // Feature 2.8: Páginas Individuais de Posts - Dynamic Route
 // @feature: Individual Post Pages
 // @created: Feature 2.8
+// @enhanced: Feature 2.10 - Dynamic Metadata
 
 import React from 'react';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Header } from "@/components/header";
 import { PageWrapper } from "@/components/ui/page-wrapper";
@@ -23,11 +25,12 @@ import { PostNavigation } from '@/components/blog/post-navigation';
 import { ReadingProgress } from '@/components/blog/reading-progress';
 import { RelatedPosts } from '@/components/blog/related-posts';
 import { ShareButtons } from '@/components/blog/share-buttons';
+import { ScrollToTop } from '@/components/blog/scroll-to-top';
 
 const FEATURE_NAME = '[Feature: IndividualPost]';
 
 interface BlogPostPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 // Generate static params for all posts
@@ -46,6 +49,70 @@ export async function generateStaticParams() {
   } catch (error) {
     logger.error(`${FEATURE_NAME} Error generating static params`, error as Error);
     return [];
+  }
+}
+
+// Feature 2.10: Dynamic Metadata Generation
+// Generate dynamic metadata for each post for SEO optimization
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  try {
+    const resolvedParams = await params;
+    logger.info(`${FEATURE_NAME} Generating metadata for post`, { slug: resolvedParams.slug });
+    
+    const post = getPostBySlugPublic(resolvedParams.slug);
+    
+    if (!post) {
+      logger.warn(`${FEATURE_NAME} Post not found for metadata generation`, { slug: resolvedParams.slug });
+      return {
+        title: 'Post não encontrado | BetLink Blog',
+        description: 'O post solicitado não foi encontrado no BetLink Blog.',
+      };
+    }
+    
+    const categoryInfo = getCategoryInfo(post.category);
+    const title = `${post.title} | BetLink Blog`;
+    const description = post.excerpt || `${post.title} - Artigo sobre apostas esportivas no BetLink Blog.`;
+    
+    logger.info(`${FEATURE_NAME} Metadata generated successfully`, { 
+      slug: resolvedParams.slug,
+      title: post.title,
+      category: post.category 
+    });
+    
+    return {
+      title,
+      description,
+      keywords: post.tags?.join(', ') || 'apostas esportivas, tipster, análise',
+      authors: [{ name: post.author?.name || 'BetLink' }],
+      openGraph: {
+        title,
+        description,
+        type: 'article',
+        publishedTime: post.date,
+        tags: post.tags,
+        authors: [post.author?.name || 'BetLink'],
+        section: categoryInfo.name,
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title,
+        description,
+      },
+      alternates: {
+        canonical: `/blog/${resolvedParams.slug}`,
+      },
+    };
+  } catch (error) {
+    const resolvedParams = await params;
+    logger.error(`${FEATURE_NAME} Error generating metadata`, error as Error, { 
+      slug: resolvedParams.slug 
+    });
+    
+    // Fallback metadata to prevent build failure
+    return {
+      title: 'BetLink Blog',
+      description: 'Artigos e análises sobre apostas esportivas e tipsters profissionais.',
+    };
   }
 }
 
@@ -229,57 +296,26 @@ function formatPostContent(content: string) {
   return formattedElements;
 }
 
-// Generate metadata for the post
-export async function generateMetadata({ params }: BlogPostPageProps) {
-  const post = getPostBySlugPublic(params.slug);
-  
-  if (!post) {
-    return {
-      title: 'Post não encontrado - BetLink Blog',
-    };
-  }
-  
-  const categoryInfo = getCategoryInfo(post.category);
-  
-  return {
-    title: `${post.title} - BetLink Blog`,
-    description: post.excerpt,
-    keywords: [...post.tags, categoryInfo.label, 'apostas esportivas', 'betlink'].join(', '),
-    authors: [{ name: post.author.name }],
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-      publishedTime: post.date,
-      authors: [post.author.name],
-      tags: post.tags,
-    },
-    twitter: {
-      card: 'summary',
-      title: post.title,
-      description: post.excerpt,
-    },
-  };
-}
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   try {
-    logger.info(`${FEATURE_NAME} Loading individual post page`, { slug: params.slug });
+    const resolvedParams = await params;
+    logger.info(`${FEATURE_NAME} Loading individual post page`, { slug: resolvedParams.slug });
     
-    const post = getPostBySlugPublic(params.slug);
+    const post = getPostBySlugPublic(resolvedParams.slug);
     
     if (!post) {
-      logger.warn(`${FEATURE_NAME} Post not found`, { slug: params.slug });
+      logger.warn(`${FEATURE_NAME} Post not found`, { slug: resolvedParams.slug });
       notFound();
     }
     
     const categoryInfo = getCategoryInfo(post.category);
-    const { previousPost, nextPost } = getAdjacentPosts(params.slug);
-    const relatedPosts = getRelatedPosts(post.category, params.slug, 3);
+    const { previousPost, nextPost } = getAdjacentPosts(resolvedParams.slug);
+    const relatedPosts = getRelatedPosts(post.category, resolvedParams.slug, 3);
     const readTime = calculateReadTime(post.content);
     
     logger.info(`${FEATURE_NAME} Post page loaded successfully`, { 
-      slug: params.slug,
+      slug: resolvedParams.slug,
       title: post.title,
       category: post.category,
       hasRelated: relatedPosts.length > 0
@@ -382,15 +418,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             {/* Related Posts */}
             <RelatedPosts
               posts={relatedPosts}
-              currentSlug={params.slug}
+              currentSlug={resolvedParams.slug}
             />
           </article>
         </main>
+        
+        {/* Feature 2.10: Scroll to Top Button */}
+        <ScrollToTop />
       </PageWrapper>
     );
   } catch (error) {
+    const resolvedParams = await params;
     logger.error(`${FEATURE_NAME} Error loading post page`, error as Error, { 
-      slug: params.slug 
+      slug: resolvedParams.slug 
     });
     
     // Fallback UI
