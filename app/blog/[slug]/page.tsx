@@ -2,6 +2,7 @@
 // @feature: Individual Post Pages
 // @created: Feature 2.8
 
+import React from 'react';
 import { notFound } from 'next/navigation';
 import { Header } from "@/components/header";
 import { PageWrapper } from "@/components/ui/page-wrapper";
@@ -9,7 +10,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { logger } from '@/lib/utils/logger';
 import { 
   getAllPosts, 
@@ -67,6 +67,168 @@ function calculateReadTime(content: string): string {
   return `${minutes} min`;
 }
 
+// Format post content with proper heading styles
+function formatPostContent(content: string) {
+  // Split content into lines
+  const lines = content.split('\n');
+  const formattedElements: React.JSX.Element[] = [];
+  let currentList: string[] = [];
+  
+  const flushList = () => {
+    if (currentList.length > 0) {
+      formattedElements.push(
+        <ul key={`list-${formattedElements.length}`} className="list-disc list-inside space-y-2 mb-6 text-gray-700">
+          {currentList.map((item, index) => (
+            <li key={index} className="leading-relaxed">
+              {item}
+            </li>
+          ))}
+        </ul>
+      );
+      currentList = [];
+    }
+  };
+
+  const formatMathExpression = (text: string) => {
+    // Replace common math symbols with proper formatting
+    return text
+      .replace(/(\d+)\s*×\s*(\d+)/g, '$1 × $2') // Multiplication
+      .replace(/(\d+)\s*÷\s*(\d+)/g, '$1 ÷ $2') // Division
+      .replace(/(\d+)\s*\+\s*(\d+)/g, '$1 + $2') // Addition
+      .replace(/(\d+)\s*-\s*(\d+)/g, '$1 - $2') // Subtraction
+      .replace(/(\d+)\s*=\s*(\d+)/g, '$1 = $2') // Equality
+      .replace(/\(([^)]+)\)/g, '($1)') // Parentheses
+      .replace(/(\d+),(\d+)/g, '$1,$2'); // Decimal numbers
+  };
+
+  const formatBoldText = (text: string) => {
+    // Replace **[text]** with bold formatting
+    return text.replace(/\*\*\[([^\]]+)\]\*\*/g, '<strong>$1</strong>');
+  };
+  
+  lines.forEach((line, index) => {
+    const trimmedLine = line.trim();
+    
+    // Check for different heading patterns
+    if (trimmedLine.startsWith('### ')) {
+      flushList();
+      // H3 heading (### Title)
+      const title = trimmedLine.replace('### ', '');
+      formattedElements.push(
+        <h3 key={index} className="text-2xl font-bold mt-8 mb-4 text-gray-900 border-b border-gray-200 pb-2">
+          {title}
+        </h3>
+      );
+      return;
+    }
+    
+    if (trimmedLine.startsWith('## ')) {
+      flushList();
+      // H2 heading (## Title)
+      const title = trimmedLine.replace('## ', '');
+      formattedElements.push(
+        <h2 key={index} className="text-3xl font-bold mt-10 mb-6 text-gray-900 border-b-2 border-primary pb-3">
+          {title}
+        </h2>
+      );
+      return;
+    }
+    
+    if (trimmedLine.startsWith('# ')) {
+      flushList();
+      // H1 heading (# Title)
+      const title = trimmedLine.replace('# ', '');
+      formattedElements.push(
+        <h1 key={index} className="text-4xl font-bold mt-12 mb-8 text-gray-900 border-b-4 border-primary pb-4">
+          {title}
+        </h1>
+      );
+      return;
+    }
+    
+    if (trimmedLine.startsWith('***') || trimmedLine.startsWith('---')) {
+      flushList();
+      // Horizontal rule
+      formattedElements.push(
+        <hr key={index} className="my-8 border-gray-300" />
+      );
+      return;
+    }
+    
+    if (trimmedLine.startsWith('**') && trimmedLine.endsWith('**')) {
+      flushList();
+      // Bold text (entire line)
+      const text = trimmedLine.replace(/\*\*/g, '');
+      formattedElements.push(
+        <p key={index} className="text-lg font-semibold text-gray-800 my-4">
+          {text}
+        </p>
+      );
+      return;
+    }
+    
+    // Check for mathematical expressions
+    if (trimmedLine.includes('=') && (trimmedLine.includes('×') || trimmedLine.includes('+') || trimmedLine.includes('-') || trimmedLine.includes('÷'))) {
+      flushList();
+      // Mathematical expression
+      const formattedMath = formatMathExpression(trimmedLine);
+      formattedElements.push(
+        <div key={index} className="bg-gray-50 border-l-4 border-primary p-4 my-6 rounded-r-lg">
+          <div className="font-mono text-lg text-gray-800 leading-relaxed">
+            {formattedMath}
+          </div>
+        </div>
+      );
+      return;
+    }
+    
+    // Check for calculation explanations
+    if (trimmedLine.toLowerCase().includes('vamos calcular') || 
+        trimmedLine.toLowerCase().includes('calcule') ||
+        trimmedLine.toLowerCase().includes('resultado') ||
+        trimmedLine.toLowerCase().includes('valor esperado')) {
+      flushList();
+      formattedElements.push(
+        <div key={index} className="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded-r-lg">
+          <p className="text-gray-800 font-medium">
+            {trimmedLine}
+          </p>
+        </div>
+      );
+      return;
+    }
+    
+    if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
+      // List item - collect for grouping
+      const text = trimmedLine.replace(/^[\*\-]\s/, '');
+      currentList.push(text);
+      return;
+    }
+    
+    if (trimmedLine === '') {
+      flushList();
+      // Empty line
+      formattedElements.push(
+        <div key={index} className="h-4" />
+      );
+      return;
+    }
+    
+    // Regular paragraph with bold formatting
+    flushList();
+    const formattedText = formatBoldText(line);
+    formattedElements.push(
+      <p key={index} className="text-gray-700 leading-relaxed mb-4" 
+         dangerouslySetInnerHTML={{ __html: formattedText }} />
+    );
+  });
+  
+  // Flush any remaining list
+  flushList();
+  
+  return formattedElements;
+}
+
 // Generate metadata for the post
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const post = getPostBySlugPublic(params.slug);
@@ -91,18 +253,11 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
       publishedTime: post.date,
       authors: [post.author.name],
       tags: post.tags,
-      images: post.coverImage ? [{
-        url: post.coverImage,
-        width: 800,
-        height: 400,
-        alt: post.title
-      }] : [],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title: post.title,
       description: post.excerpt,
-      images: post.coverImage ? [post.coverImage] : [],
     },
   };
 }
@@ -209,24 +364,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               />
             </header>
             
-            {/* Cover Image */}
-            {post.coverImage && (
-              <div className="relative w-full h-[400px] md:h-[500px] mb-8 overflow-hidden rounded-lg">
-                <Image
-                  src={post.coverImage}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            )}
-            
             {/* Post Content */}
             <div className="prose prose-lg max-w-none mb-12">
-              {/* Render markdown content - for now showing as plain text */}
-              <div className="whitespace-pre-wrap">
-                {post.content}
+              {/* Render formatted content */}
+              <div className="space-y-4">
+                {formatPostContent(post.content)}
               </div>
             </div>
             

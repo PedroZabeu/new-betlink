@@ -7,26 +7,19 @@
 import { useState, useMemo } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Calendar, Clock, User, FileText } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { logger } from '@/lib/utils/logger';
 import { 
   BlogPost, 
   FilterState, 
-  getCategoryInfo,
-  getAllCategories
+  getCategoryInfo
 } from '@/lib/blog/types';
 import { 
-  extractUniqueTagsFromPosts,
   combineFiltersLogic,
-  clearAllFilters,
-  hasActiveFilters
+  clearAllFilters
 } from '@/lib/blog/filters';
-import { CategoryBadge } from './category-badge';
-import { TagChip } from './tag-chip';
 import { SearchBar } from './search-bar';
 import { HighlightTitle, HighlightExcerpt } from './search-highlight';
 import { useSearchDebounce } from '@/hooks/use-debounce';
@@ -74,7 +67,7 @@ export function BlogClient({ posts }: BlogClientProps) {
   }), [filters, debouncedSearchQuery]);
 
   // Process posts with filters
-  const { posts: filteredPosts, counts } = useMemo(() => {
+  const { posts: filteredPosts } = useMemo(() => {
     const result = combineFiltersLogic(posts, currentFilters);
     
     logger.debug(`${FEATURE_NAME} Posts filtered with search`, { 
@@ -88,56 +81,6 @@ export function BlogClient({ posts }: BlogClientProps) {
     return result;
   }, [posts, currentFilters]);
 
-  // Extract available tags
-  const availableTags = useMemo(() => {
-    return extractUniqueTagsFromPosts(posts);
-  }, [posts]);
-
-  // Get categories with counts
-  const categoriesWithCounts = useMemo(() => {
-    return getAllCategories().map(categoryInfo => ({
-      ...categoryInfo,
-      count: counts.byCategory[categoryInfo.id] || 0,
-      isActive: filters.categories.includes(categoryInfo.id)
-    }));
-  }, [counts.byCategory, filters.categories]);
-
-  // Get tags with counts
-  const tagsWithCounts = useMemo(() => {
-    return availableTags
-      .map(tag => ({
-        tag,
-        count: counts.byTag[tag] || 0,
-        isActive: filters.tags.includes(tag)
-      }))
-      .sort((a, b) => {
-        if (a.isActive && !b.isActive) return -1;
-        if (!a.isActive && b.isActive) return 1;
-        return b.count - a.count;
-      });
-  }, [availableTags, counts.byTag, filters.tags]);
-
-  const handleCategoryToggle = (categoryId: string) => {
-    const newCategories = filters.categories.includes(categoryId as any)
-      ? filters.categories.filter(c => c !== categoryId)
-      : [...filters.categories, categoryId as any];
-
-    setFilters({
-      ...filters,
-      categories: newCategories
-    });
-  };
-
-  const handleTagToggle = (tag: string) => {
-    const newTags = filters.tags.includes(tag)
-      ? filters.tags.filter(t => t !== tag)
-      : [...filters.tags, tag];
-
-    setFilters({
-      ...filters,
-      tags: newTags
-    });
-  };
 
   const handleSearchChange = (value: string) => {
     setSearchInput(value);
@@ -148,9 +91,6 @@ export function BlogClient({ posts }: BlogClientProps) {
     setSearchInput('');
   };
 
-  const activeFiltersCount = currentFilters.categories.length + currentFilters.tags.length + 
-                            (currentFilters.searchQuery ? 1 : 0);
-  const hasFilters = hasActiveFilters(currentFilters);
   const isSearching = searchInput !== debouncedSearchQuery;
 
   // Featured post (first filtered post or first overall)
@@ -159,100 +99,26 @@ export function BlogClient({ posts }: BlogClientProps) {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-muted/50 py-12 md:py-20">
+      {/* New Blog Header Section */}
+      <section className="bg-muted/30 py-6">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Blog BetLink
-            </h1>
-            <p className="text-xl text-muted-foreground mb-6">
-              Dicas, estratégias e análises para melhorar suas apostas esportivas. 
-              Conteúdo criado por especialistas para apostadores de todos os níveis.
-            </p>
-            
-            {/* Posts count and filter summary */}
-            <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1">
-                <FileText className="h-4 w-4" />
-                <span>{filteredPosts.length} {filteredPosts.length === 1 ? 'post' : 'posts'}</span>
-              </div>
-              {hasFilters && (
-                <div className="text-primary">
-                  {activeFiltersCount} filtro(s) ativo(s)
-                </div>
-              )}
+          <div className="flex items-center justify-between">
+            <h1 className="text-4xl md:text-5xl font-bold">Blog</h1>
+            <div className="max-w-md">
+              <SearchBar
+                value={searchInput}
+                onChange={handleSearchChange}
+                resultCount={filteredPosts.length}
+                isSearching={isSearching}
+                placeholder="Buscar posts..."
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
-        {/* Filters */}
-        <div className="mb-8 space-y-4">
-          {/* Search Bar */}
-          <div className="max-w-md">
-            <SearchBar
-              value={searchInput}
-              onChange={handleSearchChange}
-              resultCount={filteredPosts.length}
-              isSearching={isSearching}
-              placeholder="Buscar posts por título, conteúdo, tags..."
-            />
-          </div>
-
-          {/* Categories */}
-          <div className="space-y-2">
-            <h4 className="text-sm font-medium text-muted-foreground">Categorias</h4>
-            <div className="flex flex-wrap gap-2" data-testid="category-filters">
-              {categoriesWithCounts.map((category) => (
-                <CategoryBadge
-                  key={category.id}
-                  label={category.label}
-                  color={category.color}
-                  count={category.count}
-                  isActive={category.isActive}
-                  onClick={() => handleCategoryToggle(category.id)}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Tags */}
-          {tagsWithCounts.length > 0 && (
-            <div className="space-y-2">
-              <h4 className="text-sm font-medium text-muted-foreground">
-                Tags ({availableTags.length})
-              </h4>
-              <div className="flex flex-wrap gap-1" data-testid="tag-filters">
-                {tagsWithCounts.slice(0, 20).map(({ tag, count, isActive }) => (
-                  <TagChip
-                    key={tag}
-                    tag={tag}
-                    count={count}
-                    isActive={isActive}
-                    onClick={() => handleTagToggle(tag)}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Clear Filters */}
-          {hasFilters && (
-            <div className="flex justify-center">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleClearFilters}
-                data-testid="clear-all-filters"
-              >
-                <X className="h-3 w-3 mr-1" />
-                Limpar filtros
-              </Button>
-            </div>
-          )}
-        </div>
+      <section className="bg-muted/30 py-12">
+        <div className="container mx-auto px-4">
 
         {/* No results message */}
         {filteredPosts.length === 0 && posts.length > 0 && (
@@ -261,13 +127,13 @@ export function BlogClient({ posts }: BlogClientProps) {
               <FileText className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">Nenhum post encontrado</h3>
               <p className="text-muted-foreground mb-4">
-                Não encontramos posts que correspondam aos filtros selecionados.
+                Não encontramos posts que correspondam à sua busca.
               </p>
               <Button
                 variant="outline"
                 onClick={handleClearFilters}
               >
-                Limpar filtros e ver todos os posts
+                Limpar busca e ver todos os posts
               </Button>
             </div>
           </div>
@@ -278,52 +144,40 @@ export function BlogClient({ posts }: BlogClientProps) {
           <div className="mb-12">
             <Link href={`/blog/${featuredPost.slug}`} className="block group">
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300" data-testid="featured-post">
-                <div className="grid md:grid-cols-2 gap-0">
-                  <div className="relative h-64 md:h-full">
-                    <Image
-                      src={featuredPost.coverImage || '/api/placeholder/800/400'}
-                      alt={featuredPost.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <Badge 
-                        className={`bg-${getCategoryInfo(featuredPost.category).color}-100 text-${getCategoryInfo(featuredPost.category).color}-800 border-0`}
-                        data-testid={`category-${featuredPost.category}`}
-                      >
-                        {getCategoryInfo(featuredPost.category).label}
-                      </Badge>
-                    </div>
+                <div className="p-6 md:p-8">
+                  <div className="mb-4">
+                    <Badge variant="outline" className="mb-2">Destaque</Badge>
+                    <Badge 
+                      className={`bg-${getCategoryInfo(featuredPost.category).color}-100 text-${getCategoryInfo(featuredPost.category).color}-800 border-0 ml-2`}
+                      data-testid={`category-${featuredPost.category}`}
+                    >
+                      {getCategoryInfo(featuredPost.category).label}
+                    </Badge>
                   </div>
-                  <div className="p-6 md:p-8 flex flex-col justify-center">
-                    <div className="mb-4">
-                      <Badge variant="outline" className="mb-2">Destaque</Badge>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4 line-clamp-2 group-hover:text-primary transition-colors">
+                    <HighlightTitle 
+                      text={featuredPost.title} 
+                      query={currentFilters.searchQuery || ''} 
+                    />
+                  </h2>
+                  <p className="text-muted-foreground mb-6 line-clamp-3">
+                    <HighlightExcerpt 
+                      text={featuredPost.excerpt} 
+                      query={currentFilters.searchQuery || ''} 
+                    />
+                  </p>
+                  <div className="flex items-center gap-6 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-1">
+                      <User className="h-4 w-4" />
+                      <span>{featuredPost.author?.name || 'Anonymous'}</span>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 line-clamp-2 group-hover:text-primary transition-colors">
-                      <HighlightTitle 
-                        text={featuredPost.title} 
-                        query={currentFilters.searchQuery || ''} 
-                      />
-                    </h2>
-                    <p className="text-muted-foreground mb-6 line-clamp-3">
-                      <HighlightExcerpt 
-                        text={featuredPost.excerpt} 
-                        query={currentFilters.searchQuery || ''} 
-                      />
-                    </p>
-                    <div className="flex items-center gap-6 text-sm text-muted-foreground">
-                      <div className="flex items-center gap-1">
-                        <User className="h-4 w-4" />
-                        <span>{featuredPost.author?.name || 'Anonymous'}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Calendar className="h-4 w-4" />
-                        <span>{formatDate(featuredPost.date)}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Clock className="h-4 w-4" />
-                        <span>{calculateReadTime(featuredPost.content)} de leitura</span>
-                      </div>
+                    <div className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" />
+                      <span>{formatDate(featuredPost.date)}</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <Clock className="h-4 w-4" />
+                      <span>{calculateReadTime(featuredPost.content)} de leitura</span>
                     </div>
                   </div>
                 </div>
@@ -337,6 +191,7 @@ export function BlogClient({ posts }: BlogClientProps) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" data-testid="posts-grid">
             {remainingPosts.map((post) => {
               const categoryInfo = getCategoryInfo(post.category);
+              
               return (
                 <Link
                   key={post.slug}
@@ -347,25 +202,17 @@ export function BlogClient({ posts }: BlogClientProps) {
                     className="overflow-hidden hover:shadow-lg transition-all duration-300 h-full"
                     data-testid={`post-${post.slug}`}
                   >
-                    <CardHeader className="p-0">
-                      <div className="relative h-48">
-                        <Image
-                          src={post.coverImage || '/api/placeholder/400/200'}
-                          alt={post.title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute top-4 left-4">
-                          <Badge 
-                            className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
-                            data-testid={`category-${post.category}`}
-                          >
-                            {categoryInfo.label}
-                          </Badge>
-                        </div>
+                    <CardHeader className="p-6 pb-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge 
+                          className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
+                          data-testid={`category-${post.category}`}
+                        >
+                          {categoryInfo.label}
+                        </Badge>
                       </div>
                     </CardHeader>
-                    <CardContent className="p-6 flex-1">
+                    <CardContent className="p-6 pt-0 flex-1">
                       <h3 className="text-xl font-semibold mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                         <HighlightTitle 
                           text={post.title} 
@@ -419,20 +266,19 @@ export function BlogClient({ posts }: BlogClientProps) {
         )}
 
         {/* Results summary */}
-        {filteredPosts.length > 0 && (
+        {filteredPosts.length > 0 && currentFilters.searchQuery && (
           <div className="mt-8 text-center text-sm text-muted-foreground">
-            Mostrando {filteredPosts.length} de {posts.length} posts
-            {hasFilters && (
-              <Button
-                variant="link"
-                onClick={handleClearFilters}
-                className="ml-2 p-0 h-auto text-sm"
-              >
-                Ver todos
-              </Button>
-            )}
+            Mostrando {filteredPosts.length} de {posts.length} posts para &quot;{currentFilters.searchQuery}&quot;
+            <Button
+              variant="link"
+              onClick={handleClearFilters}
+              className="ml-2 p-0 h-auto text-sm"
+            >
+              Ver todos
+            </Button>
           </div>
         )}
+        </div>
       </section>
     </>
   );

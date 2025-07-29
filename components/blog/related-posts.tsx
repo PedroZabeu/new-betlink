@@ -3,7 +3,6 @@
 // @created: Feature 2.8
 
 import Link from "next/link";
-import Image from "next/image";
 import { Badge } from '@/components/ui/badge';
 import { Calendar, Clock } from 'lucide-react';
 import { BlogPost, getCategoryInfo } from '@/lib/blog/types';
@@ -55,27 +54,15 @@ export function RelatedPosts({ posts, currentSlug, className }: RelatedPostsProp
               className="group block"
             >
               <article className="border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300">
-                {/* Cover Image */}
-                {post.coverImage && (
-                  <div className="relative h-48">
-                    <Image
-                      src={post.coverImage}
-                      alt={post.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <Badge 
-                        className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
-                      >
-                        {categoryInfo.label}
-                      </Badge>
-                    </div>
-                  </div>
-                )}
-                
                 {/* Content */}
                 <div className="p-4">
+                  <div className="mb-3">
+                    <Badge 
+                      className={`bg-${categoryInfo.color}-100 text-${categoryInfo.color}-800 border-0`}
+                    >
+                      {categoryInfo.label}
+                    </Badge>
+                  </div>
                   <h3 className="font-semibold mb-2 line-clamp-2 group-hover:text-primary transition-colors">
                     {post.title}
                   </h3>
