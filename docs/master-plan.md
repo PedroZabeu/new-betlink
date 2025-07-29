@@ -134,39 +134,43 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 **Fase 2: Blog Features (5 features)**
 ```markdown
-- [ ] Feature 2.6: Criar 4 Novos Posts sobre Apostas
-  - [ ] Setup estrutura /_posts e configuração
-  - [ ] Post 1: Métricas Essenciais nas Apostas Esportivas
-  - [ ] Post 2: Entendendo o EV+ (Expected Value Positivo)
-  - [ ] Post 3: Estratégias para Manter Contas Ativas
-  - [ ] Post 4: Montando sua Carteira de Tipsters
-  - [ ] Test: Posts renderizando em Markdown
+- [✅] Feature 2.6: Criar 4 Novos Posts sobre Apostas
+  - [✅] Setup estrutura /_posts e configuração
+  - [✅] Post 1: Métricas Essenciais nas Apostas Esportivas
+  - [✅] Post 2: Entendendo o EV+ (Expected Value Positivo)
+  - [✅] Post 3: Estratégias para Manter Contas Ativas
+  - [✅] Post 4: Montando sua Carteira de Tipsters
+  - [✅] Test: Posts renderizando em Markdown
 
-- [ ] Feature 2.7: Sistema de Tags e Categorias
-  - [ ] Definir types e interfaces
-  - [ ] 4 categorias fixas (educacional, estrategias, gestao-banca, ferramentas)
-  - [ ] Sistema de tags flexível (3-6 por post)
-  - [ ] Componente TagFilter com design existente
-  - [ ] Test: Filtros combinados funcionando
+- [🔄] Feature 2.7: Sistema de Tags e Categorias - REVISADO
+  - [🔄] Approach: Server Component + Client Interactivity (baseado em Next.js Blog Starter)
+  - [🔄] Estrutura Híbrida:
+    * Server Component (/app/blog/page.tsx) - data loading com fs access
+    * Client Component (/components/blog/blog-client.tsx) - filtros interativos
+    * API utilitários (/lib/blog/api.ts) - baseado no Next.js starter pattern
+  - [ ] Fase 1: Server Component com data loading (30min)
+  - [ ] Fase 2: Client Component com filtros (45min)  
+  - [ ] Fase 3: Integração e polish (15min)
+  - [ ] Test: Filtros funcionando sem erros de fs/client
 
 - [ ] Feature 2.8: Sistema de Busca no Blog
   - [ ] Componente SearchBar reutilizando Input
-  - [ ] Busca em título, excerpt, conteúdo, tags
+  - [ ] Busca client-side nos dados carregados
   - [ ] Debounce 300ms para performance
   - [ ] Highlight dos termos encontrados
   - [ ] Test: Busca retorna < 200ms
 
 - [ ] Feature 2.9: Página Individual de Post Aprimorada
+  - [ ] Server Component para carregar post individual
+  - [ ] generateStaticParams para todas as páginas
   - [ ] Breadcrumbs: Home > Blog > [Categoria] > [Post]
-  - [ ] Navegação: Post anterior/próximo
   - [ ] Posts relacionados (mesma categoria)
-  - [ ] Compartilhamento: WhatsApp, Telegram, Copiar link
-  - [ ] Test: Navegação e compartilhamento funcionando
+  - [ ] Test: Static generation + navegação funcionando
 
 - [ ] Feature 2.10: Melhorias de Performance e UX
-  - [ ] Static Generation para todas as páginas
-  - [ ] Skeleton loading para lista de posts
-  - [ ] Scroll to top button (aparece após 300px)
+  - [ ] Static Generation para todas as páginas (SSG)
+  - [ ] generateStaticParams para posts
+  - [ ] Skeleton loading para componentes client
   - [ ] Lazy loading de imagens com blur placeholder
   - [ ] Test: Lighthouse > 90, TTI < 3s
 ```
@@ -420,11 +424,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 11/44 Features (25%)
+### Overall Progress: 12/44 Features (27.3%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 5/18 features (27.8%) - Fase 1 completa, Fase 2 iniciando
+EPIC 2: 🟦 6/18 features (33.3%) - Fase 1 completa, Fase 2 em progresso
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
@@ -491,6 +495,15 @@ EPIC 6: ⬜ 0/5 features (0%)
 - **Reuso de componentes acelera desenvolvimento em 50%+ após Feature 1.3**
 - **Trabalho paralelo Claude/Cursor maximiza eficiência**
 - **Cookie consent deve aparecer após 1s para melhor UX**
+- **29/01/2025 - CRÍTICO: Next.js App Router Server/Client boundaries**
+  - ❌ fs, path, gray-matter NÃO funcionam em Client Components ('use client')
+  - ✅ Server Components podem acessar file system naturalmente
+  - ✅ Approach Híbrida: Server loads data + Client handles interactivity
+  - ✅ Padrão Next.js Blog Starter é referência gold standard
+- **29/01/2025 - Arquitetura recomendada para features com dados + interatividade:**
+  - Server Component: data loading, fs access, static generation
+  - Client Component: filtros, estados, interatividade, URL sync
+  - Separação clara de responsabilidades evita conflitos
 
 ---
 

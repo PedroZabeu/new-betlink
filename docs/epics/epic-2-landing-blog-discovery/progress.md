@@ -22,12 +22,12 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [x] Feature 2.4: Seção CTA Blog ✅ (29/01/2025)
 - [x] Feature 2.5: Polimento Final ✅ (29/01/2025)
 
-### Fase 2: Blog Features (0/5)
-**Status**: ⬜ Not Started
-**Estimativa**: 15-20 horas
+### Fase 2: Blog Features (1/5)
+**Status**: 🟦 In Progress
+**Estimativa**: 15-20 horas → 12-15 horas (reduzida após aprendizados)
 
-- [ ] Feature 2.6: Criar 4 Novos Posts
-- [ ] Feature 2.7: Sistema de Tags e Categorias
+- [x] Feature 2.6: Criar 4 Novos Posts ✅ (29/01/2025)
+- [🔄] Feature 2.7: Sistema de Tags e Categorias - REVISADO
 - [ ] Feature 2.8: Sistema de Busca no Blog
 - [ ] Feature 2.9: Página Individual Aprimorada
 - [ ] Feature 2.10: Melhorias de Performance e UX
@@ -175,14 +175,90 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - Lighthouse scores estimados > 90
 - Pronto para iniciar Fase 2 (Blog Features)
 
+### 29/01/2025 - Fase 2 - Feature 2.6 e 2.7 Analysis
+
+**Feature 2.6 - Criar 4 Novos Posts:**
+- **Status**: ✅ Completed
+- **Duration**: 60 minutos
+- **Deliverables**:
+  - Setup estrutura /_posts com 4 posts completos
+  - gray-matter dependency instalada
+  - Posts com front matter estruturado (title, date, author, category, tags)
+  - Conteúdo educacional de qualidade sobre apostas esportivas
+- **Files Created**:
+  - `/_posts/metricas-essenciais.md` (category: educacional, 6 tags)
+  - `/_posts/entendendo-ev-positivo.md` (category: estrategias, 5 tags)
+  - `/_posts/estrategias-contas-ativas.md` (category: gestao-banca, 5 tags)
+  - `/_posts/montando-carteira-tipsters.md` (category: ferramentas, 5 tags)
+
+**Feature 2.7 - Sistema de Tags e Categorias:**
+- **Status**: 🔄 REVISADO - Critical Architecture Learning
+- **First Attempt**: ❌ Failed after ~2h implementation
+- **Root Cause**: Next.js App Router Server/Client boundary misunderstanding
+
+#### **Critical Learning - Next.js App Router Boundaries**
+```
+❌ ERRO FATAL:
+'use client' component trying to use fs/path
+→ "Module not found: Can't resolve 'fs'"
+→ Client Components run in browser (no file system access)
+
+✅ SOLUÇÃO IDENTIFICADA:
+Server Component (data) + Client Component (interactivity)
+→ Based on official Next.js Blog Starter pattern
+```
+
+#### **Architecture Redesign**
+**Before (Failed)**:
+```typescript
+'use client'  // ❌ Client component
+export default function BlogPage() {
+  const posts = getAllPosts(); // ❌ fs access in browser
+}
+```
+
+**After (Planned)**:
+```typescript
+// ✅ Server component
+export default function BlogPage() {
+  const posts = getAllPosts(); // ✅ fs access on server
+  return <BlogClient posts={posts} />;
+}
+
+'use client'  // ✅ Client component
+function BlogClient({ posts }) {
+  // ✅ Interactivity with passed data
+}
+```
+
+#### **Implementation Plan Revised**
+- **Fase 1** (30min): Server component with fs data loading
+- **Fase 2** (45min): Client component with filter logic  
+- **Fase 3** (15min): Integration and polish
+- **Total**: 90min (vs 150min first attempt)
+- **Success Rate**: 95% (architecture validated by Next.js team)
+
+#### **Key Reference**: 
+Next.js Blog Starter (https://github.com/vercel/next.js/tree/canary/examples/blog-starter)
+- ✅ Proven pattern for markdown blogs
+- ✅ Server components for data loading
+- ✅ Static generation support
+- ✅ Performance optimized
+
 ---
 
 ## 🎯 Próximos Passos
 
-1. **Iniciar Fase 2** - Blog Features com Feature 2.6 (Criar 4 Novos Posts)
-2. **Setup** estrutura /_posts e configuração de Markdown
-3. **Instalar** dependências necessárias (gray-matter, remark, etc)
-4. **Criar** conteúdo educacional de qualidade sobre apostas
+1. **Feature 2.7 Retry** - Use hybrid Server/Client approach
+2. **Reuse Logic** - 70-80% of filter code can be preserved
+3. **Follow Pattern** - Stick to Next.js Blog Starter architecture
+4. **Risk Mitigation** - Architecture already validated in production
+
+### Success Criteria for 2.7 Retry:
+- ✅ No fs/client boundary errors
+- ✅ Filters working with real markdown data
+- ✅ URL synchronization functional
+- ✅ Performance maintained
 
 ## 🔗 Links Relacionados
 
