@@ -185,6 +185,8 @@ For detailed examples, see `/docs/collaboration/workflow-examples.md`
 - **Components**: Always include loading and error states
 - **Forms**: Client-side validation + server-side verification
 - **Queries**: Typed Supabase queries with error handling
+- **UI/UX**: NUNCA usar emojis no app - sempre usar ícones do Lucide React
+- **Backgrounds**: Manter consistência - não adicionar backgrounds diferentes sem necessidade
 
 ### Logging Standards
 **IMPORTANTE: Use SEMPRE o logger centralizado. NUNCA use console.log/error/warn diretamente.**

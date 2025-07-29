@@ -24,21 +24,6 @@ export function LandingHero() {
           Começar Gratuitamente
         </a>
       </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 w-full max-w-4xl">
-        <div className="text-center">
-          <div className="text-3xl font-bold text-primary">500+</div>
-          <p className="text-sm text-muted-foreground mt-1">Tipsters Verificados</p>
-        </div>
-        <div className="text-center">
-          <div className="text-3xl font-bold text-primary">85%</div>
-          <p className="text-sm text-muted-foreground mt-1">Taxa de Acerto Média</p>
-        </div>
-        <div className="text-center">
-          <div className="text-3xl font-bold text-primary">24/7</div>
-          <p className="text-sm text-muted-foreground mt-1">Suporte ao Cliente</p>
-        </div>
-      </div>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { LandingHero } from "@/components/landing-hero";
+import { AdvantagesSection } from "@/components/home/advantages-section";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { PageWrapper } from "@/components/ui/page-wrapper";
 
@@ -11,7 +12,11 @@ export default function Home() {
       <main className="flex-1">
         <div className="container mx-auto px-4">
           <LandingHero />
-          
+        </div>
+        
+        <AdvantagesSection />
+        
+        <div className="container mx-auto px-4">
           <section className="py-16">
             <h2 className="text-3xl font-bold text-center mb-12">
               Como Funciona
