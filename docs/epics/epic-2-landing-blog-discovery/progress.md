@@ -4,7 +4,7 @@
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
 - **Previsão**: 4 fases, ~10-15 dias
-- **Progresso**: 12/18 features (67%) - Fase 1 ✅, Fase 2 ✅, Fase 3 (2/3)
+- **Progresso**: 13/28 features (46%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (0/15)
 
 ## 🎯 Visão Geral do EPIC
 Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, tudo com dados mockados até a Fase 4 (integração Supabase).
@@ -25,19 +25,39 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - ✅ Feature 2.9: Sistema de Busca no Blog
 - ✅ Feature 2.10: Melhorias de Performance e UX
 
-### 🎯 Fase 3: Discovery de Canais (67%)
+### 🎯 Fase 3: Discovery de Canais (100%) ✅
 - ✅ Feature 2.11: Refinamento dos Cards de Canal
 - ✅ Feature 2.12: Página de Detalhes do Canal
-- ⬜ Feature 2.13: Fluxo de Assinatura (Pré-Pagamento)
+- ✅ Feature 2.13: Fluxo de Checkout Completo
 
 ### 🎯 Fase 4: Integração Supabase (0%)
-- ⬜ Feature 2.14: Schema do Banco e Queries Base
-- ⬜ Feature 2.15: Integração Página de Explorar
-- ⬜ Feature 2.16: Integração Página de Detalhes
-- ⬜ Feature 2.17: Persistência do Fluxo de Assinatura
-- ⬜ Feature 2.18: Otimização e Cache
 
-**Progresso Total EPIC 2: 67%** █████████████░░░░░░░
+**Etapa 4.1: Foundation (0/3)**
+- ⬜ Feature 2.14: Setup Supabase + Tabelas Core
+- ⬜ Feature 2.15: Popular Dados + Queries Básicas
+- ⬜ Feature 2.16: Migrar Listagem de Canais
+
+**Etapa 4.2: Dados Dinâmicos (0/3)**
+- ⬜ Feature 2.17: Sistema de Métricas Real
+- ⬜ Feature 2.18: Ocupação e Waitlist Dinâmicos
+- ⬜ Feature 2.19: Histórico de Tips
+
+**Etapa 4.3: Funcionalidades Interativas (0/3)**
+- ⬜ Feature 2.20: Detalhes do Canal (Supabase)
+- ⬜ Feature 2.21: Sistema de Reviews
+- ⬜ Feature 2.22: Gráficos Dinâmicos
+
+**Etapa 4.4: Captura e Analytics (0/3)**
+- ⬜ Feature 2.23: Salvar Leads no Banco
+- ⬜ Feature 2.24: Dashboard de Leads
+- ⬜ Feature 2.25: Analytics de Conversão
+
+**Etapa 4.5: Otimização e Polish (0/3)**
+- ⬜ Feature 2.26: RLS e Segurança
+- ⬜ Feature 2.27: Performance e Índices
+- ⬜ Feature 2.28: Real-time Updates
+
+**Progresso Total EPIC 2: 46%** █████████░░░░░░░░░░
 
 ## 📈 Progresso por Fase
 
@@ -63,23 +83,44 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [x] Feature 2.9: Sistema de Busca no Blog ✅ (29/01/2025)
 - [x] Feature 2.10: Melhorias de Performance e UX ✅ (31/01/2025)
 
-### Fase 3: Discovery de Canais (2/3)
-**Status**: 🟦 In Progress
-**Estimativa**: 17-21 horas → Tempo Real: ~6.5 horas (até agora)
+### Fase 3: Discovery de Canais (3/3) ✅
+**Status**: ✅ Completed
+**Estimativa**: 17-21 horas → Tempo Real: ~8.5 horas
+**Conclusão**: 01/02/2025
 
 - [x] Feature 2.11: Refinamento dos Cards de Canal ✅ (01/02/2025)
 - [x] Feature 2.12: Página de Detalhes do Canal ✅ (01/02/2025)
-- [ ] Feature 2.13: Fluxo de Assinatura (Pré-Pagamento)
+- [x] Feature 2.13: Fluxo de Checkout Completo ✅ (01/02/2025)
 
-### Fase 4: Integração com Supabase (0/5)
+### Fase 4: Integração com Supabase (0/15)
 **Status**: ⬜ Not Started
-**Estimativa**: 22-27 horas
+**Estimativa**: 38-48 horas
+**Estrutura**: 5 etapas com 3 features cada
 
-- [ ] Feature 2.14: Schema do Banco e Queries Base
-- [ ] Feature 2.15: Integração Página de Explorar
-- [ ] Feature 2.16: Integração Página de Detalhes
-- [ ] Feature 2.17: Persistência do Fluxo de Assinatura
-- [ ] Feature 2.18: Otimização e Cache
+**Etapa 4.1 - Foundation (Setup e Dados)**:
+- [ ] Feature 2.14: Setup Supabase + Tabelas Core
+- [ ] Feature 2.15: Popular Dados + Queries Básicas
+- [ ] Feature 2.16: Migrar Listagem de Canais
+
+**Etapa 4.2 - Dados Dinâmicos**:
+- [ ] Feature 2.17: Sistema de Métricas Real
+- [ ] Feature 2.18: Ocupação e Waitlist Dinâmicos
+- [ ] Feature 2.19: Histórico de Tips
+
+**Etapa 4.3 - Funcionalidades Interativas**:
+- [ ] Feature 2.20: Detalhes do Canal (Supabase)
+- [ ] Feature 2.21: Sistema de Reviews
+- [ ] Feature 2.22: Gráficos Dinâmicos
+
+**Etapa 4.4 - Captura e Analytics**:
+- [ ] Feature 2.23: Salvar Leads no Banco
+- [ ] Feature 2.24: Dashboard de Leads
+- [ ] Feature 2.25: Analytics de Conversão
+
+**Etapa 4.5 - Otimização e Polish**:
+- [ ] Feature 2.26: RLS e Segurança
+- [ ] Feature 2.27: Performance e Índices
+- [ ] Feature 2.28: Real-time Updates
 
 ## 📋 Features Detalhadas
 
@@ -394,11 +435,45 @@ function BlogClient({ posts }) {
   - Performance < 3s inicial
 - **User Testing**: ✅ Aprovado com 100% dos requisitos
 
-**Status EPIC 2**: 67% completo - Fase 1 ✅, Fase 2 ✅, Fase 3 (2/3)
-**Próximo milestone**: Feature 2.13 - Fluxo de Assinatura (Pré-Pagamento)
+**Status EPIC 2**: 46% completo - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (0/15)
+**Próximo milestone**: Feature 2.14 - Setup Supabase + Tabelas Core (Fase 4 - Etapa 4.1)
+**Nova estrutura Fase 4**: Dividida em 5 etapas com 15 features totais
+
+### 01/02/2025 - Fase 3 - Feature 2.13 Concluída
+
+**Feature 2.13 - Fluxo de Checkout Completo:**
+- **Status**: ✅ COMPLETO (01/02/2025)
+- **Duration**: ~2 horas (incluindo correção do react-input-mask)
+- **Architecture**: Fluxo multi-step com persistência de estado
+- **Key Deliverables**:
+  - **6 Etapas**: Auth → Plano → Contato → Faturamento → Pagamento → Confirmação
+  - **Máscaras Customizadas**: Componente MaskedInput para substituir react-input-mask
+  - **Validações**: CPF, Cartão (Luhn), CEP com busca mockada
+  - **Métodos de Pagamento**: Cartão, PIX, Boleto (mockados)
+  - **Integração**: Autenticação Supabase funcionando
+  - **Redirecionamento**: Dashboard após conclusão
+- **Critical Fix**:
+  - react-input-mask incompatível com React 18+ (findDOMNode deprecated)
+  - Solução: Criado /components/ui/masked-input.tsx customizado
+  - Removida dependência do package.json
+- **User Testing**: ✅ Fluxo completo testado com Playwright MCP
+
+**Fase 3 - Conclusão Final**:
+- ✅ 3/3 features completadas em ~8.5 horas total
+- ✅ Discovery system 100% funcional com checkout completo
+- ✅ Ready for payment integration (Stripe/MercadoPago)
+- ✅ Fase 3 oficialmente concluída
+
+## 🎯 Próximos Passos
+
+**Fase 4: Integração com Supabase** (próxima)
+1. **Feature 2.14**: Setup Supabase + Tabelas Core
+2. **Feature 2.15**: Popular Dados + Queries Básicas
+3. **Feature 2.16**: Migrar Listagem de Canais
 
 ## 🔗 Links Relacionados
 
 - [Master Plan](/docs/master-plan.md)
 - [EPIC 1 Handover](/docs/epics/epic-1-base-system/handover.md)
 - [Guardrails EPIC 2](#guardrails-críticos)
+- [Feature 2.13 Handover](/docs/features/handover/feature-2.13-handover.md)

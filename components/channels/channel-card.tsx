@@ -5,6 +5,7 @@ import { Star, ChevronRight } from "lucide-react";
 import { ChannelCard as ChannelCardType, TimeWindow } from "@/lib/types/channel";
 import { logger } from "@/lib/utils/logger";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 interface ChannelCardProps {
   channel: ChannelCardType;
@@ -148,6 +149,14 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
                 hasWaitlist,
                 occupancyRate: Math.round(occupancyRate)
               });
+              
+              if (!hasWaitlist) {
+                // Navigate to checkout with default monthly plan
+                router.push(`/checkout/${channelSlug}?source=channel-card`);
+              } else {
+                // TODO: Implement waitlist flow
+                toast.info("Você será adicionado à lista de espera");
+              }
             }}
           >
             {hasWaitlist ? 'Lista de Espera' : 'Assinar Canal'}

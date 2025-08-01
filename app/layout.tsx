@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
 import { CookieBanner } from "@/components/cookie-consent";
 import "./globals.css";
 
@@ -68,6 +69,7 @@ export default function RootLayout({
         >
           {children}
           <CookieBanner />
+          <Toaster position="top-right" richColors />
         </ThemeProvider>
       </body>
     </html>

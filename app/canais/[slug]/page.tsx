@@ -71,7 +71,7 @@ export default function ChannelDetailPage({ params }: { params: { slug: string }
       <div className="container mx-auto px-4 pb-16">
         <div className="grid gap-8">
           {/* Subscription Plans */}
-          <SubscriptionPlansCard plans={channel.subscriptionPlans} channelName={channel.name} />
+          <SubscriptionPlansCard plans={channel.subscriptionPlans} channelName={channel.name} channelSlug={params.slug} />
           
           {/* Metrics and Chart Section */}
           <div className="grid lg:grid-cols-2 gap-8">

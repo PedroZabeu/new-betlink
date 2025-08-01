@@ -12,16 +12,16 @@ import { useRouter } from 'next/navigation';
 interface SubscriptionPlansCardProps {
   plans: SubscriptionPlan[];
   channelName: string;
+  channelSlug: string;
 }
 
-export default function SubscriptionPlansCard({ plans, channelName }: SubscriptionPlansCardProps) {
+export default function SubscriptionPlansCard({ plans, channelName, channelSlug }: SubscriptionPlansCardProps) {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
   const router = useRouter();
   
   const handleSubscribe = (planId: string) => {
-    // TODO: In Feature 2.13, this will navigate to the subscription flow
-    console.log('Subscribe to plan:', planId);
-    alert('Fluxo de assinatura será implementado na Feature 2.13');
+    // Navigate to checkout with selected plan
+    router.push(`/checkout/${channelSlug}?plan=${planId}&source=channel-detail`);
   };
   
   return (

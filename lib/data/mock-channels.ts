@@ -338,3 +338,18 @@ export const mockChannels: ChannelCard[] = [
     totalTips: 2987
   }
 ];
+
+// Helper function to get channel by slug
+export function getChannelBySlug(slug: string) {
+  // Convert slug back to name (reverse the slug transformation)
+  // Example: "futebol-europeu-premium" -> "Futebol Europeu Premium"
+  const name = slug
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+  
+  // Find channel by name (case insensitive)
+  return mockChannels.find(channel => 
+    channel.name.toLowerCase().replace(/\s+/g, '-') === slug
+  );
+}

@@ -196,38 +196,117 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Planos de assinatura flexíveis por tipster
   - [✅] Test: Gráfico atualiza com filtros, todos dados visíveis
 
-- [ ] Feature 2.13: Fluxo de Assinatura
-  - [ ] Multi-step até pagamento
-  - [ ] Captura de leads
-  - [ ] Test: Fluxo completo
+- [✅] Feature 2.13: Fluxo de Checkout Completo
+  - [✅] Multi-step até pagamento (6 etapas)
+  - [✅] Máscaras customizadas (React 18+ compatível)
+  - [✅] Test: Fluxo completo com Playwright MCP
 ```
 
-**Fase 4: Integração Supabase (5 features)**
+**Fase 4: Integração Supabase (15 features)**
+
+*Etapa 4.1: Foundation (3 features)*
 ```markdown
-- [ ] Feature 2.14: Schema e Queries
-  - [ ] Tabelas otimizadas
-  - [ ] Views e functions
+- [ ] Feature 2.14: Setup Supabase + Tabelas Core
+  - [ ] Criar tabelas: channels, channel_tags, subscription_plans
+  - [ ] Popular dados iniciais de teste
+  - [ ] Testar conexão e queries básicas
+  - [ ] Test: Dados visíveis no Supabase Dashboard
+
+- [ ] Feature 2.15: Popular Dados + Queries Básicas
+  - [ ] Migrar 12 canais mockados para banco
+  - [ ] Criar camada de queries TypeScript
+  - [ ] Tipos gerados do Supabase
+  - [ ] Test: Queries retornando dados corretos
+
+- [ ] Feature 2.16: Migrar Listagem de Canais
+  - [ ] Substituir mock por dados reais em /canais
+  - [ ] Manter visual idêntico
+  - [ ] Filtros funcionando com banco
+  - [ ] Test: Página idêntica mas com dados do Supabase
+```
+
+*Etapa 4.2: Dados Dinâmicos (3 features)*
+```markdown
+- [ ] Feature 2.17: Sistema de Métricas Real
+  - [ ] Tabela channel_metrics com períodos
+  - [ ] Cálculo de ROI, MDD, winrate
+  - [ ] Atualização via functions/triggers
+  - [ ] Test: Métricas mudando em tempo real
+
+- [ ] Feature 2.18: Ocupação e Waitlist Dinâmicos
+  - [ ] Views para calcular ocupação
+  - [ ] Sistema de waitlist funcional
+  - [ ] Badges "Lotado" dinâmicos
+  - [ ] Test: Ocupação refletindo assinantes reais
+
+- [ ] Feature 2.19: Histórico de Tips
+  - [ ] Tabela tips com resultados
+  - [ ] Timeline de apostas
+  - [ ] Cálculo de lucros/prejuízos
+  - [ ] Test: Tips aparecendo na página de detalhes
+```
+
+*Etapa 4.3: Funcionalidades Interativas (3 features)*
+```markdown
+- [ ] Feature 2.20: Detalhes do Canal (Supabase)
+  - [ ] Página completa com dados reais
+  - [ ] Todas abas funcionando
+  - [ ] Performance mantida
+  - [ ] Test: Página idêntica mas 100% Supabase
+
+- [ ] Feature 2.21: Sistema de Reviews
+  - [ ] Tabela channel_reviews com RLS
+  - [ ] Usuários podem avaliar
+  - [ ] Rating médio calculado
+  - [ ] Test: Deixar review e ver atualizar
+
+- [ ] Feature 2.22: Gráficos Dinâmicos
+  - [ ] Dados históricos reais
+  - [ ] Filtros de período funcionais
+  - [ ] Animações suaves
+  - [ ] Test: Gráfico muda com período selecionado
+```
+
+*Etapa 4.4: Captura e Analytics (3 features)*
+```markdown
+- [ ] Feature 2.23: Salvar Leads no Banco
+  - [ ] Tabela captured_leads
+  - [ ] Integração com checkout flow
+  - [ ] Validações server-side
+  - [ ] Test: Lead salvo após checkout
+
+- [ ] Feature 2.24: Dashboard de Leads
+  - [ ] Nova rota /tipster/leads
+  - [ ] Visualizar leads capturados
+  - [ ] Filtros e exportação
+  - [ ] Test: Tipster vê seus leads
+
+- [ ] Feature 2.25: Analytics de Conversão
+  - [ ] Métricas de abandono
+  - [ ] Funil de conversão
+  - [ ] Insights acionáveis
+  - [ ] Test: Dashboard com métricas reais
+```
+
+*Etapa 4.5: Otimização e Polish (3 features)*
+```markdown
+- [ ] Feature 2.26: RLS e Segurança
+  - [ ] Policies para todas tabelas
+  - [ ] Testes de permissão
+  - [ ] Auditoria de segurança
+  - [ ] Test: Usuários só veem o permitido
+
+- [ ] Feature 2.27: Performance e Índices
+  - [ ] Criar índices otimizados
+  - [ ] Query optimization
+  - [ ] Implementar cache
   - [ ] Test: Queries < 100ms
 
-- [ ] Feature 2.15: Integração Explorar
-  - [ ] Dados reais nos cards
-  - [ ] Filtros dinâmicos
-  - [ ] Test: Performance mantida
-
-- [ ] Feature 2.16: Integração Detalhes
-  - [ ] Página com dados reais
-  - [ ] Gráficos funcionais
-  - [ ] Test: Abas com dados
-
-- [ ] Feature 2.17: Persistência Assinatura
-  - [ ] Salvar leads
-  - [ ] Analytics básico
-  - [ ] Test: Dados salvos
-
-- [ ] Feature 2.18: Otimização e Cache
-  - [ ] Cache multicamadas
-  - [ ] Performance produção
-  - [ ] Test: TTI < 3s
+- [ ] Feature 2.28: Real-time Updates
+  - [ ] Subscriptions Supabase
+  - [ ] Badges atualizando ao vivo
+  - [ ] Notificações de mudanças
+  - [ ] Test: Updates sem refresh
 ```
 
 ---
@@ -433,11 +512,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 18/44 Features (40.9%)
+### Overall Progress: 19/54 Features (35.2%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 12/18 features (66.7%) - Fase 1 ✅, Fase 2 ✅, Fase 3 🟦 IN PROGRESS
+EPIC 2: 🟦 13/28 features (46.4%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 ⬜ PENDING
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
@@ -513,6 +592,10 @@ EPIC 6: ⬜ 0/5 features (0%)
   - Server Component: data loading, fs access, static generation
   - Client Component: filtros, estados, interatividade, URL sync
   - Separação clara de responsabilidades evita conflitos
+- **01/02/2025 - react-input-mask incompatível com React 18+:**
+  - ❌ findDOMNode deprecated causa erro fatal
+  - ✅ Solução: Criar componente MaskedInput customizado
+  - ✅ Approach controlada sem refs diretas ao DOM
 
 ---
 
