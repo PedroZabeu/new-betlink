@@ -180,18 +180,21 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 **Fase 3: Discovery de Canais (3 features)**
 ```markdown
-- [🟦] Feature 2.11: Refinamento dos Cards (In Planning)
-  - [ ] Cards com métricas: ROI, Lucro, MDD, Odds Média, Volume, Avaliação
-  - [ ] Tags: esporte, bookmaker, método, mercado, liquidez
-  - [ ] Sistema de filtros colapsáveis
-  - [ ] Ordenação: popularidade, ROI, preço
-  - [ ] 10-12 canais mockados
-  - [ ] Test: Cards responsivos e filtros funcionando
+- [✅] Feature 2.11: Refinamento dos Cards
+  - [✅] Cards com métricas: ROI, Lucro, MDD, Odds Média, Volume, Avaliação
+  - [✅] Tags: esporte, bookmaker, método, mercado, liquidez
+  - [✅] Sistema de filtros colapsáveis
+  - [✅] Ordenação: popularidade, ROI, preço
+  - [✅] 12 canais mockados
+  - [✅] Test: Cards responsivos e filtros funcionando
 
-- [ ] Feature 2.12: Página de Detalhes
-  - [ ] Página completa do canal
-  - [ ] Sistema de abas
-  - [ ] Test: Todos dados visíveis
+- [✅] Feature 2.12: Página de Detalhes
+  - [✅] Página completa do canal com cards organizados
+  - [✅] Gráfico interativo com filtro de período (7d, 30d, 6m, YTD, Total)
+  - [✅] Tabela de resultados com shadcn/ui Table
+  - [✅] Cards: Métricas, Sobre, Avaliações, FAQ
+  - [✅] Planos de assinatura flexíveis por tipster
+  - [✅] Test: Gráfico atualiza com filtros, todos dados visíveis
 
 - [ ] Feature 2.13: Fluxo de Assinatura
   - [ ] Multi-step até pagamento
@@ -430,11 +433,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 16/44 Features (36.4%)
+### Overall Progress: 18/44 Features (40.9%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 10/18 features (55.5%) - Fase 1 ✅, Fase 2 ✅ COMPLETE
+EPIC 2: 🟦 12/18 features (66.7%) - Fase 1 ✅, Fase 2 ✅, Fase 3 🟦 IN PROGRESS
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)

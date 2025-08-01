@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Star, ChevronRight } from "lucide-react";
 import { ChannelCard as ChannelCardType, TimeWindow } from "@/lib/types/channel";
 import { logger } from "@/lib/utils/logger";
+import { useRouter } from "next/navigation";
 
 interface ChannelCardProps {
   channel: ChannelCardType;
@@ -13,10 +14,13 @@ interface ChannelCardProps {
 const FEATURE_NAME = '[Feature 2.11: Channel Discovery]';
 
 export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
+  const router = useRouter();
   const metrics = channel.metrics[timeWindow];
   const occupancyRate = (channel.subscribers / channel.maxSubscribers) * 100;
   const isAlmostFull = occupancyRate >= 90;
   const hasWaitlist = occupancyRate >= 100;
+  
+  const channelSlug = channel.name.toLowerCase().replace(/\s+/g, '-');
 
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
@@ -126,6 +130,7 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
                 tipster: channel.tipster,
                 price: channel.price
               });
+              router.push(`/canais/${channelSlug}`);
             }}
           >
             Ver Detalhes

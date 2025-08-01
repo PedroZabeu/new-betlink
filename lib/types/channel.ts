@@ -119,3 +119,91 @@ export const SORT_OPTIONS: Array<{ value: SortOption; label: string }> = [
   { value: 'price-low', label: 'Menor Preço' },
   { value: 'price-high', label: 'Maior Preço' }
 ];
+
+// Types for channel detail page
+export interface SubscriptionPlan {
+  id: string;
+  name: string; // "Mensal", "Trimestral", "Semestral", "Temporada"
+  duration: number; // em dias
+  price: number;
+  originalPrice?: number; // para mostrar desconto
+  discount?: number; // percentual de desconto
+  features?: string[]; // benefícios específicos do plano
+  isPopular?: boolean; // destacar plano mais vendido
+}
+
+export interface ChartPoint {
+  date: string;
+  value: number;
+  profit: number;
+}
+
+export interface Tip {
+  id: string;
+  date: string;
+  event: string;
+  market: string;
+  odd: number;
+  stake: number;
+  status: 'win' | 'loss' | 'void' | 'pending';
+  return: number;
+}
+
+export interface Review {
+  id: string;
+  author: string;
+  avatar: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
+
+export interface FAQ {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface ChannelDetail extends ChannelCard {
+  slug: string;
+  
+  // Planos de Assinatura (flexível por tipster)
+  subscriptionPlans: SubscriptionPlan[];
+  
+  // Métricas detalhadas com gráfico por período
+  detailedMetrics: Record<TimeWindow, {
+    roi: number;
+    profit: number;
+    winRate: number;
+    totalBets: number;
+    avgOdds: number;
+    maxDrawdown: number;
+    chartData: ChartPoint[];
+  }>;
+  
+  // Resultados
+  recentTips: Tip[];
+  
+  // Informações
+  about: {
+    bio: string;
+    methodology: string;
+    specialties: string[];
+    experience: string;
+  };
+  
+  reviews: Review[];
+  faqs: FAQ[];
+}
+
+// Period options for the detail page
+export type DetailPeriod = '7d' | '30d' | '3m' | '6m' | '1y' | 'all';
+
+export const DETAIL_PERIOD_LABELS: Record<DetailPeriod, string> = {
+  '7d': '7 dias',
+  '30d': '30 dias',
+  '3m': '3 meses',
+  '6m': '6 meses',
+  '1y': '1 ano',
+  'all': 'Total'
+};

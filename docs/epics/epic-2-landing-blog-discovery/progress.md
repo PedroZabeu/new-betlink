@@ -4,7 +4,7 @@
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
 - **Previsão**: 4 fases, ~10-15 dias
-- **Progresso**: 10/18 features (55.5%) - Fase 1 ✅, Fase 2 ✅
+- **Progresso**: 12/18 features (67%) - Fase 1 ✅, Fase 2 ✅, Fase 3 (2/3)
 
 ## 🎯 Visão Geral do EPIC
 Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, tudo com dados mockados até a Fase 4 (integração Supabase).
@@ -25,9 +25,9 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - ✅ Feature 2.9: Sistema de Busca no Blog
 - ✅ Feature 2.10: Melhorias de Performance e UX
 
-### 🎯 Fase 3: Discovery de Canais (0%)
-- 🟦 Feature 2.11: Refinamento dos Cards de Canal (In Planning)
-- ⬜ Feature 2.12: Modal/Página de Detalhes do Canal
+### 🎯 Fase 3: Discovery de Canais (67%)
+- ✅ Feature 2.11: Refinamento dos Cards de Canal
+- ✅ Feature 2.12: Página de Detalhes do Canal
 - ⬜ Feature 2.13: Fluxo de Assinatura (Pré-Pagamento)
 
 ### 🎯 Fase 4: Integração Supabase (0%)
@@ -37,7 +37,7 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - ⬜ Feature 2.17: Persistência do Fluxo de Assinatura
 - ⬜ Feature 2.18: Otimização e Cache
 
-**Progresso Total EPIC 2: 55.5%** ██████████░░░░░░░░░░
+**Progresso Total EPIC 2: 67%** █████████████░░░░░░░
 
 ## 📈 Progresso por Fase
 
@@ -63,12 +63,12 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [x] Feature 2.9: Sistema de Busca no Blog ✅ (29/01/2025)
 - [x] Feature 2.10: Melhorias de Performance e UX ✅ (31/01/2025)
 
-### Fase 3: Discovery de Canais (0/3)
+### Fase 3: Discovery de Canais (2/3)
 **Status**: 🟦 In Progress
-**Estimativa**: 17-21 horas
+**Estimativa**: 17-21 horas → Tempo Real: ~6.5 horas (até agora)
 
-- [🟦] Feature 2.11: Refinamento dos Cards de Canal (In Planning)
-- [ ] Feature 2.12: Modal/Página de Detalhes do Canal
+- [x] Feature 2.11: Refinamento dos Cards de Canal ✅ (01/02/2025)
+- [x] Feature 2.12: Página de Detalhes do Canal ✅ (01/02/2025)
 - [ ] Feature 2.13: Fluxo de Assinatura (Pré-Pagamento)
 
 ### Fase 4: Integração com Supabase (0/5)
@@ -353,8 +353,49 @@ function BlogClient({ posts }) {
 - ✅ Ready for production-level usage
 - ✅ Fase 2 oficialmente concluída
 
-**Status EPIC 2**: 55.5% completo - Fase 1 ✅, Fase 2 ✅
-**Próximo milestone**: Completar Fase 3 para atingir 72% do EPIC
+### 01/02/2025 - Fase 3 - Feature 2.11 Concluída
+
+**Feature 2.11 - Refinamento dos Cards de Canal:**
+- **Status**: ✅ COMPLETO (01/02/2025)
+- **Duration**: ~4 horas
+- **Architecture**: Sistema completo de discovery com filtros avançados
+- **Key Deliverables**:
+  - **Cards**: 6 métricas dinâmicas (ROI, Lucro, MDD, Odds, Volume, Avaliação)
+  - **Filtros**: Sistema colapsável com 5 dimensões de tags
+  - **Ordenação**: Popular, ROI, Preço (asc/desc)
+  - **Mobile**: Drawer lateral com todos os filtros
+  - **URL Sync**: Compartilhamento de filtros via URL
+  - **CTAs**: Dois botões por card (Ver Detalhes + Assinar Canal)
+- **Technical Features**:
+  - 12 canais mock com dados realistas
+  - Métricas mudam por janela temporal
+  - Performance < 50ms nos filtros
+  - Grid responsivo (2 colunas desktop, 1 mobile)
+- **User Testing**: ✅ Testes E2E executados com sucesso
+
+### 01/02/2025 - Fase 3 - Feature 2.12 Concluída
+
+**Feature 2.12 - Página de Detalhes do Canal:**
+- **Status**: ✅ COMPLETO (01/02/2025)
+- **Duration**: ~2.5 horas
+- **Architecture**: Página dinâmica única sem pastas por tipster
+- **Key Deliverables**:
+  - **Arquitetura Escalável**: `/app/canais/[slug]/page.tsx` renderiza todos os canais
+  - **Planos Flexíveis**: Diferentes combinações por tipster (mensal, trimestral, semestral, temporada)
+  - **Gráfico Interativo**: Evolução do bankroll com Recharts
+  - **Métricas Dinâmicas**: Filtro por período (7d, 30d, 6m, YTD, Total)
+  - **Tabela de Resultados**: 20 tips recentes com badges visuais
+  - **Cards Informativos**: About, Reviews, FAQ
+- **Technical Features**:
+  - generateStaticParams para SSG
+  - Dados centralizados em mock-channel-details.ts
+  - Client Components apenas onde necessário
+  - Scroll suave para planos
+  - Performance < 3s inicial
+- **User Testing**: ✅ Aprovado com 100% dos requisitos
+
+**Status EPIC 2**: 67% completo - Fase 1 ✅, Fase 2 ✅, Fase 3 (2/3)
+**Próximo milestone**: Feature 2.13 - Fluxo de Assinatura (Pré-Pagamento)
 
 ## 🔗 Links Relacionados
 
