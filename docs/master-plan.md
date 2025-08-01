@@ -180,10 +180,13 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 **Fase 3: Discovery de Canais (3 features)**
 ```markdown
-- [ ] Feature 2.11: Refinamento dos Cards
-  - [ ] Cards com todas informações
+- [🟦] Feature 2.11: Refinamento dos Cards (In Planning)
+  - [ ] Cards com métricas: ROI, Lucro, MDD, Odds Média, Volume, Avaliação
+  - [ ] Tags: esporte, bookmaker, método, mercado, liquidez
+  - [ ] Sistema de filtros colapsáveis
+  - [ ] Ordenação: popularidade, ROI, preço
   - [ ] 10-12 canais mockados
-  - [ ] Test: Cards responsivos
+  - [ ] Test: Cards responsivos e filtros funcionando
 
 - [ ] Feature 2.12: Página de Detalhes
   - [ ] Página completa do canal
@@ -427,11 +430,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 13/44 Features (29.5%)
+### Overall Progress: 16/44 Features (36.4%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 10/18 features (55.5%) - Fase 1 ✅, Fase 2 ✅, iniciando Fase 3
+EPIC 2: 🟦 10/18 features (55.5%) - Fase 1 ✅, Fase 2 ✅ COMPLETE
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
