@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Search, Filter, X } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Search, Filter, X, Circle } from "lucide-react";
 import { ChannelCard } from "./channel-card";
 import { ChannelFilters } from "./channel-filters";
 import { ChannelsSkeleton } from "./channels-skeleton";
@@ -21,11 +22,12 @@ import { logger } from "@/lib/utils/logger";
 
 interface ChannelsClientProps {
   channels: ChannelCardType[];
+  isLiveData?: boolean;
 }
 
 const FEATURE_NAME = '[Feature 2.11: Channel Discovery]';
 
-export function ChannelsClient({ channels }: ChannelsClientProps) {
+export function ChannelsClient({ channels, isLiveData = false }: ChannelsClientProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -213,6 +215,19 @@ export function ChannelsClient({ channels }: ChannelsClientProps) {
 
       {/* Main Content */}
       <div className="flex-1">
+        {/* Header with Live Data Badge */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold flex items-center gap-2">
+            Canais Disponíveis
+            {isLiveData && (
+              <Badge variant="destructive" className="animate-pulse">
+                <Circle className="h-2 w-2 fill-current" />
+                <span className="ml-1">Live Data</span>
+              </Badge>
+            )}
+          </h2>
+        </div>
+
         {/* Search and Sort */}
         <div className="space-y-4 mb-6">
           <div className="flex flex-col sm:flex-row gap-4">

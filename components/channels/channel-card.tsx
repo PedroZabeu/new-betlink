@@ -24,7 +24,7 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
   const channelSlug = channel.name.toLowerCase().replace(/\s+/g, '-');
 
   return (
-    <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full flex flex-col">
+    <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
       <CardHeader>
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-2">
@@ -115,15 +115,16 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
         </div>
       </CardContent>
 
-      <CardFooter className="flex items-center justify-between border-t pt-4">
-        <div>
-          <p className="text-2xl font-bold">R$ {channel.price.toFixed(2)}</p>
-          <p className="text-xs text-muted-foreground">por mês</p>
-        </div>
-        <div className="flex gap-2">
+      <CardFooter className="border-t pt-4">
+        <div className="w-full space-y-3">
+          <div>
+            <p className="text-2xl font-bold">R$ {channel.price.toFixed(2)}</p>
+            <p className="text-xs text-muted-foreground">por mês</p>
+          </div>
+          <div className="flex gap-2 flex-col sm:flex-row">
           <Button 
             variant="outline"
-            className="gap-2" 
+            className="gap-2 w-full sm:w-auto" 
             onClick={() => {
               logger.info(`${FEATURE_NAME} View details clicked`, {
                 channelId: channel.id,
@@ -138,7 +139,7 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
             <ChevronRight className="h-4 w-4" />
           </Button>
           <Button 
-            className="gap-2" 
+            className="gap-2 w-full sm:w-auto" 
             disabled={hasWaitlist}
             onClick={() => {
               logger.info(`${FEATURE_NAME} Subscribe clicked`, {
@@ -161,6 +162,7 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
           >
             {hasWaitlist ? 'Lista de Espera' : 'Assinar Canal'}
           </Button>
+          </div>
         </div>
       </CardFooter>
     </Card>

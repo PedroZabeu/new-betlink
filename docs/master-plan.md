@@ -218,11 +218,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Visual mostrando 75% sincronizado (diferenças esperadas)
   - [✅] Test: Dashboard funcional com comparação detalhada
 
-- [ ] Feature 2.16: Migrar Listagem de Canais
-  - [ ] Substituir mock por dados reais em /canais
-  - [ ] Badge "Live Data 🔴" indicando fonte
-  - [ ] Filtros funcionando com banco
-  - [ ] Test: Página com badge e dados do Supabase
+- [✅] Feature 2.16: Migrar Listagem de Canais
+  - [✅] Substituir mock por dados reais em /canais
+  - [✅] Badge "Live Data 🔴" indicando fonte
+  - [✅] Filtros funcionando com banco
+  - [✅] Test: Página com badge e dados do Supabase
 ```
 
 *Etapa 4.2: Dados Dinâmicos (4 features)*
@@ -520,11 +520,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 19/55 Features (34.5%)
+### Overall Progress: 20/55 Features (36.4%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 13/29 features (44.8%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1)
+EPIC 2: 🟦 16/29 features (55.2%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1 ✅ 3/3)
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)

@@ -1,5 +1,78 @@
 import { createClient } from '@/lib/supabase/server';
 
+// Types for Supabase data
+export interface ChannelWithDetails {
+  id: number;
+  name: string;
+  slug: string;
+  description: string | null;
+  base_price: number;
+  is_active: boolean;
+  is_premium: boolean;
+  current_subscribers: number;
+  max_subscribers: number;
+  created_at: string;
+  updated_at: string;
+  channel_tags: ChannelTag[];
+  channel_metrics: ChannelMetric[];
+  subscription_plans: SubscriptionPlan[];
+}
+
+export interface ChannelTag {
+  id: number;
+  channel_id: number;
+  sport: string;
+  bookmaker: string;
+  method: string;
+  market: string;
+  liquidity: string;
+}
+
+export interface ChannelMetric {
+  id: number;
+  channel_id: number;
+  time_window: string;
+  roi: number;
+  profit_units: number | null;
+  mdd: number | null;
+  win_rate: number | null;
+  avg_odds: number | null;
+  total_bets: number | null;
+  volume_units: number | null;
+  rating: number;
+  updated_at: string;
+}
+
+export interface SubscriptionPlan {
+  id: number;
+  channel_id: number;
+  name: string;
+  price: number;
+  duration_days: number;
+  features: string[] | null;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export async function getChannelsWithDetails() {
+  const supabase = await createClient();
+  
+  const { data, error } = await supabase
+    .from('channels')
+    .select(`
+      *,
+      channel_tags!inner(*),
+      channel_metrics!inner(*),
+      subscription_plans!inner(*)
+    `)
+    .eq('is_active', true)
+    .eq('channel_metrics.time_window', '30d') // Use 30d for main display
+    .order('created_at', { ascending: false });
+    
+  return { data: data as ChannelWithDetails[] | null, error };
+}
+
 export async function getAllChannels() {
   const supabase = await createClient();
   

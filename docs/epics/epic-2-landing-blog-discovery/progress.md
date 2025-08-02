@@ -4,7 +4,7 @@
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
 - **Previsão**: 4 fases, ~10-15 dias
-- **Progresso**: 15/29 features (52%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (2/16) - **Etapa 4.1 em andamento**
+- **Progresso**: 16/29 features (55%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (3/16) - **Etapa 4.1 COMPLETA**
 
 ## 🎯 Visão Geral do EPIC
 Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, tudo com dados mockados até a Fase 4 (integração Supabase).
@@ -32,10 +32,10 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ### 🎯 Fase 4: Integração Supabase (0%)
 
-**Etapa 4.1: Foundation (2/3)** - **EM ANDAMENTO** 🟦
+**Etapa 4.1: Foundation (3/3)** - **COMPLETA** ✅
 - ✅ Feature 2.14: Setup Supabase + Tabelas Core + Página de Status
 - ✅ Feature 2.15: Popular Dados + Queries Básicas + Dashboard de Comparação
-- 🟦 Feature 2.16: Migrar Listagem de Canais + Badge Live Data
+- ✅ Feature 2.16: Migrar Listagem de Canais + Badge Live Data
 
 **Etapa 4.2: Dados Dinâmicos (0/4)**
 - ⬜ Feature 2.17: Resolver Tech Debt da Feature 2.15
@@ -58,7 +58,7 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - ⬜ Feature 2.28: Performance e Índices + Dashboard Métricas
 - ⬜ Feature 2.29: Real-time Updates + Badge LIVE
 
-**Progresso Total EPIC 2: 52%** ██████████░░░░░░░░
+**Progresso Total EPIC 2: 55.2%** ██████████░░░░░░░░
 
 ## 📈 Progresso por Fase
 
@@ -101,7 +101,7 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 **Etapa 4.1 - Foundation (Setup e Dados)**:
 - [x] Feature 2.14: Setup Supabase + Tabelas Core + Página /dev/supabase-status ✅ (02/02/2025)
 - [x] Feature 2.15: Popular Dados + Queries Básicas + Página /dev/data-migration ✅ (02/02/2025)
-- [ ] Feature 2.16: Migrar Listagem de Canais + Badge "Live Data"
+- [✅] Feature 2.16: Migrar Listagem de Canais + Badge "Live Data" [⚠️ Tech Debt]
 
 **Etapa 4.2 - Dados Dinâmicos**:
 - [ ] Feature 2.17: Resolver Tech Debt da Feature 2.15
@@ -503,7 +503,19 @@ function BlogClient({ posts }) {
   - Componentes reutilizáveis de status
   - Testes E2E executados com sucesso
 
-**Status Etapa 4.1**: 2/3 features completas, Feature 2.16 próxima
+**Status Etapa 4.1**: 3/3 features completas ✅
+
+🔹 **Tech Debt da Etapa 4.1**:
+  - channel_tipsters vazia (sem associações)
+  - Campos NULL em channel_metrics (profit_units, mdd, avg_odds)
+  - Página de detalhes ainda usando dados mockados
+  - Inconsistência entre card e detalhes
+
+🔧 **Plano de Resolução do Tech Debt**:
+  1. Criar tipsters reais via sign-up (Playwright MCP)
+  2. Atualizar roles e conectar tabelas (Cursor MCP)
+  3. Popular campos NULL com dados realistas
+  4. Migrar página de detalhes para Supabase
 
 ## 🔗 Links Relacionados
 
