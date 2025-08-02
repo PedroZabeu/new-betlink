@@ -4,7 +4,7 @@
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
 - **Previsão**: 4 fases, ~10-15 dias
-- **Progresso**: 15/28 features (53%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (2/15) - **Etapa 4.1 em andamento**
+- **Progresso**: 15/29 features (52%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (2/16) - **Etapa 4.1 em andamento**
 
 ## 🎯 Visão Geral do EPIC
 Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, tudo com dados mockados até a Fase 4 (integração Supabase).
@@ -34,30 +34,31 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 **Etapa 4.1: Foundation (2/3)** - **EM ANDAMENTO** 🟦
 - ✅ Feature 2.14: Setup Supabase + Tabelas Core + Página de Status
-- ✅ Feature 2.15: Popular Dados + Queries Básicas (123 registros)
+- ✅ Feature 2.15: Popular Dados + Queries Básicas + Dashboard de Comparação
 - 🟦 Feature 2.16: Migrar Listagem de Canais + Badge Live Data
 
-**Etapa 4.2: Dados Dinâmicos (0/3)**
-- ⬜ Feature 2.17: Sistema de Métricas Real
-- ⬜ Feature 2.18: Ocupação e Waitlist Dinâmicos
-- ⬜ Feature 2.19: Histórico de Tips
+**Etapa 4.2: Dados Dinâmicos (0/4)**
+- ⬜ Feature 2.17: Resolver Tech Debt da Feature 2.15
+- ⬜ Feature 2.18: Sistema de Métricas Real
+- ⬜ Feature 2.19: Ocupação e Waitlist Dinâmicos
+- ⬜ Feature 2.20: Histórico de Tips
 
 **Etapa 4.3: Funcionalidades Interativas (0/3)**
-- ⬜ Feature 2.20: Detalhes do Canal (Supabase)
-- ⬜ Feature 2.21: Sistema de Reviews
-- ⬜ Feature 2.22: Gráficos Dinâmicos
+- ⬜ Feature 2.21: Detalhes do Canal (Supabase)
+- ⬜ Feature 2.22: Sistema de Reviews
+- ⬜ Feature 2.23: Gráficos Dinâmicos
 
 **Etapa 4.4: Captura e Analytics (0/3)**
-- ⬜ Feature 2.23: Salvar Leads no Banco
-- ⬜ Feature 2.24: Dashboard de Leads
-- ⬜ Feature 2.25: Analytics de Conversão
+- ⬜ Feature 2.24: Salvar Leads no Banco
+- ⬜ Feature 2.25: Dashboard de Leads
+- ⬜ Feature 2.26: Analytics de Conversão
 
 **Etapa 4.5: Otimização e Polish (0/3)**
-- ⬜ Feature 2.26: RLS e Segurança + Página de Testes
-- ⬜ Feature 2.27: Performance e Índices + Dashboard Métricas
-- ⬜ Feature 2.28: Real-time Updates + Badge LIVE
+- ⬜ Feature 2.27: RLS e Segurança + Página de Testes
+- ⬜ Feature 2.28: Performance e Índices + Dashboard Métricas
+- ⬜ Feature 2.29: Real-time Updates + Badge LIVE
 
-**Progresso Total EPIC 2: 53%** ██████████░░░░░░░░
+**Progresso Total EPIC 2: 52%** ██████████░░░░░░░░
 
 ## 📈 Progresso por Fase
 
@@ -92,35 +93,36 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [x] Feature 2.12: Página de Detalhes do Canal ✅ (01/02/2025)
 - [x] Feature 2.13: Fluxo de Checkout Completo ✅ (01/02/2025)
 
-### Fase 4: Integração com Supabase (2/15)
+### Fase 4: Integração com Supabase (2/16)
 **Status**: 🟦 In Progress
-**Estimativa**: 38-48 horas
-**Estrutura**: 5 etapas com 3 features cada
+**Estimativa**: 40-50 horas
+**Estrutura**: 5 etapas (4+3+3+3+3 features)
 
 **Etapa 4.1 - Foundation (Setup e Dados)**:
 - [x] Feature 2.14: Setup Supabase + Tabelas Core + Página /dev/supabase-status ✅ (02/02/2025)
-- [x] Feature 2.15: Popular Dados + Queries Básicas (123 registros) ✅ (02/02/2025)
+- [x] Feature 2.15: Popular Dados + Queries Básicas + Página /dev/data-migration ✅ (02/02/2025)
 - [ ] Feature 2.16: Migrar Listagem de Canais + Badge "Live Data"
 
 **Etapa 4.2 - Dados Dinâmicos**:
-- [ ] Feature 2.17: Sistema de Métricas Real
-- [ ] Feature 2.18: Ocupação e Waitlist Dinâmicos
-- [ ] Feature 2.19: Histórico de Tips
+- [ ] Feature 2.17: Resolver Tech Debt da Feature 2.15
+- [ ] Feature 2.18: Sistema de Métricas Real
+- [ ] Feature 2.19: Ocupação e Waitlist Dinâmicos
+- [ ] Feature 2.20: Histórico de Tips
 
 **Etapa 4.3 - Funcionalidades Interativas**:
-- [ ] Feature 2.20: Detalhes do Canal (Supabase)
-- [ ] Feature 2.21: Sistema de Reviews
-- [ ] Feature 2.22: Gráficos Dinâmicos
+- [ ] Feature 2.21: Detalhes do Canal (Supabase)
+- [ ] Feature 2.22: Sistema de Reviews
+- [ ] Feature 2.23: Gráficos Dinâmicos
 
 **Etapa 4.4 - Captura e Analytics**:
-- [ ] Feature 2.23: Salvar Leads no Banco
-- [ ] Feature 2.24: Dashboard de Leads
-- [ ] Feature 2.25: Analytics de Conversão
+- [ ] Feature 2.24: Salvar Leads no Banco
+- [ ] Feature 2.25: Dashboard de Leads
+- [ ] Feature 2.26: Analytics de Conversão
 
 **Etapa 4.5 - Otimização e Polish**:
-- [ ] Feature 2.26: RLS e Segurança + Página /dev/security-test
-- [ ] Feature 2.27: Performance e Índices + Dashboard de métricas
-- [ ] Feature 2.28: Real-time Updates + Badge "LIVE" pulsando
+- [ ] Feature 2.27: RLS e Segurança + Página /dev/security-test
+- [ ] Feature 2.28: Performance e Índices + Dashboard de métricas
+- [ ] Feature 2.29: Real-time Updates + Badge "LIVE" pulsando
 
 ## 📋 Features Detalhadas
 
@@ -493,14 +495,13 @@ function BlogClient({ posts }) {
 
 **Feature 2.15 - Popular Dados + Queries Básicas:**
 - **Status**: ✅ COMPLETO (02/02/2025)
-- **Duration**: < 5 minutos (via Cursor MCP)
+- **Duration**: ~6 horas total
 - **Key Deliverables**:
-  - 12 canais inseridos com dados completos
-  - 12 channel_tags com categorização
-  - 72 channel_metrics (6 períodos × 12 canais)
-  - 27 subscription_plans (varia por canal)
-  - Total: 123 registros inseridos com 100% de sucesso
-- **Decisão**: Interface visual removida do escopo (desnecessária)
+  - População de dados: 123 registros (12 canais + tags + metrics + plans)
+  - Página /dev/data-migration com dashboard visual
+  - Comparação mock vs banco mostrando 75% sync
+  - Componentes reutilizáveis de status
+  - Testes E2E executados com sucesso
 
 **Status Etapa 4.1**: 2/3 features completas, Feature 2.16 próxima
 

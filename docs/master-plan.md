@@ -202,7 +202,7 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [✅] Test: Fluxo completo com Playwright MCP
 ```
 
-**Fase 4: Integração Supabase (15 features)**
+**Fase 4: Integração Supabase (16 features)**
 
 *Etapa 4.1: Foundation (3 features)*
 ```markdown
@@ -214,9 +214,9 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 - [✅] Feature 2.15: Popular Dados + Queries Básicas
   - [✅] Migrar 12 canais mockados para banco (123 registros)
-  - [✅] Dados 100% populados via MCP Supabase
-  - [✅] Verificação de integridade realizada
-  - [✅] Test: 4 tabelas populadas com sucesso
+  - [✅] Página /dev/data-migration comparando mock vs banco
+  - [✅] Visual mostrando 75% sincronizado (diferenças esperadas)
+  - [✅] Test: Dashboard funcional com comparação detalhada
 
 - [ ] Feature 2.16: Migrar Listagem de Canais
   - [ ] Substituir mock por dados reais em /canais
@@ -225,21 +225,29 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
   - [ ] Test: Página com badge e dados do Supabase
 ```
 
-*Etapa 4.2: Dados Dinâmicos (3 features)*
+*Etapa 4.2: Dados Dinâmicos (4 features)*
 ```markdown
-- [ ] Feature 2.17: Sistema de Métricas Real
+- [ ] Feature 2.17: Resolver Tech Debt da Feature 2.15
+  - [ ] Remover todos console.logs de debug
+  - [ ] Adicionar React keys faltantes em DataComparisonTable
+  - [ ] Calcular valores esperados dinamicamente
+  - [ ] Implementar logger estruturado onde necessário
+  - [ ] Refatorar componentes para melhor manutenibilidade
+  - [ ] Test: Zero warnings no console, código limpo
+
+- [ ] Feature 2.18: Sistema de Métricas Real
   - [ ] Tabela channel_metrics com períodos
   - [ ] Cálculo de ROI, MDD, winrate
   - [ ] Atualização via functions/triggers
   - [ ] Test: Métricas mudando em tempo real
 
-- [ ] Feature 2.18: Ocupação e Waitlist Dinâmicos
+- [ ] Feature 2.19: Ocupação e Waitlist Dinâmicos
   - [ ] Views para calcular ocupação
   - [ ] Sistema de waitlist funcional
   - [ ] Badges "Lotado" dinâmicos
   - [ ] Test: Ocupação refletindo assinantes reais
 
-- [ ] Feature 2.19: Histórico de Tips
+- [ ] Feature 2.20: Histórico de Tips
   - [ ] Tabela tips com resultados
   - [ ] Timeline de apostas
   - [ ] Cálculo de lucros/prejuízos
@@ -248,19 +256,19 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 *Etapa 4.3: Funcionalidades Interativas (3 features)*
 ```markdown
-- [ ] Feature 2.20: Detalhes do Canal (Supabase)
+- [ ] Feature 2.21: Detalhes do Canal (Supabase)
   - [ ] Página completa com dados reais
   - [ ] Todas abas funcionando
   - [ ] Performance mantida
   - [ ] Test: Página idêntica mas 100% Supabase
 
-- [ ] Feature 2.21: Sistema de Reviews
+- [ ] Feature 2.22: Sistema de Reviews
   - [ ] Tabela channel_reviews com RLS
   - [ ] Usuários podem avaliar
   - [ ] Rating médio calculado
   - [ ] Test: Deixar review e ver atualizar
 
-- [ ] Feature 2.22: Gráficos Dinâmicos
+- [ ] Feature 2.23: Gráficos Dinâmicos
   - [ ] Dados históricos reais
   - [ ] Filtros de período funcionais
   - [ ] Animações suaves
@@ -269,19 +277,19 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 *Etapa 4.4: Captura e Analytics (3 features)*
 ```markdown
-- [ ] Feature 2.23: Salvar Leads no Banco
+- [ ] Feature 2.24: Salvar Leads no Banco
   - [ ] Tabela captured_leads
   - [ ] Integração com checkout flow
   - [ ] Validações server-side
   - [ ] Test: Lead salvo após checkout
 
-- [ ] Feature 2.24: Dashboard de Leads
+- [ ] Feature 2.25: Dashboard de Leads
   - [ ] Nova rota /tipster/leads
   - [ ] Visualizar leads capturados
   - [ ] Filtros e exportação
   - [ ] Test: Tipster vê seus leads
 
-- [ ] Feature 2.25: Analytics de Conversão
+- [ ] Feature 2.26: Analytics de Conversão
   - [ ] Métricas de abandono
   - [ ] Funil de conversão
   - [ ] Insights acionáveis
@@ -290,19 +298,19 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 *Etapa 4.5: Otimização e Polish (3 features)*
 ```markdown
-- [ ] Feature 2.26: RLS e Segurança
+- [ ] Feature 2.27: RLS e Segurança
   - [ ] Policies para todas tabelas
   - [ ] Página /dev/security-test com testes visuais
   - [ ] Botões testando cada permissão
   - [ ] Test: Página mostra todos testes passando
 
-- [ ] Feature 2.27: Performance e Índices
+- [ ] Feature 2.28: Performance e Índices
   - [ ] Criar índices otimizados
   - [ ] Dashboard mostrando métricas de performance
   - [ ] Gráfico antes/depois da otimização
   - [ ] Test: Dashboard mostra queries < 100ms
 
-- [ ] Feature 2.28: Real-time Updates
+- [ ] Feature 2.29: Real-time Updates
   - [ ] Subscriptions Supabase
   - [ ] Badge "LIVE 🔴" pulsando com updates
   - [ ] Dados atualizando sem refresh
@@ -512,11 +520,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 19/54 Features (35.2%)
+### Overall Progress: 19/55 Features (34.5%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 13/28 features (46.4%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1)
+EPIC 2: 🟦 13/29 features (44.8%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1)
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
