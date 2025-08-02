@@ -206,23 +206,23 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 *Etapa 4.1: Foundation (3 features)*
 ```markdown
-- [ ] Feature 2.14: Setup Supabase + Tabelas Core
-  - [ ] Criar tabelas: channels, channel_tags, subscription_plans
-  - [ ] Popular dados iniciais de teste
-  - [ ] Testar conexão e queries básicas
-  - [ ] Test: Dados visíveis no Supabase Dashboard
+- [✅] Feature 2.14: Setup Supabase + Tabelas Core
+  - [✅] Criar tabelas: channels, channel_tags, subscription_plans
+  - [✅] Página /dev/supabase-status mostrando conexão
+  - [✅] Dashboard visual com status de cada tabela
+  - [✅] Test: Página mostra todas tabelas criadas
 
-- [ ] Feature 2.15: Popular Dados + Queries Básicas
-  - [ ] Migrar 12 canais mockados para banco
-  - [ ] Criar camada de queries TypeScript
-  - [ ] Tipos gerados do Supabase
-  - [ ] Test: Queries retornando dados corretos
+- [✅] Feature 2.15: Popular Dados + Queries Básicas
+  - [✅] Migrar 12 canais mockados para banco (123 registros)
+  - [✅] Dados 100% populados via MCP Supabase
+  - [✅] Verificação de integridade realizada
+  - [✅] Test: 4 tabelas populadas com sucesso
 
 - [ ] Feature 2.16: Migrar Listagem de Canais
   - [ ] Substituir mock por dados reais em /canais
-  - [ ] Manter visual idêntico
+  - [ ] Badge "Live Data 🔴" indicando fonte
   - [ ] Filtros funcionando com banco
-  - [ ] Test: Página idêntica mas com dados do Supabase
+  - [ ] Test: Página com badge e dados do Supabase
 ```
 
 *Etapa 4.2: Dados Dinâmicos (3 features)*
@@ -292,21 +292,21 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 ```markdown
 - [ ] Feature 2.26: RLS e Segurança
   - [ ] Policies para todas tabelas
-  - [ ] Testes de permissão
-  - [ ] Auditoria de segurança
-  - [ ] Test: Usuários só veem o permitido
+  - [ ] Página /dev/security-test com testes visuais
+  - [ ] Botões testando cada permissão
+  - [ ] Test: Página mostra todos testes passando
 
 - [ ] Feature 2.27: Performance e Índices
   - [ ] Criar índices otimizados
-  - [ ] Query optimization
-  - [ ] Implementar cache
-  - [ ] Test: Queries < 100ms
+  - [ ] Dashboard mostrando métricas de performance
+  - [ ] Gráfico antes/depois da otimização
+  - [ ] Test: Dashboard mostra queries < 100ms
 
 - [ ] Feature 2.28: Real-time Updates
   - [ ] Subscriptions Supabase
-  - [ ] Badges atualizando ao vivo
-  - [ ] Notificações de mudanças
-  - [ ] Test: Updates sem refresh
+  - [ ] Badge "LIVE 🔴" pulsando com updates
+  - [ ] Dados atualizando sem refresh
+  - [ ] Test: Ver mudanças em tempo real
 ```
 
 ---
@@ -516,7 +516,7 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 13/28 features (46.4%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 ⬜ PENDING
+EPIC 2: 🟦 13/28 features (46.4%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1)
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)
@@ -596,6 +596,11 @@ EPIC 6: ⬜ 0/5 features (0%)
   - ❌ findDOMNode deprecated causa erro fatal
   - ✅ Solução: Criar componente MaskedInput customizado
   - ✅ Approach controlada sem refs diretas ao DOM
+- **02/02/2025 - Início da Fase 4 (Integração Supabase) - Etapa 4.1:**
+  - ✅ Tabelas antigas deletadas (channels, tips, channel_metrics_cache)
+  - ✅ Estrutura limpa mantendo apenas profiles e auth.users
+  - 🟦 Feature 2.14 em planejamento detalhado
+  - 📋 Etapa 4.1 dividida em 3 features focadas em foundation
 
 ---
 

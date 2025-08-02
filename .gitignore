@@ -20,6 +20,9 @@
 # production
 /build
 
+# MCP configuration (contains tokens)
+.mcp.json
+
 # misc
 .DS_Store
 *.pem

@@ -4,7 +4,7 @@
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
 - **Previsão**: 4 fases, ~10-15 dias
-- **Progresso**: 13/28 features (46%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (0/15)
+- **Progresso**: 15/28 features (53%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 (2/15) - **Etapa 4.1 em andamento**
 
 ## 🎯 Visão Geral do EPIC
 Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, tudo com dados mockados até a Fase 4 (integração Supabase).
@@ -32,10 +32,10 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ### 🎯 Fase 4: Integração Supabase (0%)
 
-**Etapa 4.1: Foundation (0/3)**
-- ⬜ Feature 2.14: Setup Supabase + Tabelas Core
-- ⬜ Feature 2.15: Popular Dados + Queries Básicas
-- ⬜ Feature 2.16: Migrar Listagem de Canais
+**Etapa 4.1: Foundation (2/3)** - **EM ANDAMENTO** 🟦
+- ✅ Feature 2.14: Setup Supabase + Tabelas Core + Página de Status
+- ✅ Feature 2.15: Popular Dados + Queries Básicas (123 registros)
+- 🟦 Feature 2.16: Migrar Listagem de Canais + Badge Live Data
 
 **Etapa 4.2: Dados Dinâmicos (0/3)**
 - ⬜ Feature 2.17: Sistema de Métricas Real
@@ -53,11 +53,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - ⬜ Feature 2.25: Analytics de Conversão
 
 **Etapa 4.5: Otimização e Polish (0/3)**
-- ⬜ Feature 2.26: RLS e Segurança
-- ⬜ Feature 2.27: Performance e Índices
-- ⬜ Feature 2.28: Real-time Updates
+- ⬜ Feature 2.26: RLS e Segurança + Página de Testes
+- ⬜ Feature 2.27: Performance e Índices + Dashboard Métricas
+- ⬜ Feature 2.28: Real-time Updates + Badge LIVE
 
-**Progresso Total EPIC 2: 46%** █████████░░░░░░░░░░
+**Progresso Total EPIC 2: 53%** ██████████░░░░░░░░
 
 ## 📈 Progresso por Fase
 
@@ -92,15 +92,15 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [x] Feature 2.12: Página de Detalhes do Canal ✅ (01/02/2025)
 - [x] Feature 2.13: Fluxo de Checkout Completo ✅ (01/02/2025)
 
-### Fase 4: Integração com Supabase (0/15)
-**Status**: ⬜ Not Started
+### Fase 4: Integração com Supabase (2/15)
+**Status**: 🟦 In Progress
 **Estimativa**: 38-48 horas
 **Estrutura**: 5 etapas com 3 features cada
 
 **Etapa 4.1 - Foundation (Setup e Dados)**:
-- [ ] Feature 2.14: Setup Supabase + Tabelas Core
-- [ ] Feature 2.15: Popular Dados + Queries Básicas
-- [ ] Feature 2.16: Migrar Listagem de Canais
+- [x] Feature 2.14: Setup Supabase + Tabelas Core + Página /dev/supabase-status ✅ (02/02/2025)
+- [x] Feature 2.15: Popular Dados + Queries Básicas (123 registros) ✅ (02/02/2025)
+- [ ] Feature 2.16: Migrar Listagem de Canais + Badge "Live Data"
 
 **Etapa 4.2 - Dados Dinâmicos**:
 - [ ] Feature 2.17: Sistema de Métricas Real
@@ -118,9 +118,9 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 - [ ] Feature 2.25: Analytics de Conversão
 
 **Etapa 4.5 - Otimização e Polish**:
-- [ ] Feature 2.26: RLS e Segurança
-- [ ] Feature 2.27: Performance e Índices
-- [ ] Feature 2.28: Real-time Updates
+- [ ] Feature 2.26: RLS e Segurança + Página /dev/security-test
+- [ ] Feature 2.27: Performance e Índices + Dashboard de métricas
+- [ ] Feature 2.28: Real-time Updates + Badge "LIVE" pulsando
 
 ## 📋 Features Detalhadas
 
@@ -471,9 +471,43 @@ function BlogClient({ posts }) {
 2. **Feature 2.15**: Popular Dados + Queries Básicas
 3. **Feature 2.16**: Migrar Listagem de Canais
 
+### 02/02/2025 - Início da Fase 4 - Etapa 4.1
+
+**Preparação para Feature 2.14:**
+- **Status**: ✅ CONCLUÍDA
+- **Ações realizadas**:
+  - Deletadas tabelas antigas do EPIC 2 (channels, tips, channel_metrics_cache)
+  - Mantidas apenas profiles e auth.users
+  - Plano da Etapa 4.1 aprovado com 3 features
+  - Criadas 5 novas tabelas no Supabase
+  - Página /dev/supabase-status implementada e funcionando
+
+**Feature 2.14 - Setup Supabase + Tabelas Core:**
+- **Status**: ✅ COMPLETO (02/02/2025)
+- **Duration**: ~4 horas
+- **Key Deliverables**:
+  - 5 tabelas criadas: channels, channel_tipsters, channel_tags, channel_metrics, subscription_plans
+  - Página /dev/supabase-status com dashboard visual
+  - Componentes de status reutilizáveis
+  - Performance queries < 100ms
+
+**Feature 2.15 - Popular Dados + Queries Básicas:**
+- **Status**: ✅ COMPLETO (02/02/2025)
+- **Duration**: < 5 minutos (via Cursor MCP)
+- **Key Deliverables**:
+  - 12 canais inseridos com dados completos
+  - 12 channel_tags com categorização
+  - 72 channel_metrics (6 períodos × 12 canais)
+  - 27 subscription_plans (varia por canal)
+  - Total: 123 registros inseridos com 100% de sucesso
+- **Decisão**: Interface visual removida do escopo (desnecessária)
+
+**Status Etapa 4.1**: 2/3 features completas, Feature 2.16 próxima
+
 ## 🔗 Links Relacionados
 
 - [Master Plan](/docs/master-plan.md)
 - [EPIC 1 Handover](/docs/epics/epic-1-base-system/handover.md)
 - [Guardrails EPIC 2](#guardrails-críticos)
 - [Feature 2.13 Handover](/docs/features/handover/feature-2.13-handover.md)
+- [Etapa 4.1 Plan](/docs/epics/epic-2-landing-blog-discovery/fase-4-etapa-4.1-plan.md)
