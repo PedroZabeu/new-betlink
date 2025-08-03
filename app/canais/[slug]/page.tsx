@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getChannelBySlug, getAllChannelSlugs } from '@/lib/supabase/queries/channel-details';
+import { getChannelBySlug } from '@/lib/supabase/queries/channel-details';
 import { Separator } from '@/components/ui/separator';
 import ChannelHeader from '@/components/channels/detail/channel-header';
 import SubscriptionPlansCard from '@/components/channels/detail/subscription-plans-card';
@@ -12,15 +12,9 @@ import ReviewsCard from '@/components/channels/detail/reviews-card';
 import FaqCard from '@/components/channels/detail/faq-card';
 import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { InfoIcon } from 'lucide-react';
 
-export async function generateStaticParams() {
-  const slugs = await getAllChannelSlugs();
-  return slugs.map((slug) => ({
-    slug,
-  }));
-}
+// Force dynamic rendering since we need cookies for auth
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const { data: channel } = await getChannelBySlug(params.slug);
@@ -31,7 +25,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
   
-  const tipsterName = channel.channel_tipsters?.[0]?.user?.name || 'Tipster';
+  const tipsterName = channel.channel_tipsters?.[0]?.profiles?.name || 'Tipster';
   
   return {
     title: `${channel.name} - ${tipsterName} | BetLink`,
@@ -52,18 +46,19 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
   }
   
   // Transform Supabase data to component format
-  const tipsterName = channelData.channel_tipsters?.[0]?.user?.name || 'Tipster Pro';
+  const tipsterName = channelData.channel_tipsters?.[0]?.profiles?.name || 'Tipster Pro';
   
   // Build metrics object with all time windows
   const metricsMap: Record<string, any> = {};
   
-  // Map time windows to display format
+  // No mapping needed anymore - use values directly from DB
   const timeWindowMap: Record<string, string> = {
     '7d': '7d',
     '30d': '30d',
-    '3m': '90d',
-    '6m': '180d',
-    '12m': '365d',
+    '3m': '3m',
+    '6m': '6m',
+    'ytd': 'ytd',
+    '12m': '12m',
     'all': 'all'
   };
   
@@ -81,27 +76,49 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
     };
   });
   
-  // Add YTD metrics (same as 365d for now)
-  if (metricsMap['365d']) {
-    metricsMap['YTD'] = { ...metricsMap['365d'] };
+  
+  // Ensure we have at least 30d metrics (fallback with default values)
+  if (!metricsMap['30d']) {
+    metricsMap['30d'] = {
+      roi: 0,
+      profitUnits: 0,
+      mdd: 0,
+      avgOdds: 0,
+      volumeUnits: 0,
+      winRate: 0,
+      totalBets: 0,
+      rating: 0
+    };
   }
   
-  // Add MTD metrics (same as 30d for now)
-  if (metricsMap['30d']) {
-    metricsMap['MTD'] = { ...metricsMap['30d'] };
-  }
+  // Build detailedMetrics structure expected by MetricsCard
+  const detailedMetrics: Record<string, any> = {};
+  
+  Object.entries(metricsMap).forEach(([period, data]) => {
+    detailedMetrics[period] = {
+      roi: data.roi,
+      profit: data.profitUnits,
+      winRate: data.winRate,
+      totalBets: data.totalBets,
+      avgOdds: data.avgOdds,
+      maxDrawdown: Math.abs(data.mdd), // MDD is stored as negative
+      volumeUnits: data.volumeUnits, // Add volumeUnits for metrics card
+      chartData: [] // Empty for now, will be populated when we implement chart data
+    };
+  });
   
   const channel = {
     id: channelData.id,
     name: channelData.name,
     slug: channelData.slug,
     tipster: tipsterName,
-    avatar: channelData.name.substring(0, 2).toUpperCase(),
+    avatar: (tipsterName || channelData.name).substring(0, 2).toUpperCase(),
     isPremium: channelData.is_premium,
     description: channelData.description || '',
     subscribers: channelData.current_subscribers,
     maxSubscribers: channelData.max_subscribers,
     metrics: metricsMap,
+    detailedMetrics,
     tags: {
       sport: channelData.channel_tags[0]?.sport || 'Futebol',
       bookmaker: channelData.channel_tags[0]?.bookmaker || 'Bet365',
@@ -166,13 +183,6 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
       {/* Main Content */}
       <div className="container mx-auto px-4 pb-16">
         <div className="grid gap-8">
-          {/* Alert sobre dados do Supabase */}
-          <Alert>
-            <InfoIcon className="h-4 w-4" />
-            <AlertDescription>
-              Esta página agora está usando dados reais do Supabase. Algumas seções como Tips Recentes e Avaliações ainda estão em desenvolvimento.
-            </AlertDescription>
-          </Alert>
           {/* Subscription Plans */}
           <SubscriptionPlansCard plans={channel.subscriptionPlans} channelName={channel.name} channelSlug={params.slug} />
           
@@ -188,7 +198,7 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
           {/* Info Cards */}
           <div className="grid lg:grid-cols-3 gap-8">
             <AboutCard about={channel.about} tipster={channel.tipster} />
-            <ReviewsCard reviews={channel.reviews} rating={channel.metrics['30d'].rating} />
+            <ReviewsCard reviews={channel.reviews} rating={channel.metrics['30d']?.rating || 0} />
             <FaqCard faqs={channel.faqs} />
           </div>
         </div>

@@ -66,7 +66,7 @@
 - [x] Criar `docs/features/handover/feature-2.16-handover.md`
 - [x] Criar `docs/features/testing/feature-2.16-test-results.md`
 - [x] Atualizar `docs/master-plan.md` (marcar como completa)
-- [x] Git commit com mensagem descritiva
+- [x] Git commit com mensagem descritiva ✅
 
 ## 🧪 Plano de Testes E2E (Playwright)
 
@@ -100,14 +100,14 @@ npx playwright test feature-2.16
 npx playwright test feature-2.16 -g "should display Live Data badge"
 ```
 
-### Validação Manual (Checklist)
-- [ ] Badge "Live Data" vermelho pulsando
-- [ ] 12 canais carregados corretamente
-- [ ] Filtros funcionando (esporte, preço, etc)
-- [ ] Ordenação mantida
-- [ ] Performance < 2s
-- [ ] Sem erros no console
-- [ ] Layout responsivo
+### Validação Manual (Checklist) - COMPLETO
+- [x] Badge "Live Data" vermelho pulsando ✅
+- [x] 12 canais carregados corretamente ✅
+- [x] Filtros funcionando (esporte, preço, etc) ✅
+- [x] Ordenação mantida ✅
+- [x] Performance < 2s ✅
+- [x] Sem erros no console ✅
+- [x] Layout responsivo ✅
 
 ## 📊 Métricas Esperadas
 

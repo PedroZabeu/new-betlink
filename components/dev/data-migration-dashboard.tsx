@@ -8,6 +8,7 @@ import { DataComparisonTable } from '@/components/dev/data-comparison-table';
 import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { AlertCircle, CheckCircle2 } from 'lucide-react';
+import { logger } from '@/lib/utils/logger';
 import { mockChannels } from '@/lib/data/mock-channels';
 import { 
   getAllChannels, 
@@ -94,7 +95,10 @@ export function DataMigrationDashboard() {
         setOverallSync(calculateOverallSync(channelComparisons));
       }
     } catch (err) {
-      console.error('Error loading migration data:', err);
+      logger.error('Error loading migration data', err as Error, {
+        component: 'DataMigrationDashboard',
+        action: 'loadData'
+      });
       setError(err instanceof Error ? err.message : 'Failed to load migration data');
     } finally {
       setLoading(false);

@@ -85,6 +85,68 @@ After login, try accessing other dashboards:
 
 ---
 
-**Last Updated**: January 25, 2025  
-**Feature**: 1.2 - Database Schema + Auth Pages  
+## Tipsters Created for Feature 2.17
+
+### João Silva
+- **Email**: joao.silva@betlink.com
+- **Password**: Test@123!
+- **Role**: tipster (needs update from cliente)
+- **Access**: Tipster dashboard, channel management
+- **Dashboard**: `/tipster/dashboard`
+- **Status**: ✅ Created, needs role update
+- **Assigned Channels**:
+  - arbitragem-tennis-pro
+  - modelo-ml-basquete
+  - analise-cantos-asiaticos
+
+### Maria Santos
+- **Email**: maria.santos@betlink.com
+- **Password**: Test@123!
+- **Role**: tipster (needs update from cliente)
+- **Access**: Tipster dashboard, channel management
+- **Dashboard**: `/tipster/dashboard`
+- **Status**: ✅ Created, needs role update
+- **Assigned Channels**:
+  - value-betting-europeu
+  - cash-out-automatizado
+  - trading-pre-jogo
+
+### Pedro Costa
+- **Email**: pedro.costa@betlink.com
+- **Password**: Test@123!
+- **Role**: tipster (needs update from cliente)
+- **Access**: Tipster dashboard, channel management
+- **Dashboard**: `/tipster/dashboard`
+- **Status**: ✅ Created, needs role update
+- **Assigned Channels**:
+  - apostas-ao-vivo-premium
+  - dutching-inteligente
+  - lay-favoritos-sistema
+
+### Ana Oliveira
+- **Email**: ana.oliveira@betlink.com
+- **Password**: Test@123!
+- **Role**: tipster (needs update from cliente)
+- **Access**: Tipster dashboard, channel management
+- **Dashboard**: `/tipster/dashboard`
+- **Status**: ✅ Created, needs role update
+- **Assigned Channels**:
+  - sistema-gols-asiaticos
+  - estrategia-zebras
+  - combo-multiplas-seguras
+
+### SQL to Update Roles (Phase 2):
+```sql
+UPDATE profiles 
+SET role = 'tipster'
+WHERE email IN (
+  'joao.silva@betlink.com',
+  'maria.santos@betlink.com',
+  'pedro.costa@betlink.com',
+  'ana.oliveira@betlink.com'
+);
+```
+
+**Last Updated**: August 2, 2025  
+**Feature**: 2.17 - Resolve Tech Debt (Tipsters)  
 **Status**: ✅ Complete with working test users 

@@ -14,8 +14,10 @@ interface MetricsCardProps {
 const periodOptions: { value: TimeWindow; label: string }[] = [
   { value: '7d', label: '7 dias' },
   { value: '30d', label: '30 dias' },
-  { value: '180d', label: '6 meses' },
-  { value: 'YTD', label: 'Ano atual' },
+  { value: '3m', label: '3 meses' },
+  { value: '6m', label: '6 meses' },
+  { value: 'ytd', label: 'Ano atual' },
+  { value: '12m', label: '12 meses' },
   { value: 'all', label: 'Todo período' }
 ];
 
@@ -46,8 +48,8 @@ export default function MetricsCard({ channel }: MetricsCardProps) {
       bgColor: 'bg-blue-100'
     },
     {
-      label: 'Total de Apostas',
-      value: metrics.totalBets.toString(),
+      label: 'Unidades Apostadas',
+      value: `${metrics.volumeUnits}u`,
       icon: Activity,
       color: 'text-purple-600',
       bgColor: 'bg-purple-100'

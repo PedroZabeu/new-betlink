@@ -1,6 +1,6 @@
 // Channel types for the discovery page
 
-export type TimeWindow = '7d' | 'MTD' | '30d' | '180d' | 'YTD' | 'all';
+export type TimeWindow = '7d' | '30d' | '3m' | '6m' | 'ytd' | '12m' | 'all';
 export type Liquidity = 'alta' | 'média' | 'baixa';
 export type SortOption = 'popular' | 'roi' | 'price-low' | 'price-high';
 export type Availability = 'available' | 'waitlist' | 'all';
@@ -106,10 +106,11 @@ export const MARKET_OPTIONS = [
 
 export const TIME_WINDOW_LABELS: Record<TimeWindow, string> = {
   '7d': '7 dias',
-  'MTD': 'Mês atual',
   '30d': '30 dias',
-  '180d': '6 meses',
-  'YTD': 'Ano atual',
+  '3m': '3 meses',
+  '6m': '6 meses',
+  'ytd': 'Ano atual',
+  '12m': '12 meses',
   'all': 'Todo período'
 };
 

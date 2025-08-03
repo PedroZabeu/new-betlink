@@ -71,7 +71,7 @@ export function ChannelCard({ channel, timeWindow }: ChannelCardProps) {
             <p className="font-bold text-sm sm:text-base">{metrics.avgOdds}</p>
           </div>
           <div className="text-center p-2.5 sm:p-3 bg-muted/50 rounded-lg">
-            <p className="text-xs text-muted-foreground">Volume</p>
+            <p className="text-xs text-muted-foreground">Unidades Apostadas</p>
             <p className="font-bold text-sm sm:text-base">{metrics.volumeUnits}u</p>
           </div>
           <div className="text-center p-2.5 sm:p-3 bg-muted/50 rounded-lg">

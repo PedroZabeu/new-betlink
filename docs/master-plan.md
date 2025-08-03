@@ -16,8 +16,10 @@
 ```markdown
 <!-- AI updates this section as it creates/removes mocks -->
 - [✅] Test users for each role (master, admin, tipster, cliente) - Created in Feature 1.2
-- [✅] Mock data for channels (6 fake channels) - Created in Feature 1.6
-- [✅] Mock blog posts (8 posts) - Created in Feature 1.6
+- [❌] ~~Mock data for channels~~ - Replaced with real Supabase data in Feature 2.16
+- [✅] Mock blog posts (12 posts total) - 8 from Feature 1.6 + 4 from Feature 2.6
+- [🧑] Mock channel metrics - Currently hardcoded, will be replaced in Feature 2.18-2.20
+- [📈] Mock chart data - Empty placeholder, will be implemented in Feature 2.19
 - [ ] Mock Telegram bot responses (needed for EPIC 6)
 - [ ] Mock Stripe webhooks (needed for EPIC 5)
 ```
@@ -91,230 +93,57 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 
 ## 🎯 EPIC 2: Landing, Blog & Discovery
 
-### Status: 🟦 In Progress
+### Status: 🟦 In Progress (77.3% - 17/22 features)
 ### Dependencies: EPIC 1
 ### Start Date: 2025-01-29
 ### End Date: -
 ### Progress File: `docs/epics/epic-2-landing-blog-discovery/progress.md`
 
 #### Objetivo
-Criar landing page completa, sistema de blog aprimorado e discovery de canais com interface moderna, dividido em 4 fases progressivas.
+Transformar o BetLink em uma plataforma completa de descoberta de tipsters, com landing page profissional, blog educacional, discovery de canais e sistema de métricas reais.
 
-#### Features por Fase:
+#### Features Checklist:
 
-**Fase 1: Landing Page Features (5 features)**
+**Fase 1: Landing Page Features (5/5)** ✅
 ```markdown
 - [✅] Feature 2.1: Ajustes na Navegação
-  - [✅] Underline para aba ativa
-  - [✅] Hover states suaves
-  - [✅] Transições fluidas
-  - [✅] Test: Estados visuais corretos
-
 - [✅] Feature 2.2: Seção de Vantagens
-  - [✅] Remover números genéricos
-  - [✅] 4 cards de vantagens
-  - [✅] Grid responsivo
-  - [✅] Test: Cards visíveis e alinhados
-
 - [✅] Feature 2.3: Melhoria "Como Funciona"
-  - [✅] Novos textos dos 3 passos
-  - [✅] Manter layout atual
-  - [✅] Test: Textos atualizados
-
 - [✅] Feature 2.4: Seção CTA Blog
-  - [✅] Call-to-action para blog
-  - [✅] Design harmonioso
-  - [✅] Test: Link funcionando
-
 - [✅] Feature 2.5: Polimento Final
-  - [✅] Performance optimization
-  - [✅] Lighthouse > 90
-  - [✅] Test: Métricas validadas
 ```
 
-**Fase 2: Blog Features (5 features)**
+**Fase 2: Blog Features (5/5)** ✅
 ```markdown
-- [✅] Feature 2.6: Criar 4 Novos Posts sobre Apostas
-  - [✅] Setup estrutura /_posts e configuração
-  - [✅] Post 1: Métricas Essenciais nas Apostas Esportivas
-  - [✅] Post 2: Entendendo o EV+ (Expected Value Positivo)
-  - [✅] Post 3: Estratégias para Manter Contas Ativas
-  - [✅] Post 4: Montando sua Carteira de Tipsters
-  - [✅] Test: Posts renderizando em Markdown
-
-- [✅] Feature 2.7: Sistema de Tags e Categorias - COMPLETO
-  - [✅] Approach: Server Component + Client Interactivity (baseado em Next.js Blog Starter)
-  - [✅] Estrutura Híbrida:
-    * Server Component (/app/blog/page.tsx) - data loading com fs access
-    * Client Component (/components/blog/blog-client.tsx) - filtros interativos
-    * API utilitários (/lib/blog/api.ts) - baseado no Next.js starter pattern
-  - [✅] Fase 1: Server Component com data loading (30min)
-  - [✅] Fase 2: Client Component com filtros (45min)  
-  - [✅] Fase 3: Integração e polish (15min)
-  - [✅] Test: Filtros funcionando sem erros de fs/client
-
-- [✅] Feature 2.8: Páginas Individuais de Posts - COMPLETO
-  - [✅] Server Component /app/blog/[slug]/page.tsx
-  - [✅] generateStaticParams para todas as páginas
-  - [✅] Links clicáveis nos cards do blog
-  - [✅] Breadcrumbs: Home > Blog > [Categoria] > [Post]
-  - [✅] Posts relacionados (mesma categoria)
-  - [✅] Reading Progress + Share Buttons + Post Navigation
-  - [✅] Test: Static generation + navegação funcionando
-
-- [✅] Feature 2.9: Sistema de Busca no Blog - COMPLETO
-  - [✅] Componente SearchBar reutilizando Input
-  - [✅] Busca client-side nos dados carregados com scoring inteligente
-  - [✅] Debounce 300ms para performance otimizada
-  - [✅] Highlight dos termos encontrados em títulos e excerpts
-  - [✅] Integração perfeita com filtros existentes
-  - [✅] Test: Busca retorna < 200ms com feedback visual
-
-- [✅] Feature 2.10: Melhorias de Performance e UX - COMPLETO
-  - [✅] Static Generation para todas as páginas (SSG)
-  - [✅] generateStaticParams para posts + generateMetadata dinâmico
-  - [✅] Skeleton loading para componentes client + ScrollToTop button
-  - [✅] Lazy loading de imagens com blur placeholder + Cache system
-  - [✅] Test: Lighthouse estimado 95+, TTI < 1s, validado via Playwright
+- [✅] Feature 2.6: Criar 4 Novos Posts
+- [✅] Feature 2.7: Sistema de Tags e Categorias
+- [✅] Feature 2.8: Páginas Individuais de Posts
+- [✅] Feature 2.9: Sistema de Busca no Blog
+- [✅] Feature 2.10: Melhorias de Performance e UX
 ```
 
-**Fase 3: Discovery de Canais (3 features)**
+**Fase 3: Discovery de Canais (3/3)** ✅
 ```markdown
-- [✅] Feature 2.11: Refinamento dos Cards
-  - [✅] Cards com métricas: ROI, Lucro, MDD, Odds Média, Volume, Avaliação
-  - [✅] Tags: esporte, bookmaker, método, mercado, liquidez
-  - [✅] Sistema de filtros colapsáveis
-  - [✅] Ordenação: popularidade, ROI, preço
-  - [✅] 12 canais mockados
-  - [✅] Test: Cards responsivos e filtros funcionando
-
-- [✅] Feature 2.12: Página de Detalhes
-  - [✅] Página completa do canal com cards organizados
-  - [✅] Gráfico interativo com filtro de período (7d, 30d, 6m, YTD, Total)
-  - [✅] Tabela de resultados com shadcn/ui Table
-  - [✅] Cards: Métricas, Sobre, Avaliações, FAQ
-  - [✅] Planos de assinatura flexíveis por tipster
-  - [✅] Test: Gráfico atualiza com filtros, todos dados visíveis
-
+- [✅] Feature 2.11: Refinamento dos Cards de Canal
+- [✅] Feature 2.12: Página de Detalhes do Canal
 - [✅] Feature 2.13: Fluxo de Checkout Completo
-  - [✅] Multi-step até pagamento (6 etapas)
-  - [✅] Máscaras customizadas (React 18+ compatível)
-  - [✅] Test: Fluxo completo com Playwright MCP
 ```
 
-**Fase 4: Integração Supabase (16 features)**
-
-*Etapa 4.1: Foundation (3 features)*
+**Fase 4: Integração Supabase (4/4)** ✅
 ```markdown
-- [✅] Feature 2.14: Setup Supabase + Tabelas Core
-  - [✅] Criar tabelas: channels, channel_tags, subscription_plans
-  - [✅] Página /dev/supabase-status mostrando conexão
-  - [✅] Dashboard visual com status de cada tabela
-  - [✅] Test: Página mostra todas tabelas criadas
-
-- [✅] Feature 2.15: Popular Dados + Queries Básicas
-  - [✅] Migrar 12 canais mockados para banco (123 registros)
-  - [✅] Página /dev/data-migration comparando mock vs banco
-  - [✅] Visual mostrando 75% sincronizado (diferenças esperadas)
-  - [✅] Test: Dashboard funcional com comparação detalhada
-
-- [✅] Feature 2.16: Migrar Listagem de Canais
-  - [✅] Substituir mock por dados reais em /canais
-  - [✅] Badge "Live Data 🔴" indicando fonte
-  - [✅] Filtros funcionando com banco
-  - [✅] Test: Página com badge e dados do Supabase
+- [✅] Feature 2.14: Setup Supabase + Tabelas Core + Página de Status
+- [✅] Feature 2.15: Popular Dados + Queries Básicas + Dashboard de Comparação
+- [✅] Feature 2.16: Migrar Listagem de Canais + Badge Live Data
+- [✅] Feature 2.17: Resolver Tech Debt da Feature 2.16
 ```
 
-*Etapa 4.2: Dados Dinâmicos (4 features)*
+**Fase 5: Sistema de Métricas Reais (0/5)** ⬜
 ```markdown
-- [ ] Feature 2.17: Resolver Tech Debt da Feature 2.15
-  - [ ] Remover todos console.logs de debug
-  - [ ] Adicionar React keys faltantes em DataComparisonTable
-  - [ ] Calcular valores esperados dinamicamente
-  - [ ] Implementar logger estruturado onde necessário
-  - [ ] Refatorar componentes para melhor manutenibilidade
-  - [ ] Test: Zero warnings no console, código limpo
-
-- [ ] Feature 2.18: Sistema de Métricas Real
-  - [ ] Tabela channel_metrics com períodos
-  - [ ] Cálculo de ROI, MDD, winrate
-  - [ ] Atualização via functions/triggers
-  - [ ] Test: Métricas mudando em tempo real
-
-- [ ] Feature 2.19: Ocupação e Waitlist Dinâmicos
-  - [ ] Views para calcular ocupação
-  - [ ] Sistema de waitlist funcional
-  - [ ] Badges "Lotado" dinâmicos
-  - [ ] Test: Ocupação refletindo assinantes reais
-
-- [ ] Feature 2.20: Histórico de Tips
-  - [ ] Tabela tips com resultados
-  - [ ] Timeline de apostas
-  - [ ] Cálculo de lucros/prejuízos
-  - [ ] Test: Tips aparecendo na página de detalhes
-```
-
-*Etapa 4.3: Funcionalidades Interativas (3 features)*
-```markdown
-- [ ] Feature 2.21: Detalhes do Canal (Supabase)
-  - [ ] Página completa com dados reais
-  - [ ] Todas abas funcionando
-  - [ ] Performance mantida
-  - [ ] Test: Página idêntica mas 100% Supabase
-
-- [ ] Feature 2.22: Sistema de Reviews
-  - [ ] Tabela channel_reviews com RLS
-  - [ ] Usuários podem avaliar
-  - [ ] Rating médio calculado
-  - [ ] Test: Deixar review e ver atualizar
-
-- [ ] Feature 2.23: Gráficos Dinâmicos
-  - [ ] Dados históricos reais
-  - [ ] Filtros de período funcionais
-  - [ ] Animações suaves
-  - [ ] Test: Gráfico muda com período selecionado
-```
-
-*Etapa 4.4: Captura e Analytics (3 features)*
-```markdown
-- [ ] Feature 2.24: Salvar Leads no Banco
-  - [ ] Tabela captured_leads
-  - [ ] Integração com checkout flow
-  - [ ] Validações server-side
-  - [ ] Test: Lead salvo após checkout
-
-- [ ] Feature 2.25: Dashboard de Leads
-  - [ ] Nova rota /tipster/leads
-  - [ ] Visualizar leads capturados
-  - [ ] Filtros e exportação
-  - [ ] Test: Tipster vê seus leads
-
-- [ ] Feature 2.26: Analytics de Conversão
-  - [ ] Métricas de abandono
-  - [ ] Funil de conversão
-  - [ ] Insights acionáveis
-  - [ ] Test: Dashboard com métricas reais
-```
-
-*Etapa 4.5: Otimização e Polish (3 features)*
-```markdown
-- [ ] Feature 2.27: RLS e Segurança
-  - [ ] Policies para todas tabelas
-  - [ ] Página /dev/security-test com testes visuais
-  - [ ] Botões testando cada permissão
-  - [ ] Test: Página mostra todos testes passando
-
-- [ ] Feature 2.28: Performance e Índices
-  - [ ] Criar índices otimizados
-  - [ ] Dashboard mostrando métricas de performance
-  - [ ] Gráfico antes/depois da otimização
-  - [ ] Test: Dashboard mostra queries < 100ms
-
-- [ ] Feature 2.29: Real-time Updates
-  - [ ] Subscriptions Supabase
-  - [ ] Badge "LIVE 🔴" pulsando com updates
-  - [ ] Dados atualizando sem refresh
-  - [ ] Test: Ver mudanças em tempo real
+- [ ] Feature 2.18: Criar Tabela Tips e Sistema de Métricas Dinâmicas
+- [ ] Feature 2.19: Implementar Gráfico de Performance Real
+- [ ] Feature 2.20: Migrar Todas as Métricas para Cálculo Dinâmico
+- [ ] Feature 2.21: Timeline de Tips Recentes
+- [ ] Feature 2.22: Polish Final e Documentação do Epic 2
 ```
 
 ---
@@ -520,11 +349,11 @@ Criar landing page completa, sistema de blog aprimorado e discovery de canais co
 
 ## 📊 Progress Tracking
 
-### Overall Progress: 20/55 Features (36.4%)
+### Overall Progress: 23/65 Features (35.4%)
 
 ```
 EPIC 1: ✅ 6/6 features (100%) - COMPLETE
-EPIC 2: 🟦 16/29 features (55.2%) - Fase 1 ✅, Fase 2 ✅, Fase 3 ✅, Fase 4 🟦 IN PROGRESS (Etapa 4.1 ✅ 3/3)
+EPIC 2: 🟦 17/22 features (77.3%) - Fases 1-4 ✅, Fase 5 ⬜ (0/5)
 EPIC 3: ⬜ 0/5 features (0%)
 EPIC 4: ⬜ 0/5 features (0%)
 EPIC 5: ⬜ 0/5 features (0%)

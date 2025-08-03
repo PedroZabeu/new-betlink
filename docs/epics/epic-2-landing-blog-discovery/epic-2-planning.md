@@ -2,7 +2,7 @@
 
 ## 📋 Visão Geral
 
-O EPIC 2 está dividido em 4 fases progressivas, totalizando 18 features. Cada fase constrói sobre a anterior, começando com melhorias visuais na landing page e culminando com integração completa com Supabase.
+O EPIC 2 está dividido em 5 fases progressivas, totalizando 22 features. Cada fase constrói sobre a anterior, começando com melhorias visuais na landing page e culminando com sistema completo de métricas reais.
 
 ## 🎯 Objetivo Principal
 
@@ -11,6 +11,7 @@ Transformar o BetLink em uma plataforma completa de descoberta de tipsters, com:
 - Blog rico em conteúdo educacional
 - Sistema completo de descoberta e assinatura de canais
 - Dados reais integrados com alta performance
+- Sistema de métricas dinâmicas baseado em apostas reais
 
 ---
 
@@ -238,30 +239,7 @@ Adicionar conteúdo especializado sobre apostas ao blog e implementar funcionali
 
 ---
 
-### Feature 2.8: Sistema de Busca no Blog
-**Objetivo**: Permitir encontrar conteúdo rapidamente
-
-**Entregas**:
-- Barra de busca no topo da página do blog
-- Busca em tempo real (enquanto digita)
-- Busca por:
-  - Título do post
-  - Conteúdo/descrição
-  - Tags e categorias
-- Resultados instantâneos
-- Mensagem quando não encontrar nada
-
-**Critérios de Teste**:
-- [ ] Busca retorna resultados corretos
-- [ ] Funciona enquanto digita
-- [ ] Limpar busca restaura todos posts
-- [ ] Mobile friendly
-
-**Estimativa**: 3-4 horas
-
----
-
-### Feature 2.9: Página Individual de Post Aprimorada
+### Feature 2.8: Páginas Individuais de Posts
 **Objetivo**: Melhorar experiência de leitura
 
 **Entregas**:
@@ -279,6 +257,29 @@ Adicionar conteúdo especializado sobre apostas ao blog e implementar funcionali
 - [ ] Compartilhamento abre apps corretos
 - [ ] Posts relacionados aparecem
 - [ ] Layout responsivo
+
+**Estimativa**: 3-4 horas
+
+---
+
+### Feature 2.9: Sistema de Busca no Blog
+**Objetivo**: Permitir encontrar conteúdo rapidamente
+
+**Entregas**:
+- Barra de busca no topo da página do blog
+- Busca em tempo real (enquanto digita)
+- Busca por:
+  - Título do post
+  - Conteúdo/descrição
+  - Tags e categorias
+- Resultados instantâneos
+- Mensagem quando não encontrar nada
+
+**Critérios de Teste**:
+- [ ] Busca retorna resultados corretos
+- [ ] Funciona enquanto digita
+- [ ] Limpar busca restaura todos posts
+- [ ] Mobile friendly
 
 **Estimativa**: 3-4 horas
 
@@ -313,8 +314,8 @@ Adicionar conteúdo especializado sobre apostas ao blog e implementar funcionali
 **Ordem de Implementação**:
 1. Criar 4 novos posts (conteúdo base)
 2. Sistema de Tags (organização)
-3. Sistema de Busca (encontrar conteúdo)
-4. Página Individual (melhor leitura)
+3. Páginas Individuais (melhor leitura)
+4. Sistema de Busca (encontrar conteúdo)
 5. Performance e UX (polimento)
 
 **O que deixamos para depois**:
@@ -387,7 +388,7 @@ Criar interface completa de descoberta de canais com dados mockados, modal de de
 
 ---
 
-### Feature 2.12: Modal/Página de Detalhes do Canal
+### Feature 2.12: Página de Detalhes do Canal
 **Objetivo**: Criar página completa com todas informações do canal (inspirada em Tipsterland + Tipstrr)
 
 **Entregas**:
@@ -683,49 +684,16 @@ Substituir todos os dados mockados das fases anteriores por dados reais do Supab
 
 ---
 
-### Feature 2.18: Otimização e Cache
-**Objetivo**: Garantir performance em produção
-
-**Entregas**:
-- Implementar cache em múltiplas camadas:
-  - Database: materialized views
-  - API: cache headers adequados
-  - Client: React Query stale time
-- Otimizações:
-  - Lazy loading de imagens
-  - Virtual scrolling para listas grandes
-  - Debounce em filtros
-  - Batch queries quando possível
-- Monitoring:
-  - Tempo de queries
-  - Taxa de cache hit
-  - Errors tracking
-- Edge cases:
-  - Canais sem dados suficientes
-  - Queries vazias
-  - Fallbacks adequados
-
-**Critérios de Teste**:
-- [ ] TTI < 3s em 3G
-- [ ] Filtros respondem < 500ms
-- [ ] Zero errors em produção
-- [ ] Cache funcionando
-
-**Estimativa**: 3-4 horas
-
----
-
 ## Resumo da Fase 4
 
-**Total de Features**: 5
-**Estimativa Total**: 22-27 horas (4-5 dias)
+**Total de Features**: 4
+**Estimativa Total**: 19-23 horas (4-5 dias)
 
 **Ordem de Implementação**:
 1. Schema e queries base (foundation)
 2. Página de explorar (principal touchpoint)
 3. Página de detalhes (conversão)
 4. Fluxo de assinatura (monetização)
-5. Otimização (polish)
 
 **Considerações Técnicas**:
 - Usar React Query para todo fetching
@@ -739,10 +707,253 @@ Substituir todos os dados mockados das fases anteriores por dados reais do Supab
 - Analytics implementado
 - Pronto para pagamentos
 
-**Próxima Fase**: 
-- Implementação de pagamentos
-- Dashboard do assinante
-- Sistema de notificações
+---
+
+# FASE 5: Sistema de Métricas Reais
+
+## Visão Geral da Fase
+Implementar sistema completo de métricas dinâmicas baseadas em apostas reais, eliminando valores hardcoded e criando transparência total.
+
+## Features Breakdown
+
+### Feature 2.18: Criar Tabela Tips e Sistema de Métricas Dinâmicas
+**Objetivo**: Criar a infraestrutura de dados que permitirá calcular todas as métricas baseadas em apostas reais
+
+**Entregas**:
+- Tabela `tips` completa no Supabase:
+  - Informações da aposta: esporte, liga, evento, mercado, seleção
+  - Valores: odds, stake, resultado, profit/loss
+  - Timestamps: created_at, event_date, resolved_at
+  - Metadados: analysis, bookmaker, confidence_level
+- Funções PostgreSQL para cálculo:
+  - `calculate_roi()` - ROI em período específico
+  - `calculate_win_rate()` - Taxa de acerto
+  - `calculate_mdd()` - Maximum Drawdown
+  - `calculate_avg_odds()` - Odds média
+- Sistema de cache inteligente
+- Badge visual "Real-time Metrics ⚡"
+
+**Critérios de Teste**:
+- [ ] Tabela criada com todos os campos
+- [ ] Functions retornam valores corretos
+- [ ] Cache funcionando
+- [ ] Badge aparece quando dados são calculados
+
+**Estimativa**: 4-5 horas
+
+---
+
+### Feature 2.19: Implementar Gráfico de Performance Real
+**Objetivo**: Substituir gráfico placeholder por visualização real da evolução do bankroll
+
+**Entregas**:
+- Gráfico interativo com dados reais:
+  - Evolução do lucro acumulado ao longo do tempo
+  - Períodos: 7 dias, 30 dias, 3 meses, 6 meses, 1 ano
+  - Área destacada para drawdowns
+  - Pontos de destaque para performance excepcional
+  - Tooltip rico com detalhes
+  - Animações suaves entre períodos
+- Function `generate_chart_data()` para dados
+- Cálculo de drawdown em tempo real
+- Integração com página de detalhes
+
+**Critérios de Teste**:
+- [ ] Gráfico carrega dados reais
+- [ ] Períodos funcionam corretamente
+- [ ] Drawdowns destacados
+- [ ] Performance fluida
+
+**Estimativa**: 3-4 horas
+
+---
+
+### Feature 2.20: Migrar Todas as Métricas para Cálculo Dinâmico
+**Objetivo**: Remover dependência de valores hardcoded e usar apenas cálculos em tempo real
+
+**Entregas**:
+- Substituir queries estáticas por functions:
+  - `get_channel_metrics()` - todas as métricas em uma query
+  - Cache no frontend com React Query
+  - Animações sutis quando valores mudam
+  - Fallback para valores mockados
+  - Indicadores "live" vs "cached"
+- Atualizar todas as páginas:
+  - Listagem de canais
+  - Página de detalhes
+  - Cards de métricas
+  - Dashboard de comparação
+
+**Critérios de Teste**:
+- [ ] Todas as métricas calculadas dinamicamente
+- [ ] Cache funcionando
+- [ ] Animações suaves
+- [ ] Zero valores hardcoded
+
+**Estimativa**: 3-4 horas
+
+---
+
+### Feature 2.21: Timeline de Tips Recentes
+**Objetivo**: Adicionar seção visual mostrando últimas apostas do canal
+
+**Entregas**:
+- Timeline visual com últimas 20 apostas:
+  - Evento, esporte, odds, stake, resultado
+  - Sistema de blur para não-assinantes
+  - Filtros por resultado (wins/losses/pending)
+  - Estatísticas resumidas
+  - Call-to-action para assinantes
+- Componente `TipTimeline` reutilizável
+- Query `get_recent_tips()` otimizada
+- Integração na página de detalhes
+
+**Critérios de Teste**:
+- [ ] Timeline carrega corretamente
+- [ ] Blur funciona para não-assinantes
+- [ ] Filtros funcionando
+- [ ] Performance com muitas tips
+
+**Estimativa**: 2-3 horas
+
+---
+
+### Feature 2.22: Polish Final e Documentação do Epic 2
+**Objetivo**: Garantir que todas as 22 features estejam polidas e bem documentadas
+
+**Entregas**:
+- Auditoria completa de performance:
+  - Lighthouse > 85 em todas as páginas
+  - Bundle analysis e otimizações
+  - Imagens otimizadas e lazy loading
+- Consistência visual:
+  - Design system check
+  - Mobile experience
+  - Animações uniformes
+- SEO e meta tags:
+  - Title tags únicos
+  - Meta descriptions otimizadas
+  - Open Graph tags completas
+  - Structured data
+- Testes E2E completos:
+  - Suite cobrindo todo o Epic 2
+  - Fluxo completo testado
+  - Performance validada
+- Documentação técnica:
+  - Todas as functions SQL documentadas
+  - Estrutura das tabelas
+  - Fluxograma do sistema de métricas
+- Limpeza de código:
+  - Remover TODOs e FIXMEs
+  - Deletar arquivos não utilizados
+  - Resolver warnings do TypeScript
+- Dashboard de métricas do Epic 2:
+  - Página `/dev/epic-2-metrics`
+  - Mostrar todas as conquistas
+  - Gráficos de performance
+  - Checklist visual de features
+
+**Critérios de Teste**:
+- [ ] Lighthouse scores > 85
+- [ ] Zero console errors/warnings
+- [ ] Performance targets atingidos
+- [ ] Documentação completa
+- [ ] Todos os testes passando
+
+**Estimativa**: 6-8 horas
+
+---
+
+## Resumo da Fase 5
+
+**Total de Features**: 5
+**Estimativa Total**: 18-24 horas (4-5 dias)
+
+**Ordem de Implementação**:
+1. Tabela Tips e métricas dinâmicas (foundation)
+2. Gráfico de performance real (visualização)
+3. Migração completa para cálculos (conectividade)
+4. Timeline de tips (engajamento)
+5. Polish final (excelência)
+
+**Considerações Técnicas**:
+- Performance crítica com muitos dados
+- Cache em múltiplas camadas
+- Animações suaves
+- Fallbacks robustos
+
+**Métricas de Sucesso**:
+- Zero dados mockados restantes
+- Performance mantida
+- Transparência total
+- Sistema escalável
+
+---
+
+# RESUMO GERAL DO EPIC 2
+
+## 📊 Estatísticas Finais
+
+**Total de Features**: 22
+**Fases**: 5
+**Estimativa Total**: 77-100 horas (15-20 dias)
+**Status Atual**: 19/22 completas (86.4%)
+
+## 🎯 Fases e Progresso
+
+### Fase 1: Landing Page Features ✅
+- **Features**: 5/5 completas
+- **Tempo**: ~6 horas
+- **Status**: 100% concluída
+
+### Fase 2: Blog Features ✅
+- **Features**: 5/5 completas
+- **Tempo**: ~12 horas
+- **Status**: 100% concluída
+
+### Fase 3: Discovery de Canais ✅
+- **Features**: 3/3 completas
+- **Tempo**: ~8.5 horas
+- **Status**: 100% concluída
+
+### Fase 4: Integração Supabase ✅
+- **Features**: 4/4 completas
+- **Tempo**: ~10 horas
+- **Status**: 100% concluída
+
+### Fase 5: Sistema de Métricas Reais ⬜
+- **Features**: 0/5 completas
+- **Tempo**: 0 horas
+- **Status**: 0% concluída
+
+## 🚀 Próximos Passos
+
+1. **Iniciar Fase 5**: Sistema de métricas reais
+2. **Feature 2.18**: Criar Tabela Tips e Sistema de Métricas Dinâmicas
+3. **Feature 2.19**: Implementar Gráfico de Performance Real
+4. **Feature 2.20**: Migrar Todas as Métricas para Cálculo Dinâmico
+5. **Feature 2.21**: Timeline de Tips Recentes
+6. **Polish Final**: Feature 2.22
+
+## 📝 Notas para EPICs Futuros
+
+### Para o EPIC de Dashboard de Clientes:
+- Sistema de ocupação real baseado em assinantes ativos
+- Tabela `channel_subscriptions` para assinantes
+- View calculando ocupação real
+- Sistema de waitlist funcional
+
+### Para o EPIC de Dashboard dos Tipsters:
+- Sistema de criação de tips usando tabela `tips`
+- Interface de criação de apostas
+- Sistema de aprovação
+- Notificações para assinantes
+
+### Para o EPIC de Sistema de Pagamentos:
+- Integração com checkout da Feature 2.13
+- Gateway de pagamento real
+- Sistema de assinaturas recorrentes
+- Relatórios financeiros
 
 ---
 

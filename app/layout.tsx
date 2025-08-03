@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 import { CookieBanner } from "@/components/cookie-consent";
+import { GlobalErrorBoundary } from "@/components/error-boundary";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -67,9 +68,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <CookieBanner />
-          <Toaster position="top-right" richColors />
+          <GlobalErrorBoundary>
+            {children}
+            <CookieBanner />
+            <Toaster position="top-right" richColors />
+          </GlobalErrorBoundary>
         </ThemeProvider>
       </body>
     </html>

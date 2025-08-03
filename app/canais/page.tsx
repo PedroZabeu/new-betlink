@@ -19,8 +19,8 @@ function transformChannelData(channels: ChannelWithDetails[]) {
       id: channel.id,
       name: channel.name,
       slug: channel.slug,
-      tipster: "Tipster Pro", // Placeholder since channel_tipsters is empty
-      avatar: channel.name.substring(0, 2).toUpperCase(),
+      tipster: channel.channel_tipsters?.[0]?.profiles?.name || "Tipster",
+      avatar: (channel.channel_tipsters?.[0]?.profiles?.name || channel.name).substring(0, 2).toUpperCase(),
       isPremium: channel.is_premium,
       description: channel.description || "",
       metrics: {

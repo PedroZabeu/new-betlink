@@ -4,14 +4,18 @@ import { logger } from '@/lib/utils/logger';
 
 export interface ChannelFullDetails extends ChannelWithDetails {
   channel_tipsters: {
-    user: {
+    profiles: {
       id: string;
       name: string;
+      email: string;
       telegram: string | null;
     };
-    role: string;
   }[];
-  // Adicionaremos reviews e tips no futuro
+  // Additional fields for future implementation
+  about_bio?: string;
+  about_methodology?: string;
+  about_specialties?: string[];
+  about_experience?: string;
   recent_tips?: any[];
   reviews?: any[];
 }
@@ -28,9 +32,17 @@ export async function getChannelBySlug(slug: string) {
         channel_tags(*),
         channel_metrics(*),
         subscription_plans(*),
-        channel_tipsters(
-          role,
-          user:profiles(id, name, telegram)
+        channel_tipsters!inner(
+          id,
+          channel_id,
+          user_id,
+          joined_at,
+          profiles!inner(
+            id,
+            name,
+            email,
+            telegram
+          )
         )
       `)
       .eq('slug', slug)
@@ -64,4 +76,28 @@ export async function getAllChannelSlugs() {
   }
   
   return data?.map(channel => channel.slug) || [];
+}
+
+// Buscar métricas de um canal por período específico
+export async function getChannelMetricsByPeriod(channelId: number, timeWindow: string) {
+  const supabase = await createClient();
+  
+  try {
+    const { data, error } = await supabase
+      .from('channel_metrics')
+      .select('*')
+      .eq('channel_id', channelId)
+      .eq('time_window', timeWindow)
+      .single();
+      
+    if (error) {
+      logger.error('Failed to fetch channel metrics by period', error, { channelId, timeWindow });
+      return { data: null, error };
+    }
+    
+    return { data, error: null };
+  } catch (error) {
+    logger.error('Unexpected error fetching channel metrics', error as Error, { channelId, timeWindow });
+    return { data: null, error };
+  }
 }

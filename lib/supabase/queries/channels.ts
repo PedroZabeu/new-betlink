@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
+import { logger } from '@/lib/utils/logger';
 
 // Types for Supabase data
 export interface ChannelWithDetails {
@@ -16,6 +17,19 @@ export interface ChannelWithDetails {
   channel_tags: ChannelTag[];
   channel_metrics: ChannelMetric[];
   subscription_plans: SubscriptionPlan[];
+  channel_tipsters: ChannelTipster[];
+}
+
+export interface ChannelTipster {
+  id: number;
+  channel_id: number;
+  user_id: string;
+  joined_at: string;
+  profiles: {
+    id: string;
+    name: string;
+    email: string;
+  };
 }
 
 export interface ChannelTag {
@@ -56,21 +70,44 @@ export interface SubscriptionPlan {
 }
 
 export async function getChannelsWithDetails() {
-  const supabase = await createClient();
-  
-  const { data, error } = await supabase
-    .from('channels')
-    .select(`
-      *,
-      channel_tags!inner(*),
-      channel_metrics!inner(*),
-      subscription_plans!inner(*)
-    `)
-    .eq('is_active', true)
-    .eq('channel_metrics.time_window', '30d') // Use 30d for main display
-    .order('created_at', { ascending: false });
+  try {
+    const supabase = await createClient();
     
-  return { data: data as ChannelWithDetails[] | null, error };
+    const { data, error } = await supabase
+      .from('channels')
+      .select(`
+        *,
+        channel_tags!inner(*),
+        channel_metrics!inner(*),
+        subscription_plans!inner(*),
+        channel_tipsters!inner(
+          id,
+          channel_id,
+          user_id,
+          joined_at,
+          profiles!inner(
+            id,
+            name,
+            email
+          )
+        )
+      `)
+      .eq('is_active', true)
+      .eq('channel_metrics.time_window', '30d') // Use 30d for main display
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      logger.error('Failed to fetch channels with details', error, {
+        function: 'getChannelsWithDetails'
+      });
+      throw error;
+    }
+
+    return { data: data as ChannelWithDetails[] | null, error: null };
+  } catch (error) {
+    logger.error('Unexpected error in getChannelsWithDetails', error as Error);
+    return { data: null, error: error as Error };
+  }
 }
 
 export async function getAllChannels() {
