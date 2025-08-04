@@ -40,7 +40,9 @@ console.error(error);
 - Subscription-based tipster channels
 - Automated Telegram integration for channel access
 - Payment processing with Stripe/MercadoPago
-- Bet tracking and ROI calculation
+- **Bet tracking with Green/Red nomenclature (Half Green/Red, Void, Cancelled)**
+- **ROI calculation with weighted averages (Lucro/Stake × 100)**
+- **Live metrics calculated from tips table (channel_metrics_live view)**
 - Waiting list management for full channels
 
 ## Essential Commands
@@ -105,6 +107,16 @@ npm test
 - Environment variables required:
   - `NEXT_PUBLIC_SUPABASE_URL`
   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+
+### Betting System & Metrics
+- **Status nomenclature**: `green`, `half_green`, `red`, `half_red`, `void`, `cancelled`
+- **Profit/Loss calculation**: Automatic via PostgreSQL trigger
+- **Live metrics view**: `channel_metrics_live` (replaces old `channel_metrics` table)
+- **Weighted averages**: 
+  - Odds: `SUM(odds × stake) / SUM(stake)`
+  - Hit Rate: `SUM(stake_wins) / SUM(stake_total) × 100`
+- **ROI Formula**: `(Profit / Stake) × 100`
+- **Partial bets**: Support via `partial_percentage` field (default 100%)
 
 ### Path Aliases
 - `@/*` maps to the project root (configured in tsconfig.json)

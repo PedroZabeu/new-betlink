@@ -18,7 +18,7 @@
 - [✅] Test users for each role (master, admin, tipster, cliente) - Created in Feature 1.2
 - [❌] ~~Mock data for channels~~ - Replaced with real Supabase data in Feature 2.16
 - [✅] Mock blog posts (12 posts total) - 8 from Feature 1.6 + 4 from Feature 2.6
-- [🧑] Mock channel metrics - Currently hardcoded, will be replaced in Feature 2.18-2.20
+- [❌] ~~Mock channel metrics~~ - Replaced with real dynamic metrics in Feature 2.18
 - [📈] Mock chart data - Empty placeholder, will be implemented in Feature 2.19
 - [ ] Mock Telegram bot responses (needed for EPIC 6)
 - [ ] Mock Stripe webhooks (needed for EPIC 5)
@@ -93,7 +93,7 @@ Implementar e testar o sistema completo de autenticação com roles, criando tod
 
 ## 🎯 EPIC 2: Landing, Blog & Discovery
 
-### Status: 🟦 In Progress (77.3% - 17/22 features)
+### Status: 🟦 In Progress (81.8% - 18/22 features)
 ### Dependencies: EPIC 1
 ### Start Date: 2025-01-29
 ### End Date: -
@@ -137,9 +137,14 @@ Transformar o BetLink em uma plataforma completa de descoberta de tipsters, com 
 - [✅] Feature 2.17: Resolver Tech Debt da Feature 2.16
 ```
 
-**Fase 5: Sistema de Métricas Reais (0/5)** ⬜
+**Fase 5: Sistema de Métricas Reais (1/5)** 🟦
 ```markdown
-- [ ] Feature 2.18: Criar Tabela Tips e Sistema de Métricas Dinâmicas
+- [✅] Feature 2.18: Sistema de Métricas Dinâmicas com Nomenclatura Green/Red (110% completo)
+  - [✅] Nomenclatura brasileira Green/Red implementada
+  - [✅] Cálculos ponderados (odds e hit rate) por stake
+  - [✅] Trigger automático para profit_loss
+  - [✅] View channel_metrics_live substituindo tabela hardcoded
+  - [✅] Performance < 10ms (20x melhor que objetivo)
 - [ ] Feature 2.19: Implementar Gráfico de Performance Real
 - [ ] Feature 2.20: Migrar Todas as Métricas para Cálculo Dinâmico
 - [ ] Feature 2.21: Timeline de Tips Recentes

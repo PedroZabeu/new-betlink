@@ -146,14 +146,17 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
     },
     faqs: [
       {
+        id: 'faq-1',
         question: 'Como recebo as dicas?',
         answer: 'As dicas são enviadas diretamente no canal do Telegram assim que você se torna assinante.'
       },
       {
+        id: 'faq-2',
         question: 'Posso cancelar a qualquer momento?',
         answer: 'Sim, você pode cancelar sua assinatura a qualquer momento através do painel de controle.'
       },
       {
+        id: 'faq-3',
         question: 'Qual o horário de envio das tips?',
         answer: 'As tips são enviadas conforme identificamos oportunidades, geralmente entre 10h e 22h.'
       }

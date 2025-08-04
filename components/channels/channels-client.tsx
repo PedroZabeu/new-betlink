@@ -23,11 +23,12 @@ import { logger } from "@/lib/utils/logger";
 interface ChannelsClientProps {
   channels: ChannelCardType[];
   isLiveData?: boolean;
+  channelsWithLiveMetrics?: number[];
 }
 
 const FEATURE_NAME = '[Feature 2.11: Channel Discovery]';
 
-export function ChannelsClient({ channels, isLiveData = false }: ChannelsClientProps) {
+export function ChannelsClient({ channels, isLiveData = false, channelsWithLiveMetrics = [] }: ChannelsClientProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -311,6 +312,7 @@ export function ChannelsClient({ channels, isLiveData = false }: ChannelsClientP
               key={channel.id} 
               channel={channel} 
               timeWindow={filters.timeWindow}
+              hasLiveMetrics={channelsWithLiveMetrics.includes(channel.id)}
             />
           ))}
         </div>
