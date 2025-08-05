@@ -108,6 +108,14 @@ npm test
   - `NEXT_PUBLIC_SUPABASE_URL`
   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
+### Supabase Project Info (for MCP access)
+- **Project Name**: `pedro.zabeu.bets@gmail.com's Project`
+- **Project ID**: `ohnuaxnygsnkupmoimtq`
+- **Region**: `us-east-2`
+- **Status**: `ACTIVE_HEALTHY`
+- **Created**: July 24, 2025
+- **Note**: Always use this project ID when accessing Supabase via MCP tools
+
 ### Betting System & Metrics
 - **Status nomenclature**: `green`, `half_green`, `red`, `half_red`, `void`, `cancelled`
 - **Profit/Loss calculation**: Automatic via PostgreSQL trigger

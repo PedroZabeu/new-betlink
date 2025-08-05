@@ -1,0 +1,967 @@
+tip_id,channel_id,channel_name,channel_slug,created_at,event_date,description,odds,stake,status,profit_loss,partial_percentage
+6d6fc8e8-b417-4198-a70f-6614b35c5cef,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2023-08-17T17:27:29.608167+00:00,"Jogo 367 - Histórico - Championship",3.71,2,green,5.42,100
+d379ea90-83c8-4cc0-8560-93b9a5d79539,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2023-09-24T20:38:50.424327+00:00,"Jogo 371 - Histórico - Championship",4.36,3,red,-3,100
+822d060c-e2e7-479c-914f-f0f8001aa5a5,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2023-11-05T05:08:48.80951+00:00,"Jogo 364 - Histórico - Championship",3.74,3,red,-3,100
+739d1522-be63-4d76-9425-f1e6eb6ff48f,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2023-11-09T23:29:24.534361+00:00,"Jogo 368 - Histórico - Championship",4.21,2,green,6.42,100
+d0b5f707-dd14-4a98-85d4-db830c9a4999,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2023-12-13T20:47:06.846636+00:00,"Jogo 373 - Histórico - Championship",3.51,1,red,-1,100
+f5e7674b-e0f2-44a4-b117-ef71fda86ee4,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-02-08T10:08:12.43391+00:00,"Jogo 374 - Histórico - Championship",3.19,3,green,6.57,100
+a8c58b01-a1a8-48fa-be15-f9d0d533e975,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-03-04T11:52:12.20311+00:00,"Jogo 365 - Histórico - Championship",1.84,2,green,1.68,100
+f6015d39-3989-4c87-bdcd-05f786c47acf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-03-05T05:43:46.82937+00:00,"Jogo 372 - Histórico - Championship",4.93,3,green,11.79,100
+d6d4dc10-bd07-4702-977e-699508c7b1aa,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-03-30T20:38:00.71292+00:00,"Jogo 366 - Histórico - Championship",4.29,1,green,3.29,100
+5679f450-26cd-4157-84c5-535483a63176,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-04-17T23:11:52.015337+00:00,"Jogo 362 - Histórico - Championship",2.11,2,red,-2,100
+3d8d344f-52e2-4cfe-bd94-c8a56aa0a4ea,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-04-25T13:52:38.053573+00:00,"Jogo 361 - Histórico - Championship",3.22,2,red,-2,100
+012470f3-0869-4e65-b14f-f87166c69bf1,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-05-13T23:38:32.775211+00:00,"Jogo 375 - Histórico - Championship",3.44,2,green,4.88,100
+bc858d75-a906-44fc-bd2e-400b7abdc395,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-06-07T23:54:42.817551+00:00,"Jogo 369 - Histórico - Championship",3.44,3,red,-3,100
+6cd3da2a-fe05-43c5-a69e-53f92a559112,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-06-30T05:53:53.534083+00:00,"Jogo 363 - Histórico - Championship",2.53,2,green,3.06,100
+37993d1c-0674-4f80-baae-8c703bfa6cdb,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:25:10.933256+00:00,2024-07-11T17:58:24.785595+00:00,"Jogo 370 - Histórico - Championship",1.94,3,red,-3,100
+5bf89c5a-5d77-4e08-b7d5-43eacd5d88ba,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-08-05T11:14:24.45831+00:00,"Jogo 172 - Ano passado - Premier League",2.6,1,red,-1,100
+713089cf-13bd-4e94-8c2b-21e97834df3a,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-08-09T18:11:04.462069+00:00,"Jogo 180 - Ano passado - Premier League",3.78,3,red,-3,100
+a5ce1a93-3af2-418f-a757-e5d2f6a76571,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-08-22T01:07:29.532229+00:00,"Jogo 183 - Ano passado - Premier League",2.56,2,red,-2,100
+ef6609ba-e787-4d02-b537-776c1ef91ea4,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-08-28T04:28:10.02917+00:00,"Jogo 206 - Ano passado - Premier League",2.01,4,green,4.04,100
+563b230e-b8c7-4923-9a97-82259e7f453c,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-09-21T13:38:20.300448+00:00,"Jogo 174 - Ano passado - Premier League",2.11,1,red,-1,100
+22ead014-d620-4a49-8329-830b29c572db,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-09-23T01:38:24.501806+00:00,"Jogo 195 - Ano passado - Premier League",3.68,1,green,2.68,100
+d1b3be3c-28f5-4552-b6e4-c4056ffbb3cf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-09-25T10:36:09.327035+00:00,"Jogo 208 - Ano passado - Premier League",4.51,4,green,14.04,100
+fb176ea1-597d-4bea-9ddf-6ebce4145aa3,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-09-28T03:59:51.683744+00:00,"Jogo 207 - Ano passado - Premier League",4.65,1,green,3.65,100
+2f1753de-1ebd-4f62-9d67-2a4c4b1d06e5,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-19T10:48:26.514415+00:00,"Jogo 203 - Ano passado - Premier League",2.06,3,void,0,100
+36418599-21f4-41e1-9007-f9eccc23c2b6,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-21T08:30:33.81819+00:00,"Jogo 182 - Ano passado - Premier League",2.2,4,red,-4,100
+162cc680-ed82-4e99-a896-4028555920de,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-23T07:00:27.111486+00:00,"Jogo 190 - Ano passado - Premier League",4.42,1,green,3.42,100
+5b34bb8a-9bc0-40d6-a422-8928ef868bc8,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-25T00:30:42.845637+00:00,"Jogo 193 - Ano passado - Premier League",4.29,3,green,9.87,100
+5825a162-e48f-4078-b95a-4607e67c8826,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-27T08:44:10.906875+00:00,"Jogo 192 - Ano passado - Premier League",2.17,3,red,-3,100
+93ef099b-1009-4328-aeb8-ac3dc9ffb02e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-10-27T17:40:14.027261+00:00,"Jogo 177 - Ano passado - Premier League",1.88,1,green,0.88,100
+c083042a-723b-4cf2-bb10-369367ede509,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-11-16T22:31:34.61053+00:00,"Jogo 199 - Ano passado - Premier League",1.96,4,red,-4,100
+25e8c9ca-376d-4789-a835-12b104986953,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-11-18T06:41:32.180633+00:00,"Jogo 186 - Ano passado - Premier League",3.24,1,green,2.24,100
+04b9a426-7c40-4ce5-9ea9-9751ea0ad68c,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-11-20T20:02:48.915706+00:00,"Jogo 164 - Ano passado - Premier League",4.09,2,red,-2,100
+451382db-72ce-4d25-9648-6a7e8fa07ae0,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-11-26T04:00:20.740859+00:00,"Jogo 189 - Ano passado - Premier League",2.92,1,red,-1,100
+7ea21eae-b4b1-4df9-8eb0-44fad0b24a53,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-12-04T20:03:21.553852+00:00,"Jogo 204 - Ano passado - Premier League",2.25,3,red,-3,100
+5f55f09a-77fd-4846-8cb9-d2c8d222b8aa,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-12-17T22:26:42.921873+00:00,"Jogo 188 - Ano passado - Premier League",2.83,4,green,7.32,100
+66fd8f5f-5343-42b7-b1a2-eecd36db6205,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2024-12-29T19:45:46.786361+00:00,"Jogo 176 - Ano passado - Premier League",2.69,3,red,-3,100
+567edb59-ed73-490f-9b9f-123e837ba8ba,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-12T02:17:18.887557+00:00,"Jogo 166 - Ano passado - Premier League",3.75,3,red,-3,100
+abdebe22-fe2f-479d-85c4-d4ffc1695e94,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-18T12:48:10.094187+00:00,"Jogo 196 - Ano passado - Premier League",4.43,5,green,17.15,100
+48557d12-3b99-48aa-95d2-04dc1b78aa86,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-20T21:52:33.106193+00:00,"Jogo 191 - Ano passado - Premier League",2.83,1,red,-1,100
+8ff660ce-21ca-4b05-9196-91b9dc831609,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-22T07:13:21.318138+00:00,"Jogo 175 - Ano passado - Premier League",3.2,3,red,-3,100
+de225e47-e3e2-4d60-bdbd-0e10fda97286,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-25T07:15:20.512557+00:00,"Jogo 200 - Ano passado - Premier League",4.39,1,red,-1,100
+6b9e9a24-3dcd-4e44-ac9c-19cd815f2ecf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-01-29T00:10:24.461242+00:00,"Jogo 173 - Ano passado - Premier League",2.98,3,green,5.94,100
+dfc5f1c6-42c8-4595-b660-9faac3e1652e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-02T03:28:22.675998+00:00,"Jogo 162 - Ano passado - Premier League",2.42,5,green,7.1,100
+59974bd8-f1a1-438f-8016-de5b88f55b27,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-06T15:55:35.177924+00:00,"Jogo 209 - Ano passado - Premier League",3.17,5,green,10.85,100
+b24afb43-226c-493c-a311-ab9637433344,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-15T16:46:38.785866+00:00,"Jogo 201 - Ano passado - Premier League",4.39,2,red,-2,100
+778db896-995d-46c9-8bb7-1ea1a062ed10,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-23T08:05:25.978977+00:00,"Jogo 187 - Ano passado - Premier League",2.9,1,red,-1,100
+e74f6d29-50dc-466b-a363-edb9839be77a,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-25T14:03:38.925586+00:00,"Jogo 169 - Ano passado - Premier League",2.04,2,red,-2,100
+5975b97b-d376-423c-9e95-d66e3e2c664d,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-02-25T14:21:18.2235+00:00,"Jogo 178 - Ano passado - Premier League",3.52,2,red,-2,100
+1537cb5c-97b7-4109-8d56-5db326953b07,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-03-01T05:11:47.707368+00:00,"Jogo 171 - Ano passado - Premier League",2.29,3,red,-3,100
+50d86a6d-35ab-44cd-b3ea-b2a1abd702aa,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-03-10T12:32:52.858519+00:00,"Jogo 205 - Ano passado - Premier League",3.57,3,green,7.71,100
+72aa19f6-c754-42e4-bdc4-8ab255a2f7d6,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-04-01T23:10:51.50871+00:00,"Jogo 210 - Ano passado - Premier League",3.57,1,red,-1,100
+f2502fed-cbb5-4bd8-be93-3bc0469b685a,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-04-08T09:58:08.573514+00:00,"Jogo 194 - Ano passado - Premier League",3.96,2,red,-2,100
+cdf7b235-8f81-4074-868a-e5896c381ba6,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-04-10T18:29:45.68058+00:00,"Jogo 168 - Ano passado - Premier League",1.92,5,red,-5,100
+9cc3e72b-3752-488a-bb6a-256f12d3d163,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-04-21T19:50:30.139282+00:00,"Jogo 165 - Ano passado - Premier League",3.87,4,green,11.48,100
+9f969654-24d0-434a-8eb8-00b89c762471,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-04-22T16:06:06.740484+00:00,"Jogo 181 - Ano passado - Premier League",3.19,1,green,2.19,100
+9832f2d3-f101-49b1-93d5-47d84527a782,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-02T02:36:14.42962+00:00,"Jogo 167 - Ano passado - Premier League",3.48,4,void,0,100
+a2799d65-ca1e-472a-b635-5386bc093631,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-08T07:40:22.39261+00:00,"Jogo 163 - Ano passado - Premier League",2.99,2,half_green,1.99,50
+7836fd00-fecb-4463-9387-bf78299d159b,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-11T05:39:35.329428+00:00,"Jogo 185 - Ano passado - Premier League",2.85,5,green,9.25,100
+9cec7a10-2222-4062-9b79-9b435857b1e5,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-13T07:57:35.365545+00:00,"Jogo 198 - Ano passado - Premier League",1.81,3,green,2.43,100
+754da2f6-9999-4bfc-bda5-c740b6f5ce40,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-16T13:00:48.347694+00:00,"Jogo 170 - Ano passado - Premier League",1.86,3,red,-3,100
+dbac67f4-c9b2-429e-82d5-162cbb627816,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-16T23:44:17.875822+00:00,"Jogo 197 - Ano passado - Premier League",3.67,2,red,-2,100
+ef5aed05-f802-425b-a985-a8ede0267829,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-17T01:05:56.025209+00:00,"Jogo 184 - Ano passado - Premier League",3.14,4,red,-4,100
+81ff531d-1b69-4a63-96a6-ce21e5579e94,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-18T09:39:00.239673+00:00,"Jogo 161 - Ano passado - Premier League",2.84,5,green,9.2,100
+02c2859a-61a4-4de4-b746-653865fb533c,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-05-25T09:43:47.280196+00:00,"Jogo 202 - Ano passado - Premier League",2.95,2,red,-2,100
+a82b4b5a-e4c2-4165-ab24-ba3ac3c1bfb5,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:50.775475+00:00,2025-06-10T17:56:20.113072+00:00,"Jogo 179 - Ano passado - Premier League",3,1,red,-1,100
+a9279c1a-73e0-47c5-8bc0-13ab8a2160fb,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-05T21:37:41.366753+00:00,"Jogo 77 - Mês passado - Premier League",2.9,3,green,5.7,100
+a39a141b-b66c-4cbe-b4fa-8b2beb9da73d,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-05T22:25:48.08248+00:00,"Jogo 84 - Mês passado - Premier League",4.39,2,green,6.78,100
+6e4ed3ca-a706-4102-89fe-9ae45d759bb9,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-06T00:45:35.708202+00:00,"Jogo 66 - Mês passado - Premier League",3.94,3,green,8.82,100
+15f53dbb-9e89-464e-8793-91d936c75eac,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-06T19:09:36.761135+00:00,"Jogo 62 - Mês passado - Premier League",1.78,3,green,2.34,100
+42642fe6-7aa9-4857-b73b-d196a14cedc9,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-09T01:29:30.431455+00:00,"Jogo 61 - Mês passado - Premier League",2.08,2,green,2.16,100
+e21a79bb-f922-42ba-b6da-272bf0f38119,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-09T23:01:44.453319+00:00,"Jogo 70 - Mês passado - Premier League",2.54,1,red,-1,100
+12fc1e26-1aae-4879-835b-df2d533cef52,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-10T20:21:44.253827+00:00,"Jogo 80 - Mês passado - Premier League",2.94,3,red,-3,100
+880f52a6-310c-4442-b598-c43526254123,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-12T08:43:55.517819+00:00,"Jogo 68 - Mês passado - Premier League",1.79,1,green,0.79,100
+9cc17c35-dd10-4a31-9a5b-604809ec918e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-12T17:23:20.200107+00:00,"Jogo 71 - Mês passado - Premier League",2.68,2,green,3.36,100
+87d2494e-574f-49e6-9a37-0670518c9f81,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-14T00:22:34.208799+00:00,"Jogo 78 - Mês passado - Premier League",2.06,2,green,2.12,100
+2e19818d-a44b-44e5-b83d-2bf752875d7e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-14T03:38:02.980215+00:00,"Jogo 82 - Mês passado - Premier League",4.2,1,green,3.2,100
+6b1d51d2-084e-4ba7-9939-658aac2d4396,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-14T15:53:52.130387+00:00,"Jogo 67 - Mês passado - Premier League",3.57,2,red,-2,100
+a60b189e-ab21-4961-bb8e-4b119257006b,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-15T06:05:32.112179+00:00,"Jogo 65 - Mês passado - Premier League",1.77,1,red,-1,100
+9ca8462f-f180-4a9a-986b-20cdfd0129ce,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-15T14:32:08.103174+00:00,"Jogo 72 - Mês passado - Premier League",1.87,2,green,1.74,100
+65af992d-2b2a-4d80-a992-eff3c51646e2,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-17T06:57:34.168186+00:00,"Jogo 85 - Mês passado - Premier League",2.52,3,green,4.56,100
+e065d1f0-bd12-4b9a-bd0f-0a4940af5caf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-18T02:26:00.735484+00:00,"Jogo 79 - Mês passado - Premier League",3.55,3,green,7.65,100
+01736dfa-e972-4b7f-b8ec-f7f6e40a371d,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-21T13:55:09.792294+00:00,"Jogo 83 - Mês passado - Premier League",3.84,1,green,2.84,100
+8102153d-92d5-4dcb-86bf-91819513eb3f,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-22T09:19:51.599715+00:00,"Jogo 76 - Mês passado - Premier League",3.27,1,red,-1,100
+5ab61ba2-3562-490f-b39b-f6802bec41ad,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-23T14:33:42.184373+00:00,"Jogo 63 - Mês passado - Premier League",4.14,1,red,-1,100
+c477b961-9a7e-44ee-93dd-82552b67fd3c,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-24T07:43:55.725751+00:00,"Jogo 69 - Mês passado - Premier League",1.66,3,red,-3,100
+68b0feb2-b092-4470-b25e-2851cca7c8bf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-25T00:11:54.903562+00:00,"Jogo 74 - Mês passado - Premier League",1.81,3,red,-3,100
+a292108e-a20b-499a-a937-4c8e9b624573,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-25T17:20:56.762733+00:00,"Jogo 75 - Mês passado - Premier League",2.78,3,green,5.34,100
+9f80eaa1-be7e-4729-8a2f-17ba12568228,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-26T22:44:19.057649+00:00,"Jogo 64 - Mês passado - Premier League",4.33,1,red,-1,100
+ec5469cc-a013-4152-89a6-3159a18ba15b,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-27T01:58:50.206755+00:00,"Jogo 81 - Mês passado - Premier League",4.27,3,green,9.81,100
+f512315d-3bb1-40c8-9f3e-4903e3b92452,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:30.727811+00:00,2025-07-27T07:46:10.836346+00:00,"Jogo 73 - Mês passado - Premier League",4.36,2,green,6.72,100
+327cba87-0c0d-49b1-b5aa-6ba42273fc46,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-28T21:02:04.695616+00:00,"Jogo 12 - Últimos 7 dias - Premier League",3.47,1,red,-1,100
+1bf8b2ba-1627-4889-a8ec-b2cc4a5d188f,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-29T07:36:28.953603+00:00,"Jogo 7 - Últimos 7 dias - Premier League",2.46,1,green,1.46,100
+2e7109a8-6b81-47cd-b5e6-170befbd3d8d,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-29T08:57:18.491592+00:00,"Jogo 6 - Últimos 7 dias - Premier League",3.17,1,red,-1,100
+1dbf5d32-9786-4bab-a1d0-a2165b96f5cf,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-30T06:13:00.587699+00:00,"Jogo 9 - Últimos 7 dias - Premier League",2.44,1,green,1.44,100
+0b435308-6bc2-4bed-81d4-bb1bc016b736,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-30T08:29:45.846337+00:00,"Jogo 2 - Últimos 7 dias - Premier League",3.43,1,green,2.43,100
+56d5fe9f-2296-4807-b97b-9202adb45189,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-30T20:35:49.097121+00:00,"Jogo 13 - Últimos 7 dias - Premier League",2.34,1,green,1.34,100
+1ca46099-5a10-4ba1-9e37-37e407376402,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-31T20:10:53.625891+00:00,"Jogo 1 - Últimos 7 dias - Premier League",3.27,1,green,2.27,100
+2685a104-8c51-4b89-bbc0-b5f0f530b6dc,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-07-31T23:30:01.109835+00:00,"Jogo 15 - Últimos 7 dias - Premier League",3.97,1,green,2.97,100
+d0d6fa5d-3591-4173-b1b6-483fee2752b8,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-01T06:42:35.827213+00:00,"Jogo 5 - Últimos 7 dias - Premier League",1.92,1,green,0.92,100
+68cac848-2f5d-4677-a34f-67a2d47c31f7,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-01T06:57:53.057827+00:00,"Jogo 3 - Últimos 7 dias - Premier League",2.56,1,red,-1,100
+08b899aa-3388-47c6-ac5d-5c65a626bf3d,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-03T07:30:44.579495+00:00,"Jogo 10 - Últimos 7 dias - Premier League",3.58,1,red,-1,100
+4f895b0f-35ff-47bd-951e-b9e83052b3c7,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-03T12:14:37.024572+00:00,"Jogo 4 - Últimos 7 dias - Premier League",3.86,1,green,2.86,100
+e988739f-697d-44d3-bd24-be74e337177e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-03T14:17:10.854752+00:00,"Jogo 8 - Últimos 7 dias - Premier League",3.57,1,green,2.57,100
+1af51213-902c-4026-a2a7-0f9b1af89b58,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-03T17:18:37.281323+00:00,"Jogo 14 - Últimos 7 dias - Premier League",1.65,1,green,0.65,100
+2ae6bf5d-ce58-4561-9f6e-5dafa7e99f5e,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T12:24:10.515027+00:00,2025-08-03T20:31:34.04956+00:00,"Jogo 11 - Últimos 7 dias - Premier League",3.65,1,green,2.65,100
+91ddb212-b49c-4f6f-8491-63a579772b59,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T09:06:47.091656+00:00,"Teste Cancelled - Tip cancelada por lesão",1.9,3,cancelled,0,100
+dcc1bfe2-08b8-4439-8a79-574cd3c16cbb,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T10:06:47.091656+00:00,"Teste Void - Jogo cancelado por chuva",2.2,2,void,0,100
+5d645c0b-1862-4571-9317-7dfda39d918b,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T11:06:47.091656+00:00,"Teste Half Red - PSG +0.25 AH",1.95,6,half_red,-3,50
+e15950b6-0828-4919-a3e4-02e1318de540,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T12:06:47.091656+00:00,"Teste Red - Real Madrid ML",1.75,3,red,-3,100
+d11bdd6c-a8a9-496f-a493-d5054fd513bc,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T13:06:47.091656+00:00,"Teste Half Green - Bayern -0.25 AH",2.1,4,half_green,2.2,50
+75744da1-d150-4c10-94ec-377ec4e4a80a,1,Futebol Europeu Premium,futebol-europeu-premium,2025-08-04T15:06:47.091656+00:00,2025-08-04T14:06:47.091656+00:00,"Teste Green - Manchester City vs Chelsea Over 2.5",1.85,5,green,4.25,100
+c87f9066-ea11-4618-a521-b465e3e2c1ed,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2023-10-09T11:10:24.132031+00:00,"Jogo 386 - Histórico - NCAA Basketball",3.45,3,red,-3,100
+5bda59b7-38a4-4df6-a094-8d34428ee1a8,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2023-11-25T05:54:37.135357+00:00,"Jogo 387 - Histórico - NCAA Basketball",4.75,1,green,3.75,100
+f524739f-aa23-4f14-bbef-4c3cea26e884,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-02-18T03:36:04.451025+00:00,"Jogo 384 - Histórico - NCAA Basketball",3.82,2,red,-2,100
+3787cc28-0be6-414a-8f7d-82713376718c,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-02-20T09:12:32.209935+00:00,"Jogo 385 - Histórico - NCAA Basketball",3.61,3,green,7.83,100
+cd111b85-68dd-4c9e-8a4c-5fb0c33fe894,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-02-27T01:11:09.988585+00:00,"Jogo 380 - Histórico - NCAA Basketball",4.62,2,red,-2,100
+968281ba-0490-4003-83fb-7d8e78e851b1,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-03-07T09:39:56.028828+00:00,"Jogo 378 - Histórico - NCAA Basketball",2.18,1,red,-1,100
+be243ce0-e0c7-419a-b3de-5487286e602c,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-03-15T23:31:26.811456+00:00,"Jogo 376 - Histórico - NCAA Basketball",2.71,3,green,5.13,100
+2c1bd8a9-31d7-431b-b0dc-1fcb9306bf83,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-04-23T08:20:35.495388+00:00,"Jogo 383 - Histórico - NCAA Basketball",3.85,1,red,-1,100
+4c3dbc85-0fe3-4c52-a6e5-666000c7ce0d,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-05-25T10:23:14.23079+00:00,"Jogo 379 - Histórico - NCAA Basketball",3.96,2,void,0,100
+0c049aa3-a3b5-43f3-9d74-fc35d1b724b5,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-07-01T05:48:20.682594+00:00,"Jogo 382 - Histórico - NCAA Basketball",5.22,1,green,4.22,100
+cb65635b-123a-4934-a864-0e9bcc68bc62,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-07-01T07:55:42.431263+00:00,"Jogo 377 - Histórico - NCAA Basketball",1.92,2,green,1.84,100
+4bec5ead-a3db-4b73-af24-171fcfccf7dd,2,NBA Props Master,nba-props-master,2025-08-04T12:25:10.933256+00:00,2024-07-25T01:22:22.985378+00:00,"Jogo 381 - Histórico - NCAA Basketball",4.05,2,green,6.1,100
+abef32e8-8d84-4e35-9897-dfce9e9839ed,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-08-05T08:27:34.408232+00:00,"Jogo 248 - Ano passado - NBA Regular",2.89,4,green,7.56,100
+306742a1-261d-4fb9-8b2d-bfbe261bcb66,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-08-07T11:01:04.927914+00:00,"Jogo 213 - Ano passado - NBA Regular",1.93,4,green,3.72,100
+22bb5aab-9f45-4690-a459-1fa318981d7f,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-08-08T00:22:16.045209+00:00,"Jogo 224 - Ano passado - NBA Regular",3.09,5,red,-5,100
+d7d15f64-4723-4779-b489-3523f9c0b107,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-08-19T04:17:56.682513+00:00,"Jogo 234 - Ano passado - NBA Regular",3.55,3,red,-3,100
+74e9c36e-9dee-4c12-85e7-6cd990838397,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-09-08T11:16:10.633181+00:00,"Jogo 233 - Ano passado - NBA Regular",4.59,4,red,-4,100
+2126d103-3ac2-4f5e-b207-1d0c54b15734,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-09-15T01:13:35.061318+00:00,"Jogo 225 - Ano passado - NBA Regular",3.11,5,red,-5,100
+85a4f3ce-975f-48ab-a474-89fc92135815,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-09-24T08:46:53.103555+00:00,"Jogo 237 - Ano passado - NBA Regular",2.8,5,green,9,100
+3a8293fe-c7ef-45d9-bb07-628bb056bb75,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-09-25T02:07:49.256474+00:00,"Jogo 218 - Ano passado - NBA Regular",3.32,4,red,-4,100
+5c54045f-42e7-4983-bcee-ba0a53391714,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-10-13T19:44:04.822059+00:00,"Jogo 230 - Ano passado - NBA Regular",1.78,1,red,-1,100
+8e51baf6-bad2-4643-af42-0fb2b5bae816,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-10-26T02:00:51.566384+00:00,"Jogo 235 - Ano passado - NBA Regular",4.48,5,green,17.4,100
+f9d3059d-572c-4318-8431-a21ff5344c6b,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-03T00:42:45.647012+00:00,"Jogo 226 - Ano passado - NBA Regular",3.64,1,red,-1,100
+365c4752-e657-45bb-84e3-cdcde4ae702d,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-07T23:58:42.831952+00:00,"Jogo 222 - Ano passado - NBA Regular",3.77,5,red,-5,100
+6c542114-6b35-465f-a7a5-19f33fdd5adc,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-10T22:43:42.325593+00:00,"Jogo 247 - Ano passado - NBA Regular",2.3,5,green,6.5,100
+26696b02-c0bf-4085-a00d-5410a303117e,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-14T03:15:57.824922+00:00,"Jogo 227 - Ano passado - NBA Regular",4.6,3,green,10.8,100
+5093cdd0-817c-44d4-8001-302c7db1ed6f,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-26T08:03:44.386888+00:00,"Jogo 229 - Ano passado - NBA Regular",2.52,4,red,-4,100
+18459b61-ab52-46b5-9272-5f9ceb3b0062,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-30T02:20:06.763811+00:00,"Jogo 242 - Ano passado - NBA Regular",3.21,2,green,4.42,100
+93ab1ebd-0074-4741-a061-796286586209,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-11-30T17:59:47.316991+00:00,"Jogo 220 - Ano passado - NBA Regular",2.56,5,green,7.8,100
+041e2674-8c96-43ab-b97b-1897c854b0d2,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-12-09T00:45:25.877789+00:00,"Jogo 214 - Ano passado - NBA Regular",3.69,2,green,5.38,100
+57d77da4-8d69-417f-99c5-610d68e2db90,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2024-12-17T04:36:39.414638+00:00,"Jogo 241 - Ano passado - NBA Regular",4.26,1,red,-1,100
+040325af-8bdd-461e-a9d4-f34dbab1f852,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-01-07T09:00:40.740319+00:00,"Jogo 221 - Ano passado - NBA Regular",4.2,3,green,9.6,100
+945c7d61-644a-4ead-8cb0-3964e08d9825,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-01-28T16:31:52.238072+00:00,"Jogo 250 - Ano passado - NBA Regular",2.88,2,green,3.76,100
+0802bffa-b3fd-420a-9f6e-86a94660051b,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-01-29T02:42:05.934502+00:00,"Jogo 231 - Ano passado - NBA Regular",3.39,1,red,-1,100
+4b96980d-5f1f-44a7-bfea-e33e40be31c6,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-02-03T23:25:40.113234+00:00,"Jogo 244 - Ano passado - NBA Regular",3.99,4,green,11.96,100
+ea80cc05-7044-4d97-bdd0-ee0681ba0ff3,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-02-04T11:20:42.846492+00:00,"Jogo 240 - Ano passado - NBA Regular",4.21,2,green,6.42,100
+152db299-4042-4de6-899c-5d97bab79de3,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-02-09T11:39:22.395658+00:00,"Jogo 216 - Ano passado - NBA Regular",2.92,2,green,3.84,100
+aa14abf7-e3a2-4d34-97ed-9666850268ee,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-02-24T00:10:09.883827+00:00,"Jogo 243 - Ano passado - NBA Regular",3.24,5,green,11.2,100
+9ee65ec9-8df3-4a9f-b0dc-ec7c83aa10ba,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-03-03T08:45:53.620145+00:00,"Jogo 228 - Ano passado - NBA Regular",3.75,2,red,-2,100
+190ac21a-4d66-4baa-95dd-726b9137d26d,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-03-24T01:11:36.235231+00:00,"Jogo 238 - Ano passado - NBA Regular",3.77,2,red,-2,100
+4ea4eb50-0ccc-4085-aac5-a50806660424,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-03-25T05:07:59.208189+00:00,"Jogo 236 - Ano passado - NBA Regular",4.61,1,green,3.61,100
+d6fad9f1-674b-489f-bfa2-c47e8e6bd25d,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-04-09T03:23:47.987687+00:00,"Jogo 223 - Ano passado - NBA Regular",3.15,3,red,-3,100
+331745aa-447f-4b60-b342-c028768cb058,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-04-14T19:38:19.114814+00:00,"Jogo 219 - Ano passado - NBA Regular",4.27,4,green,13.08,100
+e52f0a09-a771-4234-85f7-25f5520a35f4,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-04-26T19:20:20.403706+00:00,"Jogo 246 - Ano passado - NBA Regular",1.99,5,red,-5,100
+db545cb1-1cd2-4226-8f24-f60aae34ed1b,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-05-04T17:14:05.805859+00:00,"Jogo 232 - Ano passado - NBA Regular",4.5,3,red,-3,100
+95ca6f9f-61dd-4a6c-a828-c1b18bd80aba,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-05-05T01:13:47.491207+00:00,"Jogo 211 - Ano passado - NBA Regular",4.7,2,red,-2,100
+001031f1-283f-405c-8150-0baf2304cb46,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-05-21T20:41:55.304666+00:00,"Jogo 217 - Ano passado - NBA Regular",3.46,4,green,9.84,100
+90ff8eda-07fc-4617-939a-bd3431026fb5,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-06-01T08:11:03.196984+00:00,"Jogo 239 - Ano passado - NBA Regular",2.44,3,green,4.32,100
+3e937947-9c2d-4846-981e-6461af2c70ff,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-06-03T18:21:41.821864+00:00,"Jogo 215 - Ano passado - NBA Regular",2.1,4,green,4.4,100
+43e39a8e-5498-4ed4-a0b9-c2fb89ec1684,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-06-12T13:35:25.848961+00:00,"Jogo 212 - Ano passado - NBA Regular",2.9,5,green,9.5,100
+6a1d9164-f998-4515-9af1-8570473b20d5,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-06-23T12:06:03.997581+00:00,"Jogo 249 - Ano passado - NBA Regular",1.92,5,green,4.6,100
+26e8e33d-bc73-4ef5-a072-ec91babcced5,2,NBA Props Master,nba-props-master,2025-08-04T12:24:50.775475+00:00,2025-07-02T02:15:12.654517+00:00,"Jogo 245 - Ano passado - NBA Regular",2.05,3,red,-3,100
+8eff81c4-be63-4ffa-8ce4-8a4f3480e34c,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-05T19:48:34.071226+00:00,"Jogo 90 - Mês passado - NBA Playoffs",3.28,3,red,-3,100
+ee1dafe8-4b40-4da7-af9e-ecdd20038196,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-07T20:13:47.296985+00:00,"Jogo 103 - Mês passado - NBA Playoffs",3.95,3,red,-3,100
+bfe23fa3-ece9-4cc8-9044-cc68a015db06,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-10T08:52:14.017586+00:00,"Jogo 99 - Mês passado - NBA Playoffs",2.74,1,green,1.74,100
+490651c5-76ca-4f2a-98e4-05714de3d73c,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-10T19:58:26.018933+00:00,"Jogo 105 - Mês passado - NBA Playoffs",1.8,3,red,-3,100
+484d938b-b324-4ab7-be2d-15a0e9b66c53,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-10T21:36:14.199889+00:00,"Jogo 89 - Mês passado - NBA Playoffs",1.65,2,green,1.3,100
+ecebc83d-163b-46c3-9be7-e52aa35433c6,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-11T21:44:33.200604+00:00,"Jogo 86 - Mês passado - NBA Playoffs",1.76,1,red,-1,100
+3176c365-cb1f-46d6-8c8e-51b42b9da406,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-12T02:47:14.799426+00:00,"Jogo 93 - Mês passado - NBA Playoffs",3.05,3,red,-3,100
+cf6fa56d-7c39-46f2-8847-91f50d9298d9,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-14T23:38:12.602386+00:00,"Jogo 95 - Mês passado - NBA Playoffs",3.59,3,green,7.77,100
+1e3ddfba-38d0-4aab-807f-898c99c2c809,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-15T21:15:54.283078+00:00,"Jogo 92 - Mês passado - NBA Playoffs",1.87,1,red,-1,100
+75f8b68d-adfc-49c2-b376-fd648f1c5695,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-16T06:51:38.643063+00:00,"Jogo 101 - Mês passado - NBA Playoffs",3.42,2,green,4.84,100
+324c3048-43ed-46c7-9759-5204bfcdcef3,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-18T10:18:06.926179+00:00,"Jogo 87 - Mês passado - NBA Playoffs",2.75,1,green,1.75,100
+079beb48-d946-414e-b145-56263f1c0b38,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-18T22:12:48.895788+00:00,"Jogo 100 - Mês passado - NBA Playoffs",3.56,1,red,-1,100
+25688187-bc06-42f0-8f59-05a125f50fc3,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-19T06:20:21.222969+00:00,"Jogo 102 - Mês passado - NBA Playoffs",3.48,2,green,4.96,100
+7b804f19-b27a-4578-b940-3a71dad8e828,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-20T08:53:03.182321+00:00,"Jogo 94 - Mês passado - NBA Playoffs",2.26,3,green,3.78,100
+df5b7148-1312-47fc-9fe4-2576170d0c91,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-21T11:56:56.617497+00:00,"Jogo 96 - Mês passado - NBA Playoffs",3.7,2,red,-2,100
+2eb9197a-affd-4236-93ca-b0616d7095a2,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-23T00:41:30.18521+00:00,"Jogo 97 - Mês passado - NBA Playoffs",3.9,3,green,8.7,100
+9b90b32f-645e-435c-ade4-0916c8b59624,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-23T04:17:01.105329+00:00,"Jogo 98 - Mês passado - NBA Playoffs",2.06,1,green,1.06,100
+54fe15fa-7813-44de-9e52-8279227461b7,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-23T13:59:10.390595+00:00,"Jogo 104 - Mês passado - NBA Playoffs",2.24,3,red,-3,100
+1925ab80-6c31-4095-a2a7-4b657b1b854b,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-24T03:35:59.720925+00:00,"Jogo 88 - Mês passado - NBA Playoffs",2.84,2,green,3.68,100
+7f8dcaf8-7ab0-4718-9f11-4110b3614a3e,2,NBA Props Master,nba-props-master,2025-08-04T12:24:30.727811+00:00,2025-07-24T11:40:25.248366+00:00,"Jogo 91 - Mês passado - NBA Playoffs",4.22,1,green,3.22,100
+a3c19f0a-fbf9-4375-81d9-5a222c14c8b3,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-07-28T20:35:19.414703+00:00,"Jogo 17 - Últimos 7 dias - NBA Finals",3.28,1,green,2.28,100
+c6414a6f-5c26-484f-a10a-bb24c7334f58,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-07-29T23:40:41.989595+00:00,"Jogo 20 - Últimos 7 dias - NBA Finals",1.95,1,green,0.95,100
+e9e5227c-3ddd-49ab-b2c4-b6374dd8eeb2,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-07-30T16:20:43.772315+00:00,"Jogo 16 - Últimos 7 dias - NBA Finals",3.75,1,red,-1,100
+1b415df3-87e2-4919-b6d9-db4c8fec6f3d,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-07-31T18:02:13.938463+00:00,"Jogo 22 - Últimos 7 dias - NBA Finals",2.08,1,red,-1,100
+5fa88456-08a6-4dd4-80ef-4770faa4e734,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-01T16:37:30.738109+00:00,"Jogo 25 - Últimos 7 dias - NBA Finals",3.12,1,green,2.12,100
+f6adfad6-688a-4274-96e0-99e28e4b9ad4,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-02T14:16:24.539213+00:00,"Jogo 24 - Últimos 7 dias - NBA Finals",2.96,1,green,1.96,100
+20559f22-7200-4604-a910-4f087d47323d,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-02T22:35:56.594283+00:00,"Jogo 19 - Últimos 7 dias - NBA Finals",4,1,green,3,100
+922456f4-ab87-4a3b-baff-442d00bfd7b8,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-02T23:25:13.300472+00:00,"Jogo 21 - Últimos 7 dias - NBA Finals",1.72,1,red,-1,100
+50a6e08a-f131-40c1-a66f-79428a16dd27,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-04T06:21:51.492659+00:00,"Jogo 23 - Últimos 7 dias - NBA Finals",2.33,1,red,-1,100
+61e3fc20-6b6a-46f6-8209-302997342143,2,NBA Props Master,nba-props-master,2025-08-04T12:24:10.515027+00:00,2025-08-04T08:47:03.915249+00:00,"Jogo 18 - Últimos 7 dias - NBA Finals",2.21,1,green,1.21,100
+4f1ad0fe-c4d1-4d81-a4da-83813cda29d3,2,NBA Props Master,nba-props-master,2025-08-04T15:11:46.713892+00:00,2025-08-04T10:11:46.713892+00:00,"AUDITORIA: Tripla 3.60 → Dupla 2.40 (1 jogo cancelado)",2.4,5,green,7,100
+82374288-4b7e-4287-b1a7-a34ba12d0560,2,NBA Props Master,nba-props-master,2025-08-04T15:11:46.713892+00:00,2025-08-04T11:11:46.713892+00:00,"AUDITORIA: Botafogo +0.25 AH vs Fluminense (perdeu 0-1)",2.3,6,red,-6,100
+bfd5dd8c-fcfe-494c-84da-c3c5305ea0da,2,NBA Props Master,nba-props-master,2025-08-04T15:11:46.713892+00:00,2025-08-04T12:11:46.713892+00:00,"AUDITORIA: Barcelona ML (cash out 25%, resto ganhou)",1.8,10,half_green,6,75
+c78b6407-5163-40ca-8bdd-ba7600332e20,2,NBA Props Master,nba-props-master,2025-08-04T15:11:46.713892+00:00,2025-08-04T13:11:46.713892+00:00,"AUDITORIA: Flamengo +0.25 AH vs Palmeiras (0-0)",2.15,8,half_green,4.6,50
+2ab05268-6db9-4db4-9857-3c7a5a152fe3,2,NBA Props Master,nba-props-master,2025-08-04T15:11:46.713892+00:00,2025-08-04T14:11:46.713892+00:00,"AUDITORIA: Liverpool -0.75 AH vs Arsenal (ganhou 2-1)",1.95,10,half_green,4.75,50
+1bbcea3c-210d-44b9-8c64-e27ce1d8d0e8,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2023-09-12T12:29:04.055648+00:00,"Jogo 394 - Histórico - Segunda Division",3.73,2,green,5.46,100
+a89cd970-2042-400a-b56e-e79761d15101,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2023-09-22T22:55:25.433167+00:00,"Jogo 395 - Histórico - Segunda Division",3.04,1,red,-1,100
+c74dbfa0-303a-432b-bbe3-bde0f7fb7298,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2023-11-12T13:26:40.733634+00:00,"Jogo 392 - Histórico - Segunda Division",2.44,2,red,-2,100
+8942c2db-ac66-46fb-89f5-1cd332baf820,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2023-12-04T18:33:50.214756+00:00,"Jogo 393 - Histórico - Segunda Division",4.38,1,green,3.38,100
+f9966170-ef71-4fae-a6ac-12f32076b66d,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-01-17T22:12:37.0538+00:00,"Jogo 391 - Histórico - Segunda Division",4.39,2,green,6.78,100
+51af4a5a-a622-4f30-abfe-f41ecdd3d827,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-03-06T11:39:03.217415+00:00,"Jogo 390 - Histórico - Segunda Division",2.93,2,red,-2,100
+32bc641f-0741-402d-8f96-3cdacae03f8f,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-03-10T15:38:44.691395+00:00,"Jogo 389 - Histórico - Segunda Division",4.52,1,green,3.52,100
+0cdc319b-a459-4a60-8ed5-4cc4bad85f77,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-06-06T03:22:16.347647+00:00,"Jogo 398 - Histórico - Segunda Division",3.08,3,red,-3,100
+544916a9-6107-4967-a255-a593a78ecdd1,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-06-16T05:54:16.306191+00:00,"Jogo 396 - Histórico - Segunda Division",3.59,1,green,2.59,100
+54738cf6-65b0-4b1c-8ddc-23825a891932,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-06-29T06:23:09.738684+00:00,"Jogo 399 - Histórico - Segunda Division",1.85,2,red,-2,100
+1fb35ff3-8c4c-4648-9535-990a8b552d45,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-07-09T06:04:24.217289+00:00,"Jogo 397 - Histórico - Segunda Division",2.03,1,red,-1,100
+ebc88548-6860-41ac-a0e6-2490181857e9,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:25:10.933256+00:00,2024-08-01T08:45:27.53066+00:00,"Jogo 388 - Histórico - Segunda Division",4.16,3,red,-3,100
+cf65eea1-363f-4510-bcb8-0521c45ad4da,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-01T12:20:45.123932+00:00,"Jogo 280 - Ano passado - Copa del Rey",4.48,4,green,13.92,100
+79badb2d-02ce-4e1d-ab21-c7578cb2db4e,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-04T16:49:19.246468+00:00,"Jogo 265 - Ano passado - Copa del Rey",1.79,5,red,-5,100
+1c03f688-29f0-47c7-a5b0-1a88571d516c,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-05T08:45:48.521634+00:00,"Jogo 271 - Ano passado - Copa del Rey",3.81,5,red,-5,100
+38643cb9-9a34-4ffb-8316-f12ba7446510,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-19T19:42:55.77361+00:00,"Jogo 288 - Ano passado - Copa del Rey",2.01,5,red,-5,100
+efcfecca-6b0f-4925-86f9-f4465c9dfed4,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-23T22:04:02.465105+00:00,"Jogo 260 - Ano passado - Copa del Rey",4.24,5,green,16.2,100
+3894e7f3-c1b5-4f47-b33c-8ab43a23c1a8,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-27T18:25:26.696952+00:00,"Jogo 282 - Ano passado - Copa del Rey",4.51,2,green,7.02,100
+85d18c9c-9d5a-428b-a314-374f9ca8efb5,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-09-28T01:18:24.577604+00:00,"Jogo 285 - Ano passado - Copa del Rey",3.13,1,green,2.13,100
+673a76e5-9edb-4741-81dd-a474b03fc59d,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-11-06T20:05:40.44554+00:00,"Jogo 253 - Ano passado - Copa del Rey",2.12,2,red,-2,100
+4779c186-1fc1-43df-9612-9b214c493774,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-11-14T23:06:22.294901+00:00,"Jogo 261 - Ano passado - Copa del Rey",2.28,3,green,3.84,100
+e981c400-73c5-4b20-9e91-298c7c7845f4,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-11-16T06:18:49.049242+00:00,"Jogo 273 - Ano passado - Copa del Rey",4.31,5,red,-5,100
+bacf438a-9a2f-4b85-8efb-541d141c0ad8,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-11-19T15:14:47.752724+00:00,"Jogo 251 - Ano passado - Copa del Rey",4.07,5,red,-5,100
+c6621967-59b7-41ce-a2c6-39f67a4b33ba,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-11-25T22:54:19.582469+00:00,"Jogo 279 - Ano passado - Copa del Rey",2.67,2,green,3.34,100
+6979282d-cb67-4d7e-83fc-6f2d4048c0bf,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-12-10T00:59:52.971276+00:00,"Jogo 287 - Ano passado - Copa del Rey",3.43,5,red,-5,100
+233412b9-6068-40d4-a295-d197a7455b21,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-12-15T21:49:07.930212+00:00,"Jogo 256 - Ano passado - Copa del Rey",4.63,5,red,-5,100
+4079b8cd-9ac4-4b3d-b68f-e3cb2c49e127,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2024-12-30T21:32:47.670876+00:00,"Jogo 278 - Ano passado - Copa del Rey",4.05,2,green,6.1,100
+c78c096a-d45b-4f7f-a64e-b250576796c9,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-02-03T19:06:45.582623+00:00,"Jogo 258 - Ano passado - Copa del Rey",4.6,4,green,14.4,100
+101dc487-dd78-4e31-b6fc-2553f85d7161,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-02-09T18:12:32.885777+00:00,"Jogo 259 - Ano passado - Copa del Rey",2.38,3,red,-3,100
+529d3e63-9b21-4dec-8be3-39a59ecec4a4,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-02-13T11:22:34.360364+00:00,"Jogo 254 - Ano passado - Copa del Rey",4.2,2,red,-2,100
+5f239ef4-fd5b-4261-a983-81b9b63eef1b,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-02-16T07:43:18.425397+00:00,"Jogo 264 - Ano passado - Copa del Rey",3.52,2,green,5.04,100
+cf0cd7a8-fb1f-4ee1-8a3a-4c15496ccbad,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-02-21T07:08:06.105764+00:00,"Jogo 272 - Ano passado - Copa del Rey",3.07,1,red,-1,100
+07ebdf76-4ae1-413f-b69d-e16e9b9eb5d5,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-07T10:08:10.948389+00:00,"Jogo 274 - Ano passado - Copa del Rey",3.2,2,green,4.4,100
+f67d9da8-b771-4d02-8bce-725a8dfe4848,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-10T03:56:28.770886+00:00,"Jogo 267 - Ano passado - Copa del Rey",4.05,1,green,3.05,100
+03520f2f-caa1-4cb8-bb5b-9343284a5c35,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-10T05:39:00.901964+00:00,"Jogo 270 - Ano passado - Copa del Rey",3.48,5,red,-5,100
+06ce9462-a6a9-4c8e-8609-dc554ad9d382,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-12T07:46:09.524255+00:00,"Jogo 277 - Ano passado - Copa del Rey",2.46,3,green,4.38,100
+2dfa23e9-dab6-4937-80d1-37cf3826e974,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-13T19:54:22.168647+00:00,"Jogo 290 - Ano passado - Copa del Rey",2.26,5,green,6.3,100
+b57695da-5236-4ac8-a430-8865eb0b151a,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-18T11:45:00.501163+00:00,"Jogo 262 - Ano passado - Copa del Rey",4.04,5,red,-5,100
+c434d5ea-b10b-40a4-81bb-32cc771ea42d,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-03-23T05:21:18.659774+00:00,"Jogo 266 - Ano passado - Copa del Rey",2.87,1,red,-1,100
+5b75e109-a7f6-4297-ac9c-b3787143f53b,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-04-21T13:24:03.917462+00:00,"Jogo 283 - Ano passado - Copa del Rey",3.14,3,green,6.42,100
+2df0592c-98c0-494d-940b-dbe573c5b0a6,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-04-26T02:29:39.33278+00:00,"Jogo 257 - Ano passado - Copa del Rey",2.21,1,red,-1,100
+3570659a-4fdc-4ad3-8367-024671de90a8,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-04-30T05:09:04.271728+00:00,"Jogo 289 - Ano passado - Copa del Rey",3.35,1,red,-1,100
+aa69d19d-cb0a-4226-8421-bed93ba19b51,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-05-01T19:06:37.606836+00:00,"Jogo 255 - Ano passado - Copa del Rey",2.61,3,green,4.83,100
+7d014ca8-2c8b-48e8-99a0-8b541edb6344,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-05-14T06:10:03.341259+00:00,"Jogo 275 - Ano passado - Copa del Rey",4.4,2,green,6.8,100
+c64e57e2-af38-4d90-a1d2-e1c9508ed72a,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-05-23T06:29:41.921156+00:00,"Jogo 269 - Ano passado - Copa del Rey",3.32,4,red,-4,100
+ca0d4612-bee8-4c07-824f-fce41d23f941,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-10T04:47:26.128651+00:00,"Jogo 286 - Ano passado - Copa del Rey",3.27,3,green,6.81,100
+6cb3946f-5099-42e3-adcd-a5f2d4ef9d31,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-15T08:49:09.532682+00:00,"Jogo 263 - Ano passado - Copa del Rey",3.26,5,green,11.3,100
+2fdeb574-8ecc-455e-b6bb-b2f47882a2f2,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-17T12:59:07.454122+00:00,"Jogo 284 - Ano passado - Copa del Rey",2.09,4,green,4.36,100
+7630bd52-2f1a-450c-ace2-73f0b35088be,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-23T04:41:01.85219+00:00,"Jogo 268 - Ano passado - Copa del Rey",3.04,1,green,2.04,100
+f98c081c-3a0d-4da7-87a5-d2d553a382a6,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-26T21:08:05.054629+00:00,"Jogo 252 - Ano passado - Copa del Rey",1.84,1,red,-1,100
+196795b8-45fd-4691-b8a1-02b761e0c80a,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-06-30T14:20:04.609593+00:00,"Jogo 281 - Ano passado - Copa del Rey",2.92,4,red,-4,100
+61d7dae9-550c-4b11-a3f7-5a209edf392b,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:50.775475+00:00,2025-07-03T11:21:32.045456+00:00,"Jogo 276 - Ano passado - Copa del Rey",3.9,1,red,-1,100
+a6304a48-2207-4f10-9848-9ef8f0ccbbe4,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-06T17:42:14.506126+00:00,"Jogo 119 - Mês passado - Bundesliga",2.04,1,green,1.04,100
+0073dca2-9ef6-4f8a-8f45-e13dd6fc9cdc,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-08T11:29:26.839084+00:00,"Jogo 112 - Mês passado - Bundesliga",4.03,3,red,-3,100
+268c99ef-1073-4a47-b898-1520d8542144,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-09T09:13:02.374421+00:00,"Jogo 117 - Mês passado - Bundesliga",1.7,1,red,-1,100
+a939b719-0379-49b6-b49c-49aebc3424f0,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-09T10:52:59.214153+00:00,"Jogo 124 - Mês passado - Bundesliga",1.93,3,red,-3,100
+78d3bc7e-a87c-40fd-a20e-be4f777417f5,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-10T13:40:54.573205+00:00,"Jogo 106 - Mês passado - Bundesliga",2.83,2,green,3.66,100
+8a5b1a43-d6fa-424d-8c75-f2593ba0d5f5,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-10T19:21:02.453691+00:00,"Jogo 113 - Mês passado - Bundesliga",3.3,3,red,-3,100
+eefee35c-e576-47f7-9fa7-c16567d6238a,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-12T05:20:14.725259+00:00,"Jogo 110 - Mês passado - Bundesliga",2,1,void,0,100
+4cf83766-f8ec-4d7e-9e0b-ad951648155f,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-13T10:52:45.80861+00:00,"Jogo 111 - Mês passado - Bundesliga",2.29,2,green,2.58,100
+1e7b6768-21d0-4e46-9c2b-8564e397d569,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-13T15:45:00.484849+00:00,"Jogo 118 - Mês passado - Bundesliga",3.93,1,red,-1,100
+02f04470-4efe-4989-82d1-0d6568b25dc7,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-15T08:13:27.522182+00:00,"Jogo 120 - Mês passado - Bundesliga",2.33,1,green,1.33,100
+febda1b5-2387-4b9c-80a1-193b3c8f7c6e,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-15T23:34:41.469603+00:00,"Jogo 125 - Mês passado - Bundesliga",1.88,3,green,2.64,100
+99bd2336-ecd6-4abc-abe5-75f22a14b547,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-16T23:53:18.11455+00:00,"Jogo 123 - Mês passado - Bundesliga",4.19,2,red,-2,100
+8339cf08-2fca-4a7b-a849-9a38e2f22b42,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-17T13:12:50.029701+00:00,"Jogo 116 - Mês passado - Bundesliga",3.3,2,green,4.6,100
+0544a0fa-26ff-4209-af9d-1ab6d8732ee9,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-18T01:11:35.052416+00:00,"Jogo 115 - Mês passado - Bundesliga",3.15,3,red,-3,100
+8d062d84-19a5-44af-a5e5-10a53039e9cc,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-18T05:22:57.3698+00:00,"Jogo 109 - Mês passado - Bundesliga",1.72,2,green,1.44,100
+b02811de-957d-4a51-b44f-f3e7259b173a,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-21T16:33:43.170609+00:00,"Jogo 107 - Mês passado - Bundesliga",3.64,2,red,-2,100
+07910ae9-0dca-49e6-adeb-6a9602c5f985,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-21T17:37:42.109711+00:00,"Jogo 114 - Mês passado - Bundesliga",3.69,3,red,-3,100
+a2ca303d-21bb-4196-9897-919ab91eb38d,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-23T18:07:02.217291+00:00,"Jogo 121 - Mês passado - Bundesliga",4.3,3,red,-3,100
+164db035-7bec-4a04-a849-90d3d111a4d3,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-23T23:01:23.556871+00:00,"Jogo 108 - Mês passado - Bundesliga",2.03,2,red,-2,100
+f4369660-4123-4baf-8dbe-7a913fd2c0cb,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:30.727811+00:00,2025-07-25T03:07:45.623864+00:00,"Jogo 122 - Mês passado - Bundesliga",4.04,1,red,-1,100
+f1a6d308-e9c6-45b2-973a-261c719e53f7,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-28T15:50:06.461129+00:00,"Jogo 28 - Últimos 7 dias - La Liga",3.55,1,red,-1,100
+b3c352d2-a165-4810-8aaf-9e6f0389aeb6,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-28T16:24:28.374607+00:00,"Jogo 35 - Últimos 7 dias - La Liga",2.16,1,green,1.16,100
+2e4e6b66-6537-4235-bec2-b084d6f88eda,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-29T12:02:03.968184+00:00,"Jogo 34 - Últimos 7 dias - La Liga",2.45,1,green,1.45,100
+0d31efb7-4cd0-40bd-ac59-536f3caacbb8,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-29T19:15:15.631955+00:00,"Jogo 26 - Últimos 7 dias - La Liga",1.58,1,green,0.58,100
+bb5d6b3c-598c-4c89-80f6-b5b4737f6e82,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-30T14:23:19.784887+00:00,"Jogo 27 - Últimos 7 dias - La Liga",3.96,1,red,-1,100
+c07d932a-9dfa-4810-894c-df7cd75ab5f1,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-07-31T23:13:11.155584+00:00,"Jogo 32 - Últimos 7 dias - La Liga",1.73,1,red,-1,100
+a019550b-f65d-446c-9138-ffc97412f526,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-08-02T03:14:34.098218+00:00,"Jogo 30 - Últimos 7 dias - La Liga",2,1,red,-1,100
+fab2248a-f850-48e7-b034-5206d22a1157,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-08-04T03:45:28.982819+00:00,"Jogo 33 - Últimos 7 dias - La Liga",1.78,1,red,-1,100
+e0637d02-efa5-4863-a262-53f219af934f,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-08-04T05:14:06.006897+00:00,"Jogo 31 - Últimos 7 dias - La Liga",3.2,1,green,2.2,100
+e80b799b-679b-486a-b257-7e7c8b2bc331,3,Arbitragem Tênis ATP,arbitragem-tenis-atp,2025-08-04T12:24:10.515027+00:00,2025-08-04T12:00:32.461427+00:00,"Jogo 29 - Últimos 7 dias - La Liga",2.96,1,red,-1,100
+a279453a-2951-40df-9527-5b289ccc1920,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2023-10-14T03:36:05.58605+00:00,"Jogo 402 - Histórico - FA Cup",3.46,2,green,4.92,100
+5b44928b-ceb0-46ca-a638-98e174a011c5,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2023-12-15T19:52:39.171138+00:00,"Jogo 406 - Histórico - FA Cup",2.09,2,green,2.18,100
+2488dc8e-c0bc-44ef-9bae-b8185f946022,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-01-17T13:06:34.417715+00:00,"Jogo 408 - Histórico - FA Cup",3.22,2,green,4.44,100
+d0fe0e8c-316b-49e2-929a-831519b4d154,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-01-19T09:15:53.425688+00:00,"Jogo 405 - Histórico - FA Cup",4.82,3,green,11.46,100
+ea866697-d6a3-43e3-8924-3d4c6c9fbe05,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-01-20T16:48:48.357938+00:00,"Jogo 401 - Histórico - FA Cup",2.12,1,green,1.12,100
+d644fc26-a696-473d-a4ee-f75525844caa,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-03-21T17:28:39.171787+00:00,"Jogo 400 - Histórico - FA Cup",4.29,3,green,9.87,100
+982449a8-7723-4369-a7c3-c28484b1cff2,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-04-08T18:02:03.250435+00:00,"Jogo 404 - Histórico - FA Cup",1.9,3,red,-3,100
+8f268741-9642-4e9a-9bd9-9c7e591b9d88,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-05-01T10:07:50.050109+00:00,"Jogo 407 - Histórico - FA Cup",3.97,3,green,8.91,100
+74558637-b384-4e52-a596-131b2788fd17,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:25:10.933256+00:00,2024-08-02T16:41:50.85877+00:00,"Jogo 403 - Histórico - FA Cup",3.87,3,green,8.61,100
+a88f5bb8-4936-4c51-bbe1-e9d7f9d5da22,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-08-17T20:17:37.308866+00:00,"Jogo 312 - Ano passado - Conference League",3.44,3,red,-3,100
+72e2d2ae-a2f1-4d82-8765-8781cdd66d95,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-09-06T09:42:03.655854+00:00,"Jogo 311 - Ano passado - Conference League",2.58,5,green,7.9,100
+550b3927-dc8d-405a-bc25-bcd6e4df0540,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-09-13T21:32:51.065098+00:00,"Jogo 297 - Ano passado - Conference League",4.19,5,red,-5,100
+27b1d047-893c-448d-be36-8e4d518cdc84,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-10-02T21:57:24.165558+00:00,"Jogo 292 - Ano passado - Conference League",2.54,3,red,-3,100
+8b8a1af0-44d8-4dea-a222-18010fd9fef6,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-10-15T05:28:13.279531+00:00,"Jogo 295 - Ano passado - Conference League",3.84,2,green,5.68,100
+83cc6305-84d4-4252-9f9f-16de26630b67,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-10-18T01:34:13.620844+00:00,"Jogo 306 - Ano passado - Conference League",1.7,5,red,-5,100
+544be35a-2d2e-49bd-900e-1e74fbc23078,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-10-23T04:59:55.38214+00:00,"Jogo 296 - Ano passado - Conference League",3.9,1,red,-1,100
+cbca0ad3-d88a-4ac0-87fd-ea851d1401ee,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-11-08T21:19:46.414172+00:00,"Jogo 301 - Ano passado - Conference League",2.97,1,red,-1,100
+f264a220-01db-4ba1-a769-b922c70249ad,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-11-17T06:42:51.152873+00:00,"Jogo 320 - Ano passado - Conference League",3.72,2,red,-2,100
+7d7d2727-8583-48e9-a0b2-25334eb92198,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-11-18T01:31:19.066177+00:00,"Jogo 303 - Ano passado - Conference League",4.47,3,green,10.41,100
+c356cc73-f278-41bc-b8f3-756bcebef5e1,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-11-18T03:03:00.503174+00:00,"Jogo 317 - Ano passado - Conference League",4.15,5,red,-5,100
+6cd5558c-1aea-484d-b1ae-9cd9ec9771d5,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-11-29T04:51:08.425095+00:00,"Jogo 294 - Ano passado - Conference League",2.49,4,green,5.96,100
+062302a5-7266-4f50-a35e-ee9025e477ac,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-12-07T03:13:17.31712+00:00,"Jogo 316 - Ano passado - Conference League",4.15,1,red,-1,100
+1e10d76f-de56-4463-a3f3-33de5e03d4ae,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-12-17T20:55:21.446407+00:00,"Jogo 291 - Ano passado - Conference League",1.84,2,red,-2,100
+0320346d-2999-4259-a19e-3496c3770210,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2024-12-24T18:28:49.765013+00:00,"Jogo 315 - Ano passado - Conference League",3.94,4,red,-4,100
+89adcc68-22ca-454d-9c4b-04b0eafe10a2,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-02-06T15:03:37.953795+00:00,"Jogo 302 - Ano passado - Conference League",2.44,2,red,-2,100
+5a8c7ad9-3c37-4f8e-a6c7-4db12a144645,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-02-08T08:42:32.424111+00:00,"Jogo 310 - Ano passado - Conference League",2.18,1,green,1.18,100
+47a7b237-2adc-4096-9b99-1f1aff8749c2,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-02-15T04:07:46.956745+00:00,"Jogo 309 - Ano passado - Conference League",4.13,4,green,12.52,100
+c9475aa2-9730-4129-a9d9-e565ca50ef2e,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-03-27T11:00:44.436932+00:00,"Jogo 293 - Ano passado - Conference League",1.81,2,void,0,100
+73df79e8-a617-483b-bfdb-b152d749a764,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-05-02T18:20:01.143149+00:00,"Jogo 318 - Ano passado - Conference League",2.2,5,green,6,100
+f859fe6c-8dac-47c6-a82f-3d8757504697,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-05-15T07:29:25.288136+00:00,"Jogo 300 - Ano passado - Conference League",2.88,4,green,7.52,100
+44981d4d-4945-4d6d-85ff-75c0997a52b4,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-05-18T06:40:30.154395+00:00,"Jogo 299 - Ano passado - Conference League",2.72,5,red,-5,100
+68c86683-a765-4d73-9244-91e44ec2e7bf,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-05-18T15:29:13.853148+00:00,"Jogo 313 - Ano passado - Conference League",2.07,5,green,5.35,100
+4d1ebfe0-56a2-4439-81dd-b9592095d1a1,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-01T10:18:16.422991+00:00,"Jogo 319 - Ano passado - Conference League",3.38,4,red,-4,100
+b36d275f-9c9a-4bdb-966b-89bfcd5be417,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-07T12:33:02.653401+00:00,"Jogo 314 - Ano passado - Conference League",3.79,5,green,13.95,100
+99a073f6-8a2f-4114-a2ab-c34793bc6328,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-11T21:46:56.43356+00:00,"Jogo 298 - Ano passado - Conference League",2.6,1,green,1.6,100
+04c27796-4b62-49d6-a0b7-dc718d52d909,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-17T10:48:19.568964+00:00,"Jogo 308 - Ano passado - Conference League",4.19,1,green,3.19,100
+faa28a87-db22-4bfa-ba09-967828ab9337,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-21T09:42:47.948339+00:00,"Jogo 305 - Ano passado - Conference League",4.12,2,void,0,100
+ba8fdb78-2b4d-41ec-83ee-526aef58a415,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-06-29T00:13:46.286999+00:00,"Jogo 304 - Ano passado - Conference League",2.02,3,green,3.06,100
+d6760552-c09c-44cb-bb45-a28db6637c51,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:50.775475+00:00,2025-07-01T03:34:49.027425+00:00,"Jogo 307 - Ano passado - Conference League",3.87,3,green,8.61,100
+a147fe12-518d-4de6-b5a6-c2015d9f50d4,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-05T19:14:39.928584+00:00,"Jogo 129 - Mês passado - Europa League",1.84,3,red,-3,100
+e9dd6c6a-0540-43c1-82f7-0eaa702f6298,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-10T06:39:27.997365+00:00,"Jogo 127 - Mês passado - Europa League",3.76,3,green,8.28,100
+6361780a-f009-4f26-9f0c-60f43705d9e5,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-11T01:15:52.472492+00:00,"Jogo 132 - Mês passado - Europa League",3.28,2,red,-2,100
+bb25b068-a2c9-455d-9ab2-385fad70b192,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-11T15:56:01.201498+00:00,"Jogo 126 - Mês passado - Europa League",3,1,red,-1,100
+d2c3659f-3f52-4af3-8939-d0bba4d3dd59,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-12T00:03:08.86139+00:00,"Jogo 131 - Mês passado - Europa League",1.81,2,green,1.62,100
+2dcb8cdd-1e09-4cc0-96d3-019e28f4b54d,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-14T15:29:33.701725+00:00,"Jogo 137 - Mês passado - Europa League",2.98,2,red,-2,100
+ceb1900e-6f37-42cb-b6a6-0777b725d823,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-15T10:11:53.656393+00:00,"Jogo 134 - Mês passado - Europa League",2.02,2,green,2.04,100
+657dee2f-864e-449f-af22-9f4618591037,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-16T16:42:17.968011+00:00,"Jogo 128 - Mês passado - Europa League",1.67,2,green,1.34,100
+82657efd-fcb6-46d3-b9c2-e2fd5c0a3062,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-19T23:38:22.954032+00:00,"Jogo 136 - Mês passado - Europa League",2.81,3,green,5.43,100
+3e26b03b-b936-45a9-8332-01672159b928,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-20T02:01:18.920882+00:00,"Jogo 135 - Mês passado - Europa League",1.71,2,red,-2,100
+3a7e3b13-5071-43b5-86ba-7d7db99f7ea1,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-20T11:22:46.331559+00:00,"Jogo 133 - Mês passado - Europa League",2.05,1,green,1.05,100
+a7f4d0cc-7b1a-4623-a977-f23bc1b25da0,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-23T05:39:27.64338+00:00,"Jogo 139 - Mês passado - Europa League",2.48,2,red,-2,100
+06e98a7f-abc7-4f7f-9b4b-b1bc1fb3d1f2,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-23T18:56:04.235428+00:00,"Jogo 140 - Mês passado - Europa League",2.39,3,red,-3,100
+ef876adb-8a21-4dce-89db-e65c464d05c1,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-24T19:24:00.179442+00:00,"Jogo 130 - Mês passado - Europa League",1.67,1,void,0,100
+27b13c04-919d-4b99-86be-80407cd7a51f,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:30.727811+00:00,2025-07-26T02:07:59.952124+00:00,"Jogo 138 - Mês passado - Europa League",3,1,red,-1,100
+61f810a1-d74c-4ba7-9184-a785cdc4ecf6,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-29T08:31:51.60383+00:00,"Jogo 47 - Últimos 7 dias - Champions League",1.62,1,green,0.62,100
+16deb660-94ac-48d4-b97e-6279ae0d74d4,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-29T10:10:09.586932+00:00,"Jogo 43 - Últimos 7 dias - Champions League",3.47,1,green,2.47,100
+53be1c3d-02db-4c47-86c0-d35c8368e4a4,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-29T16:14:51.506258+00:00,"Jogo 45 - Últimos 7 dias - Champions League",1.74,1,green,0.74,100
+28dd243c-bb96-418a-82e9-6aef433d274e,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-29T21:35:26.244482+00:00,"Jogo 46 - Últimos 7 dias - Champions League",2.18,1,red,-1,100
+abeac214-9566-4d18-89e3-867b3b593c73,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-30T00:01:18.79347+00:00,"Jogo 44 - Últimos 7 dias - Champions League",3.37,1,green,2.37,100
+8f0b024f-502b-4c79-81c3-8fbef0c650c1,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-30T18:31:42.955011+00:00,"Jogo 37 - Últimos 7 dias - Champions League",3.19,1,red,-1,100
+13395d0f-d16e-4cb6-ba32-c01bc0f656b8,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-07-31T15:06:05.936305+00:00,"Jogo 40 - Últimos 7 dias - Champions League",1.67,1,green,0.67,100
+0f5190df-2b6d-4a7e-990b-8a9180bdb516,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-01T02:48:21.707117+00:00,"Jogo 41 - Últimos 7 dias - Champions League",2,1,red,-1,100
+ae81ed0d-ec53-442b-9c4f-e8954323fc61,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-01T10:26:50.188869+00:00,"Jogo 48 - Últimos 7 dias - Champions League",1.86,1,green,0.86,100
+14abb6b2-af9c-4c83-ad2e-85507e119367,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-01T10:46:57.854462+00:00,"Jogo 36 - Últimos 7 dias - Champions League",2.14,1,green,1.14,100
+591d4424-2a34-4b0e-9823-b047bc169b38,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-01T18:44:29.561223+00:00,"Jogo 38 - Últimos 7 dias - Champions League",2.13,1,green,1.13,100
+163ac73d-26eb-411f-9189-39b1289bc3d6,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-01T19:43:50.062408+00:00,"Jogo 39 - Últimos 7 dias - Champions League",2,1,green,1,100
+f205bbd1-4992-41fa-a658-bcfe8b0aa8dd,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-02T09:51:26.589554+00:00,"Jogo 50 - Últimos 7 dias - Champions League",3.22,1,green,2.22,100
+233f6424-c2e6-4e03-a5eb-5d32260f352e,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-02T11:23:54.617432+00:00,"Jogo 49 - Últimos 7 dias - Champions League",2.27,1,green,1.27,100
+6ae60faa-0c3c-4c2c-812d-3194b68636be,4,NFL Underdogs System,nfl-underdogs-system,2025-08-04T12:24:10.515027+00:00,2025-08-02T13:37:39.549858+00:00,"Jogo 42 - Últimos 7 dias - Champions League",1.77,1,green,0.77,100
+add20707-9067-4388-9d15-58d7296dfd63,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-08-08T11:39:25.58617+00:00,"Jogo 419 - Histórico - Serie B",4.06,3,green,9.18,100
+483779be-87b4-4529-9d10-9cc199be4ffd,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-08-18T15:00:19.511131+00:00,"Jogo 416 - Histórico - Serie B",3.42,1,red,-1,100
+ad5cc9b8-a295-4f9a-bebd-fad94f6180f5,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-09-22T12:02:44.645013+00:00,"Jogo 412 - Histórico - Serie B",3.79,1,red,-1,100
+c2f70405-4ff3-4c14-bab9-6ea436e2d06c,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-11-15T15:27:24.737146+00:00,"Jogo 409 - Histórico - Serie B",3.78,1,green,2.78,100
+b1b3705f-f24d-49aa-98c5-ab9ff6a40b7d,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-11-16T07:29:56.511014+00:00,"Jogo 418 - Histórico - Serie B",5.07,2,red,-2,100
+9c3787c3-2110-422a-a1a0-3994d3969807,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-11-22T18:34:41.688245+00:00,"Jogo 411 - Histórico - Serie B",2.92,1,red,-1,100
+0d164c2d-c1e1-4c1d-bdd6-8417fc3cd72d,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2023-12-10T10:59:44.216949+00:00,"Jogo 420 - Histórico - Serie B",3.74,3,green,8.22,100
+79a4ac91-1bcc-4ed9-8c41-23654ac12567,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2024-04-08T19:29:15.847374+00:00,"Jogo 413 - Histórico - Serie B",3.84,1,green,2.84,100
+35ec6426-2692-4bc3-a871-980453ed7591,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2024-04-24T11:21:55.564907+00:00,"Jogo 410 - Histórico - Serie B",2.35,2,red,-2,100
+fea769b5-3709-42d4-ad4d-4fd613d12367,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2024-05-31T07:15:14.624586+00:00,"Jogo 415 - Histórico - Serie B",2.36,2,green,2.72,100
+e18a4f13-0e9e-4819-a1e6-cb78f8374828,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2024-06-26T15:45:35.345248+00:00,"Jogo 414 - Histórico - Serie B",4.15,3,green,9.45,100
+987a8a65-cf30-418c-989f-ebb1d63ca770,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:25:10.933256+00:00,2024-06-28T00:47:06.246014+00:00,"Jogo 417 - Histórico - Serie B",3.58,2,green,5.16,100
+8ec745b6-8176-4050-8d37-1c162e46e3c3,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-08-16T10:13:15.784202+00:00,"Jogo 333 - Ano passado - Coppa Italia",2.33,2,green,2.66,100
+d0f1f74c-c0dc-4244-85ce-a3b4996eb0d3,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-03T02:43:53.004564+00:00,"Jogo 337 - Ano passado - Coppa Italia",4.45,1,red,-1,100
+0fac8fc7-2439-4125-be40-b096c697be5f,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-19T16:47:04.025465+00:00,"Jogo 325 - Ano passado - Coppa Italia",3.56,3,green,7.68,100
+4919a531-819a-450f-b7b8-e0cdc93150fd,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-22T14:42:22.975105+00:00,"Jogo 344 - Ano passado - Coppa Italia",1.83,5,red,-5,100
+ed8b294e-3de4-4bb2-b6d1-d5a4ad1a1041,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-23T17:11:34.160606+00:00,"Jogo 354 - Ano passado - Coppa Italia",3.78,4,green,11.12,100
+11272031-331a-492d-b2c1-88615d1c7c78,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-28T16:13:02.464968+00:00,"Jogo 332 - Ano passado - Coppa Italia",2.84,5,green,9.2,100
+55e658dd-79ba-4f81-acf6-9fb2fbbfa51a,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-09-29T11:07:27.447649+00:00,"Jogo 346 - Ano passado - Coppa Italia",2.19,5,green,5.95,100
+d0dcb7f1-567d-4f22-9a5a-1b42b86844e8,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-10-19T05:32:12.583062+00:00,"Jogo 330 - Ano passado - Coppa Italia",2.35,3,green,4.05,100
+2704c402-b435-4caa-9f1d-392a2ab3dea0,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2024-12-30T04:08:08.323584+00:00,"Jogo 350 - Ano passado - Coppa Italia",2.98,3,red,-3,100
+9e5b7436-2778-4326-b39a-209fcc73f168,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-01-03T15:59:30.639262+00:00,"Jogo 360 - Ano passado - Coppa Italia",4.37,3,green,10.11,100
+96e9a169-14b6-400a-ad9e-fe9f7b1cf3be,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-01-27T00:54:21.625317+00:00,"Jogo 357 - Ano passado - Coppa Italia",2.59,5,red,-5,100
+2060f336-65bd-49c0-bf8b-abe3af162ee9,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-02-03T07:49:04.436323+00:00,"Jogo 355 - Ano passado - Coppa Italia",4.17,2,green,6.34,100
+7b71e11c-0780-44b3-b499-53a712373af4,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-02-06T03:55:32.049576+00:00,"Jogo 335 - Ano passado - Coppa Italia",2.82,2,green,3.64,100
+c8588342-6994-49cb-b1b0-4daaec8a5f59,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-02-12T02:19:16.363768+00:00,"Jogo 352 - Ano passado - Coppa Italia",1.96,1,green,0.96,100
+11f6e37f-7c3c-4570-b6b4-ad3b4fc22f53,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-02-15T22:53:35.719357+00:00,"Jogo 356 - Ano passado - Coppa Italia",4.35,5,red,-5,100
+bd1e4db7-0e94-401e-bb0e-20f6d67f51ee,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-02-21T07:25:15.980268+00:00,"Jogo 340 - Ano passado - Coppa Italia",1.97,2,green,1.94,100
+c97a78cb-abaf-4e67-9957-0e70d7d729dd,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-01T13:24:51.50989+00:00,"Jogo 349 - Ano passado - Coppa Italia",2.54,4,green,6.16,100
+7b45174d-f203-40f0-be0e-d0369c4fc889,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-02T04:06:14.789192+00:00,"Jogo 343 - Ano passado - Coppa Italia",4.2,1,green,3.2,100
+155d6d86-e626-449d-ae37-ab11a5cb1207,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-06T00:40:44.674628+00:00,"Jogo 359 - Ano passado - Coppa Italia",2.67,2,red,-2,100
+4787ff1a-dc34-4f67-a4ff-5e5c6f84f69c,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-07T06:56:41.297768+00:00,"Jogo 353 - Ano passado - Coppa Italia",4.4,2,green,6.8,100
+8c4d05df-2b3a-45b3-a805-8f96bbc91f50,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-11T20:01:58.809829+00:00,"Jogo 347 - Ano passado - Coppa Italia",4.36,1,red,-1,100
+a517517a-e1a9-4548-b57a-ed44194d8497,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-14T01:20:54.520943+00:00,"Jogo 329 - Ano passado - Coppa Italia",3.68,3,green,8.04,100
+83f4f719-7d8a-4207-934a-046b69e08137,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-15T22:40:52.277224+00:00,"Jogo 324 - Ano passado - Coppa Italia",2.14,3,green,3.42,100
+0536030a-8ed9-4400-b17d-7fbc5581f73d,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-23T00:30:02.574214+00:00,"Jogo 326 - Ano passado - Coppa Italia",1.84,3,red,-3,100
+620f4c54-c531-46c1-8135-453ec808f16e,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-03-26T22:03:45.944356+00:00,"Jogo 341 - Ano passado - Coppa Italia",2.62,5,red,-5,100
+d0e11952-d9d6-4556-a84a-f8fef928c37b,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-04-02T13:53:49.826831+00:00,"Jogo 322 - Ano passado - Coppa Italia",3.14,1,red,-1,100
+9e618d94-fb82-4839-8b4d-9996fe6efb1c,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-04-16T07:03:18.38931+00:00,"Jogo 358 - Ano passado - Coppa Italia",2,3,green,3,100
+111bf797-ba34-45e3-b676-6ceef2200e93,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-04-24T12:35:43.126269+00:00,"Jogo 345 - Ano passado - Coppa Italia",2.31,2,green,2.62,100
+5bf71c58-8fdb-4c8a-829a-05c89e904d7b,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-05-11T01:45:22.943114+00:00,"Jogo 339 - Ano passado - Coppa Italia",2.31,5,green,6.55,100
+77f60ee3-038b-4365-8357-4ebbbc5f5e93,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-05-12T05:35:15.352787+00:00,"Jogo 323 - Ano passado - Coppa Italia",4.26,1,red,-1,100
+b11180aa-950b-4964-a195-fd3a6fc1b6bd,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-05-24T09:10:15.410394+00:00,"Jogo 328 - Ano passado - Coppa Italia",2.39,4,green,5.56,100
+ca4d1a23-8368-4f07-9c80-cc1c01c3aa87,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-05-27T04:47:16.574533+00:00,"Jogo 348 - Ano passado - Coppa Italia",4.65,4,green,14.6,100
+b1000969-315c-4f11-a63d-a22a9fd94604,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-05-29T11:50:32.803514+00:00,"Jogo 331 - Ano passado - Coppa Italia",2.48,4,green,5.92,100
+cbeb062b-d4ba-4a22-bd16-ae3071f13e38,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-04T22:27:11.271276+00:00,"Jogo 338 - Ano passado - Coppa Italia",3.1,2,green,4.2,100
+fcb8bc83-4f13-49a1-a241-20e8f3af2533,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-07T16:52:11.018884+00:00,"Jogo 321 - Ano passado - Coppa Italia",1.89,5,green,4.45,100
+c0bb6196-e227-4bf7-bace-e08a335fc463,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-16T08:55:45.88752+00:00,"Jogo 327 - Ano passado - Coppa Italia",4.5,1,green,3.5,100
+5c7fa3a1-8c08-411a-97da-a108bba07656,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-19T15:38:36.341722+00:00,"Jogo 351 - Ano passado - Coppa Italia",1.97,4,green,3.88,100
+ff3f35d1-37e3-4227-9017-999bb6490016,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-23T13:58:09.439277+00:00,"Jogo 336 - Ano passado - Coppa Italia",2.32,5,green,6.6,100
+ebc55eb1-f962-4acd-b97e-bee5d86977e5,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-06-24T16:53:59.781778+00:00,"Jogo 334 - Ano passado - Coppa Italia",3.11,4,green,8.44,100
+f1438ce3-f33b-4d67-87af-3c662688293f,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:50.775475+00:00,2025-07-04T06:53:49.596199+00:00,"Jogo 342 - Ano passado - Coppa Italia",3.82,1,green,2.82,100
+aa0e844c-8fdf-42cc-9d00-92cef82320c3,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-07T05:07:28.310814+00:00,"Jogo 148 - Mês passado - Ligue 1",2.83,2,green,3.66,100
+195b49c2-42aa-4ba1-ae39-4632de8dcf44,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-09T02:56:29.507645+00:00,"Jogo 149 - Mês passado - Ligue 1",1.76,1,red,-1,100
+44bdd6d6-4116-45e2-b596-afe56edee8c5,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-09T08:44:28.466496+00:00,"Jogo 150 - Mês passado - Ligue 1",4.3,3,red,-3,100
+daa15047-597f-4582-8089-421e0c0dc701,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-09T10:18:49.16019+00:00,"Jogo 152 - Mês passado - Ligue 1",2.69,3,red,-3,100
+c57039e7-00a8-49a5-b16d-f6ce14529164,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-09T10:21:34.091263+00:00,"Jogo 142 - Mês passado - Ligue 1",4.23,2,void,0,100
+95164e6d-5713-41a0-9930-5d80cb76a38d,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-09T15:29:24.54669+00:00,"Jogo 158 - Mês passado - Ligue 1",1.92,2,red,-2,100
+28aa75ea-6681-4333-8156-d73e90b46287,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-12T21:07:19.548375+00:00,"Jogo 155 - Mês passado - Ligue 1",2.21,2,red,-2,100
+4a64144a-c486-42fc-a53d-60c3ee7ea8ee,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-13T01:14:19.298398+00:00,"Jogo 153 - Mês passado - Ligue 1",2.28,3,red,-3,100
+1727c8ca-f5ca-4791-a814-eca0e9cc4e72,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-13T14:53:09.17192+00:00,"Jogo 160 - Mês passado - Ligue 1",1.89,1,red,-1,100
+fb499490-ad05-4538-85b9-72230bd3a17f,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-13T17:43:47.122057+00:00,"Jogo 141 - Mês passado - Ligue 1",2.33,1,green,1.33,100
+1839ae0c-4e5c-4c8b-a81a-a91a97d51669,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-14T18:36:22.914745+00:00,"Jogo 156 - Mês passado - Ligue 1",2.69,3,green,5.07,100
+e11281af-bc0e-40ff-b92f-a8bc0694b946,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-16T16:03:59.269578+00:00,"Jogo 154 - Mês passado - Ligue 1",3.72,1,green,2.72,100
+f6a86eee-1bcc-4cea-92cd-a0e7244ad97d,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-19T08:14:00.09149+00:00,"Jogo 157 - Mês passado - Ligue 1",3.65,1,green,2.65,100
+887a39a7-1abd-4a43-830b-c967495317e8,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-19T16:45:47.288722+00:00,"Jogo 147 - Mês passado - Ligue 1",2.64,1,red,-1,100
+d6e17185-d762-4eab-bd77-d261759d1107,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-19T18:26:04.718603+00:00,"Jogo 143 - Mês passado - Ligue 1",3.79,2,green,5.58,100
+051cbaec-fd78-44e7-8973-72c266f0a710,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-20T13:47:55.199295+00:00,"Jogo 146 - Mês passado - Ligue 1",2.65,2,green,3.3,100
+72830079-0860-4ef7-afed-d5acb153dc9e,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-22T10:51:00.76891+00:00,"Jogo 151 - Mês passado - Ligue 1",2.79,3,green,5.37,100
+3c252937-406a-41d2-ba00-eab5da861555,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-22T16:38:49.704622+00:00,"Jogo 144 - Mês passado - Ligue 1",3.41,1,red,-1,100
+e71c51eb-294c-45cc-8a13-cd88d5c9a582,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-24T15:07:35.518937+00:00,"Jogo 159 - Mês passado - Ligue 1",4.22,3,green,9.66,100
+a477bc2f-7079-4ed8-ab87-98d9d23ecbd9,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:30.727811+00:00,2025-07-26T06:29:40.590617+00:00,"Jogo 145 - Mês passado - Ligue 1",3.33,3,green,6.99,100
+acefe3ce-c356-4855-8e3f-36ed5a09fccd,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-07-28T17:47:07.598154+00:00,"Jogo 52 - Últimos 7 dias - Serie A",2.51,1,red,-1,100
+3c4232f5-d8df-472c-9205-3fb68e559b2b,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-07-29T03:02:25.727531+00:00,"Jogo 57 - Últimos 7 dias - Serie A",1.64,1,green,0.64,100
+e56a48c8-4e7a-43da-9ba1-edb42e8961ad,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-07-31T02:36:59.757571+00:00,"Jogo 56 - Últimos 7 dias - Serie A",2.34,1,red,-1,100
+6ac92f1d-a495-4de0-8832-d541bdf2c2c7,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-07-31T21:14:56.030735+00:00,"Jogo 54 - Últimos 7 dias - Serie A",3.32,1,green,2.32,100
+c976001f-9266-4d2f-940f-f596cf481521,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-01T03:15:48.143045+00:00,"Jogo 55 - Últimos 7 dias - Serie A",2.7,1,red,-1,100
+c240ef84-500d-421a-9c75-5112bbe751fb,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-01T17:40:29.967105+00:00,"Jogo 51 - Últimos 7 dias - Serie A",1.94,1,red,-1,100
+af684334-9a9b-40be-a0e5-96875c6810bb,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-02T18:50:47.943211+00:00,"Jogo 58 - Últimos 7 dias - Serie A",1.94,1,green,0.94,100
+f9685585-aebc-4cb6-9f1e-00db15cca282,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-03T10:44:21.945759+00:00,"Jogo 53 - Últimos 7 dias - Serie A",1.97,1,red,-1,100
+6b03f38a-7a57-465c-9864-bd139b5adbf2,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-03T19:38:51.395912+00:00,"Jogo 59 - Últimos 7 dias - Serie A",3.8,1,green,2.8,100
+9a8d67c5-1a71-4632-be9e-56e0783d2e54,5,MMA Insider Tips,mma-insider-tips,2025-08-04T12:24:10.515027+00:00,2025-08-04T03:26:20.69864+00:00,"Jogo 60 - Últimos 7 dias - Serie A",1.68,1,red,-1,100
+39a7990c-15b7-4110-96ce-a86edf88aa16,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-10T02:00:58.937801+00:00,"Jogo 43 - KBL/CBA",2.7,1,green,1.7,100
+ffaa0f31-fa74-4764-83b1-7e807b747458,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-10T14:07:50.302877+00:00,"Jogo 74 - KBL/CBA",2.31,1,green,1.31,100
+39bdcbb9-b790-4d7a-89cf-99ce5f87b8fb,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-13T08:09:37.694454+00:00,"Jogo 61 - KBL/CBA",2.65,3,green,4.95,100
+2cf2ae05-ad5e-4ef0-86f9-7e99bfd2e727,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-20T20:04:12.682637+00:00,"Jogo 69 - KBL/CBA",2.94,1,green,1.94,100
+6cb082e2-c4a9-433b-a8cf-9ea1483ff3d8,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-21T17:20:06.058341+00:00,"Jogo 68 - KBL/CBA",3,1,void,0,100
+1a7fd8c4-d39d-4d37-9ba9-d126262abfcf,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-08-23T11:08:35.974132+00:00,"Jogo 32 - KBL/CBA",2.16,1,red,-1,100
+44c8816f-b719-49f0-86bd-cba3f674bde2,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-08T00:46:35.189426+00:00,"Jogo 65 - KBL/CBA",3,1,red,-1,100
+ab8554e5-cb34-428d-8e54-7839ef5a9624,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-09T01:57:37.754026+00:00,"Jogo 47 - KBL/CBA",1.78,2,red,-2,100
+303fdeb8-dc16-40b8-aed9-f516d8d6211a,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-10T14:36:01.081504+00:00,"Jogo 58 - KBL/CBA",2.74,2,red,-2,100
+ff77b4b7-a596-4102-815a-6e9654155d41,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-17T23:15:51.097716+00:00,"Jogo 56 - KBL/CBA",2.4,2,red,-2,100
+a5cf0134-50b3-4cbd-b90d-cb282682906c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-28T07:56:18.543839+00:00,"Jogo 19 - KBL/CBA",1.94,3,red,-3,100
+5ce4b02e-55f9-4a0c-a4ca-4fd80d1ef69d,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-09-29T07:10:19.376037+00:00,"Jogo 38 - KBL/CBA",3.15,2,red,-2,100
+cc143b40-5c75-41a7-96d0-391dcba52c03,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-01T00:24:14.56901+00:00,"Jogo 60 - KBL/CBA",2.45,1,red,-1,100
+c224cfcd-e5fc-45e9-b374-c6afd1187fc2,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-08T09:05:51.396333+00:00,"Jogo 42 - KBL/CBA",2.36,1,green,1.36,100
+bea453ca-571c-4d78-a865-c0417b2590f6,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-10T06:36:24.456038+00:00,"Jogo 10 - KBL/CBA",1.73,3,red,-3,100
+ba83ffba-f8b1-4746-90d4-9efb608f5bb0,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-13T10:21:53.99745+00:00,"Jogo 9 - KBL/CBA",2.13,2,green,2.26,100
+bd7e67b3-fae7-4e50-9aec-59170312f956,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-21T10:13:51.142527+00:00,"Jogo 34 - KBL/CBA",3.01,1,green,2.01,100
+8ac719b3-c7c6-4e76-b0f9-cee41b49a17c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-22T05:04:56.537407+00:00,"Jogo 46 - KBL/CBA",2.68,3,green,5.04,100
+fb0c2a12-d470-45b9-b155-f82cfaedc213,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-10-27T12:30:25.611635+00:00,"Jogo 16 - KBL/CBA",2.35,2,red,-2,100
+71f8acb8-cd4e-4c32-9fd9-867583b8381b,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-01T17:21:33.867991+00:00,"Jogo 25 - KBL/CBA",2.02,2,red,-2,100
+15621bf6-1b0c-4285-8f6e-642800e3160b,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-02T21:40:49.29674+00:00,"Jogo 67 - KBL/CBA",2.05,2,red,-2,100
+b26ebbfb-80a3-493b-9685-2d65bfe07df9,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-09T15:34:28.994401+00:00,"Jogo 73 - KBL/CBA",2.7,3,void,0,100
+3a05a1b4-a902-46b6-936a-73491a9d9c9c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-10T05:47:27.1596+00:00,"Jogo 44 - KBL/CBA",3.06,3,red,-3,100
+8e8ca480-fea1-4f0a-ad50-e1f765cce652,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-12T18:41:14.723545+00:00,"Jogo 54 - KBL/CBA",2.05,1,green,1.05,100
+49a377c2-f88c-4d7c-98ac-d17e6c37c0e8,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-15T13:25:39.624823+00:00,"Jogo 20 - KBL/CBA",3.03,2,green,4.06,100
+c8242827-111d-4850-b67b-6494f5b62658,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-18T12:22:50.976073+00:00,"Jogo 64 - KBL/CBA",2.06,3,green,3.18,100
+73c46960-b0be-4019-a930-23195d8b9a22,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-11-29T21:23:56.244062+00:00,"Jogo 11 - KBL/CBA",2.69,3,red,-3,100
+d7e35ccb-a245-484e-8a9a-ddc5ca9cc604,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-01T04:56:33.291716+00:00,"Jogo 48 - KBL/CBA",2.3,2,red,-2,100
+2455139e-901f-456e-b47b-34e11c675331,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-06T05:41:21.306525+00:00,"Jogo 23 - KBL/CBA",2.31,1,red,-1,100
+22fa3933-39eb-467c-9910-a8e2eabd2d75,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-07T04:35:42.026265+00:00,"Jogo 6 - KBL/CBA",2.81,1,red,-1,100
+75153937-22ea-4111-9318-828832cfeff3,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-08T00:09:42.343305+00:00,"Jogo 28 - KBL/CBA",3.12,2,green,4.24,100
+96d08768-5657-4eae-b643-1cb27971fa12,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-11T13:46:58.562875+00:00,"Jogo 45 - KBL/CBA",2.01,3,green,3.03,100
+089b6e24-b2ed-4a71-bb26-33ed56ef090e,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-14T18:42:55.89821+00:00,"Jogo 53 - KBL/CBA",2.25,3,red,-3,100
+65ee3c9a-bce1-4778-b2dd-05e1acdfcb19,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-19T12:35:02.983275+00:00,"Jogo 18 - KBL/CBA",1.98,1,green,0.98,100
+66655c97-eed3-4f51-8f30-340284b6e95a,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-25T02:54:48.701675+00:00,"Jogo 13 - KBL/CBA",3.11,2,green,4.22,100
+0a873a9f-3f38-4312-a4ad-faa59fd3931b,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-26T10:34:04.850792+00:00,"Jogo 22 - KBL/CBA",2.37,1,green,1.37,100
+1743ff55-bf78-4c08-b2ef-a89d4c5862d4,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2024-12-28T21:15:27.513076+00:00,"Jogo 26 - KBL/CBA",2.69,2,green,3.38,100
+fc68f956-8c12-41c9-b1cf-39ee6777d434,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-02T08:51:51.946918+00:00,"Jogo 21 - KBL/CBA",2.37,1,red,-1,100
+4baac6d6-943c-4c0d-b909-8090ee10441c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-02T13:44:59.171148+00:00,"Jogo 8 - KBL/CBA",2.17,1,green,1.17,100
+01a326b4-40e7-4ec8-824c-bf8db78a6d42,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-03T15:45:48.794873+00:00,"Jogo 49 - KBL/CBA",2.56,3,green,4.68,100
+ee87a643-6095-4453-b51d-794865bedc32,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-14T13:37:06.407718+00:00,"Jogo 71 - KBL/CBA",2.29,3,red,-3,100
+9093409e-e721-4a38-8c39-32fdfa15566c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-15T07:56:04.255478+00:00,"Jogo 5 - KBL/CBA",1.79,3,green,2.37,100
+b3f9a214-e2c4-4d2e-b1d0-c079dcc15e16,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-16T02:05:37.886634+00:00,"Jogo 3 - KBL/CBA",3.13,3,red,-3,100
+431dea68-7024-4dc0-b2a5-79513a58d441,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-01-16T19:38:18.369823+00:00,"Jogo 14 - KBL/CBA",2.07,1,red,-1,100
+c3468bde-7d06-41ac-bcd2-f6327e460d93,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-02-14T05:51:44.655183+00:00,"Jogo 1 - KBL/CBA",2.41,1,green,1.41,100
+11361a74-7b80-4cbe-bc43-c687fbb13a3f,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-03-11T22:07:30.935336+00:00,"Jogo 52 - KBL/CBA",3.11,1,red,-1,100
+b34c2fc5-7aa3-4b04-8233-2b8c1de8bf17,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-03-20T22:42:56.089814+00:00,"Jogo 2 - KBL/CBA",1.92,1,green,0.92,100
+85fc7b88-00d8-42bc-97c3-f11c98bef1ad,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-03-24T15:02:40.702289+00:00,"Jogo 27 - KBL/CBA",1.83,1,green,0.83,100
+f78da69b-9a32-403b-81f3-41e43db0f5f0,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-03-27T05:00:17.396755+00:00,"Jogo 33 - KBL/CBA",2.48,2,green,2.96,100
+5d4603f8-c7b3-47e2-a23d-16001ea5a27f,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-03-27T15:21:51.980602+00:00,"Jogo 41 - KBL/CBA",1.92,3,red,-3,100
+d48be1f4-a9c4-451b-9d02-ebac2ac3c967,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-03T19:41:22.137485+00:00,"Jogo 24 - KBL/CBA",3.09,3,green,6.27,100
+19549d15-e869-4c7f-9e66-406fe87cb0b6,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-03T22:26:15.812991+00:00,"Jogo 72 - KBL/CBA",2.3,1,red,-1,100
+e6ff6fc1-6d29-4725-9662-7143cb6ed9fb,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-10T10:38:19.921012+00:00,"Jogo 75 - KBL/CBA",1.88,1,green,0.88,100
+9df84424-61ef-4ee8-92b0-17603ce1d818,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-11T13:06:15.506214+00:00,"Jogo 59 - KBL/CBA",2.76,2,green,3.52,100
+e08a6f90-cb6a-4523-8146-50d793e07cce,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-19T19:32:14.655378+00:00,"Jogo 70 - KBL/CBA",1.76,1,green,0.76,100
+e019617b-17f8-4cfc-9c1a-01b7466c429c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-26T07:00:14.423286+00:00,"Jogo 36 - KBL/CBA",2.64,2,green,3.28,100
+e264d786-27ef-4643-8465-1cb4813082de,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-27T10:15:32.754515+00:00,"Jogo 39 - KBL/CBA",2.86,3,red,-3,100
+98059dcd-a0ea-4433-850d-1525944feafe,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-04-28T09:35:02.088306+00:00,"Jogo 55 - KBL/CBA",2.98,1,green,1.98,100
+bab900de-b849-44dd-8248-938a8772ed04,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-03T03:11:24.742572+00:00,"Jogo 17 - KBL/CBA",2.47,1,red,-1,100
+72f74781-22e3-4c1f-aebe-22e5d0237ef0,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-13T20:54:55.022198+00:00,"Jogo 15 - KBL/CBA",2,2,red,-2,100
+34f448fb-f93a-415f-8dcd-6bfe1c4751b9,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-15T20:00:47.004988+00:00,"Jogo 66 - KBL/CBA",2.16,1,green,1.16,100
+98e37780-e4d6-4331-8a10-76eb79c9042c,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-17T03:05:15.986888+00:00,"Jogo 62 - KBL/CBA",1.85,2,green,1.7,100
+e6a6079c-f79c-440c-afdb-95abf073643e,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-17T14:37:09.917454+00:00,"Jogo 4 - KBL/CBA",1.96,1,green,0.96,100
+633f4492-cf0a-488c-b31f-b9df3c45e3a8,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-20T05:36:14.609765+00:00,"Jogo 35 - KBL/CBA",2.52,3,green,4.56,100
+bde80d46-3c5a-4e4d-9c3a-6bca7a57a78d,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-05-24T17:57:44.188382+00:00,"Jogo 30 - KBL/CBA",2.97,2,green,3.94,100
+0f4daad9-0858-4a4d-b133-660e414cb4cb,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-06-02T10:17:28.72367+00:00,"Jogo 37 - KBL/CBA",2.35,2,green,2.7,100
+2e4cf481-814a-4998-8378-53b0d11fa3ef,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-06-14T19:15:38.871733+00:00,"Jogo 50 - KBL/CBA",1.94,3,green,2.82,100
+b0a45a1f-e760-4731-97c9-7612a4fab83a,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-06-20T09:51:35.961522+00:00,"Jogo 12 - KBL/CBA",2.15,1,green,1.15,100
+ce325179-e6ea-4526-b770-7837f4b46ba1,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-06-24T11:51:43.748323+00:00,"Jogo 63 - KBL/CBA",2.84,1,green,1.84,100
+dc0469c7-30b0-45ad-8e2b-dcb1d1ad18f2,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-06-25T16:27:03.011638+00:00,"Jogo 57 - KBL/CBA",3.05,2,green,4.1,100
+ee7ec299-5fe0-4e7b-83c8-1f84dca344a3,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-07-05T04:48:03.612176+00:00,"Jogo 29 - KBL/CBA",2.43,3,green,4.29,100
+418d1ecb-205f-4633-b3aa-9df021aa0abf,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-07-08T18:43:09.90442+00:00,"Jogo 31 - KBL/CBA",2.56,2,red,-2,100
+3361c04d-f88c-4824-a47a-a906c0afd144,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-07-12T07:31:56.455231+00:00,"Jogo 40 - KBL/CBA",2.48,1,green,1.48,100
+99a997fb-872e-42e5-99de-2ddf12f41700,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-07-26T12:33:48.72471+00:00,"Jogo 7 - KBL/CBA",3.2,3,red,-3,100
+532dc9d6-c4e3-4766-ac22-6e34b978fb18,6,Basquete Asiático Pro,basquete-asiatico-pro,2025-08-04T14:30:09.793639+00:00,2025-07-26T15:11:26.49481+00:00,"Jogo 51 - KBL/CBA",2.25,2,red,-2,100
+f2c2bcfd-ba8c-43cb-bac7-44ec188e3656,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-08-18T23:16:14.946749+00:00,"Jogo 18 - Cartões/Escanteios",2.76,4,red,-4,100
+46b013f3-5e0d-436e-a642-944ae8e93f55,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-08-25T10:06:36.374508+00:00,"Jogo 41 - Cartões/Escanteios",2.76,4,red,-4,100
+4c50c7b3-90b8-4c30-8877-153057563030,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-08-29T03:42:45.508665+00:00,"Jogo 69 - Cartões/Escanteios",2.23,5,red,-5,100
+dc9f5ddc-846c-4d1b-ae3f-a6a42eb3b570,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-08-31T09:58:46.054594+00:00,"Jogo 67 - Cartões/Escanteios",2.63,4,red,-4,100
+7495e882-7667-4f4a-9fd2-1c6dc41ba1d9,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-09-06T02:38:30.674901+00:00,"Jogo 5 - Cartões/Escanteios",2.83,5,red,-5,100
+0358fce6-4e77-49df-be3a-1f4279b8f59a,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-09-15T06:22:06.744523+00:00,"Jogo 47 - Cartões/Escanteios",3.17,5,red,-5,100
+2856e7d9-75af-4c7b-b39a-f08bbd141472,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-09-17T15:22:33.831835+00:00,"Jogo 61 - Cartões/Escanteios",2.07,4,green,4.28,100
+20efd513-2d8d-434c-a04d-e49c91ede30e,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-09-23T14:52:59.167621+00:00,"Jogo 6 - Cartões/Escanteios",2.78,2,red,-2,100
+a52784ef-2ff3-4de1-860f-6429de80ec44,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-09-23T18:39:42.272376+00:00,"Jogo 13 - Cartões/Escanteios",3.29,1,red,-1,100
+5077bfc9-529b-47d4-8548-764f18bdda28,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-02T03:44:41.626929+00:00,"Jogo 89 - Cartões/Escanteios",3.96,5,red,-5,100
+b81eaa91-96f4-4efe-9554-08381a206ddd,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-02T07:19:03.351389+00:00,"Jogo 20 - Cartões/Escanteios",2.35,2,red,-2,100
+44abaa34-2473-42bb-8086-6b04c239c98c,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-04T11:21:11.426238+00:00,"Jogo 70 - Cartões/Escanteios",2.53,1,green,1.53,100
+82581e7a-e13a-4335-8df5-f9bf2730703b,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-07T08:07:43.901164+00:00,"Jogo 23 - Cartões/Escanteios",2.76,2,red,-2,100
+e88038ad-7415-4aba-a3e0-5b37f3172b49,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-08T09:30:16.997494+00:00,"Jogo 81 - Cartões/Escanteios",3.91,5,green,14.55,100
+5036c5ab-43dd-4e33-956c-a7c2e4982201,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-10T16:44:13.624295+00:00,"Jogo 83 - Cartões/Escanteios",2.12,3,red,-3,100
+fcaca799-fbd8-4d62-92b3-23fe7ba17e41,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-12T07:03:05.931317+00:00,"Jogo 37 - Cartões/Escanteios",2.77,1,red,-1,100
+daccb638-13cf-4152-9a20-3e250d9bde59,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-18T05:04:00.999805+00:00,"Jogo 32 - Cartões/Escanteios",2.58,3,green,4.74,100
+603dddce-91e5-4713-9541-c2e091ba74a2,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-25T00:02:16.586281+00:00,"Jogo 82 - Cartões/Escanteios",2.89,3,red,-3,100
+1bd03393-7306-4cbd-9301-6eac357c4655,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-27T03:59:44.448137+00:00,"Jogo 88 - Cartões/Escanteios",2.16,4,red,-4,100
+53ac3e45-808a-461e-bb41-7aaef07b5fbb,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-10-29T01:41:09.784933+00:00,"Jogo 9 - Cartões/Escanteios",3.26,1,green,2.26,100
+c53f7187-c912-4197-9378-6dde0ff08f9c,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-02T10:33:05.219361+00:00,"Jogo 12 - Cartões/Escanteios",2.44,2,green,2.88,100
+27ca0c56-8014-4a20-b53b-c388fa2dac93,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-03T01:01:56.504998+00:00,"Jogo 50 - Cartões/Escanteios",3.8,3,green,8.4,100
+dd64f698-3179-4bf5-b168-a91beb24dd10,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-03T18:55:32.309758+00:00,"Jogo 84 - Cartões/Escanteios",2.89,5,red,-5,100
+e2b01c4c-56f5-487d-bda8-b5f6e9c75392,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-12T10:43:33.130741+00:00,"Jogo 35 - Cartões/Escanteios",2.1,4,green,4.4,100
+6c03cb1d-eae6-4385-a1c7-6e11821ddd7d,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-12T18:21:36.598065+00:00,"Jogo 77 - Cartões/Escanteios",2.4,2,green,2.8,100
+ca991a88-17d2-4707-8d19-69de61bacba0,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-22T15:46:41.29991+00:00,"Jogo 87 - Cartões/Escanteios",3.62,4,green,10.48,100
+22a200dd-518c-497e-992e-844e8294f7e7,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-26T17:45:22.629575+00:00,"Jogo 45 - Cartões/Escanteios",2.86,3,green,5.58,100
+11a1b364-9d67-4190-bef3-cd5d201380ce,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-27T10:09:18.293356+00:00,"Jogo 78 - Cartões/Escanteios",2.23,5,red,-5,100
+01fbb3d8-286b-4034-8c88-9b0d940af526,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-28T02:54:27.93309+00:00,"Jogo 38 - Cartões/Escanteios",3.93,5,green,14.65,100
+99523862-2ce2-4abd-95cc-c59be38a8c20,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-28T15:25:33.432941+00:00,"Jogo 16 - Cartões/Escanteios",2.29,1,red,-1,100
+174a989b-b7e1-43cd-b7fb-2ca8321e4111,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-29T04:00:15.083353+00:00,"Jogo 63 - Cartões/Escanteios",2.36,3,green,4.08,100
+4e89a2d6-7a0a-4096-83d9-c6cfa5cc607c,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-11-30T02:30:55.335629+00:00,"Jogo 60 - Cartões/Escanteios",2.75,4,green,7,100
+cad91f37-0d4a-4d92-a4b8-4f19928cedf9,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-03T06:35:27.306504+00:00,"Jogo 73 - Cartões/Escanteios",3.8,2,green,5.6,100
+1a6f65b7-d795-4d6e-9a54-a03ec9c9f541,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-04T22:35:51.318573+00:00,"Jogo 54 - Cartões/Escanteios",2.6,4,green,6.4,100
+cd517bec-f917-4349-ac82-fa25c3542622,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-05T23:07:04.330673+00:00,"Jogo 3 - Cartões/Escanteios",3.54,5,red,-5,100
+91143e20-c80d-4950-8ac8-5c50bb6cc4a7,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-08T20:38:01.364711+00:00,"Jogo 46 - Cartões/Escanteios",2.82,5,red,-5,100
+6266b0cb-f43e-4803-8bb7-5ba8f1dc00cc,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-14T02:17:29.128087+00:00,"Jogo 22 - Cartões/Escanteios",2.44,4,red,-4,100
+d25218dd-39bd-4412-a3c4-fd3357102de5,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-16T09:02:42.225244+00:00,"Jogo 55 - Cartões/Escanteios",3.87,2,red,-2,100
+c9ee5e7e-b41f-494e-af55-c16eebb53f79,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-16T12:47:22.490234+00:00,"Jogo 72 - Cartões/Escanteios",3.6,1,red,-1,100
+f4758326-24dc-43f1-90b1-e1f370d6b34a,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-16T23:56:26.274394+00:00,"Jogo 2 - Cartões/Escanteios",3.6,1,green,2.6,100
+9ce0e3f5-9bef-4c09-aba6-1cfa2b913cfc,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-26T12:03:43.991911+00:00,"Jogo 42 - Cartões/Escanteios",2.24,1,red,-1,100
+facb76fc-ba8c-4447-8957-b8048ec270af,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-28T00:34:14.732316+00:00,"Jogo 64 - Cartões/Escanteios",2.38,5,green,6.9,100
+84dd89b3-1d13-44ea-bb22-baf1fec8d4bf,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-29T18:59:36.079354+00:00,"Jogo 56 - Cartões/Escanteios",3.11,1,green,2.11,100
+a69f09ab-514e-47a3-b08d-7aaba9624b71,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2024-12-31T19:25:54.23223+00:00,"Jogo 68 - Cartões/Escanteios",2.7,2,green,3.4,100
+2f7ccdc5-9a80-4ee9-b7e9-46858bbb753f,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-02T03:53:45.307046+00:00,"Jogo 86 - Cartões/Escanteios",3.12,1,green,2.12,100
+3f121f59-c542-4fab-addd-ba19e02f32f9,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-02T23:15:37.356007+00:00,"Jogo 10 - Cartões/Escanteios",3.45,2,red,-2,100
+b2948386-6d38-4615-9cbc-c25e31c8ca54,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-09T11:59:44.499974+00:00,"Jogo 66 - Cartões/Escanteios",3.96,4,green,11.84,100
+16ec8b9d-2d98-4d2f-83a3-9e8544362a7d,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-14T23:42:55.449832+00:00,"Jogo 36 - Cartões/Escanteios",2.3,4,green,5.2,100
+001ee5de-a52b-4b91-bd68-70cdf7d2d86a,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-15T15:10:29.958944+00:00,"Jogo 17 - Cartões/Escanteios",2.16,2,green,2.32,100
+1221ddf5-e50b-438a-a50b-ae9b922d0d03,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-16T11:58:00.179884+00:00,"Jogo 11 - Cartões/Escanteios",3.6,3,green,7.8,100
+2e95e046-8f63-4250-831c-ad8f34676df7,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-01-22T22:05:02.09105+00:00,"Jogo 21 - Cartões/Escanteios",2.35,1,red,-1,100
+648f37cd-49ce-46ac-8e9e-d0f32e8ee662,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-01T15:31:00.879573+00:00,"Jogo 52 - Cartões/Escanteios",2.17,3,green,3.51,100
+37931fdd-355e-4a9e-bb91-1d03f0d5dd71,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-03T20:49:14.482851+00:00,"Jogo 24 - Cartões/Escanteios",3.05,4,green,8.2,100
+5bc9d24f-13cf-4e99-a455-a95e344baa87,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-08T18:35:49.135466+00:00,"Jogo 43 - Cartões/Escanteios",2.19,1,green,1.19,100
+c34f36eb-b0b6-466f-8c1e-8a00f750e70f,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-11T09:50:01.054288+00:00,"Jogo 31 - Cartões/Escanteios",2.52,5,red,-5,100
+a6cb24ed-f3eb-4960-aa13-41a07687ab53,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-19T12:10:02.701109+00:00,"Jogo 44 - Cartões/Escanteios",3.52,5,red,-5,100
+04a40744-2b83-4f5c-a7ef-f82787c777d7,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-03-21T21:17:38.036553+00:00,"Jogo 59 - Cartões/Escanteios",3.23,2,green,4.46,100
+cc60a27b-303d-47ed-93a6-92542ac01a72,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-01T22:32:42.097891+00:00,"Jogo 76 - Cartões/Escanteios",3.02,3,green,6.06,100
+2c378c7b-3d8b-4551-abc1-78360fa8bd25,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-02T11:01:01.033441+00:00,"Jogo 85 - Cartões/Escanteios",3.47,3,green,7.41,100
+14833ccf-846e-49fd-85ab-d7b5fa6a8b09,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-07T02:08:30.247487+00:00,"Jogo 57 - Cartões/Escanteios",3.73,2,red,-2,100
+7e3cb326-1b37-4167-8ac0-9d09ad4fec5e,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-09T03:22:20.12609+00:00,"Jogo 33 - Cartões/Escanteios",2.54,1,red,-1,100
+9b51781b-3ff6-47ee-b464-8fc83d5f6bab,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-10T12:28:55.070529+00:00,"Jogo 4 - Cartões/Escanteios",2.56,2,red,-2,100
+a4cb4e6b-5448-41da-b059-1d53ef805c20,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-11T01:49:56.57011+00:00,"Jogo 71 - Cartões/Escanteios",2.31,3,red,-3,100
+f119f191-9ac3-4a4d-a7b9-8ec331bf0789,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-19T13:11:43.975908+00:00,"Jogo 28 - Cartões/Escanteios",3.2,5,red,-5,100
+7297848a-4a8b-407d-b05a-4517ff4351f1,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-20T08:31:39.948494+00:00,"Jogo 53 - Cartões/Escanteios",3.32,3,green,6.96,100
+dec41091-2e00-48b1-bd23-9f112941765f,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-23T08:59:11.762354+00:00,"Jogo 58 - Cartões/Escanteios",2.88,4,red,-4,100
+ce59a782-84f8-4898-b4e6-b288753c34a2,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-23T14:38:25.38745+00:00,"Jogo 34 - Cartões/Escanteios",2.82,1,green,1.82,100
+313b47a8-f1f7-4064-b849-89c858240623,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-04-30T16:58:56.505537+00:00,"Jogo 75 - Cartões/Escanteios",3.61,3,red,-3,100
+4fafb747-6341-44e7-b37b-2d62efd6f71c,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-05-10T04:22:29.026771+00:00,"Jogo 74 - Cartões/Escanteios",2.69,2,red,-2,100
+84870695-a9df-404c-b3b0-a1c56ff6df9e,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-05-12T06:11:42.397922+00:00,"Jogo 26 - Cartões/Escanteios",3.74,2,red,-2,100
+454bc499-86ba-47ef-a4ff-605e5bea924d,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-05-22T23:24:05.011191+00:00,"Jogo 14 - Cartões/Escanteios",3.48,2,red,-2,100
+732c8d41-6721-4db5-baf4-089cec986451,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-05-27T00:23:34.685311+00:00,"Jogo 62 - Cartões/Escanteios",2.66,3,green,4.98,100
+b6b809e1-bb62-49da-b3f6-50b327f7d372,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-02T06:42:18.699764+00:00,"Jogo 40 - Cartões/Escanteios",3.57,4,green,10.28,100
+80b0d9e8-afb6-4ac5-9012-cb8a3d32ef2e,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-03T15:07:03.808597+00:00,"Jogo 27 - Cartões/Escanteios",3.17,1,red,-1,100
+703dec1e-099e-4f8a-a339-edc605495ac9,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-04T09:29:34.58063+00:00,"Jogo 30 - Cartões/Escanteios",3.16,1,green,2.16,100
+c178a4df-51bd-4342-9138-ba0203dec8df,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-11T01:21:53.793722+00:00,"Jogo 19 - Cartões/Escanteios",2.95,5,green,9.75,100
+bd047b74-df5f-43f7-ab4f-f01b9ec01c81,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-11T04:28:51.868371+00:00,"Jogo 8 - Cartões/Escanteios",2.73,5,green,8.65,100
+7c91599b-78c4-4db0-8a50-8a23884210b1,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-13T06:26:25.945054+00:00,"Jogo 90 - Cartões/Escanteios",2.14,4,green,4.56,100
+02368428-9513-4c27-bf57-326c3f380855,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-14T03:57:21.825969+00:00,"Jogo 15 - Cartões/Escanteios",2.76,3,red,-3,100
+ee683e33-4825-4c4d-91a4-a2b250a0baa1,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-23T22:41:15.415931+00:00,"Jogo 79 - Cartões/Escanteios",3.27,2,red,-2,100
+4d3cc376-aedd-46cd-b2ad-de7b910c7d7f,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-06-28T15:01:12.439274+00:00,"Jogo 7 - Cartões/Escanteios",2.55,2,red,-2,100
+0908e973-a803-45fa-a3bb-f9983f1a6648,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-06T22:29:32.524035+00:00,"Jogo 48 - Cartões/Escanteios",2.69,3,green,5.07,100
+7fc7c266-88d2-46b3-8d56-87ff2f762ed0,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-09T11:01:07.621016+00:00,"Jogo 65 - Cartões/Escanteios",3.61,2,green,5.22,100
+e0230a1a-8bdb-4d0c-8a00-21a1fd57b2b8,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-10T02:50:08.752312+00:00,"Jogo 80 - Cartões/Escanteios",2.66,2,red,-2,100
+fcfc7667-2df3-4149-9f28-230818303af8,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-19T23:29:13.484663+00:00,"Jogo 49 - Cartões/Escanteios",2.97,1,green,1.97,100
+978d6b3e-163c-4dfb-89f6-67b60a38a298,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-21T14:15:05.613217+00:00,"Jogo 25 - Cartões/Escanteios",3.99,2,green,5.98,100
+63ef993f-2809-41c3-9740-85d15a8b89e1,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-22T22:06:41.568807+00:00,"Jogo 1 - Cartões/Escanteios",3.19,1,void,0,100
+b5f041f8-2dd6-4606-95d4-458fab91ae12,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-26T08:55:47.122662+00:00,"Jogo 29 - Cartões/Escanteios",2.39,2,green,2.78,100
+f4cd1532-7354-4646-901e-3b1309dec905,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-07-31T14:50:44.427757+00:00,"Jogo 51 - Cartões/Escanteios",3.24,1,green,2.24,100
+7ccce55c-76b3-40eb-a5ff-80e8e0a6f2c6,7,Soccer Chasing System,soccer-chasing-system,2025-08-04T14:30:20.174066+00:00,2025-08-02T09:24:58.640843+00:00,"Jogo 39 - Cartões/Escanteios",2.47,3,green,4.41,100
+2784277e-f787-4683-8f80-0939ef471526,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-14T14:48:49.095439+00:00,"Jogo 41 - Futebol",2.73,2,red,-2,100
+0dd2fd35-e3c5-458e-9936-4fcb2b8c7ba1,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-16T09:28:52.236139+00:00,"Jogo 25 - Futebol",2.23,2,green,2.46,100
+0aad893f-d260-4eed-9bf2-a377b180e9d5,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-20T03:33:07.111631+00:00,"Jogo 58 - Basquete",2.4,2,red,-2,100
+a5298e8a-8a31-4b0a-8e10-8bc2bb5d7666,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-21T07:31:47.518883+00:00,"Jogo 3 - Basquete",3.93,1,red,-1,100
+3fb90b09-add3-4427-990a-52acd777e282,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-23T07:17:03.730011+00:00,"Jogo 77 - Basquete",2.94,2,red,-2,100
+42ecb077-384f-4f51-ad61-88626a6232d8,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-08-28T19:39:55.20146+00:00,"Jogo 38 - Tênis",3.73,2,green,5.46,100
+d845163d-e2c3-4fb9-b123-33d8b90fce97,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-09-02T12:42:56.18445+00:00,"Jogo 68 - Basquete",2.85,1,red,-1,100
+5f98198c-ce4d-453e-a2a4-050b0eaa3d7e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-09-14T10:58:14.033674+00:00,"Jogo 30 - Futebol",2.42,2,red,-2,100
+5dc68466-745f-455b-bfa4-eb16b5df23f1,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-09-26T19:45:30.583208+00:00,"Jogo 26 - Vôlei",3.44,2,red,-2,100
+720ef50e-1a14-4f74-a885-f80394e4269e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-04T03:52:13.217418+00:00,"Jogo 63 - Tênis",2.61,1,red,-1,100
+14fb6946-473b-4911-9bbd-e5660ef1eedb,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-06T03:07:15.904919+00:00,"Jogo 49 - Tênis",2.43,1,red,-1,100
+e66fff94-254c-4175-b147-9d4a51d96164,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-07T05:20:50.462241+00:00,"Jogo 62 - Basquete",2.83,2,green,3.66,100
+f345271e-2d85-41b7-b327-4ab7bf3d1e0e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-09T18:58:48.296666+00:00,"Jogo 81 - Futebol",3.81,1,red,-1,100
+5cdaa60f-7528-496a-8192-76690092305f,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-12T04:01:03.766217+00:00,"Jogo 50 - Basquete",3.62,1,green,2.62,100
+dcade936-2392-446d-8105-76a9c94cf861,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-16T20:56:13.440584+00:00,"Jogo 78 - Futebol",3.1,1,green,2.1,100
+97e0327a-edde-4bc7-92d2-ffe21af60bca,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-23T22:09:18.515163+00:00,"Jogo 84 - Futebol",2.55,2,red,-2,100
+5fc31554-b4b2-4954-839a-5dcea3d181f3,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-25T09:34:07.912326+00:00,"Jogo 23 - Basquete",3.93,1,green,2.93,100
+73502296-e6d6-4d9d-90cc-31a89496ac21,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-30T19:24:40.148679+00:00,"Jogo 33 - Vôlei",3.22,2,green,4.44,100
+3821def3-afa8-452d-bdc4-a06b2c63bc62,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-10-31T13:24:11.749901+00:00,"Jogo 61 - Basquete",3.49,1,green,2.49,100
+23cfea7a-a4b6-42bb-8a06-84ebc3d4c478,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-01T18:43:05.115009+00:00,"Jogo 79 - Basquete",3.5,2,green,5,100
+5fd569d7-c55e-4163-b2de-f87b5eb90261,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-12T08:44:59.161391+00:00,"Jogo 17 - Tênis",2.37,1,green,1.37,100
+7917929a-092a-4f94-97a8-91dc4b5eef0c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-18T12:40:16.9367+00:00,"Jogo 20 - Vôlei",2.45,1,green,1.45,100
+ec7f5871-d083-4ad8-b9bb-f077ce8b23d4,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-24T18:40:02.183747+00:00,"Jogo 83 - Vôlei",3.83,2,red,-2,100
+f791aa42-5660-4184-aeb2-a9e815d0dc58,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-29T03:59:57.213073+00:00,"Jogo 66 - Tênis",3.13,1,green,2.13,100
+1f1bafaf-4f41-4461-aeb4-d920109ad3e2,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-11-29T08:17:05.696737+00:00,"Jogo 21 - Tênis",3.78,1,red,-1,100
+6ec7fa0c-e69e-4bf7-81e5-aeece11fac56,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-02T16:53:43.568845+00:00,"Jogo 27 - Tênis",2.75,1,green,1.75,100
+e2c76c1e-33be-4cd3-b200-c5f996dae9d3,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-09T04:26:44.793478+00:00,"Jogo 7 - Basquete",2.37,1,green,1.37,100
+2b0f1676-0588-4cf4-872f-c434095263be,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-10T13:24:22.699442+00:00,"Jogo 82 - Tênis",2.57,2,green,3.14,100
+1b582bd5-af20-46b7-91b4-2f22c213c0ea,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-18T06:39:10.893975+00:00,"Jogo 22 - Basquete",3.05,1,red,-1,100
+f5da7970-e1a0-402b-a1db-9da978869560,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-22T07:29:18.103855+00:00,"Jogo 13 - Futebol",2.63,1,green,1.63,100
+8de7ab16-8a34-4ac1-8733-90581dfe1e60,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2024-12-27T06:07:11.904683+00:00,"Jogo 43 - Basquete",2.34,2,green,2.68,100
+a4507992-cfd3-4c44-b549-4e22f067413e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-02T00:12:05.037678+00:00,"Jogo 24 - Basquete",3.09,1,green,2.09,100
+43c619e3-baa1-4b11-8c41-d4a41d744c20,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-02T08:42:42.683092+00:00,"Jogo 29 - Tênis",3.81,2,green,5.62,100
+f5fc23d4-8dc4-41b0-a4b4-6dc499b19775,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-03T15:04:47.247342+00:00,"Jogo 19 - Basquete",3.93,1,green,2.93,100
+894839e3-1fd6-402c-94b1-c90f0d742e8e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-05T04:14:46.922633+00:00,"Jogo 54 - Tênis",3.8,1,red,-1,100
+e234a05e-bb8a-4fe0-824b-3a28f6f96744,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-06T07:54:14.791799+00:00,"Jogo 69 - Basquete",3.47,2,green,4.94,100
+dfb9f05b-dcf7-4db1-b02e-aa7f250b66b5,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-06T17:55:28.542415+00:00,"Jogo 55 - Tênis",2.28,1,red,-1,100
+4567680b-4d57-428a-81e1-8fb2695dcf69,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-16T08:07:06.946939+00:00,"Jogo 67 - Vôlei",3.24,1,green,2.24,100
+8f3c7485-916d-4dcb-bf74-ac1a1d616ed0,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-17T01:37:25.675466+00:00,"Jogo 1 - Tênis",2.34,2,green,2.68,100
+0f07f80d-5f95-4def-ab93-43aa73ba908f,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-17T17:56:21.627651+00:00,"Jogo 75 - Vôlei",3.43,2,red,-2,100
+298dfdb0-badf-4482-b8cc-b978224f1938,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-18T14:38:50.832631+00:00,"Jogo 10 - Vôlei",2.61,1,red,-1,100
+c677b74a-1293-4fff-a445-aa1789e167d3,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-23T05:15:17.937964+00:00,"Jogo 37 - Vôlei",2.4,1,red,-1,100
+92d39487-0e4f-4f4c-b28b-ce5ec2bd7504,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-24T14:14:58.017806+00:00,"Jogo 45 - Vôlei",2.94,2,green,3.88,100
+b137df56-2453-4524-b0cf-ddc2e2f360e9,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-26T13:44:56.235962+00:00,"Jogo 34 - Futebol",2.45,1,green,1.45,100
+8d70ba16-9dd8-4f2d-aa96-8f9800cc8d78,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-26T21:05:36.582798+00:00,"Jogo 32 - Vôlei",2.99,2,red,-2,100
+5d6b8aa9-0a1f-424e-88b9-2b9bb9717e28,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-01-31T13:57:44.089704+00:00,"Jogo 40 - Tênis",3.64,1,red,-1,100
+f354be4a-8464-450d-9da4-61d58d808580,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-01T09:44:38.107763+00:00,"Jogo 28 - Tênis",2.67,2,red,-2,100
+cedf1a93-f119-4ae4-bfbc-e256b4e3733a,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-03T20:40:25.967833+00:00,"Jogo 35 - Tênis",2.87,2,red,-2,100
+3a057280-34be-4133-a33c-35d3244becaf,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-06T14:24:31.326402+00:00,"Jogo 60 - Tênis",2.36,2,red,-2,100
+79c40f6d-e947-4b9e-83a2-916a2bf73b4a,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-11T02:11:46.471268+00:00,"Jogo 11 - Futebol",2.35,1,red,-1,100
+1db4e5e8-5836-47a6-8c10-e07352b605cd,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-18T11:52:51.56012+00:00,"Jogo 31 - Vôlei",2.98,1,green,1.98,100
+98396232-5549-411c-8136-2fbf1feb209c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-21T16:33:50.631586+00:00,"Jogo 16 - Vôlei",2.46,2,green,2.92,100
+118de7ee-67c4-4f72-bee0-08198499ed31,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-02-28T03:23:55.853893+00:00,"Jogo 4 - Tênis",3.93,1,green,2.93,100
+ff04a896-44ed-461c-9e61-1b33ff537813,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-03-13T22:41:46.473247+00:00,"Jogo 64 - Basquete",2.71,2,red,-2,100
+f092d342-2fc9-4ca5-8250-3408ac1c1f5e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-03-15T13:10:12.852762+00:00,"Jogo 59 - Vôlei",3.38,1,green,2.38,100
+6a1e37ed-cadb-4357-bee0-00e71e64d0ed,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-03-16T19:53:52.490471+00:00,"Jogo 51 - Vôlei",3.7,2,green,5.4,100
+75d23b7e-a93f-484b-bed1-dd11a1213aa7,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-03-20T01:30:09.287032+00:00,"Jogo 52 - Basquete",3.57,2,green,5.14,100
+1442d3a1-ba47-488e-a122-98d80f8893ad,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-03-28T15:38:53.951853+00:00,"Jogo 18 - Futebol",3.59,1,green,2.59,100
+dd55c853-622e-4e30-b10e-ef6fec2ec78e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-07T09:27:56.559102+00:00,"Jogo 2 - Futebol",3.68,1,green,2.68,100
+c719512e-1408-4b0f-b56a-1997dae558f2,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-10T13:01:10.221061+00:00,"Jogo 12 - Basquete",2.26,2,red,-2,100
+fae01174-7bc4-4e5d-8536-ceecda336084,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-12T12:39:30.388573+00:00,"Jogo 53 - Futebol",3.63,2,red,-2,100
+17d6851c-95a4-4f20-b322-804e647fc630,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-14T16:17:18.62709+00:00,"Jogo 57 - Futebol",2.62,2,red,-2,100
+c2bfc0b0-20ce-448b-85ae-5a65622bf5f3,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-20T15:17:01.969778+00:00,"Jogo 70 - Tênis",2.4,1,red,-1,100
+df8b3094-c428-4fa9-b395-9f331ebbe971,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-21T23:31:18.553637+00:00,"Jogo 65 - Futebol",2.57,1,red,-1,100
+ab569ac5-d5f6-4c30-a9a7-b9123b4bf870,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-22T22:53:52.194244+00:00,"Jogo 71 - Vôlei",2.56,2,green,3.12,100
+b059ee01-6019-4acb-9824-b9d37044ce37,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-04-28T10:45:43.510205+00:00,"Jogo 39 - Basquete",2.3,1,green,1.3,100
+43dbf050-40ef-4ed4-afa4-0379ba81a70c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-05-06T05:23:13.871962+00:00,"Jogo 56 - Vôlei",3.99,2,green,5.98,100
+99c7ac5e-f93c-42a4-8b20-deb9a03f7ce8,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-05-26T04:44:31.195651+00:00,"Jogo 85 - Vôlei",3.87,2,green,5.74,100
+49fb2dce-7e8c-484c-83fb-994b09512b6c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-05-28T05:55:12.24419+00:00,"Jogo 73 - Vôlei",3.72,2,red,-2,100
+f156ded6-6dee-40ac-9c99-9045c7b34a63,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-05-30T23:47:19.378601+00:00,"Jogo 14 - Vôlei",2.62,2,green,3.24,100
+3800a5f2-945c-4684-902e-49aceb0f201d,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-04T18:45:50.201896+00:00,"Jogo 42 - Vôlei",3.5,2,red,-2,100
+211c6f1d-e4bc-4fd7-a992-c31c6d77235c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-05T23:16:49.152888+00:00,"Jogo 9 - Vôlei",3.61,1,green,2.61,100
+925e7bd7-d03a-4dd5-9f35-cc5032e8db19,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-12T08:16:39.855804+00:00,"Jogo 72 - Futebol",3.31,1,red,-1,100
+7d4dbf3c-ea9c-4414-b120-ba2da682c9a7,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-17T04:37:22.60318+00:00,"Jogo 47 - Basquete",2.28,2,green,2.56,100
+b5a5942b-faa0-44d5-8c7b-0ffd937d3645,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-19T02:12:42.14178+00:00,"Jogo 5 - Basquete",2.41,2,green,2.82,100
+f62d08fc-5c5a-42d2-85cf-f2c6e7eebc4c,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-20T08:36:45.763676+00:00,"Jogo 44 - Vôlei",2.67,1,red,-1,100
+3354cd5f-1ad3-4ac6-ab6c-7095665cdc7e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-20T14:31:18.467726+00:00,"Jogo 46 - Basquete",2.32,2,green,2.64,100
+7eefa0f0-0777-4263-8f58-9850dcca43a6,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-25T22:45:29.007067+00:00,"Jogo 6 - Basquete",2.64,2,red,-2,100
+1b0ab334-e5ee-4d71-aab5-b72857cd1b28,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-06-26T19:19:57.798863+00:00,"Jogo 48 - Tênis",3.56,2,red,-2,100
+c50d5137-5a52-416e-8824-81cede96865f,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-04T04:37:19.825099+00:00,"Jogo 8 - Basquete",2.69,2,green,3.38,100
+9200613b-e0cd-44df-9883-aaea1e826b38,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-11T20:40:45.881104+00:00,"Jogo 80 - Vôlei",2.6,2,red,-2,100
+cec2c668-0f32-40a8-a89a-e57eef49aa37,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-12T09:25:05.000601+00:00,"Jogo 76 - Futebol",3.65,1,green,2.65,100
+73294371-4f2d-4e7a-ae46-b62531772a7d,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-19T12:04:25.168002+00:00,"Jogo 74 - Vôlei",3.23,2,green,4.46,100
+cf615425-e88e-4cf3-ad43-00be45a8fd7f,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-24T17:32:53.686873+00:00,"Jogo 15 - Basquete",3.74,1,green,2.74,100
+06b22d14-8584-4708-91c0-c595b809842e,8,Multi-Esportes Value,multi-esportes-value,2025-08-04T14:30:34.54993+00:00,2025-07-31T20:28:34.511291+00:00,"Jogo 36 - Futebol",2.82,2,green,3.64,100
+160eb8fb-088c-44d8-aa9a-c8d17080bb39,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-02-07T21:03:37.66376+00:00,"Match 34 - LoL",3.83,1,green,2.83,100
+29f66cd5-cc03-4e89-abe5-5ebba8446269,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-02-18T06:12:07.164175+00:00,"Match 5 - Dota2",3.68,1,red,-1,100
+fb17491d-4423-408e-a8f3-926d88c9bc9f,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-02-19T05:01:20.464247+00:00,"Match 45 - Dota2",2.72,1,red,-1,100
+be608061-2066-4321-b6a9-0cbc01494420,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-02-22T13:25:28.030701+00:00,"Match 3 - Valorant",3.65,1,red,-1,100
+929ae718-a703-40bd-9971-8dc1e571190a,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-02-27T13:36:29.38283+00:00,"Match 41 - Valorant",2.6,2,green,3.2,100
+ff5a2df6-5634-4436-970f-539d51d4e8dd,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-01T21:13:16.827582+00:00,"Match 6 - CS:GO",2.41,1,red,-1,100
+12b7b3c8-67a9-4326-a964-c1bf39007463,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-04T10:24:22.326169+00:00,"Match 36 - Dota2",3.71,2,green,5.42,100
+a821101d-cab5-4667-a214-70389468b3ee,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-05T02:14:05.832979+00:00,"Match 2 - LoL",2.72,1,red,-1,100
+68500ae4-d2dc-4bba-a5ce-c153777c4ea8,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-12T01:37:38.521489+00:00,"Match 9 - LoL",2.64,1,green,1.64,100
+5dfbab27-a827-4ce4-90b8-003158e9a1aa,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-16T19:43:22.340559+00:00,"Match 16 - LoL",3.05,1,red,-1,100
+ae43715a-f0a8-4c91-8464-0983ab808630,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-19T20:05:22.861895+00:00,"Match 12 - CS:GO",2.53,2,green,3.06,100
+18b57718-835d-4014-ba7e-6845a7d18eaf,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-03-28T19:52:34.791424+00:00,"Match 21 - CS:GO",3.35,2,red,-2,100
+22f6502c-d6fa-4d68-8a69-67a0a92d2182,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-03T12:43:55.635999+00:00,"Match 24 - LoL",2.55,1,green,1.55,100
+d827f7bd-7f00-4c7c-9d22-60673011adc8,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-05T02:41:41.240864+00:00,"Match 14 - CS:GO",3.02,2,red,-2,100
+ebf7a16a-7522-44c4-93b3-d6d984aff7c7,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-06T03:13:28.370704+00:00,"Match 42 - LoL",3.12,1,red,-1,100
+52edfaa1-3be2-4c9c-aba7-616f9e176cfd,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-08T06:08:45.356876+00:00,"Match 43 - CS:GO",3.85,1,void,0,100
+42d83d5e-7def-4c13-8a94-9939b660b041,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-08T17:50:11.681412+00:00,"Match 32 - Dota2",3.23,2,red,-2,100
+bf2728b8-b834-4d91-a00e-39267b06e29d,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-13T18:11:16.733037+00:00,"Match 11 - Dota2",2.18,2,green,2.36,100
+4e33f277-cef4-465c-9f20-0eeea677441e,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-14T07:23:16.83117+00:00,"Match 26 - CS:GO",3.17,1,red,-1,100
+3625642e-a2f1-4f63-b416-87d033e40da5,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-15T03:38:14.541335+00:00,"Match 18 - Valorant",2.63,1,red,-1,100
+6fcffec5-ab8c-4520-a9cc-473cc9d61fab,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-19T15:57:31.786404+00:00,"Match 7 - Dota2",2.55,1,green,1.55,100
+bf51d272-ed9d-4104-a112-800d964da52e,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-29T07:34:55.393628+00:00,"Match 44 - LoL",2.18,1,green,1.18,100
+a5af4660-c875-4623-a457-3303d371cf0f,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-04-30T02:55:41.92723+00:00,"Match 1 - CS:GO",3.95,2,red,-2,100
+0a882f85-9291-432d-a5fb-87819997cb59,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-03T10:11:35.322628+00:00,"Match 30 - Dota2",1.89,2,red,-2,100
+eb0a01ac-7f0a-4dea-9b8f-480ce0b4366e,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-05T03:33:25.142189+00:00,"Match 27 - CS:GO",2.74,1,green,1.74,100
+ac7eaeea-73ef-4716-a3d8-3efb758ba07c,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-05T20:25:21.285255+00:00,"Match 25 - CS:GO",1.88,2,red,-2,100
+25f6a9eb-ab52-4b3e-b121-5467198a8aed,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-14T09:28:56.707264+00:00,"Match 20 - Dota2",2.72,2,green,3.44,100
+07760953-2ed6-4427-8041-587189f6a2d6,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-15T01:38:45.752211+00:00,"Match 39 - Dota2",3.7,1,green,2.7,100
+67450efc-8206-464e-9c2b-c3850186ec85,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-17T22:52:49.613107+00:00,"Match 37 - CS:GO",3.57,2,red,-2,100
+877fa13d-f2a3-42cb-ae40-f0453c391122,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-22T20:09:06.917843+00:00,"Match 13 - Valorant",3.53,2,red,-2,100
+cdc636db-9cac-4f22-82e1-bad842c46adc,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-05-24T11:16:58.236468+00:00,"Match 17 - Dota2",2.89,1,green,1.89,100
+39c70cd3-b879-40db-bb3a-b2879cffa097,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-03T19:01:05.342025+00:00,"Match 29 - Valorant",2.89,2,green,3.78,100
+31c71078-42a6-46af-afab-32389cc91ed1,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-10T02:13:24.190522+00:00,"Match 38 - Valorant",3.85,1,red,-1,100
+96f428a3-ac1c-4aa5-8fe6-972db388f358,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-10T07:34:09.454089+00:00,"Match 33 - Dota2",3.97,2,green,5.94,100
+6b7f1f04-a6e9-4467-9c09-5b12e8b267e5,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-13T09:16:04.648784+00:00,"Match 8 - CS:GO",3.8,1,green,2.8,100
+9fd57c67-d71a-4f74-8c3b-a96031ec53c2,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-16T03:06:21.760191+00:00,"Match 19 - CS:GO",3.39,1,red,-1,100
+56592db0-8cf5-482f-a845-3773cbb68c07,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-18T17:45:51.093967+00:00,"Match 22 - CS:GO",2.66,1,red,-1,100
+68ec9537-5d10-482a-b01c-d6b29894c226,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-19T07:53:46.252087+00:00,"Match 4 - Dota2",1.81,1,green,0.81,100
+e58352fd-5fa8-4dde-bbb5-bd7a61ad4497,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-19T15:59:32.086496+00:00,"Match 28 - CS:GO",2.69,1,red,-1,100
+9162c3e7-14e6-4b6d-86c0-612e65c5859d,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-19T18:44:34.613077+00:00,"Match 40 - LoL",1.84,2,green,1.68,100
+74940bb9-37fe-42bf-9605-91a37d557f31,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-06-28T16:48:23.899456+00:00,"Match 15 - Valorant",3.8,2,green,5.6,100
+a931c649-c37e-47ed-9ab1-d021bb21c60e,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-07-01T23:41:54.123248+00:00,"Match 35 - Dota2",3.66,1,green,2.66,100
+da4f39d2-c6c8-45bf-86b6-3fbfaa30d251,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-07-11T04:25:16.254635+00:00,"Match 31 - Dota2",2.12,1,red,-1,100
+18641a50-9cdc-421e-b1cd-7927100eb94e,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-07-28T00:55:00.616539+00:00,"Match 23 - LoL",3.71,2,green,5.42,100
+a1fbf9ac-6d76-45df-aa89-b60a1227c614,9,eSports Rising Stars,esports-rising-stars,2025-08-04T14:30:47.109565+00:00,2025-07-29T13:10:16.609496+00:00,"Match 10 - Valorant",3.77,2,red,-2,100
+4e1cf52e-c370-4db9-9296-a568f9ba1d72,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-08-10T18:07:35.351919+00:00,"MLB Game 32 - Totals",1.86,2,green,1.72,100
+a8b8c496-5deb-449f-8034-005520e519df,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-08-14T09:47:21.329863+00:00,"MLB Game 53 - Totals",1.93,2,green,1.86,100
+af476772-901f-410f-9373-7abb36b95475,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-08-15T07:35:33.579592+00:00,"MLB Game 38 - Totals",2.08,2,red,-2,100
+01aab90c-71b5-4916-b50a-8734c3735e90,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-08-21T04:28:56.744255+00:00,"MLB Game 57 - Totals",1.92,2,green,1.84,100
+6aef7e19-903e-42ac-a48f-d157a87e4169,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-08-30T08:30:24.523126+00:00,"MLB Game 40 - Totals",1.86,2,red,-2,100
+25f661e4-72c7-45aa-adb6-bf8b9a5779f4,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-01T14:58:19.21471+00:00,"MLB Game 81 - Totals",2.14,2,green,2.28,100
+5c05fcdf-ebfa-4b88-84a8-53211fd5f924,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-04T01:15:25.907633+00:00,"MLB Game 20 - Totals",1.98,2,green,1.96,100
+44e18274-3cde-4424-96bd-756c0d574c2c,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-05T14:35:17.475261+00:00,"MLB Game 48 - Totals",2.1,2,red,-2,100
+82f09bc1-6fb2-40ec-b103-822371b2d82e,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-05T15:45:41.921914+00:00,"MLB Game 78 - Totals",2.06,2,green,2.12,100
+502639c2-8aea-4f57-8272-4c48ae52bf86,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-06T15:42:39.451465+00:00,"MLB Game 62 - Totals",1.99,2,green,1.98,100
+d9687a29-4761-46bf-9128-0b09ba5b21f4,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-16T15:37:14.617595+00:00,"MLB Game 33 - Totals",2.08,2,green,2.16,100
+97506d9f-a872-4c65-824a-cb54276a18ee,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-18T11:33:01.867056+00:00,"MLB Game 30 - Totals",2.1,2,green,2.2,100
+9c8e00dc-e44c-4074-b525-b34631e76881,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-19T19:46:11.337225+00:00,"MLB Game 83 - Totals",2.05,2,green,2.1,100
+59acd9fe-0053-484a-9831-ab84ab943fb5,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-20T11:47:04.317833+00:00,"MLB Game 50 - Totals",1.88,2,green,1.76,100
+6b9f7149-b65c-410e-ac29-06398006f0c0,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-20T23:17:27.023619+00:00,"MLB Game 4 - Totals",2.03,2,green,2.06,100
+b8da21e1-ab05-48c4-80c3-c510529e3a16,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-21T19:05:43.695606+00:00,"MLB Game 71 - Totals",1.98,2,red,-2,100
+82692782-c5a9-462b-bf58-18f59c19d543,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-26T07:44:35.665435+00:00,"MLB Game 22 - Totals",2.04,2,green,2.08,100
+73afb4da-9401-473d-9a45-0316cddeefeb,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-27T12:59:34.023952+00:00,"MLB Game 37 - Totals",2.13,2,red,-2,100
+7639cc05-b903-4a7a-aaee-a8a1b1f190c0,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-28T05:46:28.711667+00:00,"MLB Game 54 - Totals",2.01,2,red,-2,100
+811d7bb3-e1ad-4d67-bc5d-f37b8d51df51,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-29T14:15:55.111639+00:00,"MLB Game 17 - Totals",2.14,2,red,-2,100
+a1d2610e-c833-40c4-9fc0-ec36ada7c981,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-09-29T17:11:26.609125+00:00,"MLB Game 61 - Totals",1.96,2,green,1.92,100
+ee887581-a421-42ed-933d-12426ba87900,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-01T13:28:03.805994+00:00,"MLB Game 8 - Totals",2.04,2,green,2.08,100
+6637dd74-8185-4e7d-a4cd-1b5399dcc95d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-03T22:34:08.426353+00:00,"MLB Game 68 - Totals",1.93,2,green,1.86,100
+0affc410-419a-4a2f-b868-95c6b6b842e6,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-07T17:13:31.430708+00:00,"MLB Game 79 - Totals",2.11,2,red,-2,100
+20a98194-6a38-429d-94ff-2bfbffa7611f,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-09T00:03:56.724447+00:00,"MLB Game 11 - Totals",2.01,2,green,2.02,100
+0dd73662-9102-4f77-8794-28be8c6c22ef,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-10T16:43:32.096701+00:00,"MLB Game 49 - Totals",2.13,2,green,2.26,100
+be9973f9-811d-4428-b6b2-a445e701f1e6,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-18T18:38:15.772034+00:00,"MLB Game 13 - Totals",1.88,2,green,1.76,100
+f21fcc02-7696-49d9-ac8b-2fcab9d1fb30,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-20T02:32:04.504502+00:00,"MLB Game 74 - Totals",1.9,2,red,-2,100
+32b3200d-16dd-4ef7-a094-2b318f7de3f7,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-20T13:53:15.772254+00:00,"MLB Game 47 - Totals",1.91,2,green,1.82,100
+fe10870b-4bba-4b77-810b-d510b829ef56,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-21T13:55:31.335953+00:00,"MLB Game 73 - Totals",1.9,2,green,1.8,100
+72ec53b9-c29a-4d3d-a9c0-d24794bfa928,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-10-26T18:01:58.350689+00:00,"MLB Game 44 - Totals",2.03,2,green,2.06,100
+6c93629e-38a5-45bd-9f49-9c64d7654727,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-11-11T08:23:23.430152+00:00,"MLB Game 59 - Totals",2.14,2,red,-2,100
+7c7a3ee8-fb7c-4dc3-bff5-15ff49689f17,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-11-17T21:29:17.169166+00:00,"MLB Game 82 - Totals",1.93,2,green,1.86,100
+5c5e8ed3-4301-4a77-9dff-2d8f11ad2eba,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-11-18T20:45:29.295896+00:00,"MLB Game 67 - Totals",1.91,2,red,-2,100
+d82b53d2-0e6f-4047-81ff-bc53466a8389,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-11-22T19:27:58.953018+00:00,"MLB Game 42 - Totals",1.95,2,red,-2,100
+619e99b0-5957-48d0-a935-b80c2fea3118,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-11-28T01:47:11.590966+00:00,"MLB Game 95 - Totals",1.96,2,red,-2,100
+7d6daa4a-32f4-4b17-9010-30e53b66220a,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-12-06T02:56:40.123961+00:00,"MLB Game 10 - Totals",2.08,2,red,-2,100
+8b5e059e-b0c5-4342-a845-2e101fb1c46d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-12-15T00:23:20.380594+00:00,"MLB Game 3 - Totals",1.89,2,green,1.78,100
+b9c1ef57-29ba-4a72-8fc7-5175463a5e17,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-12-26T13:06:50.061138+00:00,"MLB Game 64 - Totals",2.14,2,red,-2,100
+9d546985-05a6-4d24-acba-791ca7b6aafa,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-12-28T10:45:03.728096+00:00,"MLB Game 56 - Totals",1.99,2,green,1.98,100
+c0972d25-ddf7-4ad9-8140-f8949f63307c,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2024-12-30T06:30:38.468852+00:00,"MLB Game 31 - Totals",1.91,2,green,1.82,100
+f52dc9f8-c044-453a-8759-f4d877c4da03,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-01T13:26:48.523737+00:00,"MLB Game 80 - Totals",2.08,2,green,2.16,100
+c7887802-bd41-4cea-9c67-bfb5240549d4,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-04T11:23:54.089535+00:00,"MLB Game 93 - Totals",1.93,2,red,-2,100
+0ccbb941-0ea4-4504-8239-1fddc844ef53,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-04T18:56:39.169427+00:00,"MLB Game 1 - Totals",2.04,2,green,2.08,100
+3204037c-ba2c-4ebe-8db4-ad2ea18c8fb6,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-06T15:32:14.02551+00:00,"MLB Game 29 - Totals",1.89,2,green,1.78,100
+1dad7902-85b8-476d-b2d7-88c9a248676d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-09T11:14:44.930632+00:00,"MLB Game 14 - Totals",2.06,2,red,-2,100
+2e3436c3-6e38-4821-a691-77be787f5165,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-09T21:30:08.709509+00:00,"MLB Game 87 - Totals",2.02,2,green,2.04,100
+344fb376-13dc-454a-9071-af0df24a121d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-16T14:33:10.484256+00:00,"MLB Game 43 - Totals",1.87,2,green,1.74,100
+d1b7af23-ce55-41f9-a15f-fea470ec4853,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-19T09:08:32.835367+00:00,"MLB Game 19 - Totals",1.87,2,green,1.74,100
+886939b9-b9dd-477c-aa13-55bf54163174,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-20T07:20:59.148956+00:00,"MLB Game 46 - Totals",2.1,2,red,-2,100
+1b4b8641-7374-4919-9e6c-6f4d9f1424be,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-01-29T04:49:09.430655+00:00,"MLB Game 91 - Totals",2.06,2,red,-2,100
+29504ee4-f22f-4dc9-a790-ad41fc928a56,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-04T00:36:31.151627+00:00,"MLB Game 5 - Totals",2.02,2,green,2.04,100
+d64a92e2-00dd-417d-a6b5-55572a2421a5,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-09T20:14:01.748893+00:00,"MLB Game 60 - Totals",2.13,2,green,2.26,100
+c9092492-f6c7-45df-8531-1bb0639182ee,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-12T09:29:24.632088+00:00,"MLB Game 34 - Totals",2.13,2,green,2.26,100
+3a949d6f-a184-4d21-81b7-a5c80833d4bf,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-17T15:14:30.600111+00:00,"MLB Game 69 - Totals",1.99,2,green,1.98,100
+abbdf053-1604-43a0-aa6e-2026491a79a7,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-23T15:28:56.513501+00:00,"MLB Game 90 - Totals",2.14,2,green,2.28,100
+6344a413-9866-4537-a473-4bd63a786d45,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-25T09:16:29.156467+00:00,"MLB Game 51 - Totals",2.05,2,red,-2,100
+28f56f78-b1fa-4aa1-ae50-7fe67061a56c,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-02-27T20:28:05.696604+00:00,"MLB Game 63 - Totals",1.88,2,green,1.76,100
+7f875154-8a29-4bb8-8f32-e1eef8cd6985,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-02T18:33:44.611109+00:00,"MLB Game 75 - Totals",2.04,2,red,-2,100
+149813e2-8430-4d38-9f67-1eb889cb0ff4,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-04T11:49:41.438687+00:00,"MLB Game 58 - Totals",1.92,2,green,1.84,100
+1d3e7437-73e5-4b3f-9c68-131a408810a6,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-05T10:01:54.106223+00:00,"MLB Game 94 - Totals",2.05,2,green,2.1,100
+63cdce85-fdba-4a10-81a8-229a0de60812,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-14T03:10:07.537954+00:00,"MLB Game 72 - Totals",1.94,2,red,-2,100
+4b613d8e-d04f-4a51-9cef-cebeee3820c8,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-19T01:20:10.162345+00:00,"MLB Game 41 - Totals",2.12,2,green,2.24,100
+8d18a19a-49da-4d5b-9867-6206e4856933,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-29T07:32:38.943181+00:00,"MLB Game 84 - Totals",2.07,2,red,-2,100
+aaae133b-a204-4b95-9bf7-6f84609d4cac,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-03-29T11:27:46.20822+00:00,"MLB Game 28 - Totals",1.87,2,green,1.74,100
+de090dbe-5575-4765-8a03-f6450ae8eedf,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-03T16:50:06.623166+00:00,"MLB Game 35 - Totals",1.9,2,green,1.8,100
+66634fba-ea92-4783-97ee-f8bc0c7bcf71,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-04T21:20:27.167825+00:00,"MLB Game 52 - Totals",2.08,2,red,-2,100
+f9c876ba-b259-4380-9421-5779571dcdae,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-07T13:47:10.727222+00:00,"MLB Game 24 - Totals",2.04,2,green,2.08,100
+9d5581de-75bb-45ba-a52c-a46da4219808,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-11T22:26:43.10187+00:00,"MLB Game 39 - Totals",1.98,2,green,1.96,100
+d7770f35-1fca-42c8-a833-7a06a7d6566d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-14T02:57:32.987261+00:00,"MLB Game 55 - Totals",2.03,2,red,-2,100
+f4d4aa61-9f17-44f8-b30f-b8c04f9eb086,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-20T01:51:14.395127+00:00,"MLB Game 2 - Totals",2.1,2,green,2.2,100
+3832a317-34e9-4301-8841-f15ebe9fa550,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-20T07:36:21.711017+00:00,"MLB Game 7 - Totals",1.94,2,red,-2,100
+994b78a5-086b-495e-ab5c-0af773898a31,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-20T22:20:51.208628+00:00,"MLB Game 88 - Totals",1.9,2,red,-2,100
+776efd59-b8f8-4f80-b155-54574ef66427,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-04-28T06:10:10.718108+00:00,"MLB Game 18 - Totals",2.14,2,red,-2,100
+f3227317-f8c2-443f-8c9e-f08d62bd870a,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-02T16:05:21.637764+00:00,"MLB Game 23 - Totals",2.1,2,green,2.2,100
+d114178c-b08c-4952-896a-8731830b2a5c,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-09T07:12:25.821881+00:00,"MLB Game 89 - Totals",1.85,2,red,-2,100
+21b8fb06-df07-4ce2-af32-ee3180f26d4a,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-10T12:35:04.760032+00:00,"MLB Game 36 - Totals",1.91,2,green,1.82,100
+d00df222-30ae-41b3-8027-9be9e38a4d73,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-16T19:47:09.948435+00:00,"MLB Game 25 - Totals",1.98,2,green,1.96,100
+30a965c2-6c58-4eb5-8b24-99f46857ddaa,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-19T16:00:15.233384+00:00,"MLB Game 65 - Totals",2.01,2,green,2.02,100
+0e8bff09-863d-43cb-9835-130cfb054f5e,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-24T05:05:58.557483+00:00,"MLB Game 45 - Totals",2.07,2,green,2.14,100
+083c8f31-583b-4c43-969e-8ba3398e0a24,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-25T06:22:37.132925+00:00,"MLB Game 21 - Totals",1.98,2,red,-2,100
+6afd1546-528b-45ee-a7bb-2a1c48cad492,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-05-25T09:05:17.743877+00:00,"MLB Game 6 - Totals",1.98,2,green,1.96,100
+a7070270-984c-4ec3-94a6-c28063f5a8ea,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-01T00:58:37.164817+00:00,"MLB Game 27 - Totals",2.06,2,green,2.12,100
+f6cab6f8-91a8-46bb-abe2-3c6366947d6e,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-04T18:04:45.093277+00:00,"MLB Game 12 - Totals",2.12,2,green,2.24,100
+b1d908af-a148-483e-8719-b0f2c144dfd3,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-11T12:51:40.497962+00:00,"MLB Game 86 - Totals",1.89,2,red,-2,100
+848d258c-f211-4c16-9a08-b7dc0fb4c718,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-11T20:03:56.240348+00:00,"MLB Game 77 - Totals",2,2,green,2,100
+51519e7e-1c8f-44c4-aca2-ca3413dca97d,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-12T17:09:51.955084+00:00,"MLB Game 70 - Totals",1.97,2,red,-2,100
+0a9e2a01-b9bc-43f0-98a5-fcb0ef6de290,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-20T05:21:57.700614+00:00,"MLB Game 85 - Totals",2.01,2,red,-2,100
+fc500aed-2c1a-4ca1-8347-7c30d4b82828,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-06-21T23:43:24.275579+00:00,"MLB Game 66 - Totals",1.94,2,green,1.88,100
+640085ec-a6b4-4476-bfcc-fd9f5a3ea1ec,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-02T13:15:03.244963+00:00,"MLB Game 76 - Totals",1.96,2,red,-2,100
+a509983f-9384-49ba-9bf1-96f69e0c082c,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-13T03:38:58.185323+00:00,"MLB Game 16 - Totals",2.14,2,green,2.28,100
+b1209ead-daa6-4eff-85f6-b9427d09cb89,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-13T09:41:41.905048+00:00,"MLB Game 15 - Totals",2,2,green,2,100
+f7cde805-44c3-480f-8080-0e4b2c2e6b0f,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-15T05:00:33.699438+00:00,"MLB Game 9 - Totals",1.95,2,green,1.9,100
+2a371036-dcfd-4e40-ae18-fb3c1eb4516e,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-15T13:22:07.412065+00:00,"MLB Game 92 - Totals",2.14,2,green,2.28,100
+e77e275e-2ace-4335-87b0-5a3dfa6deb60,10,Baseball Totals AI,baseball-totals-ai,2025-08-04T14:30:57.766335+00:00,2025-07-28T16:32:00.553208+00:00,"MLB Game 26 - Totals",2.11,2,green,2.22,100
+d2f3995e-fde9-409c-9cf3-7c7508ccf117,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-13T20:36:44.125733+00:00,"Jogo 16 - Cartão Vermelho",4.87,1,red,-1,100
+a4e467ef-c590-4d2f-93a5-3a7e17d31fb2,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-14T10:31:42.216795+00:00,"Jogo 1 - Cartão Vermelho",7.05,1,green,6.05,100
+bb057ef1-cabb-4419-babd-bcb7ea17a871,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-20T04:06:31.052233+00:00,"Jogo 46 - Cartão Vermelho",6.69,1,red,-1,100
+319be90d-0de3-41fe-94d7-4251bd301e83,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-20T15:49:01.612696+00:00,"Jogo 9 - Cartão Vermelho",6.14,1,red,-1,100
+f6e940b8-61fc-41f0-b8e1-c9e0c2119be0,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-27T18:41:13.864828+00:00,"Jogo 47 - Cartão Vermelho",7.67,1,red,-1,100
+2777e678-afad-4737-8585-7d4341bf11f0,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-28T12:07:16.735192+00:00,"Jogo 40 - Cartão Vermelho",7.78,1,green,6.78,100
+4d2c5fde-6615-4bfd-a602-52848cdeabe0,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-30T14:57:37.518665+00:00,"Jogo 8 - Cartão Vermelho",7.55,1,red,-1,100
+7c921dc2-d25c-4342-b913-6a8a4cb26031,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-08-30T15:44:41.054107+00:00,"Jogo 22 - Cartão Vermelho",7.07,1,red,-1,100
+6fa344f5-fa4b-4fdd-bb35-12831c2fd41a,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-09-04T03:54:53.411175+00:00,"Jogo 36 - Cartão Vermelho",5.7,1,red,-1,100
+fbe72e66-1667-4db7-ba47-e72e0ac9a647,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-09-07T07:50:30.302838+00:00,"Jogo 59 - Cartão Vermelho",7.91,1,red,-1,100
+28793261-6cbf-45c2-826f-1b56ce24fba8,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-09-12T15:19:13.932441+00:00,"Jogo 20 - Cartão Vermelho",6.77,1,red,-1,100
+a0c0b14a-0aad-4db2-95e0-037239051581,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-09-18T22:26:30.658002+00:00,"Jogo 15 - Cartão Vermelho",7.87,1,red,-1,100
+932d6238-aa50-4faa-aa59-f7b16264efb0,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-09-23T20:09:24.946713+00:00,"Jogo 56 - Cartão Vermelho",6.23,1,red,-1,100
+bb2bea48-db02-4fee-bdab-2204ff177b88,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-01T12:37:18.235969+00:00,"Jogo 51 - Cartão Vermelho",7.34,1,green,6.34,100
+bec486b9-579d-4020-972c-c07674a8ad9f,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-02T07:45:33.922948+00:00,"Jogo 14 - Cartão Vermelho",5.43,1,red,-1,100
+afad5e32-ae01-45dd-8ef1-77774ef2ee89,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-04T10:29:53.524914+00:00,"Jogo 28 - Cartão Vermelho",5.35,1,red,-1,100
+13499bc1-44b2-492e-850b-d9e40cba55b3,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-09T13:12:48.565359+00:00,"Jogo 6 - Cartão Vermelho",4.67,1,green,3.67,100
+e36ca18c-10aa-4fa8-b70d-5f0081bf4683,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-17T03:20:42.259262+00:00,"Jogo 4 - Cartão Vermelho",6.48,1,red,-1,100
+c15f0e93-6e0f-421c-9ab9-cab1817eed61,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-18T07:04:20.032805+00:00,"Jogo 61 - Cartão Vermelho",5.47,1,red,-1,100
+f42125d4-140b-426e-bff6-ddf14121ef91,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-10-27T18:19:42.303612+00:00,"Jogo 62 - Cartão Vermelho",5.79,1,red,-1,100
+748834a3-bc68-4299-9861-1fb9b4c9fcd6,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-09T19:13:33.291431+00:00,"Jogo 57 - Cartão Vermelho",7.22,1,red,-1,100
+f3b783a6-7a6c-4d12-9703-9519fb09ada8,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-10T19:53:05.960793+00:00,"Jogo 39 - Cartão Vermelho",7.56,1,red,-1,100
+c566a700-41ba-45c5-8e1b-61f2360d3722,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-10T21:49:22.271736+00:00,"Jogo 43 - Cartão Vermelho",5.65,1,red,-1,100
+7714f0c9-6d1a-49f6-ad32-ae0a9132a5e3,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-14T21:20:05.298291+00:00,"Jogo 5 - Cartão Vermelho",7.1,1,red,-1,100
+3b151c5f-51ea-4b23-9a42-1a5dad454be9,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-14T23:57:55.872978+00:00,"Jogo 25 - Cartão Vermelho",5.67,1,red,-1,100
+352b32db-c3b4-4685-bf17-8a0d0d60ff9e,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-26T20:30:23.19467+00:00,"Jogo 41 - Cartão Vermelho",7.41,1,red,-1,100
+b59342a1-10dd-4fed-92f6-42978e829a7b,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-11-29T17:38:46.271883+00:00,"Jogo 35 - Cartão Vermelho",6.92,1,green,5.92,100
+0165233a-93af-4643-8685-9c822c9e4377,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-12-12T12:08:33.356676+00:00,"Jogo 58 - Cartão Vermelho",6.73,1,red,-1,100
+dfc013f3-f87d-4472-acb0-42077fb66797,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-12-17T18:57:41.446598+00:00,"Jogo 23 - Cartão Vermelho",6.7,1,void,0,100
+7edc1a1f-32da-49bc-a5d4-7086f9ff60e1,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2024-12-31T13:14:19.981305+00:00,"Jogo 37 - Cartão Vermelho",7.14,1,red,-1,100
+c133d5ae-1eb1-44a0-97b4-366571d13aed,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-01-12T03:57:10.110286+00:00,"Jogo 38 - Cartão Vermelho",6.19,1,green,5.19,100
+75c1029c-df00-4ccb-866f-0cb58be7b6f6,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-01-15T20:38:46.754706+00:00,"Jogo 19 - Cartão Vermelho",6.04,1,red,-1,100
+1e7ff677-7afc-4acc-8cc5-eb8946ed7b72,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-01-16T00:34:54.832654+00:00,"Jogo 21 - Cartão Vermelho",7.95,1,green,6.95,100
+4e2beb35-3100-407c-9245-8c2e6313c4de,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-01-19T07:46:49.934817+00:00,"Jogo 49 - Cartão Vermelho",7.6,1,red,-1,100
+295ba844-2591-49e0-a997-f9d0fb79e46f,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-02-09T23:02:40.456475+00:00,"Jogo 53 - Cartão Vermelho",7.45,1,red,-1,100
+1c06d502-860a-4db9-8393-6bd6882626e6,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-02-12T15:01:27.314013+00:00,"Jogo 13 - Cartão Vermelho",7.18,1,red,-1,100
+c924b860-e50e-45c0-b1f1-0e59edd95828,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-02-17T06:55:58.979937+00:00,"Jogo 33 - Cartão Vermelho",7.69,1,green,6.69,100
+6c5937a9-457f-452e-97bb-8f8d40cfe298,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-02-27T13:36:38.562658+00:00,"Jogo 55 - Cartão Vermelho",7.88,1,red,-1,100
+0c66f6af-271e-48a8-a139-0dac2c11f1b6,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-01T12:32:22.81324+00:00,"Jogo 18 - Cartão Vermelho",7.75,1,green,6.75,100
+47b3b054-5f2a-4039-8b03-1329789fbb14,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-03T10:11:12.927799+00:00,"Jogo 48 - Cartão Vermelho",7.71,1,red,-1,100
+d10f2463-2e5d-47b4-b244-0eb66bf8c6b1,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-04T10:12:24.17865+00:00,"Jogo 3 - Cartão Vermelho",7.84,1,red,-1,100
+09023e2e-2e89-4de8-a527-258f1d6bc0a9,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-10T09:38:42.136521+00:00,"Jogo 42 - Cartão Vermelho",5.44,1,red,-1,100
+452704ac-4d30-4afe-9c47-7516238b622a,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-16T10:44:55.767509+00:00,"Jogo 65 - Cartão Vermelho",5.09,1,green,4.09,100
+2d7440db-ca59-4270-9ef9-2ff541647b51,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-21T10:01:15.640128+00:00,"Jogo 45 - Cartão Vermelho",5.99,1,red,-1,100
+6bb6c6c3-92d1-44ec-b482-ab52cfcc7c8a,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-21T20:35:44.298535+00:00,"Jogo 64 - Cartão Vermelho",6.53,1,red,-1,100
+95a9b285-b659-4cb8-bf3c-270f55b2ed8f,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-03-22T00:19:50.729757+00:00,"Jogo 11 - Cartão Vermelho",5.27,1,red,-1,100
+589f6b79-7611-4adc-a5e8-3a946c0b4a13,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-04-02T21:02:55.266627+00:00,"Jogo 32 - Cartão Vermelho",6.22,1,red,-1,100
+d08eaef9-7a8e-4d72-bd94-2df7b50b8a6e,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-04-11T18:47:17.649649+00:00,"Jogo 12 - Cartão Vermelho",4.54,1,red,-1,100
+139df733-a158-4ef7-a687-a5b17325f8f2,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-04-18T13:23:01.261135+00:00,"Jogo 24 - Cartão Vermelho",4.53,1,green,3.53,100
+0f61572c-9b78-4f4a-b450-de033e0c88bc,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-05T08:56:42.402396+00:00,"Jogo 10 - Cartão Vermelho",5.1,1,red,-1,100
+ced05c28-784c-4709-ac13-a7a3baf29d2b,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-05T15:47:40.183035+00:00,"Jogo 50 - Cartão Vermelho",7.32,1,red,-1,100
+05dd8937-3b4b-4f1e-bdc1-e8debdde173b,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-05T23:18:37.606745+00:00,"Jogo 26 - Cartão Vermelho",5.02,1,green,4.02,100
+2a34c4d0-3f93-4d58-b380-63db5523c16c,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-13T05:50:49.098285+00:00,"Jogo 17 - Cartão Vermelho",5.89,1,red,-1,100
+c17b9ace-9ade-4b38-9438-1e6bf16eb868,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-13T23:09:27.264072+00:00,"Jogo 54 - Cartão Vermelho",7.87,1,red,-1,100
+3ecea4cf-f1b4-489e-a1bb-87d0113542f9,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-16T23:37:47.920103+00:00,"Jogo 52 - Cartão Vermelho",6.82,1,red,-1,100
+cfe8a076-034c-4660-b16d-acd4583db982,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-05-29T05:07:35.782433+00:00,"Jogo 63 - Cartão Vermelho",5.98,1,red,-1,100
+986d3f43-ac6d-4a30-a847-65c45d98f5ce,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-06-12T19:09:15.574903+00:00,"Jogo 34 - Cartão Vermelho",6.95,1,red,-1,100
+399cc6f2-07fa-4f3b-a42e-2303b363e744,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-06-27T01:31:03.084605+00:00,"Jogo 30 - Cartão Vermelho",4.67,1,red,-1,100
+a1b536bf-8261-4f19-a795-5f6e1cca236f,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-06-27T18:54:50.535726+00:00,"Jogo 44 - Cartão Vermelho",4.56,1,red,-1,100
+835dd414-3bc0-4cf3-9ac7-a98a6090b566,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-02T06:04:37.024759+00:00,"Jogo 7 - Cartão Vermelho",5.05,1,red,-1,100
+bcd87765-55ef-4051-9bb3-c4c2c330d1c5,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-05T20:06:43.392573+00:00,"Jogo 27 - Cartão Vermelho",5.69,1,red,-1,100
+ecba87e9-af61-49c1-8f56-f2d88359f31c,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-12T06:32:37.062099+00:00,"Jogo 60 - Cartão Vermelho",6.84,1,red,-1,100
+09f5d0a4-9706-41d6-881c-eea4de1c40f9,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-14T08:18:18.520592+00:00,"Jogo 29 - Cartão Vermelho",7.82,1,red,-1,100
+d62082cb-b1e4-4439-82db-bedd46fb2a24,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-20T16:30:37.603375+00:00,"Jogo 2 - Cartão Vermelho",7.3,1,green,6.3,100
+a593fccd-026e-40b6-84dd-0afe13235890,11,Cartões Vermelhos Pro,cartoes-vermelhos-pro,2025-08-04T14:31:07.217882+00:00,2025-07-27T07:41:23.145198+00:00,"Jogo 31 - Cartão Vermelho",5.29,1,green,4.29,100
+49ce6ec4-b697-42e2-8da2-9cf61314f750,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-07T20:58:28.030539+00:00,"NBA Live 30 - Spread/Total",2.07,2,green,2.14,100
+a6c63041-4109-4feb-aa89-0989a5d6e09f,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-08T23:59:32.380541+00:00,"NBA Live 73 - Spread/Total",2.06,2,red,-2,100
+ba0d41f7-f73f-4e21-bffd-37d5b1ec827f,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-09T15:48:39.264797+00:00,"NBA Live 3 - Spread/Total",1.98,3,green,2.94,100
+383331fd-be08-43f5-8937-b40141a96a8d,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-12T00:08:38.552678+00:00,"NBA Live 8 - Spread/Total",2.07,2,green,2.14,100
+c6fcaab7-25f1-42ff-a559-99ce09075b3f,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-13T13:07:52.318399+00:00,"NBA Live 34 - Spread/Total",1.95,3,red,-3,100
+5dded124-0951-4f25-93d6-10a4caac6118,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-22T15:00:45.555441+00:00,"NBA Live 38 - Spread/Total",1.97,3,red,-3,100
+aca60db1-7a8b-4906-aa53-01a5db31393d,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-24T00:18:28.525734+00:00,"NBA Live 71 - Spread/Total",2,1,red,-1,100
+d08ab626-ab7a-4a0e-bdea-ad09956965fb,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-08-28T18:59:55.549699+00:00,"NBA Live 29 - Spread/Total",1.93,3,green,2.79,100
+17c5861a-63de-4846-83e9-effa436d6ee7,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-01T02:51:22.676169+00:00,"NBA Live 15 - Spread/Total",1.91,1,red,-1,100
+73e27574-eca4-4184-8c8d-28ce4a5ad8fd,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-06T21:46:12.214328+00:00,"NBA Live 18 - Spread/Total",2,3,green,3,100
+258e74a9-616b-4722-8723-af418c472eb7,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-13T18:46:58.650491+00:00,"NBA Live 36 - Spread/Total",2.02,1,red,-1,100
+8480bb49-4f18-4251-91ad-6f64706bd472,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-17T15:28:25.214079+00:00,"NBA Live 52 - Spread/Total",1.92,2,green,1.84,100
+76738b2a-a214-4b2a-a84c-72d8c22c00b2,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-20T04:48:12.775899+00:00,"NBA Live 58 - Spread/Total",2.01,1,red,-1,100
+d0ae740d-3095-4706-ad19-65f5ece32e96,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-09-27T15:18:35.929587+00:00,"NBA Live 53 - Spread/Total",2.1,2,red,-2,100
+5f921b3b-e488-4ebc-9472-f0dc17576416,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-10-17T05:26:19.259504+00:00,"NBA Live 23 - Spread/Total",2.01,3,green,3.03,100
+ef88b3d6-c0eb-44df-a25b-15a2f380fdd2,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-10-20T19:11:56.344622+00:00,"NBA Live 37 - Spread/Total",1.97,3,red,-3,100
+6534617e-393f-446a-8858-81ff045c54a1,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-10-20T20:04:57.893362+00:00,"NBA Live 48 - Spread/Total",2.07,3,green,3.21,100
+17a69c5d-1676-440a-8535-16a316e3c0c2,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-10-22T00:57:00.407108+00:00,"NBA Live 59 - Spread/Total",1.97,2,red,-2,100
+a92de23b-0007-4806-8e99-8efdf45675eb,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-10-30T11:42:54.003987+00:00,"NBA Live 16 - Spread/Total",1.93,1,red,-1,100
+2de71e05-e32e-4038-b245-595304cffcf6,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-05T07:19:20.48794+00:00,"NBA Live 4 - Spread/Total",2.1,2,red,-2,100
+0e4b6c35-ff3a-4a2b-8d9b-563577319172,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-05T18:17:16.560043+00:00,"NBA Live 67 - Spread/Total",2,1,green,1,100
+3bdc9d71-fe37-47f1-8df8-6317b52e53a6,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-07T01:36:04.504978+00:00,"NBA Live 72 - Spread/Total",1.99,3,green,2.97,100
+63973e2f-5e7b-430f-87ad-984db8769f1b,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-08T18:01:22.711055+00:00,"NBA Live 11 - Spread/Total",1.95,2,red,-2,100
+9599e20c-dd33-4306-bf96-2e46da7afcd0,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-10T03:48:33.162331+00:00,"NBA Live 69 - Spread/Total",2,3,green,3,100
+4992d575-2222-4c42-8b7a-4e3b96616678,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-11-16T00:44:50.921217+00:00,"NBA Live 13 - Spread/Total",1.98,1,green,0.98,100
+21a8539b-eddd-4d1c-a1e1-758313537059,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-01T17:56:29.339853+00:00,"NBA Live 32 - Spread/Total",2.09,3,green,3.27,100
+99e52339-39e1-48e7-b8f4-3dd6534dceda,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-08T18:13:00.342152+00:00,"NBA Live 62 - Spread/Total",2.06,1,red,-1,100
+c3ed0e44-ff85-4fe3-aeca-1a32a89482f9,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-14T00:25:12.617168+00:00,"NBA Live 78 - Spread/Total",1.94,1,green,0.94,100
+123a011a-c260-488f-b5d4-a91883a7369c,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-15T01:22:45.086245+00:00,"NBA Live 31 - Spread/Total",1.94,3,red,-3,100
+2d3fb86d-ba3a-439f-ab7e-461132e98d5d,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-24T00:21:45.995045+00:00,"NBA Live 10 - Spread/Total",2.06,3,green,3.18,100
+a6c3fb56-b178-4f42-b653-d4db754544dd,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-27T22:59:07.946742+00:00,"NBA Live 75 - Spread/Total",1.93,1,red,-1,100
+9b8da50f-d586-4b8b-995e-9cb6d718b1bf,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-29T12:59:45.90151+00:00,"NBA Live 70 - Spread/Total",2.07,3,green,3.21,100
+299e2646-dd44-49cd-943a-e82cd18803e8,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2024-12-31T14:48:34.893984+00:00,"NBA Live 24 - Spread/Total",1.99,2,green,1.98,100
+fd06be3d-d9f5-47f8-87d5-4bd767d788d5,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-09T16:00:12.99965+00:00,"NBA Live 27 - Spread/Total",1.92,2,green,1.84,100
+1d5d341c-1426-45d3-9a2d-92b3b6adc0dd,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-10T18:37:57.748667+00:00,"NBA Live 76 - Spread/Total",1.91,1,green,0.91,100
+0733ddf0-a0fe-4791-bf53-07fe779d3667,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-14T09:27:43.492151+00:00,"NBA Live 55 - Spread/Total",1.98,3,green,2.94,100
+0c03824e-5e07-4f9e-b5ea-f5aceca742cd,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-21T13:06:46.895982+00:00,"NBA Live 56 - Spread/Total",2.05,1,green,1.05,100
+17c19ccb-dd6f-41cd-9091-bf70441aa562,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-22T03:45:06.730763+00:00,"NBA Live 14 - Spread/Total",2.02,1,green,1.02,100
+fc446d1c-4a05-47b1-9551-d611ed79e23d,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-28T04:47:57.673074+00:00,"NBA Live 61 - Spread/Total",2.03,2,void,0,100
+b609ac91-8edc-4385-b90a-2ee32b564ac4,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-01-29T01:55:05.687839+00:00,"NBA Live 2 - Spread/Total",2.08,2,green,2.16,100
+3dcb52f4-45f2-46fc-b2d5-668d33b5a263,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-01T13:57:18.8409+00:00,"NBA Live 44 - Spread/Total",1.99,3,green,2.97,100
+fee3f433-2f6d-4bd1-8a46-ddf1126b6131,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-01T21:14:32.738421+00:00,"NBA Live 46 - Spread/Total",2.01,1,red,-1,100
+1ae19643-f670-456b-a5ce-185051565df0,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-11T20:53:16.628751+00:00,"NBA Live 21 - Spread/Total",2.02,3,red,-3,100
+d0ef5c2f-1acc-4574-bae3-490c98207c4c,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-16T14:32:33.952667+00:00,"NBA Live 50 - Spread/Total",1.96,2,green,1.92,100
+96403f31-7b50-4a40-b2b5-e360eb8e55b8,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-19T08:11:43.205766+00:00,"NBA Live 5 - Spread/Total",2.03,3,green,3.09,100
+c07acb8c-a7eb-42ef-a8aa-5c49eb99a322,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-02-20T09:03:36.571795+00:00,"NBA Live 64 - Spread/Total",2.08,1,red,-1,100
+8dc1b33b-07ff-4b8a-b620-28ea369e1c95,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-03-11T04:06:30.473395+00:00,"NBA Live 57 - Spread/Total",1.92,2,green,1.84,100
+9163a279-7203-49c6-9cb9-17100af64ef3,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-03-12T06:58:34.427079+00:00,"NBA Live 43 - Spread/Total",2.02,2,red,-2,100
+8d70d8d9-cfb9-408c-bc2e-735b6c4a6385,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-03-12T13:44:13.816503+00:00,"NBA Live 42 - Spread/Total",2.03,3,red,-3,100
+7717f0bc-b36d-4c74-ba62-5351e6d7bdfb,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-03-20T05:58:41.185575+00:00,"NBA Live 7 - Spread/Total",2.08,1,red,-1,100
+26acd40e-040f-4247-ba18-025c1376fbe7,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-04-14T20:18:44.821151+00:00,"NBA Live 25 - Spread/Total",1.96,2,red,-2,100
+b8d4a226-a5ad-46c5-b2a9-2de705c45ff4,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-04-27T06:20:06.106148+00:00,"NBA Live 51 - Spread/Total",2.03,1,green,1.03,100
+bb38438b-947c-41d4-a410-d566368c2f21,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-01T14:27:37.814236+00:00,"NBA Live 33 - Spread/Total",2.08,2,red,-2,100
+0de4a9e1-bb43-4739-b7cd-aec8f17a5121,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-03T04:44:50.931341+00:00,"NBA Live 22 - Spread/Total",2.01,1,green,1.01,100
+33cb291d-fabc-451e-a8e4-de2ef780551f,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-04T01:50:31.133543+00:00,"NBA Live 41 - Spread/Total",1.95,3,red,-3,100
+c7afd66c-df59-4e73-8474-e36f8a3976f1,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-04T02:55:25.843409+00:00,"NBA Live 17 - Spread/Total",2.08,3,green,3.24,100
+e3d8dc1e-e0b3-4bf2-a71e-3744e42b2b40,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-09T22:20:51.00516+00:00,"NBA Live 12 - Spread/Total",2.03,1,green,1.03,100
+8c952421-2501-485c-837c-22544986b07d,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-21T17:25:17.454684+00:00,"NBA Live 20 - Spread/Total",1.94,2,red,-2,100
+9b48412b-791e-4fc6-a583-6826e43e30ea,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-24T19:09:01.899633+00:00,"NBA Live 6 - Spread/Total",1.97,3,red,-3,100
+c2f949f2-3b40-4066-aa2b-d6559b75e2f6,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-26T19:51:13.750821+00:00,"NBA Live 49 - Spread/Total",1.97,2,red,-2,100
+4737807b-fe0f-403a-a344-60bdf9b0e0b5,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-05-28T09:08:56.986132+00:00,"NBA Live 19 - Spread/Total",2.01,3,green,3.03,100
+ab756d6e-9c17-4186-b279-78d48aff59de,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-02T11:00:23.23331+00:00,"NBA Live 63 - Spread/Total",2.04,3,green,3.12,100
+0e819b0a-c508-4350-b60b-f34c2271ba14,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-02T19:07:49.287511+00:00,"NBA Live 79 - Spread/Total",2.04,2,green,2.08,100
+c0ac5063-c498-4078-bda3-19507582dc4e,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-06T01:56:54.575344+00:00,"NBA Live 66 - Spread/Total",2.02,1,green,1.02,100
+644b269a-f0ff-4501-b88d-d44e5ae35a1c,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-10T03:03:15.543074+00:00,"NBA Live 77 - Spread/Total",2,1,green,1,100
+0112f2f2-b10a-412a-930f-710343f0c76b,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-10T11:25:16.782311+00:00,"NBA Live 65 - Spread/Total",2,3,red,-3,100
+50468bcc-cab3-4476-9d25-99054a552797,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-13T07:05:40.002242+00:00,"NBA Live 74 - Spread/Total",1.97,1,green,0.97,100
+79abbea5-e45b-455b-963a-8252ea4c0f7b,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-18T06:57:58.850387+00:00,"NBA Live 28 - Spread/Total",1.91,1,green,0.91,100
+a92b9e8a-359c-43d4-8de9-a23d605f3108,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-26T09:45:41.002654+00:00,"NBA Live 68 - Spread/Total",1.9,2,red,-2,100
+7c5c0449-ece4-4448-b3d5-519173c5189c,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-06-27T14:58:35.995003+00:00,"NBA Live 1 - Spread/Total",1.94,1,green,0.94,100
+8c74f019-a9f0-45fe-b792-0a377de32785,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-03T06:24:18.824276+00:00,"NBA Live 47 - Spread/Total",2.04,1,red,-1,100
+88de7b33-6e08-4ee1-8262-afe958bafb99,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-04T07:48:53.837332+00:00,"NBA Live 40 - Spread/Total",2.05,2,red,-2,100
+46743339-d713-42ca-9e49-0ea36ee6788c,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-09T22:59:31.730448+00:00,"NBA Live 39 - Spread/Total",1.99,1,red,-1,100
+0089071a-fee9-48bf-9c4b-a93c0b022131,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-16T22:43:59.617047+00:00,"NBA Live 9 - Spread/Total",2.05,1,green,1.05,100
+f5216700-f35e-4772-8c13-75f829ecebde,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-20T15:35:05.972047+00:00,"NBA Live 35 - Spread/Total",1.92,3,red,-3,100
+032675ef-8d4f-458a-835b-7499e942dfa3,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-25T01:59:26.293787+00:00,"NBA Live 60 - Spread/Total",1.96,2,green,1.92,100
+80fb00a8-755a-476e-b73b-208e5bce23ac,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-25T12:25:51.275219+00:00,"NBA Live 80 - Spread/Total",2.09,1,green,1.09,100
+59f978cb-9175-4422-945d-a35e001b04fe,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-07-30T17:13:56.464918+00:00,"NBA Live 26 - Spread/Total",1.98,3,green,2.94,100
+24a261a6-6752-4fc3-80b6-58d7278aa265,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-08-01T08:36:02.312756+00:00,"NBA Live 45 - Spread/Total",1.96,3,green,2.88,100
+77c352f9-1a82-48ed-b0bc-ac2cc73d24ea,12,NBA Live Betting,nba-live-betting,2025-08-04T14:31:16.654591+00:00,2025-08-03T00:40:55.881297+00:00,"NBA Live 54 - Spread/Total",2.03,3,green,3.09,100

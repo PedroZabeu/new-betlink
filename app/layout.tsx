@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
 import { CookieBanner } from "@/components/cookie-consent";
 import { GlobalErrorBoundary } from "@/components/error-boundary";
+import { QueryProvider } from "@/components/providers/query-provider";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL
@@ -68,11 +69,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <GlobalErrorBoundary>
-            {children}
-            <CookieBanner />
-            <Toaster position="top-right" richColors />
-          </GlobalErrorBoundary>
+          <QueryProvider>
+            <GlobalErrorBoundary>
+              {children}
+              <CookieBanner />
+              <Toaster position="top-right" richColors />
+            </GlobalErrorBoundary>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>

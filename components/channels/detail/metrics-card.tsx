@@ -1,17 +1,17 @@
 'use client';
 
-import { useState } from 'react';
-import { ChannelDetail, TimeWindow } from '@/lib/types/channel';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { TrendingUp, TrendingDown, Target, Activity, BarChart3, AlertTriangle } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useUnifiedChannelMetrics } from '@/lib/hooks/useUnifiedChannelMetrics';
+import { Skeleton } from '@/components/ui/skeleton';
 
 interface MetricsCardProps {
-  channel: ChannelDetail;
+  channelId: number;
+  period?: string;
 }
 
-const periodOptions: { value: TimeWindow; label: string }[] = [
+const periodOptions = [
   { value: '7d', label: '7 dias' },
   { value: '30d', label: '30 dias' },
   { value: '3m', label: '3 meses' },
@@ -21,73 +21,103 @@ const periodOptions: { value: TimeWindow; label: string }[] = [
   { value: 'all', label: 'Todo período' }
 ];
 
-export default function MetricsCard({ channel }: MetricsCardProps) {
-  const [selectedPeriod, setSelectedPeriod] = useState<TimeWindow>('30d');
-  const metrics = channel.detailedMetrics[selectedPeriod];
+function MetricsCardSkeleton() {
+  return (
+    <Card>
+      <CardHeader>
+        <div className="flex items-center justify-between">
+          <Skeleton className="h-6 w-48" />
+          <Skeleton className="h-10 w-[140px]" />
+        </div>
+      </CardHeader>
+      <CardContent>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="space-y-2">
+              <div className="flex items-center gap-2">
+                <Skeleton className="h-8 w-8 rounded" />
+                <Skeleton className="h-4 w-20" />
+              </div>
+              <Skeleton className="h-8 w-24" />
+            </div>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
+export default function MetricsCard({ channelId, period = '30d' }: MetricsCardProps) {
+  const { data, isLoading } = useUnifiedChannelMetrics(channelId, period as any);
+  
+  if (isLoading) return <MetricsCardSkeleton />;
+  
+  if (!data || !data.summary) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Métricas de Performance</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground text-center py-8">
+            Nenhuma tip encontrada para o período selecionado.
+          </p>
+        </CardContent>
+      </Card>
+    );
+  }
+  
+  const { summary } = data;
   
   const metricItems = [
     {
       label: 'ROI',
-      value: `${metrics.roi > 0 ? '+' : ''}${metrics.roi}%`,
-      icon: metrics.roi > 0 ? TrendingUp : TrendingDown,
-      color: metrics.roi > 0 ? 'text-green-600' : 'text-red-600',
-      bgColor: metrics.roi > 0 ? 'bg-green-100' : 'bg-red-100'
+      value: `${summary.roi > 0 ? '+' : ''}${summary.roi.toFixed(2)}%`,
+      icon: summary.roi > 0 ? TrendingUp : TrendingDown,
+      color: summary.roi > 0 ? 'text-green-600' : 'text-red-600',
+      bgColor: summary.roi > 0 ? 'bg-green-100' : 'bg-red-100'
     },
     {
       label: 'Lucro',
-      value: `${metrics.profit > 0 ? '+' : ''}${metrics.profit.toFixed(1)}u`,
-      icon: metrics.profit > 0 ? TrendingUp : TrendingDown,
-      color: metrics.profit > 0 ? 'text-green-600' : 'text-red-600',
-      bgColor: metrics.profit > 0 ? 'bg-green-100' : 'bg-red-100'
+      value: `${summary.profit > 0 ? '+' : ''}${summary.profit.toFixed(2)}u`,
+      icon: summary.profit > 0 ? TrendingUp : TrendingDown,
+      color: summary.profit > 0 ? 'text-green-600' : 'text-red-600',
+      bgColor: summary.profit > 0 ? 'bg-green-100' : 'bg-red-100'
     },
     {
-      label: 'Taxa de Acerto',
-      value: `${metrics.winRate}%`,
-      icon: Target,
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100'
+      label: 'Max Drawdown',
+      value: `-${summary.maxDrawdown.toFixed(2)}u`,
+      icon: AlertTriangle,
+      color: 'text-orange-600',
+      bgColor: 'bg-orange-100'
     },
     {
       label: 'Unidades Apostadas',
-      value: `${metrics.volumeUnits}u`,
+      value: `${summary.totalStake.toFixed(0)}u`,
       icon: Activity,
       color: 'text-purple-600',
       bgColor: 'bg-purple-100'
     },
     {
       label: 'Odds Média',
-      value: metrics.avgOdds.toFixed(2),
+      value: summary.avgOdds.toFixed(2),
       icon: BarChart3,
       color: 'text-orange-600',
       bgColor: 'bg-orange-100'
     },
     {
-      label: 'Max Drawdown',
-      value: `${metrics.maxDrawdown}u`,
-      icon: AlertTriangle,
-      color: 'text-red-600',
-      bgColor: 'bg-red-100'
+      label: 'Total Tips',
+      value: summary.totalTips.toString(),
+      icon: Activity,
+      color: 'text-gray-600',
+      bgColor: 'bg-gray-100'
     }
   ];
   
   return (
     <Card>
       <CardHeader>
-        <div className="flex items-center justify-between">
-          <CardTitle>Métricas de Performance</CardTitle>
-          <Select value={selectedPeriod} onValueChange={(value) => setSelectedPeriod(value as TimeWindow)}>
-            <SelectTrigger className="w-[140px]">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {periodOptions.map((option) => (
-                <SelectItem key={option.value} value={option.value}>
-                  {option.label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+        <CardTitle>Métricas de Performance</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">

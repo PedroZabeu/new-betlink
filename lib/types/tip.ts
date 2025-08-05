@@ -4,7 +4,7 @@
  * @created: Feature 2.18
  */
 
-export type TipStatus = 'pending' | 'win' | 'loss' | 'void';
+export type TipStatus = 'pending' | 'green' | 'half_green' | 'red' | 'half_red' | 'void' | 'cancelled';
 
 export interface Tip {
   id: string;
@@ -21,6 +21,7 @@ export interface Tip {
   // Result fields (updated after event)
   status: TipStatus;
   profit_loss: number;
+  partial_percentage?: number; // For half bets (default 100)
 }
 
 export interface TipWithChannel extends Tip {
@@ -87,11 +88,14 @@ export function calculateProfitLoss(odds: number, stake: number, status: TipStat
 
 export function getStatusColor(status: TipStatus): string {
   switch (status) {
-    case 'win':
+    case 'green':
+    case 'half_green':
       return 'text-green-600';
-    case 'loss':
+    case 'red':
+    case 'half_red':
       return 'text-red-600';
     case 'void':
+    case 'cancelled':
       return 'text-gray-500';
     case 'pending':
     default:
@@ -101,11 +105,14 @@ export function getStatusColor(status: TipStatus): string {
 
 export function getStatusBadgeVariant(status: TipStatus): 'default' | 'secondary' | 'destructive' | 'outline' {
   switch (status) {
-    case 'win':
+    case 'green':
+    case 'half_green':
       return 'default';
-    case 'loss':
+    case 'red':
+    case 'half_red':
       return 'destructive';
     case 'void':
+    case 'cancelled':
       return 'secondary';
     case 'pending':
     default:

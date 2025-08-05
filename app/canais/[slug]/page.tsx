@@ -4,8 +4,7 @@ import { getChannelBySlug } from '@/lib/supabase/queries/channel-details';
 import { Separator } from '@/components/ui/separator';
 import ChannelHeader from '@/components/channels/detail/channel-header';
 import SubscriptionPlansCard from '@/components/channels/detail/subscription-plans-card';
-import MetricsCard from '@/components/channels/detail/metrics-card';
-import PerformanceChart from '@/components/channels/detail/performance-chart';
+import ChannelMetricsSection from '@/components/channels/detail/channel-metrics-section';
 import ResultsTable from '@/components/channels/detail/results-table';
 import AboutCard from '@/components/channels/detail/about-card';
 import ReviewsCard from '@/components/channels/detail/reviews-card';
@@ -16,8 +15,9 @@ import Link from 'next/link';
 // Force dynamic rendering since we need cookies for auth
 export const dynamic = 'force-dynamic';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const { data: channel } = await getChannelBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const { data: channel } = await getChannelBySlug(slug);
   
   if (!channel) {
     return {
@@ -38,8 +38,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function ChannelDetailPage({ params }: { params: { slug: string } }) {
-  const { data: channelData, error } = await getChannelBySlug(params.slug);
+export default async function ChannelDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const { data: channelData, error } = await getChannelBySlug(slug);
   
   if (error || !channelData) {
     notFound();
@@ -187,13 +188,10 @@ export default async function ChannelDetailPage({ params }: { params: { slug: st
       <div className="container mx-auto px-4 pb-16">
         <div className="grid gap-8">
           {/* Subscription Plans */}
-          <SubscriptionPlansCard plans={channel.subscriptionPlans} channelName={channel.name} channelSlug={params.slug} />
+          <SubscriptionPlansCard plans={channel.subscriptionPlans} channelName={channel.name} channelSlug={slug} />
           
           {/* Metrics and Chart Section */}
-          <div className="grid lg:grid-cols-2 gap-8">
-            <MetricsCard channel={channel} />
-            <PerformanceChart channel={channel} />
-          </div>
+          <ChannelMetricsSection channelId={channel.id} channelName={channel.name} />
           
           {/* Results Table */}
           <ResultsTable tips={channel.recentTips} />

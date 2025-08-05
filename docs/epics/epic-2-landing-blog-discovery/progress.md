@@ -3,8 +3,8 @@
 ## 📊 Status Geral
 - **Status**: 🟦 In Progress
 - **Início**: 29/01/2025
-- **Progresso**: 18/22 features (81.8%)
-- **Estimativa restante**: 20-26 horas (~4-5 dias úteis)
+- **Progresso**: 19/22 features (86.4%)
+- **Estimativa restante**: 14-19 horas (~3-4 dias úteis)
 
 ## 📊 Progress Tracker
 
@@ -33,14 +33,14 @@
 - ✅ Feature 2.16: Migrar Listagem de Canais + Badge Live Data
 - ✅ Feature 2.17: Resolver Tech Debt da Feature 2.16
 
-### 🟦 Fase 5: Sistema de Métricas Reais (20%)
+### 🟦 Fase 5: Sistema de Métricas Reais (40%)
 - ✅ Feature 2.18: Sistema de Métricas Dinâmicas com Nomenclatura Green/Red (110% completo)
-- ⬜ Feature 2.19: Implementar Gráfico de Performance Real
-- ⬜ Feature 2.20: Migrar Todas as Métricas para Cálculo Dinâmico
-- ⬜ Feature 2.21: Timeline de Tips Recentes
+- ✅ Feature 2.19: Implementar Gráfico de Performance Real (120% completo)
+- ⬜ Feature 2.20: Histórico de Tips Resolvidas (Proteção do Modelo de Negócio)
+- ⬜ Feature 2.21: Sistema de Reviews
 - ⬜ Feature 2.22: Polish Final e Documentação do Epic 2
 
-**Progresso Total: 81.8%** ████████████████████░░░
+**Progresso Total: 86.4%** █████████████████████░░
 
 ## 📋 Features Pendentes - Detalhes
 
@@ -56,36 +56,41 @@
   - ✅ 250+ tips realistas populadas
   - ✅ Remoção completa de channel_metrics antiga
 
-### Feature 2.19: Implementar Gráfico de Performance Real
-- **Complexidade**: Média (6-8h)
-- **Prioridade**: Alta
-- **Descrição**: Substituir gráfico placeholder por visualização real da evolução do bankroll
-- **Por que é importante**: Principal visual da página de detalhes está vazio
+### ✅ Feature 2.19: Implementar Gráfico de Performance Real - COMPLETO
+- **Complexidade**: Alta (implementada em 10h)
+- **Resultado**: 120% completo com sistema unificado:
+  - ✅ Gráfico estilo stock market (Google Finance/Apple Stocks)
+  - ✅ Hook unificado `useUnifiedChannelMetrics` como fonte única
+  - ✅ Períodos: 7D, 30D, 3M, 6M, YTD, 12M, All funcionando
+  - ✅ MDD (Maximum Drawdown) implementado
+  - ✅ Performance < 50ms (2x melhor que objetivo)
+  - ✅ Cálculos validados com análise em R
+  - ⚠️ Problema conhecido: Listagem usa view SQL antiga
 
-### Feature 2.20: Migrar Todas as Métricas para Cálculo Dinâmico
-- **Complexidade**: Média (4-5h)
-- **Prioridade**: Alta
-- **Descrição**: Remover dependência de valores hardcoded, usar apenas cálculos em tempo real
-- **Por que é importante**: Conecta todo o sistema com métricas reais
+### Feature 2.20: Histórico de Tips Resolvidas (Proteção do Modelo)
+- **Complexidade**: Alta (7h) - SEGURANÇA CRÍTICA!
+- **Prioridade**: Máxima
+- **Descrição**: DataTable mostrando APENAS tips resolvidas (NUNCA pendentes)
+- **Por que é importante**: Protege modelo de negócio + transparência
 
-### Feature 2.21: Timeline de Tips Recentes
-- **Complexidade**: Baixa (4-5h)
+### Feature 2.21: Sistema de Reviews
+- **Complexidade**: Média (5h)
 - **Prioridade**: Média
-- **Descrição**: Adicionar seção visual mostrando últimas 20 apostas do canal
-- **Por que é importante**: Transparência e engajamento com usuários
+- **Descrição**: Implementar sistema de avaliações de canais pelos assinantes
+- **Por que é importante**: Social proof e feedback para tipsters
 
 ### Feature 2.22: Polish Final e Documentação do Epic 2
-- **Complexidade**: Média (6-8h)
+- **Complexidade**: Baixa (2-4h)
 - **Prioridade**: Essencial
-- **Descrição**: Performance audit, documentação completa, dashboard de métricas do Epic
-- **Por que é importante**: Garantir qualidade e manutenibilidade
+- **Descrição**: Resolver inconsistência da listagem, documentação completa
+- **Por que é importante**: Garantir qualidade e consistência total
 
 ## 🎯 Próximos Passos
 1. ✅ ~~Feature 2.18 completa com melhorias extras~~
-2. Iniciar Feature 2.19 - Implementar Gráfico de Performance Real
-3. Feature 2.20 - Migrar métricas restantes para cálculo dinâmico
-4. Feature 2.21 - Timeline de Tips Recentes
-5. Feature 2.22 - Polish Final e Documentação
+2. ✅ ~~Feature 2.19 completa com sistema unificado de métricas~~
+3. 🔴 Feature 2.20 - Histórico de Tips (SEGURANÇA CRÍTICA!)
+4. Feature 2.21 - Sistema de Reviews
+5. Feature 2.22 - Polish Final (resolver inconsistência da listagem)
 
 ## 🔗 Links Relacionados
 - [Epic 2 Planning (detalhado)](/docs/epics/epic-2-landing-blog-discovery/epic-2-planning.md)
